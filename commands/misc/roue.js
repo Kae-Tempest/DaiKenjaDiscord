@@ -11,7 +11,7 @@ module.exports.run = async (client, message) => {
     const userPo = await client.getUser(user);
 
     if (random <= 10) {
-        const recompense = 1000
+        const recompense = 1000 + (user.prestige * 1000 - 1000)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
             "users.$.po": newBalance,
@@ -20,26 +20,29 @@ module.exports.run = async (client, message) => {
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 20 || random > 10) {
-        const recompense = 350
+        const recompense = 350 + (user.prestige * 350 - 350)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 30 || random > 20) {
-        const recompense = 150
+        const recompense = 150 + (user.prestige * 150 - 150)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 40 || random > 30) {
-        const recompense = 75
+        const recompense = 75 + (user.prestige * 75 - 75)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
@@ -47,7 +50,8 @@ module.exports.run = async (client, message) => {
         const recompense = 0
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
@@ -55,39 +59,44 @@ module.exports.run = async (client, message) => {
         const recompense = 0
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 70 || random > 60) {
-        const recompense = 75
+        const recompense = 75 + (user.prestige * 75 - 75)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 80 || random > 70) {
-        const recompense = 150
+        const recompense = 150 + (user.prestige * 150 - 150)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 90 || random > 80) {
-        const recompense = 350
+        const recompense = 350 + (user.prestige * 350 - 350)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 100 || random > 90) {
-        const recompense = 1000
+        const recompense = 1000 + (user.prestige * 1000 - 1000)
         const newBalance = Number(userPo.po) + recompense;
         client.updateUserInfo(message.member,{
-            "users.$.po": newBalance
+            "users.$.po": newBalance,
+            "users.$.rdc": tirage
         })
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
