@@ -1,7 +1,7 @@
 const fs = require('fs')
 const items = (client) => {
     function writingDot(file) {
-        fs.appendFileSync("./assets/shop/" + file , ",");
+        fs.appendFileSync("./assets/shop/" + file, ",");
     }
 
     function createItems(name, rank, classe, label, type, desc, cost, force, agi, intel, spirit, vita, consti) {
@@ -25,9 +25,15 @@ const items = (client) => {
         let data = JSON.stringify(items, null, 2);
         fs.appendFileSync('./assets/shop/shop.json', data);
 
-        if (type === "Mh" || type === "Oh") {fs.appendFileSync('./assets/shop/weapon.json', data);}
-        if (type === "armor") {fs.appendFileSync('./assets/shop/armor.json', data);}
-        if (type === "rings" || type === "earrings" || type === "belt" || type === "broach") {fs.appendFileSync('./assets/shop/accessory.json', data);}
+        if (type === "Mh" || type === "Oh") {
+            fs.appendFileSync('./assets/shop/weapon.json', data);
+        }
+        if (type === "armor") {
+            fs.appendFileSync('./assets/shop/armor.json', data);
+        }
+        if (type === "rings" || type === "earrings" || type === "belt" || type === "broach") {
+            fs.appendFileSync('./assets/shop/accessory.json', data);
+        }
     }
 
     fs.appendFileSync('./assets/shop/shop.json', '[');
@@ -290,22 +296,22 @@ const items = (client) => {
     createItems("Iron broach", "commun", "toute classe", "86", "broach", "Broche en fer", 200, 30, 30, 30, 30, 30, 30);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Gold broach", "commun", "toute classe", "87", "broach", "Broche en or", 1000, 60,60,60,60,60,60);
+    createItems("Gold broach", "commun", "toute classe", "87", "broach", "Broche en or", 1000, 60, 60, 60, 60, 60, 60);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Titanium broach", "commun", "toute classe", "88", "broach", "Broche en titanium", 3500, 80,80,80,80,80,80);
+    createItems("Titanium broach", "commun", "toute classe", "88", "broach", "Broche en titanium", 3500, 80, 80, 80, 80, 80, 80);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Diamond broach", "commun", "toute classe", "89", "broach", "Broche en diamant", 10000, 150,150,150,150,150,150);
+    createItems("Diamond broach", "commun", "toute classe", "89", "broach", "Broche en diamant", 10000, 150, 150, 150, 150, 150, 150);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Emerald broach", "commun", "toute classe", "90", "broach", "Broche en emeraude", 20000, 200,200,200,200,200,200);
+    createItems("Emerald broach", "commun", "toute classe", "90", "broach", "Broche en emeraude", 20000, 200, 200, 200, 200, 200, 200);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Divin broach", "commun", "toute classe", "91", "broach", "Broche de dieu", 150000, 500,500,500,500,500,500);
+    createItems("Divin broach", "commun", "toute classe", "91", "broach", "Broche de dieu", 150000, 500, 500, 500, 500, 500, 500);
     writingDot("shop.json");
     writingDot("accessory.json");
-    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000,1000,1000,1000,1000,1000);
+    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000);
 
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
