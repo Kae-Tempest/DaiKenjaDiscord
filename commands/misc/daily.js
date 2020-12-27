@@ -5,12 +5,20 @@ module.exports.run = async (client, message) => {
     const dailyCD = player.daily + dayCD;
     const cdTime = dayCD - (Date.now() - player.daily)
 
-    if (dailyCD > Date.now() ) return message.reply(`Il reste ${Math.floor(cdTime / (1000*60*60) % 24)} hrs, ${Math.floor(cdTime / (1000*60) % 60)} minutes et ${Math.floor(cdTime / 1000 % 60)} secondes avant de pourvoir recupérer la prochaine récompense !`);
+    if (dailyCD > Date.now()) return message.reply(`Il reste ${Math.floor(cdTime / (1000 * 60 * 60) % 24)} hrs, ${Math.floor(cdTime / (1000 * 60) % 60)} minutes et ${Math.floor(cdTime / 1000 % 60)} secondes avant de pourvoir recupérer la prochaine récompense !`);
 
-    const user = message.guild.member(message.member)
-    const userPo = await client.getUser(user);
-    const recompense = 250;
-    const newBalance = Number(userPo.po) + recompense;
+
+    function recompense(prestige) {
+        let pay;
+        if (prestige === 0) {
+            pay = 250
+        } else {
+            pay = 250 * prestige
+        }
+        return pay
+    }
+
+    const newBalance = player.po + recompense(player.prestige);
 
     client.updateUserInfo(message.member, {
         "users.$.po": newBalance,
