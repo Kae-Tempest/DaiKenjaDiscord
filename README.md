@@ -1,5 +1,9 @@
-# daikenja
-daikenja
+# Dai Kenja
 
+Bot Discord RPG/Moderation
 
-Bot Discord RPG/Modération
+neccessary module : fs,mongoose,ms
+
+Language support : French
+
+created by Kae Tempest
