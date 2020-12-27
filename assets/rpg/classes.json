@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Barbare",
+    "icon": "https://cdn.discordapp.com/attachments/587692066411249688/776032985597083668/barbare_icon.png",
+    "description": "Depuis que la guerre fait rage, des héros de toutes races ont cherché a maîtriser l'art du combat. Les barbares combienent force, autorité et maîtrise des armes et des armures pour causer des ravages dans des combats épiques",
+    "stats": {
+      "strength": 4,
+      "agility": 2,
+      "intelligence": 1,
+      "spirit": 1,
+      "constitution": 2,
+      "vitality": 50
+    }
+  },
+  {
+    "name": "Voleur",
+    "icon": "https://cdn.discordapp.com/attachments/587692066411249688/776046283299094528/Voleur_icon.png",
+    "description": "Un seul code pour les voleurs: remplis le contrat. Quant à leurs honneur... tout s'achète avec des pièces d'or. Ces mercenaires s'appuient sur des tactiques brutales et efficaces sans l'ombre d'un remords",
+    "stats": {
+      "strength": 1,
+      "agility": 3,
+      "intelligence": 3,
+      "spirit": 2,
+      "constitution": 1,
+      "vitality": 50
+    }
+  },
+  {
+    "name": "Mage",
+    "icon": "https://cdn.discordapp.com/attachments/587692066411249688/776045857241563136/Mage_icon.png",
+    "description": "Les étudiants les plus intelligents et les plus disciplinés peuvent envisager une carrière de mage. Comme la magie des arcanes que manipulent les mages est à la fois puissante et dangereuse elle n'est enseignée qu'à ceux qui la pratique avec respect et assiduité.",
+    "stats": {
+      "strength": 1,
+      "agility": 2,
+      "intelligence": 4,
+      "spirit": 2,
+      "constitution": 1,
+      "vitality": 50
+    }
+  },
+  {
+    "name": "Paladin",
+    "icon": "https://cdn.discordapp.com/attachments/587692066411249688/776044710899744788/Paladin_icon.png",
+    "description": "Le paladin observe fidèlement ces règles : protéger le faible, faire régner la justice et vaincre le mal jusque dans les recoins les plus sombres de ce monde. Ces saints guerriers sont dotés de solides armures pour pouvoir affronter les adversaires les plus coriaces. La bénédiction de la Lumière leur permet de soigner les blessures et, dans certains cas, de redonner vie aux morts.",
+    "stats": {
+      "strength": 3,
+      "agility": 1,
+      "intelligence": 1,
+      "spirit": 3,
+      "constitution": 2,
+      "vitality": 50
+    }
+  },
+  {
+    "name": "Chasseur",
+    "icon": "https://cdn.discordapp.com/attachments/587692066411249688/776043965588963358/Chasseur_icon.png",
+    "description": "Les chasseurs sont des combattants des terres sauvages qui ont tissé des liens étroits avec de fidèles compagnons animaux. Ils ont développé des tactiques leur permettant de se battre aux côtés de leur compagnon en formant un redoutable duo. Ils connaissent une grande variété de sorts naturels et savent utiliser les capacités et les attributs des animaux pour s’améliorer et améliorer leur compagnon.",
+    "stats": {
+      "strength": 3,
+      "agility": 2,
+      "intelligence": 3,
+      "spirit": 1,
+      "constitution": 1,
+      "vitality": 50
+    }
+  }
+]

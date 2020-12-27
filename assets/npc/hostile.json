@@ -1,0 +1,575 @@
+[{
+  "name": "Slime",
+  "difficulty": 0,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 5,
+  "po": 10,
+  "stats": {
+    "vitality": 10,
+    "constitution": 1,
+    "strength": 1,
+    "agility": 0,
+    "intelligence": 0
+  }
+},{
+  "name": "Goblin",
+  "difficulty": 0,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 10,
+  "po": 12,
+  "stats": {
+    "vitality": 8,
+    "constitution": 0,
+    "strength": 2,
+    "agility": 1,
+    "intelligence": 0
+  }
+},{
+  "name": "Wildboar",
+  "difficulty": 1,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 10,
+  "po": 10,
+  "stats": {
+    "vitality": 10,
+    "constitution": 2,
+    "strength": 3,
+    "agility": 2,
+    "intelligence": 1
+  }
+},{
+  "name": "Cave Spider",
+  "difficulty": 1,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 10,
+  "po": 18,
+  "stats": {
+    "vitality": 10,
+    "constitution": 2,
+    "strength": 3,
+    "agility": 5,
+    "intelligence": 2
+  }
+},{
+  "name": "Wolf",
+  "difficulty": 2,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 25,
+  "po": 25,
+  "stats": {
+    "vitality": 15,
+    "constitution": 8,
+    "strength": 5,
+    "agility": 10,
+    "intelligence": 5
+  }
+},{
+  "name": "Skeleton",
+  "difficulty": 2,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 30,
+  "po": 20,
+  "stats": {
+    "vitality": 10,
+    "constitution": 14,
+    "strength": 5,
+    "agility": 1,
+    "intelligence": 1
+  }
+},{
+  "name": "Shadow",
+  "difficulty": 2,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 30,
+  "po": 28,
+  "stats": {
+    "vitality": 10,
+    "constitution": 14,
+    "strength": 5,
+    "agility": 10,
+    "intelligence": 5
+  }
+},{
+  "name": "Ogre",
+  "difficulty": 3,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 30,
+  "po": 28,
+  "stats": {
+    "vitality": 20,
+    "constitution": 5,
+    "strength": 7,
+    "agility": 5,
+    "intelligence": 5
+  }
+},{
+  "name": "Giant Mantis",
+  "difficulty": 3,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 45,
+  "po": 30,
+  "stats": {
+    "vitality": 25,
+    "constitution": 5,
+    "strength": 7,
+    "agility": 3,
+    "intelligence": 7
+  }
+},{
+  "name": "Orc",
+  "difficulty": 3,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 65,
+  "po": 50,
+  "stats": {
+    "vitality": 50,
+    "constitution": 12,
+    "strength": 15,
+    "agility": 5,
+    "intelligence": 5
+  }
+},{
+  "name": "Phantomtooth",
+  "difficulty": 4,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 100,
+  "po": 90,
+  "stats": {
+    "vitality": 60,
+    "constitution": 20,
+    "strength": 20,
+    "agility": 10,
+    "intelligence": 10
+  }
+},{
+  "name": "Vaporhag",
+  "difficulty": 4,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 125,
+  "po": 95,
+  "stats": {
+    "vitality": 65,
+    "constitution": 25,
+    "strength": 18,
+    "agility": 15,
+    "intelligence": 15
+  }
+},{
+  "name": "Gloomfang",
+  "difficulty": 4,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 150,
+  "po": 100,
+  "stats": {
+    "vitality": 70,
+    "constitution": 22,
+    "strength": 22,
+    "agility": 20,
+    "intelligence": 15
+  }
+},{
+  "name": "Taintscreamer",
+  "difficulty": 4,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 150,
+  "po": 100,
+  "stats": {
+    "vitality": 65,
+    "constitution": 25,
+    "strength": 25,
+    "agility": 20,
+    "intelligence": 20
+  }
+},{
+  "name": "Cryptsoul",
+  "difficulty": 4,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 175,
+  "po": 115,
+  "stats": {
+    "vitality": 70,
+    "constitution": 25,
+    "strength": 25,
+    "agility": 20,
+    "intelligence": 20
+  }
+},{
+  "name": "Mimic",
+  "difficulty": 5,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 300,
+  "po": 250,
+  "stats": {
+    "vitality": 500,
+    "constitution": 35,
+    "strength": 15,
+    "agility": 0,
+    "intelligence": 50
+  }
+},{
+  "name": "Zombie",
+  "difficulty": 5,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 250,
+  "po": 130,
+  "stats": {
+    "vitality": 80,
+    "constitution": 22,
+    "strength": 30,
+    "agility": 5,
+    "intelligence": 2
+  }
+},{
+  "name": "Becale",
+  "difficulty": 6,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 300,
+  "po": 250,
+  "stats": {
+    "vitality": 100,
+    "constitution": 30,
+    "strength": 50,
+    "agility": 30,
+    "intelligence": 20
+  }
+},{
+  "name": "Sopurenne",
+  "difficulty": 6,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 325,
+  "po": 270,
+  "stats": {
+    "vitality": 150,
+    "constitution": 35,
+    "strength": 40,
+    "agility": 30,
+    "intelligence": 30
+  }
+},{
+  "name": "Dark timilo",
+  "difficulty": 7,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 350,
+  "po": 3300,
+  "stats": {
+    "vitality": 190,
+    "constitution": 40,
+    "strength": 50,
+    "agility": 30,
+    "intelligence": 35
+  }
+},{
+  "name": "King Slime",
+  "difficulty": 10,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 1000,
+  "po": 500,
+  "stats": {
+    "vitality": 500,
+    "constitution": 40,
+    "strength": 45,
+    "agility": 20,
+    "intelligence": 50
+  }
+},{
+  "name": "Giant armored cave spider",
+  "difficulty": 10,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 1100,
+  "po": 500,
+  "stats": {
+    "vitality": 50,
+    "constitution": 45,
+    "strength": 45,
+    "agility": 80,
+    "intelligence": 50
+  }
+},{
+  "name": "King Kobold Lord",
+  "difficulty": 11,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 1500,
+  "po": 510,
+  "stats": {
+    "vitality": 520,
+    "constitution": 40,
+    "strength": 43,
+    "agility": 80,
+    "intelligence": 100
+  }
+},{
+  "name": "Moonlight cat",
+  "difficulty": 11,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 1500,
+  "po": 510,
+  "stats": {
+    "vitality": 510,
+    "constitution": 40,
+    "strength": 40,
+    "agility": 150,
+    "intelligence": 90
+  }
+},{
+  "name": "Orc Disaster",
+  "difficulty": 15,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 2000,
+  "po": 1000,
+  "stats": {
+    "vitality": 800,
+    "constitution": 80,
+    "strength": 65,
+    "agility": 35,
+    "intelligence": 200
+  }
+},{
+  "name": "Elyon",
+  "difficulty": 16,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 2300,
+  "po": 1300,
+  "stats": {
+    "vitality": 1000,
+    "constitution": 150,
+    "strength": 150,
+    "agility": 300,
+    "intelligence": 300
+  }
+},{
+  "name": "Dracula",
+  "difficulty": 16,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 2500,
+  "po": 1500,
+  "stats": {
+    "vitality": 1200,
+    "constitution": 100,
+    "strength": 200,
+    "agility": 500,
+    "intelligence": 900
+  }
+},{
+  "name": "Bowser",
+  "difficulty": 16,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 2500,
+  "po": 1500,
+  "stats": {
+    "vitality": 1200,
+    "constitution": 100,
+    "strength": 200,
+    "agility": 300,
+    "intelligence": 600
+  }
+},{
+  "name": "Fake Kami",
+  "difficulty": 20,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 3500,
+  "po": 5000,
+  "stats": {
+    "vitality": 1500,
+    "constitution": 300,
+    "strength": 300,
+    "agility": 1000,
+    "intelligence": 1000
+  }
+},{
+  "name": "Shogun",
+  "difficulty": 30,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 5000,
+  "po": 10000,
+  "stats": {
+    "vitality": 2000,
+    "constitution": 300,
+    "strength": 350,
+    "agility": 1500,
+    "intelligence": 2000
+  }
+},{
+  "name": "The Gleam Eyes",
+  "difficulty": 40,
+  "category": "Boss",
+  "type": "hostile",
+  "experience": 10000,
+  "po": 30000,
+  "stats": {
+    "vitality": 4000,
+    "constitution": 200,
+    "strength": 500,
+    "agility": 1000,
+    "intelligence": 2500
+  }
+},{
+  "name": "Hellwraith",
+  "difficulty": 50,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 15000,
+  "po": 35000,
+  "stats": {
+    "vitality": 5000,
+    "constitution": 280,
+    "strength": 500,
+    "agility": 3000,
+    "intelligence": 2000
+  }
+},{
+  "name": "Vampmask",
+  "difficulty": 60,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 20000,
+  "po": 40000,
+  "stats": {
+    "vitality": 5000,
+    "constitution": 300,
+    "strength": 600,
+    "agility": 3000,
+    "intelligence": 6000
+  }
+},{
+  "name": "Dreadfang",
+  "difficulty": 70,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 25000,
+  "po": 48000,
+  "stats": {
+    "vitality": 6500,
+    "constitution": 280,
+    "strength": 750,
+    "agility": 4000,
+    "intelligence": 4000
+  }
+},{
+  "name": "Hellstep",
+  "difficulty": 80,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 28000,
+  "po": 55000,
+  "stats": {
+    "vitality": 8000,
+    "constitution": 450,
+    "strength": 800,
+    "agility": 6000,
+    "intelligence": 3000
+  }
+},{
+  "name": "Wispling",
+  "difficulty": 90,
+  "category": "Monster",
+  "type": "hostile",
+  "experience": 30000,
+  "po": 80000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 500,
+    "strength": 750,
+    "agility": 1000,
+    "intelligence": 8000
+  }
+},{
+  "name": "Kae",
+  "difficulty": 100,
+  "category": "Calamity",
+  "type": "hostile",
+  "experience": 100000,
+  "po": 100000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": 6000,
+    "intelligence": 6000
+  }
+},{
+  "name": "Charybdis",
+  "difficulty": 100,
+  "category": "Calimity",
+  "type": "hostile",
+  "experience": 100000,
+  "po": 100000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": 1000,
+    "intelligence": 10000
+  }
+},{
+  "name": "Yuusha",
+  "difficulty": 250,
+  "category": "Héro",
+  "type": "hostile",
+  "experience": 200000,
+  "po": 500000,
+  "stats": {
+    "vitality": 25000,
+    "constitution": 1500,
+    "strength": 1500,
+    "agility": 10000,
+    "intelligence": 10000
+  }
+},{
+  "name": "Demon Lord",
+  "difficulty": 250,
+  "category": "Démon",
+  "type": "hostile",
+  "experience": 215000,
+  "po": 500000,
+  "stats": {
+    "vitality": 25000,
+    "constitution": 1300,
+    "strength": 2000,
+    "agility": 10000,
+    "intelligence": 10000
+  }
+},{
+  "name": "Kami",
+  "difficulty": 500,
+  "category": "Divinity",
+  "type": "hostile",
+  "experience": 1000000,
+  "po": 1000000,
+  "stats": {
+    "vitality": 50000,
+    "constitution": 3000,
+    "strength": 3000,
+    "agility": 10000,
+    "intelligence": 10000
+  }
+}]

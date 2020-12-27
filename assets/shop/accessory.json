@@ -1,0 +1,449 @@
+[{
+  "name": "Iron rings",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "65",
+  "type": "rings",
+  "description": "Anneaux en fer",
+  "cost": 200,
+  "stats": {
+    "vitality": 20,
+    "constitution": 5,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Gold rings",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "66",
+  "type": "rings",
+  "description": "Anneaux en or",
+  "cost": 1000,
+  "stats": {
+    "vitality": 50,
+    "constitution": 20,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Titanium rings",
+  "rank": "legendaire",
+  "class": "toute classe",
+  "label": "67",
+  "type": "rings",
+  "description": "Anneaux en titanium",
+  "cost": 3500,
+  "stats": {
+    "vitality": 80,
+    "constitution": 40,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Diamond rings",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "68",
+  "type": "rings",
+  "description": "Anneaux en diamant",
+  "cost": 10000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 150,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Emerald rings",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "69",
+  "type": "rings",
+  "description": "Anneaux en emeraude",
+  "cost": 20000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 200,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divin rings",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "70",
+  "type": "rings",
+  "description": "Anneaux de dieu",
+  "cost": 75000,
+  "stats": {
+    "vitality": 500,
+    "constitution": 375,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac rings",
+  "rank": "Demoniaque",
+  "class": "toute classe",
+  "label": "71",
+  "type": "rings",
+  "description": "Anneaux du roi démon",
+  "cost": 150000,
+  "stats": {
+    "vitality": 600,
+    "constitution": 800,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Iron earrings",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "72",
+  "type": "earrings",
+  "description": "Boucle d'oreils en fer",
+  "cost": 200,
+  "stats": {
+    "vitality": 20,
+    "constitution": 0,
+    "strength": 5,
+    "agility": 5,
+    "intelligence": 5,
+    "spirit": 5
+  }
+},{
+  "name": "Gold earrings",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "73",
+  "type": "earrings",
+  "description": "bloucle d'oreils en or",
+  "cost": 1000,
+  "stats": {
+    "vitality": 40,
+    "constitution": 0,
+    "strength": 10,
+    "agility": 10,
+    "intelligence": 10,
+    "spirit": 10
+  }
+},{
+  "name": "Titanium earrings",
+  "rank": "legendaire",
+  "class": "toute classe",
+  "label": "74",
+  "type": "earrings",
+  "description": "boucles d'oreils en titanium",
+  "cost": 3500,
+  "stats": {
+    "vitality": 60,
+    "constitution": 0,
+    "strength": 15,
+    "agility": 15,
+    "intelligence": 15,
+    "spirit": 15
+  }
+},{
+  "name": "Diamond earrings",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "75",
+  "type": "earrings",
+  "description": "Boucles d'oreils en diamant",
+  "cost": 10000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 0,
+    "strength": 50,
+    "agility": 50,
+    "intelligence": 50,
+    "spirit": 50
+  }
+},{
+  "name": "Emerald earrings",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "76",
+  "type": "earrings",
+  "description": "Boucles d'oreils en emeraude",
+  "cost": 20000,
+  "stats": {
+    "vitality": 400,
+    "constitution": 0,
+    "strength": 100,
+    "agility": 100,
+    "intelligence": 100,
+    "spirit": 100
+  }
+},{
+  "name": "Divin earrings",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "77",
+  "type": "earrings",
+  "description": "Boucles d'oreils de dieu",
+  "cost": 75000,
+  "stats": {
+    "vitality": 1200,
+    "constitution": 0,
+    "strength": 300,
+    "agility": 300,
+    "intelligence": 300,
+    "spirit": 300
+  }
+},{
+  "name": "Demoniac earrings",
+  "rank": "Demoniaque",
+  "class": "toute classe",
+  "label": "78",
+  "type": "earrings",
+  "description": "Boucles d'oreils du roi démon",
+  "cost": 150000,
+  "stats": {
+    "vitality": 2000,
+    "constitution": 0,
+    "strength": 500,
+    "agility": 500,
+    "intelligence": 500,
+    "spirit": 500
+  }
+},{
+  "name": "Iron belt",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "79",
+  "type": "belt",
+  "description": "Ceinture en fer",
+  "cost": 200,
+  "stats": {
+    "vitality": 20,
+    "constitution": 20,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Gold belt",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "80",
+  "type": "belt",
+  "description": "Ceinture en or",
+  "cost": 1000,
+  "stats": {
+    "vitality": 60,
+    "constitution": 60,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Titanium belt",
+  "rank": "legendaire",
+  "class": "toute classe",
+  "label": "81",
+  "type": "belt",
+  "description": "Ceinture en titanium",
+  "cost": 3500,
+  "stats": {
+    "vitality": 80,
+    "constitution": 80,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Diamond belt",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "82",
+  "type": "belt",
+  "description": "Ceinture en diamant",
+  "cost": 10000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 150,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Emerald belt",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "83",
+  "type": "belt",
+  "description": "Ceinture en emeraude",
+  "cost": 20000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 200,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divin belt",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "84",
+  "type": "belt",
+  "description": "Ceinture de dieu",
+  "cost": 75000,
+  "stats": {
+    "vitality": 400,
+    "constitution": 400,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac belt",
+  "rank": "Demoniaque",
+  "class": "toute classe",
+  "label": "85",
+  "type": "belt",
+  "description": "Ceinture du roi démon",
+  "cost": 150000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 600,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Iron broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "86",
+  "type": "broach",
+  "description": "Broche en fer",
+  "cost": 200,
+  "stats": {
+    "vitality": 30,
+    "constitution": 30,
+    "strength": 30,
+    "agility": 30,
+    "intelligence": 30,
+    "spirit": 30
+  }
+},{
+  "name": "Gold broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "87",
+  "type": "broach",
+  "description": "Broche en or",
+  "cost": 1000,
+  "stats": {
+    "vitality": 60,
+    "constitution": 60,
+    "strength": 60,
+    "agility": 60,
+    "intelligence": 60,
+    "spirit": 60
+  }
+},{
+  "name": "Titanium broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "88",
+  "type": "broach",
+  "description": "Broche en titanium",
+  "cost": 3500,
+  "stats": {
+    "vitality": 80,
+    "constitution": 80,
+    "strength": 80,
+    "agility": 80,
+    "intelligence": 80,
+    "spirit": 80
+  }
+},{
+  "name": "Diamond broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "89",
+  "type": "broach",
+  "description": "Broche en diamant",
+  "cost": 10000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 150,
+    "strength": 150,
+    "agility": 150,
+    "intelligence": 150,
+    "spirit": 150
+  }
+},{
+  "name": "Emerald broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "90",
+  "type": "broach",
+  "description": "Broche en emeraude",
+  "cost": 20000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 200,
+    "strength": 200,
+    "agility": 200,
+    "intelligence": 200,
+    "spirit": 200
+  }
+},{
+  "name": "Divin broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "91",
+  "type": "broach",
+  "description": "Broche de dieu",
+  "cost": 150000,
+  "stats": {
+    "vitality": 500,
+    "constitution": 500,
+    "strength": 500,
+    "agility": 500,
+    "intelligence": 500,
+    "spirit": 500
+  }
+},{
+  "name": "Demoniac broach",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "92",
+  "type": "broach",
+  "description": "Broche du roi démon",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 1000,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": 1000,
+    "intelligence": 1000,
+    "spirit": 1000
+  }
+}]

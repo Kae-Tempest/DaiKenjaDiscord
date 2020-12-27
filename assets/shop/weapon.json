@@ -1,0 +1,721 @@
+[{
+  "name": "Short sword",
+  "rank": "commun",
+  "class": "Voleur",
+  "label": "1",
+  "type": "Mh",
+  "description": "Epée courte",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 1,
+    "agility": 1,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dague",
+  "rank": "commun",
+  "class": "Voleur",
+  "label": "2",
+  "type": "Mh",
+  "description": "Dague",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 1,
+    "agility": 1,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Longue sword",
+  "rank": "commun",
+  "class": "Barbare",
+  "label": "3",
+  "type": "Mh",
+  "description": "Epée longue",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 2,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Bouclier en fer",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "4",
+  "type": "Oh",
+  "description": "Bouclier en fer",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 2,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Arc",
+  "rank": "commun",
+  "class": "Chasseur",
+  "label": "5",
+  "type": "Mh",
+  "description": "Arc",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 1,
+    "agility": 0,
+    "intelligence": 1,
+    "spirit": 0
+  }
+},{
+  "name": "Masse",
+  "rank": "commun",
+  "class": "Paladin",
+  "label": "6",
+  "type": "Mh",
+  "description": "Masse",
+  "cost": 300,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 4,
+    "agility": -1,
+    "intelligence": 0,
+    "spirit": 1
+  }
+},{
+  "name": "Baton",
+  "rank": "commun",
+  "class": "Mage",
+  "label": "7",
+  "type": "Mh",
+  "description": "Baton magique",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 2,
+    "spirit": 2
+  }
+},{
+  "name": "Magic aura",
+  "rank": "commun",
+  "class": "Mage",
+  "label": "8",
+  "type": "Oh",
+  "description": "Magic aura",
+  "cost": 200,
+  "stats": {
+    "vitality": 0,
+    "constitution": 2,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 1,
+    "spirit": 1
+  }
+},{
+  "name": "Epée courte en fer blanc",
+  "rank": "rare",
+  "class": "Voleur",
+  "label": "9",
+  "type": "Mh",
+  "description": "Epée courte en fer blanc",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 5,
+    "agility": 5,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dague en fer blanc d",
+  "rank": "rare",
+  "class": "Voleur",
+  "label": "10",
+  "type": "Mh",
+  "description": "Dague en fer blanc pour la Main hand",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 5,
+    "agility": 5,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dague en fer blanc g",
+  "rank": "rare",
+  "class": "Voleur",
+  "label": "11",
+  "type": "Oh",
+  "description": "Dague en fer blanc pour la Off hand",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 5,
+    "agility": 5,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Epée longue en fer blanc",
+  "rank": "rare",
+  "class": "Barbare, Paladin",
+  "label": "12",
+  "type": "Mh",
+  "description": "Epée longue en fer blanc",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 8,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Bouclier en fer blanc",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "13",
+  "type": "Oh",
+  "description": "Bouclier en fer blanc",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 8,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Arc en chêne rouge",
+  "rank": "rare",
+  "class": "Chasseur",
+  "label": "14",
+  "type": "Mh",
+  "description": "Arc en chêne rouge",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 5,
+    "agility": 0,
+    "intelligence": 5,
+    "spirit": 0
+  }
+},{
+  "name": "Masse lourde",
+  "rank": "rare",
+  "class": "Paladin",
+  "label": "15",
+  "type": "Mh",
+  "description": "Masse lourde",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 12,
+    "agility": -3,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Bâton magique",
+  "rank": "rare",
+  "class": "Mage",
+  "label": "16",
+  "type": "Mh",
+  "description": "Bâton magique",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 8,
+    "spirit": 8
+  }
+},{
+  "name": "Magic shield",
+  "rank": "rare",
+  "class": "Mage",
+  "label": "17",
+  "type": "Oh",
+  "description": "Magic shield",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 10,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 5,
+    "spirit": 5
+  }
+},{
+  "name": "Epée courte en mythril",
+  "rank": "legendaire",
+  "class": "Voleur",
+  "label": "18",
+  "type": "Mh",
+  "description": "Epée  courte en mythril",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 15,
+    "agility": 15,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dague en mythril d",
+  "rank": "legendaire",
+  "class": "Voleur",
+  "label": "19",
+  "type": "Mh",
+  "description": "Dague en mythril pour Main hand",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 15,
+    "agility": 15,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dague en mythril g",
+  "rank": "legendaire",
+  "class": "Voleur",
+  "label": "20",
+  "type": "Oh",
+  "description": "Dague en mythril pour Off hand",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 15,
+    "agility": 15,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Epée longue en mythril",
+  "rank": "legendaire",
+  "class": "Barbare, Paladin",
+  "label": "21",
+  "type": "Mh",
+  "description": "Epée longue en mythril",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 20,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Bouclier en mythril",
+  "rank": "legendaire",
+  "class": "toute classe",
+  "label": "22",
+  "type": "Oh",
+  "description": "Bouclier en mythril",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 20,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Arc en fer à poulis",
+  "rank": "legendaire",
+  "class": "Chasseur",
+  "label": "23",
+  "type": "Mh",
+  "description": "Arc en fer à poulis",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 18,
+    "agility": 0,
+    "intelligence": 18,
+    "spirit": 0
+  }
+},{
+  "name": "Masse en mythril",
+  "rank": "legendaire",
+  "class": "Paladin",
+  "label": "24",
+  "type": "Mh",
+  "description": "Masse en mythril",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 25,
+    "agility": -7,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Vaton en chêne rouge magique",
+  "rank": "legendaire",
+  "class": "Mage",
+  "label": "25",
+  "type": "Mh",
+  "description": "Bâton en chêne rouge magique",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 20,
+    "spirit": 20
+  }
+},{
+  "name": "Divin aura",
+  "rank": "legendaire",
+  "class": "Mage",
+  "label": "26",
+  "type": "Oh",
+  "description": "Divin aura",
+  "cost": 3500,
+  "stats": {
+    "vitality": 0,
+    "constitution": 25,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 10,
+    "spirit": 10
+  }
+},{
+  "name": "Elucidator",
+  "rank": "heroique",
+  "class": "Barbare",
+  "label": "27",
+  "type": "Mh",
+  "description": "Premiere Epée de Kirito !",
+  "cost": 10000,
+  "stats": {
+    "vitality": 100,
+    "constitution": 0,
+    "strength": 200,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Dark repulser",
+  "rank": "heroique",
+  "class": "Barbare",
+  "label": "27",
+  "type": "Oh",
+  "description": "Seconde Epée de Kirito",
+  "cost": 10000,
+  "stats": {
+    "vitality": 100,
+    "constitution": 0,
+    "strength": 200,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Master sword",
+  "rank": "heroique",
+  "class": "Barbare",
+  "label": "29",
+  "type": "Mh",
+  "description": "Epée de Link !",
+  "cost": 20000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 0,
+    "strength": 300,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "New moon",
+  "rank": "heroique",
+  "class": "Paladin et Voleur",
+  "label": "30",
+  "type": "Mh",
+  "description": "Epée courte de Maple",
+  "cost": 20000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 0,
+    "strength": 150,
+    "agility": 150,
+    "intelligence": 0,
+    "spirit": 150
+  }
+},{
+  "name": "Mirror of the dark night",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "31",
+  "type": "Oh",
+  "description": "Bouclier de Maple",
+  "cost": 20000,
+  "stats": {
+    "vitality": 175,
+    "constitution": 300,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Athamé",
+  "rank": "heroique",
+  "class": "Voleur",
+  "label": "32",
+  "type": "Mh",
+  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "cost": 10000,
+  "stats": {
+    "vitality": 100,
+    "constitution": 0,
+    "strength": 100,
+    "agility": 100,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Tantō",
+  "rank": "heroique",
+  "class": "Voleur",
+  "label": "33",
+  "type": "Oh",
+  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "cost": 10000,
+  "stats": {
+    "vitality": 100,
+    "constitution": 0,
+    "strength": 100,
+    "agility": 100,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Khukuri",
+  "rank": "heroique",
+  "class": "Voleur",
+  "label": "34",
+  "type": "Mh",
+  "description": "Dague d'une Héroïne",
+  "cost": 20000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 0,
+    "strength": 150,
+    "agility": 150,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Kusanagi",
+  "rank": "heroique",
+  "class": "Voleur",
+  "label": "35",
+  "type": "Oh",
+  "description": "Dague d'une Héroïne",
+  "cost": 20000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 0,
+    "strength": 150,
+    "agility": 150,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Baguette de sureau",
+  "rank": "heroique",
+  "class": "Mage",
+  "label": "36",
+  "type": "Mh",
+  "description": "Baguette de Harry Potter",
+  "cost": 20000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 150,
+    "spirit": 150
+  }
+},{
+  "name": "Bouclier d'athena",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "37",
+  "type": "Oh",
+  "description": "Bouclier d'Athéna",
+  "cost": 21000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 300,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Evansmana",
+  "rank": "Divin",
+  "class": "Barbare",
+  "label": "38",
+  "type": "Mh",
+  "description": "Evansmana épée spation-temporelle",
+  "cost": 50000,
+  "stats": {
+    "vitality": 350,
+    "constitution": 0,
+    "strength": 500,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Venuzdnor",
+  "rank": "Demoniaque",
+  "class": "Barbare",
+  "label": "39",
+  "type": "Mh",
+  "description": "Venuzdnor epée de Anos Voldigoad",
+  "cost": 750000,
+  "stats": {
+    "vitality": 400,
+    "constitution": 0,
+    "strength": 800,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Chu'zhi",
+  "rank": "Divino-legendaire",
+  "class": "Voleur",
+  "label": "40",
+  "type": "Mh",
+  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
+  "cost": 375000,
+  "stats": {
+    "vitality": 400,
+    "constitution": 0,
+    "strength": 250,
+    "agility": 250,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Chi'zhu",
+  "rank": "Divino-legendaire",
+  "class": "Voleur",
+  "label": "41",
+  "type": "Oh",
+  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
+  "cost": 375000,
+  "stats": {
+    "vitality": 400,
+    "constitution": 0,
+    "strength": 250,
+    "agility": 250,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Typhoon",
+  "rank": "Divino-Legendaire",
+  "class": "toute classe",
+  "label": "42",
+  "type": "Oh",
+  "description": "Bouclier qui absorbe des typhoons",
+  "cost": 750000,
+  "stats": {
+    "vitality": 800,
+    "constitution": 800,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Crimson book",
+  "rank": "Divino-legendaire",
+  "class": "Mage",
+  "label": "43",
+  "type": "Mh",
+  "description": "Livre Magique",
+  "cost": 750000,
+  "stats": {
+    "vitality": 300,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 250,
+    "spirit": 250
+  }
+},{
+  "name": "Demoniac Bow",
+  "rank": "Demoniac",
+  "class": "Chasseur",
+  "label": "44",
+  "type": "Mh",
+  "description": "Arc démoniaque",
+  "cost": 750000,
+  "stats": {
+    "vitality": 300,
+    "constitution": 0,
+    "strength": 250,
+    "agility": 0,
+    "intelligence": 250,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac hammer",
+  "rank": "Demoniac",
+  "class": "Paladin",
+  "label": "45",
+  "type": "Mh",
+  "description": "Marteau démioniaque",
+  "cost": 750000,
+  "stats": {
+    "vitality": 300,
+    "constitution": 0,
+    "strength": 250,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 250
+  }
+}]

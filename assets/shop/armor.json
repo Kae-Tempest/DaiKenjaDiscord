@@ -1,0 +1,305 @@
+[{
+  "name": "Armure en cuir",
+  "rank": "commun",
+  "class": "Barbare, Voleur, Paladin, Chasseur",
+  "label": "46",
+  "type": "armor",
+  "description": "Armure en cuir",
+  "cost": 350,
+  "stats": {
+    "vitality": 30,
+    "constitution": 9,
+    "strength": 0,
+    "agility": 2,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure legère en fer",
+  "rank": "commun",
+  "class": "Voleur, Chasseur",
+  "label": "47",
+  "type": "armor",
+  "description": "Armure legère en fer",
+  "cost": 400,
+  "stats": {
+    "vitality": 35,
+    "constitution": 10,
+    "strength": 0,
+    "agility": 1,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure lourde en fer",
+  "rank": "commun",
+  "class": "Barbare, Paladin",
+  "label": "48",
+  "type": "armor",
+  "description": "Armure Lourde en fer",
+  "cost": 400,
+  "stats": {
+    "vitality": 35,
+    "constitution": 11,
+    "strength": 0,
+    "agility": -1,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Cotte de maille",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "49",
+  "type": "armor",
+  "description": "Cotte de maille",
+  "cost": 300,
+  "stats": {
+    "vitality": 30,
+    "constitution": 9,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Toge",
+  "rank": "commun",
+  "class": "Mage",
+  "label": "50",
+  "type": "armor",
+  "description": "Toge magique",
+  "cost": 300,
+  "stats": {
+    "vitality": 35,
+    "constitution": 7,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 2,
+    "spirit": 2
+  }
+},{
+  "name": "Armure en cuir renforcé",
+  "rank": "rare",
+  "class": "Barbare, Voleur, Paladin, Chasseur",
+  "label": "51",
+  "type": "armor",
+  "description": "Amure en cuir renforcé",
+  "cost": 1250,
+  "stats": {
+    "vitality": 55,
+    "constitution": 20,
+    "strength": 0,
+    "agility": 6,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure legère en fer blanc",
+  "rank": "rare",
+  "class": "Voleur, Chasseur",
+  "label": "52",
+  "type": "armor",
+  "description": "Armure legère en fer blanc",
+  "cost": 1300,
+  "stats": {
+    "vitality": 60,
+    "constitution": 22,
+    "strength": 0,
+    "agility": 5,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure lourde en fer blanc",
+  "rank": "rare",
+  "class": "Barbare, Paladin",
+  "label": "53",
+  "type": "armor",
+  "description": "Armure lourde en fer blanc",
+  "cost": 1400,
+  "stats": {
+    "vitality": 60,
+    "constitution": 25,
+    "strength": 0,
+    "agility": -3,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Cotte de maille en fer blanc",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "54",
+  "type": "armor",
+  "description": "Cotte de maille en fer blanc",
+  "cost": 1200,
+  "stats": {
+    "vitality": 60,
+    "constitution": 16,
+    "strength": 0,
+    "agility": 4,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Magic toge",
+  "rank": "rare",
+  "class": "Mage",
+  "label": "55",
+  "type": "armor",
+  "description": "Toge magique",
+  "cost": 1200,
+  "stats": {
+    "vitality": 60,
+    "constitution": 16,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 8,
+    "spirit": 8
+  }
+},{
+  "name": "Armure en crocodile rendorcé",
+  "rank": "legendaire",
+  "class": "Barbare, Voleur, Paladin, Chasseur",
+  "label": "56",
+  "type": "armor",
+  "description": "Armure en cuir de crocodile renforcé",
+  "cost": 3750,
+  "stats": {
+    "vitality": 75,
+    "constitution": 35,
+    "strength": 0,
+    "agility": 13,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure legère en mythril",
+  "rank": "legendaire",
+  "class": "Voleur, Chasseur",
+  "label": "57",
+  "type": "armor",
+  "description": "Armure legère en mythril",
+  "cost": 3800,
+  "stats": {
+    "vitality": 80,
+    "constitution": 38,
+    "strength": 0,
+    "agility": 10,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Armure lourde en mythril",
+  "rank": "legendaire",
+  "class": "Barbare, Paladin",
+  "label": "58",
+  "type": "armor",
+  "description": "Armure lourde en mythril",
+  "cost": 3900,
+  "stats": {
+    "vitality": 80,
+    "constitution": 42,
+    "strength": 0,
+    "agility": -8,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Cotte de maille en mythril",
+  "rank": "legendaire",
+  "class": "toute classe",
+  "label": "59",
+  "type": "armor",
+  "description": "Cotte de maille en mythril",
+  "cost": 3700,
+  "stats": {
+    "vitality": 75,
+    "constitution": 35,
+    "strength": 0,
+    "agility": 6,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Benny hill toge",
+  "rank": "legendaire",
+  "class": "Mage",
+  "label": "60",
+  "type": "armor",
+  "description": "Toge béni",
+  "cost": 3700,
+  "stats": {
+    "vitality": 80,
+    "constitution": 30,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 15,
+    "spirit": 15
+  }
+},{
+  "name": "Bestial armor",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "61",
+  "type": "armor",
+  "description": "Armure bestial",
+  "cost": 10000,
+  "stats": {
+    "vitality": 150,
+    "constitution": 150,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Black rose armor",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "62",
+  "type": "armor",
+  "description": "Armure de Maple",
+  "cost": 20000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 200,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "God armor",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "63",
+  "type": "armor",
+  "description": "Armure de dieux",
+  "cost": 500000,
+  "stats": {
+    "vitality": 800,
+    "constitution": 400,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac armor",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "64",
+  "type": "armor",
+  "description": "Armure du roi démon",
+  "cost": 750000,
+  "stats": {
+    "vitality": 1200,
+    "constitution": 600,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+}]
