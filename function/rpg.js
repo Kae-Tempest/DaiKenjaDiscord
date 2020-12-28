@@ -227,8 +227,13 @@ const battle = async (client, message, player, hostile) => {
     let HostileConsti = hostile.stats.constitution + (player.prestige * 10000);
     let agilityH = hostile.stats.agility + (player.prestige * 10000);
     let intelH = hostile.stats.intelligence + (player.prestige * 10000);
-    let hostilepo = hostile.po + (player.prestige * 10000 * hostile.po);
-    let hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience);
+    let hostilepo = hostile.po + (player.prestige * 10000 * hostile.po - hostile.po);
+    let hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience - hostile.experience);
+
+    if (player.prestige !== 0) {
+        hostilepo = hostile.po + (player.prestige * 10000 * hostile.po);
+        hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience);
+    }
 
     async function fight(atk) {
         let PlayerHP = player.stats.vitality;
@@ -237,9 +242,9 @@ const battle = async (client, message, player, hostile) => {
         for (let i = 1; HostileHP > 0; i++) {
             if (HostileAtk < 0) HostileAtk = 0;
             if (PlayerAtk < 0) PlayerAtk = 0;
-            if (PlayerAtk === 0 && HostileAtk === 0) return message.reply ("Vous vous entretuez ( ou pas ) !")
+            if (PlayerAtk === 0 && HostileAtk === 0) return message.reply("Vous vous entretuez ( ou pas ) !")
             if (agility > agilityH) {
-                if (agility % Math.floor(Math.random() * (agility - (agility/2)) + 1) === 0) {
+                if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                     HostileAtk = 0
                 }
             }
@@ -263,7 +268,7 @@ const battle = async (client, message, player, hostile) => {
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": PlayerHP,
                     "users.$.po": player.po,
-                    "users.$.experience": player.experience
+                    "users.$.experience": hostileexp
                 });
                 await level();
                 return message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilepo}<:GoldCoin:781575067108507648> et tu gagne ${hostileexp}exp !`);

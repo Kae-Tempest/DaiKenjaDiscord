@@ -2,7 +2,7 @@
 
 Bot Discord RPG/Moderation
 
-neccessary module : fs,mongoose,ms
+Necessary module : fs,mongoose,ms
 
 Language support : French
 
