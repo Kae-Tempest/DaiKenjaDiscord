@@ -2,7 +2,7 @@ const leveling = (client, message, player) => {
 
     function level(lvlmin, lvlmax, exp) {
         if (player.level <= lvlmax && player.level > lvlmin) {
-            if (player.prestige > 0) {
+            if (player.prestige === 0) {
                 if (player.experience >= player.level * exp - 1) {
                     player.experience -= player.level * exp;
                     player.level = Number(player.level) + 1

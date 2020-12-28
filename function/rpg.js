@@ -227,12 +227,12 @@ const battle = async (client, message, player, hostile) => {
     let HostileConsti = hostile.stats.constitution + (player.prestige * 10000);
     let agilityH = hostile.stats.agility + (player.prestige * 10000);
     let intelH = hostile.stats.intelligence + (player.prestige * 10000);
-    let hostilepo = hostile.po + (player.prestige * 10000 * hostile.po - hostile.po);
-    let hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience - hostile.experience);
+    let hostilepo = hostile.po + (player.prestige * 10000 * hostile.po);
+    let hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience);
 
     if (player.prestige !== 0) {
-        hostilepo = hostile.po + (player.prestige * 10000 * hostile.po);
-        hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience);
+        hostilepo = hostile.po + (player.prestige * 10000 * hostile.po - hostile.po);
+        hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience - hostile.experience);
     }
 
     async function fight(atk) {

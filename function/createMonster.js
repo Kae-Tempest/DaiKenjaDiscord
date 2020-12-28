@@ -43,7 +43,7 @@ const monster = (client) => {
     writingDot();
     createMonster("Orc", 3, "Monster", 65, 50, 50, 12, 15, 5, 5);
     writingDot();
-    createMonster("Phantomtooth", 4, "Monster", 100, 90, 60, 20, 20, 10, 10)
+    createMonster("Phantomtooth", 4, "Monster", 100, 90, 60, 20, 20, 10, 10);
     writingDot();
     createMonster("Vaporhag", 4, "Monster", 125, 95, 65, 25, 18, 15, 15);
     writingDot();
