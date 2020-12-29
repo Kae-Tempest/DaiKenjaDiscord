@@ -17,7 +17,12 @@ const leveling = (client, message, player) => {
                     "users.$.experience": player.experience
                 });
             }
-            message.reply(`Tu es maintenant level => ${player.level}`);
+            if(player.level !== 1) {
+                message.reply(`Tu es maintenant level => ${player.level}`);
+            }
+            else {
+                return 0;
+            }
         }
     }
 
