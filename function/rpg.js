@@ -248,12 +248,18 @@ const battle = async (client, message, player, hostile) => {
                     HostileAtk = 0
                 }
             }
+            await deleting(message, i);
             if (intelligence > intelH) {
                 HostileHP -= PlayerAtk
                 PlayerHP -= HostileAtk
+                if (HostileHP <= 0) HostileHP = 0;
+                const playerMessage = `tour ${i}: la bataille fait rage. Tu attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${HostileAtk} de dégâts! Il te reste ${PlayerHP}HP et il reste ${HostileHP}HP à ${hostile.name}`
+                await message.channel.send(playerMessage)
             } else {
                 PlayerHP -= HostileAtk
                 HostileHP -= PlayerAtk
+                const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${HostileAtk} de dégâts et tu riposte pour ${PlayerAtk} dégâts! Il reste ${HostileHP}HP à ${hostile.name} et il te reste ${PlayerHP}HP`
+                await message.channel.send(playerMessage)
             }
             if (PlayerHP <= 0) {
                 client.updateUserInfo(message.member, {
@@ -271,10 +277,14 @@ const battle = async (client, message, player, hostile) => {
                     "users.$.experience": hostileexp
                 });
                 await level();
-                return message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilepo}<:GoldCoin:781575067108507648> et tu gagne ${hostileexp}exp !`);
+                if (intelligence > intelH) {
+                    if (HostileHP <= 0) message.channel.bulkDelete(1);
+                    return message.channel.send(`Félicitation, la bataille est terminée après ${i - 1} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilepo}<:GoldCoin:781575067108507648> et tu gagne ${hostileexp}exp !`);
+                }
+                else {
+                    return message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilepo}<:GoldCoin:781575067108507648> et tu gagne ${hostileexp}exp !`);
+                }
             }
-            await deleting(message, i);
-            await message.channel.send(`tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${HostileAtk} de dégât et tu riposte pour ${PlayerAtk} dégâts! Il reste ${HostileHP}HP à ${hostile.name} et il te reste ${PlayerHP}HP`);
         }
     }
 
