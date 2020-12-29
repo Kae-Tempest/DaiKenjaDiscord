@@ -327,7 +327,7 @@
   "description": "Ceinture du roi démon",
   "cost": 150000,
   "stats": {
-    "vitality": 0,
+    "vitality": 600,
     "constitution": 600,
     "strength": 0,
     "agility": 0,
