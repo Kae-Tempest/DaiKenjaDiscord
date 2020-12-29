@@ -6,7 +6,7 @@ module.exports.run = async (client, message) => {
     if (PlayerHP > 0) return message.reply("Tu es déjà vivant, n'abuse pas des pouvoir des pourvoir de Dieu");
 
     function ressurection(lvlmin, lvlmax, cost) {
-        if (player.level >= lvlmax && player.level < lvlmin) {
+        if (player.level <= lvlmax && player.level > lvlmin) {
             if (player.po < cost) {
                 message.reply("Tu n'as pas assez de <:GoldCoin:781575067108507648> pour te résuciter ! (Tu peux aller vendre des items pour en avoir assez)")
             } else {
