@@ -559,16 +559,72 @@
     "intelligence": 10000
   }
 },{
+  "name": "Maho",
+  "difficulty": 300,
+  "category": "Demon",
+  "type": "hostile",
+  "experience": 500000,
+  "po": 750000,
+  "stats": {
+    "vitality": 30000,
+    "constitution": 1500,
+    "strength": 2000,
+    "agility": 2000,
+    "intelligence": 4000
+  }
+},{
+  "name": "Norico",
+  "difficulty": 320,
+  "category": "Calamity",
+  "type": "hostile",
+  "experience": 750000,
+  "po": 1000000,
+  "stats": {
+    "vitality": 35000,
+    "constitution": 2000,
+    "strength": 3000,
+    "agility": 3000,
+    "intelligence": 5000
+  }
+},{
+  "name": "Thor",
+  "difficulty": 350,
+  "category": "Divinity",
+  "type": "hostile",
+  "experience": 5000000,
+  "po": 5000000,
+  "stats": {
+    "vitality": 40000,
+    "constitution": 2500,
+    "strength": 2500,
+    "agility": 3000,
+    "intelligence": 3000
+  }
+},{
+  "name": "Odin",
+  "difficulty": 400,
+  "category": "divinity",
+  "type": "hostile",
+  "experience": 10000000,
+  "po": 10000000,
+  "stats": {
+    "vitality": 8000,
+    "constitution": 4000,
+    "strength": 4000,
+    "agility": 3000,
+    "intelligence": 3000
+  }
+},{
   "name": "Kami",
   "difficulty": 500,
   "category": "Divinity",
   "type": "hostile",
-  "experience": 1000000,
-  "po": 1000000,
+  "experience": 50000000,
+  "po": 50000000,
   "stats": {
-    "vitality": 50000,
-    "constitution": 3000,
-    "strength": 3000,
+    "vitality": 100000,
+    "constitution": 6000,
+    "strength": 6000,
     "agility": 10000,
     "intelligence": 10000
   }

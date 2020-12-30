@@ -4,7 +4,8 @@ const monster = (client) => {
     function writingDot() {
         fs.appendFileSync('./assets/npc/hostile.json', ",")
     }
-    function createMonster(name, difficulty, category, exp, po, vita, consti, force, agi, intel,last = 0) {
+
+    function createMonster(name, difficulty, category, exp, po, vita, consti, force, agi, intel, last = 0) {
         let monster = {
             name: name,
             difficulty: difficulty,
@@ -22,8 +23,9 @@ const monster = (client) => {
         };
         let data = JSON.stringify(monster, null, 2);
         fs.appendFileSync('./assets/npc/hostile.json', data)
-        if(!last) writingDot()
+        if (!last) writingDot()
     }
+
     fs.appendFileSync('./assets/npc/hostile.json', "[")
     createMonster("Slime", 0, "Monster", 5, 10, 10, 1, 1, 0, 0);
     createMonster("Goblin", 0, "Monster", 10, 12, 8, 0, 2, 1, 0);
@@ -65,7 +67,11 @@ const monster = (client) => {
     createMonster("Charybdis", 100, "Calimity", 100000, 100000, 10000, 1000, 1000, 1000, 10000);
     createMonster("Yuusha", 250, "Héro", 200000, 500000, 25000, 1500, 1500, 10000, 10000);
     createMonster("Demon Lord", 250, "Démon", 215000, 500000, 25000, 1300, 2000, 10000, 10000);
-    createMonster("Kami", 500, "Divinity", 1000000, 1000000, 50000, 3000, 3000, 10000, 10000,1);
+    createMonster("Maho", 300, "Demon", 500000, 750000, 30000, 1500, 2000, 2000, 4000);
+    createMonster("Norico", 320, "Calamity", 750000, 1000000, 35000, 2000, 3000, 3000, 5000);
+    createMonster("Thor", 350, "Divinity", 5000000, 5000000, 40000, 2500, 2500, 3000, 3000);
+    createMonster("Odin", 400, "divinity", 10000000, 10000000, 8000, 4000, 4000, 3000, 3000);
+    createMonster("Kami", 500, "Divinity", 50000000, 50000000, 100000, 6000, 6000, 10000, 10000, 1);
 
     fs.appendFileSync('./assets/npc/hostile.json', "]")
 }

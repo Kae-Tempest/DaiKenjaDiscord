@@ -20,9 +20,6 @@ const leveling = (client, message, player) => {
             if(player.level !== 1) {
                 message.reply(`Tu es maintenant level => ${player.level}`);
             }
-            else {
-                return 0;
-            }
         }
     }
 
