@@ -67,10 +67,6 @@ const monster = (client) => {
     createMonster("Demon Lord", 250, "Démon", 215000, 500000, 25000, 1300, 2000, 10000, 10000);
     createMonster("Kami", 500, "Divinity", 1000000, 1000000, 50000, 3000, 3000, 10000, 10000,1);
 
-    let Hostile = JSON.stringify(hostile, null, 2)
-    let count = (Hostile.match(/,/g)||[]).length
-    console.log(count)
-
     fs.appendFileSync('./assets/npc/hostile.json', "]")
 }
 
