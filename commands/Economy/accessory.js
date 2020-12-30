@@ -15,7 +15,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: "accessory",
-    aliases: ["accessory"],
+    aliases: ["accessory","acc"],
     category: 'economy',
     description: "affiche les accesoires",
     cd: 3,
