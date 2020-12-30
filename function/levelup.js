@@ -45,7 +45,7 @@ const levelup = async (client, message, player) => {
             client.updateUserInfo(message.member, {
                 "users.$.stats.vitality": player.stats.vitality += get_vita(lvl),
                 "users.$.statsMax.vitality": player.stats.vitality += get_vita(lvl),
-                "users.$.stats.constitution": player.stats.agility += get_consti(lvl),
+                "users.$.stats.constitution": player.stats.constitution += get_consti(lvl),
                 "users.$.stats.strength": player.stats.strength += get_strength(lvl),
                 "users.$.stats.agility": player.stats.agility += get_agility(lvl),
                 "users.$.stats.intelligence": player.stats.intelligence += get_intelligence(lvl),
