@@ -227,8 +227,8 @@ const battle = async (client, message, player, hostile) => {
     let HostileConsti = hostile.stats.constitution + (player.prestige * 10000);
     let agilityH = hostile.stats.agility + (player.prestige * 10000);
     let intelH = hostile.stats.intelligence + (player.prestige * 10000);
-    let hostilepo = hostile.po + (player.prestige * 10000 * hostile.po);
-    let hostileexp = hostile.experience + (player.prestige * 10000 * hostile.experience);
+    let hostilepo = hostile.po;
+    let hostileexp = hostile.experience;
 
     if (player.prestige !== 0) {
         hostilepo = hostile.po + (player.prestige * 10000 * hostile.po - hostile.po);
@@ -289,7 +289,7 @@ const battle = async (client, message, player, hostile) => {
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": PlayerHP,
                     "users.$.po": player.po,
-                    "users.$.experience": hostileexp
+                    "users.$.experience": player.experience
                 });
                 if (intelligence > intelH) {
                     if (HostileHP <= 0) await message.channel.bulkDelete(1);
