@@ -1,5 +1,4 @@
 const fs = require('fs')
-const hostile = require('../assets/npc/hostile.json');
 const monster = (client) => {
     function writingDot() {
         fs.appendFileSync('./assets/npc/hostile.json', ",")
@@ -71,7 +70,8 @@ const monster = (client) => {
     createMonster("Norico", 320, "Calamity", 750000, 1000000, 35000, 2000, 3000, 3000, 5000);
     createMonster("Thor", 350, "Divinity", 5000000, 5000000, 40000, 2500, 2500, 3000, 3000);
     createMonster("Odin", 400, "divinity", 10000000, 10000000, 8000, 4000, 4000, 3000, 3000);
-    createMonster("Kami", 500, "Divinity", 50000000, 50000000, 100000, 6000, 6000, 10000, 10000, 1);
+    createMonster("Reaper",425,"Demon",20000000,20000000,100000,4500,6000,5000,5000);
+    createMonster("Kami", 500, "Divinity", 50000000, 50000000, 200000, 6000, 6000, 10000, 10000, 1);
 
     fs.appendFileSync('./assets/npc/hostile.json', "]")
 }
