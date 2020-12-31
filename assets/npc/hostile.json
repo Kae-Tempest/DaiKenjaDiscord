@@ -591,7 +591,7 @@
   "difficulty": 350,
   "category": "Divinity",
   "type": "hostile",
-  "experience": 5000000,
+  "experience": 50000000,
   "po": 5000000,
   "stats": {
     "vitality": 40000,
@@ -605,7 +605,7 @@
   "difficulty": 400,
   "category": "divinity",
   "type": "hostile",
-  "experience": 10000000,
+  "experience": 100000000,
   "po": 10000000,
   "stats": {
     "vitality": 8000,
@@ -615,14 +615,28 @@
     "intelligence": 3000
   }
 },{
+  "name": "Reaper",
+  "difficulty": 425,
+  "category": "Demon",
+  "type": "hostile",
+  "experience": 200000000,
+  "po": 20000000,
+  "stats": {
+    "vitality": 100000,
+    "constitution": 4500,
+    "strength": 6000,
+    "agility": 5000,
+    "intelligence": 5000
+  }
+},{
   "name": "Kami",
   "difficulty": 500,
   "category": "Divinity",
   "type": "hostile",
-  "experience": 50000000,
+  "experience": 500000000,
   "po": 50000000,
   "stats": {
-    "vitality": 100000,
+    "vitality": 200000,
     "constitution": 6000,
     "strength": 6000,
     "agility": 10000,
