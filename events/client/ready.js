@@ -23,7 +23,7 @@ module.exports = client => {
     console.log("Items crées !")
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
-    //client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
+    client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
     const guild = [];
     client.guilds.cache.map(e => guild.push(e));
     guild.forEach(async g => {

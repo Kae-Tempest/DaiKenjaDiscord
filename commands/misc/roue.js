@@ -24,7 +24,7 @@ module.exports.run = async (client, message) => {
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 20 || random > 10) {
-        if (player.prestige) {
+        if (player.prestige === 0) {
             recompense = 350
         } else {
             recompense = 350 + (user.prestige * 350 - 350)
@@ -37,7 +37,7 @@ module.exports.run = async (client, message) => {
         return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
     }
     if (random <= 30 || random > 20) {
-        if (player.prestige) {
+        if (player.prestige === 0) {
             recompense = 150
         } else {
             recompense = 150 + (user.prestige * 150 - 150)
