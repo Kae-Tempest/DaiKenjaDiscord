@@ -619,7 +619,7 @@
   "difficulty": 425,
   "category": "Demon",
   "type": "hostile",
-  "experience": 200000000,
+  "experience": 500000000,
   "po": 20000000,
   "stats": {
     "vitality": 100000,
@@ -633,7 +633,7 @@
   "difficulty": 500,
   "category": "Divinity",
   "type": "hostile",
-  "experience": 500000000,
+  "experience": 1000000000,
   "po": 50000000,
   "stats": {
     "vitality": 200000,
