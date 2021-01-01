@@ -139,7 +139,7 @@ module.exports.help = {
     aliases: ["roue", "rdc"],
     category: 'misc',
     description: 'lance la roue de la chance',
-    cd: 10,
+    cd: 1,
     usage: "",
     isUserAdmin: false,
     permission: false,

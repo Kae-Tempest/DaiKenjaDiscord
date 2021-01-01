@@ -32,7 +32,7 @@ module.exports.help = {
     aliases: ["daily"],
     category: 'misc',
     description: 'Paye pour les combatant !',
-    cd: 10,
+    cd: 1,
     usage: "",
     isUserAdmin: false,
     permission: false,
