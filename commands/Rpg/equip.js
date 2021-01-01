@@ -1,6 +1,6 @@
-const {capitalize} = require('../../function/string');
+const {capitalize} = require('../../function/other/string');
 const getItemInfo = require('../../assets/shop/shop.json');
-const {calculateUserStatsEquip, calculateUserStatsUequip} = require('../../function/stats')
+const {calculateUserStatsEquip, calculateUserStatsUequip} = require('../../function/rpg/stats')
 
 module.exports.run = async (client, message, args, userInfo) => {
     const q = args.join(" ");

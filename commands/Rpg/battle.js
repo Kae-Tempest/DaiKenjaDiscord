@@ -1,6 +1,6 @@
-const {battle} = require('../../function/rpg');
+const {battle} = require('../../function/rpg/rpg');
 const hostile = require('../../assets/npc/hostile.json');
-const {capitalize} = require ('../../function/string')
+const {capitalize} = require ('../../function/other/string')
 
 module.exports.run = async (client, message, args) => {
     const player = await client.getUser(message.member);

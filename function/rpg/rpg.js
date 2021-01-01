@@ -1,5 +1,5 @@
 const {levelup} = require('./levelup');
-const {deleting} = require('../function/delete');
+const {deleting} = require('./delete');
 
 const battle = async (client, message, player, hostile) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
@@ -229,6 +229,10 @@ const battle = async (client, message, player, hostile) => {
     let intelH = hostile.stats.intelligence + (player.prestige * 10000);
     let hostilepo = hostile.po;
     let hostileexp = hostile.experience;
+
+    if(player.level >= 500) {
+        hostileexp = hostile.experience * 2;
+    }
 
     if (player.prestige !== 0) {
         hostilepo = hostile.po + (player.prestige * 10000 * hostile.po - hostile.po);

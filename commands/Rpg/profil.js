@@ -1,5 +1,5 @@
 const {MessageEmbed} = require('discord.js');
-const {capitalize} = require('../../function/string');
+const {capitalize} = require('../../function/other/string');
 const classes = require("../../assets/rpg/classes.json");
 
 

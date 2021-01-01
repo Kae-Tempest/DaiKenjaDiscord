@@ -1,5 +1,5 @@
-const {monster} = require("../../function/createMonster");
-const {items} = require("../../function/createItems");
+const {monster} = require("../../function/rpg/createMonster");
+const {items} = require("../../function/rpg/createItems");
 const fs = require('fs');
 module.exports = client => {
     fs.unlink('./assets/npc/hostile.json', (err) => {
