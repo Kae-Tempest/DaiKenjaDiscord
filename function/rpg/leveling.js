@@ -8,7 +8,7 @@ const leveling = (client, message, player) => {
                     player.level = Number(player.level) + 1
                 }
             } else if (player.prestige >= 1) {
-                if (player.experience >= player.level * exp * player.prestige - 1) {
+                if (player.experience >= player.level * exp * ( player.prestige * 1000 ) - 1) {
                     player.experience -= player.level * exp;
                     player.level = Number(player.level) + 1
                 }
