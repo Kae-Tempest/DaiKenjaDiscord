@@ -6,20 +6,20 @@ const leveling = (client, message, player) => {
                 if (player.experience >= player.level * exp - 1) {
                     player.experience -= player.level * exp;
                     player.level = Number(player.level) + 1
-                } else if (player.prestige > 0) {
-                    if (player.experience >= player.level * exp * player.prestige - 1) {
-                        player.experience -= player.level * exp;
-                        player.level = Number(player.level) + 1
-                    }
                 }
-                client.updateUserInfo(message.member, {
-                    "users.$.level": player.level,
-                    "users.$.experience": player.experience
-                });
+            } else if (player.prestige >= 1) {
+                if (player.experience >= player.level * exp * player.prestige - 1) {
+                    player.experience -= player.level * exp;
+                    player.level = Number(player.level) + 1
+                }
             }
-            if(player.level !== 1) {
-                message.reply(`Tu es maintenant level => ${player.level}`);
-            }
+            client.updateUserInfo(message.member, {
+                "users.$.level": player.level,
+                "users.$.experience": player.experience
+            });
+        }
+        if (player.level !== 1) {
+            message.reply(`Tu es maintenant level => ${player.level}`);
         }
     }
 
