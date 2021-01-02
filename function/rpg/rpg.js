@@ -234,11 +234,6 @@ const battle = async (client, message, player, hostile) => {
         hostileexp = hostile.experience * 2;
     }
 
-    if (player.prestige !== 0) {
-        hostilepo = hostile.po + (player.prestige * 2 * hostile.po - hostile.po);
-        hostileexp = hostile.experience + (player.prestige * 2 * hostile.experience - hostile.experience);
-    }
-
     async function fight(atk) {
         let PlayerHP = player.stats.vitality;
         for (let i = 1; HostileHP > 0; i++) {
