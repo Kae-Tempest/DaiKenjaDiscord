@@ -15,7 +15,7 @@ module.exports.run = async (client, message) => {
                     "users.$.stats.vitality": PlayerMaxHP,
                     "userS.po": player.po
                 });
-                return message.reply("Bon retourn parmis nous ! Fait pmus attetion la prochaine fois");
+                return message.reply("Bon retour parmis nous ! Fait pmus attetion la prochaine fois");
             }
         }
     }
