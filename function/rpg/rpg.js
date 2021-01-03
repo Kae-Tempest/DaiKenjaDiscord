@@ -5,7 +5,8 @@ const battle = async (client, message, player, hostile) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
-        while (player.level !== 0 && player.level !== 1001) {
+        while (player.level !== 0 && player.level !== 1000) {
+            await levelup(client, message, player);
             if (player.level <= 10) {
                 if (player.experience < player.level * 250 - 1) break;
             } else if (player.level <= 20 && player.level > 10) {
@@ -212,7 +213,6 @@ const battle = async (client, message, player, hostile) => {
                     "users.$.experience": 0
                 });
             }
-            await levelup(client, message, player);
         }
     }
 
@@ -230,9 +230,11 @@ const battle = async (client, message, player, hostile) => {
     let hostilepo = hostile.po;
     let hostileexp = hostile.experience;
 
-    if(player.level >= 500) {
+    if (player.level >= 500) {
         hostileexp = hostile.experience * 2;
-        if(hostileexp >= 1000000000) hostileexp = 1000000000
+    }
+    if (player.prestige !== 0) {
+        hostileexp = hostile.experience + (hostile.experience / player.prestige)
     }
 
     async function fight(atk) {
