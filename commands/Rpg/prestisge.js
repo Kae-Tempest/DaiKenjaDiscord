@@ -3,7 +3,7 @@ module.exports.run = async (client, message) => {
     let cost;
     for (let i = 0; i <= 9; i++) {
         if (i === player.prestige) {
-            cost = (i + 1) * 1000000000
+            cost = (i + 1) * 2000000000
         }
         if (i === 0) {
             cost = 1000000000
