@@ -11,7 +11,8 @@ module.exports.run = async (client, message) => {
     let recompense;
 
     function roue(po, min, max) {
-        if (random <= max || random > min) {
+        console.log(random);
+        if (random <= max && random > min) {
             if (player.prestige === 0) {
                 recompense = po
             } else {
@@ -25,10 +26,9 @@ module.exports.run = async (client, message) => {
             return message.reply(`Tu as gagné ${recompense}<:GoldCoin:781575067108507648>`);
         }
     }
-
     roue(1000, 0, 10);
     roue(350, 10, 20);
-    roue(150, 20, 30)
+    roue(150, 20, 30);
     roue(75, 30, 40);
     roue(0, 40, 50);
     roue(0, 50, 60);
