@@ -136,7 +136,7 @@ module.exports.run = async (client, message, args, userInfo) => {
         .setDescription(`${userInfo.description !== "" ? classe.description : userInfo.description}`)
         .addField("Statistique :",
             `${Object.entries(userInfo.stats).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join('\n')}
-            ${userInfo.experience}/${exptotalFinal} points d'experiences`
+            ${userInfo.experience} points d'experiences (${((userInfo.experience / exptotalFinal) * 100).toFixed(2)}%)`
         )
         .addField("Inventaire :",
             `${userInfo.po}<:GoldCoin:781575067108507648>
