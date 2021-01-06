@@ -1,5 +1,5 @@
 # Dai Kenja
-Bot Discord RPG/Moderation
+**Bot Discord RPG/Moderation**
 
 Necessary module : fs,mongoose,ms
 
