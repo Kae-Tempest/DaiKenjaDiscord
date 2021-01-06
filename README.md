@@ -7,7 +7,8 @@ Language support : French
 
 Discord Join => https://discord.gg/V9t5k5z
 # Info Utile:
-Parler pour créer son profil dans la base de donnée 
+Parler pour créer son profil dans la base de donnée.
+
 ( Si vous etiez déjà sur le serveur avant la création du bot ou si le bot est eteint quand vous arrivez sur le serveur )
 
 Pour créer un personnage => **!setup**
