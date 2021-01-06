@@ -41,6 +41,9 @@ const levelup = async (client, message, player) => {
     }
 
     function lvlstats(lvl) {
+        if (lvl === 1000) {
+            return message.reply("Tu es level max !");
+        }
         if (player.level === lvl) {
             client.updateUserInfo(message.member, {
                 "users.$.stats.vitality": player.stats.vitality += get_vita(lvl),

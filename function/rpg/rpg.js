@@ -312,6 +312,7 @@ const battle = async (client, message, player, hostile) => {
                     "users.$.level": 1000,
                     "users.$.experience": 0
                 });
+                break;
             }
         }
     }
