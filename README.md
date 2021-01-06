@@ -13,9 +13,9 @@ Pour créer un personnage => **!setup**
 # Commands:
 **Prefix Bot => "!"**
 
-_help_: Permet de voir les différantes commandes.
+_help_: Permet de voir les différentes commandes.
 
-_ticket_: Permet d'envoyer un ticket au membre du staff en cas de problèmes.
+_ticket_: Permet d'envoyer un ticket au membre du staff en cas de problème.
 
 **Economny:**
 
@@ -29,13 +29,13 @@ _sell_: Permet de vendre un objet dans son inventaire via le nom de l'item.
 
 _shop_: Permet d'acheter un objet via son `label`(nombre) avec demande d'achat. `(achat annulé au bout de 5s sans réponse)`
 
-_userbalance_: Permet de voir le porte-monnaie du joueur ping ou de son propre porte-monnaie.
+_userbalance_: Permet de voir le porte-monnaie du joueur ping ou de voir son propre porte-monnaie.
 
 **Misc:**
 
 _botinfo_: Donne des informations sur le Bot.
 
-_daily_: Donne une paie a l'utilisateur. `(cd = 24h temps reel)`
+_daily_: Donne une paie à l'utilisateur. `(cd = 24h temps reel)`
 
 _roue_: Permet de tourner une roue pour gagner une certaine somme d'argent. `(cd = 6h temps reel)`
 
@@ -45,19 +45,20 @@ _ping_: Permet de voir le ping du Bot et de l'API.
 
 _battle_: Permet de lancer un combat avec le nom du monstre que vous voulez combattre.
 
-_equip_: Permet de s'équiper d'un objet avec son nom quand il se trouve dans son inventaire.
+_equip_: Permet de s'équiper d'un objet avec le nom de celui-ci dans son inventaire.
 
 _uequip_: Permet de retirer un objet avec son nom quand il est équipé.
 
-_heal_: Heal le joueur dépendant de son niveaux. `(commande payante en po)`
+_heal_: Heal le joueur selon son niveau. `(commande payante en po)`
 
-_monsterlist_: Affiche la liste des monstres disponible a combattre. `(attention à la difficulté des monstres)`
+_monsterlist_: Affiche la liste des monstres disponible à combattre. `(attention à la difficulté des monstres)`
 
 _prestige_: Reset les niveaux en gardant les stats. `(Prérequis : lvl 1000, cout: 1Milliard jusqu'à 10Milliard, Prestige max: 10, Les monstres deviennent plus fort si votre prestige monte)`
 
 _profil_: Affiche le profil du joueur.
 
-_ressusrection:_ Permet de retourner a la vie si on meurt au combat. `(commande payante en po)`
+_ressusrection:_ Permet de retourner à la vie si on meurt au combat. `(commande payante en po)`
 
 _setup_: Permet de créer son personnage.
-created by Kae Tempest
+
+Created by Kae Tempest / Correct by Malvina
