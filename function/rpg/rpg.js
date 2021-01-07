@@ -1,7 +1,7 @@
 const {levelup} = require('./levelup');
 const {deleting} = require('./delete');
 
-const battle = async (client, message, player, hostile) => {
+const battle = async (client, message, player, hostile, userInfo) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
@@ -392,6 +392,15 @@ const battle = async (client, message, player, hostile) => {
                 PlayerHP += HostileAtk
                 player.po += hostilepo;
                 player.experience += hostileexp;
+                if (hostile.category !== "Monster") {
+                    const loot = Math.floor(Math.random() * Math.floor(11))
+                    if (loot > 5) {
+                        let userInventory = userInfo.inventory.push(hostile.loot);
+                        client.updateUserInfo(message.member, {
+                            "users.$.inventory": userInventory
+                        });
+                    }
+                }
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": PlayerHP,
                     "users.$.po": player.po,
