@@ -354,7 +354,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (HostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         HostileAtk = 0
-                        if (HostileAtk === 0) message.channel.send(`tour ${i}: Tu as esquivé le coup ! Il te reste ${PlayerHP}HP et il reste ${HostileHP}HP à ${hostile.name}`);
+                        if (HostileAtk === 0) message.channel.send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -362,7 +362,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (PlayerAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agilityH - (agilityH / 2)) + 1) === 0) {
                         PlayerAtk = 0
-                        if (PlayerAtk === 0) message.channel.send(`tour ${i}: ${hostile.name} a esquivé le coup ! Il reste ${HostileHP}HP à ${hostile.name} et il te reste ${PlayerHP}HP`);
+                        if (PlayerAtk === 0) message.channel.send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
                     }
                 }
             }
@@ -385,7 +385,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": 0
                 });
-                await message.channel.bulkDelete(1);
+                if (PlayerHP <= 0) await message.channel.bulkDelete(1);
                 return message.reply("Tu es mort");
             }
             if (HostileHP <= 0) {
@@ -394,14 +394,11 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 player.experience += hostileexp;
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(11))
-                    if (loot >= 0) {
-                        const userInventory = userInfo.inventory
-                        const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
-                        userInventory.push(drop);
+                    if (loot > 5) {
+                        let userInventory = userInfo.inventory.push(hostile.loot);
                         client.updateUserInfo(message.member, {
                             "users.$.inventory": userInventory
                         });
-                        message.reply(`Tu viens de looter sur \`${hostile.name}\` => **${drop}**`)
                     }
                 }
                 client.updateUserInfo(message.member, {
