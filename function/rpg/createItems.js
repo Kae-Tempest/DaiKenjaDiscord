@@ -135,7 +135,7 @@ const items = (client) => {
 
     createItems("Demoniac Bow", "Demoniac", "Chasseur", "44", "Mh", "Arc démoniaque", 750000, 250, 0, 250, 0, 300, 0);
 
-    createItems("Demoniac hammer", "Demoniac", "Paladin", "45", "Mh", "Marteau démioniaque", 750000, 250, 0, 0, 250, 300, 0, 1);
+    createItems("Demoniac hammer", "Demoniac", "Paladin", "45", "Mh", "Marteau démioniaque", 750000, 250, 0, 0, 250, 300, 0);
 
     createItems("Armure en cuir", "commun", "Barbare, Voleur, Paladin, Chasseur", "46", "armor", "Armure en cuir", 350, 0, 2, 0, 0, 30, 9);
 
@@ -229,8 +229,13 @@ const items = (client) => {
 
     createItems("Divin broach", "commun", "toute classe", "91", "broach", "Broche de dieu", 150000, 500, 500, 500, 500, 500, 500);
 
-    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000, 1,1);
+    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000, 1  );
 
+    createItems("Shuto","drop","Voleur","65148","Mh","Coup de karaté contenue dans une lame",1000000,2500,2000,1000,0,1500,100,0,0);
+
+    createItems("Shuta","drop","Voleur","964871","Oh","Coup de karaté contenue dans une lame",1000000,2500,2000,1000,0,1500,1000,0,0);
+
+    createItems("Arbalete","drop","Chasseur","648153","Mh","Arbalete",2000000,5000,4000,2000,0,3000,2000,1,1)
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');
