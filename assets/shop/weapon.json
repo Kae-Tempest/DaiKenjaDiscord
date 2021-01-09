@@ -718,4 +718,116 @@
     "intelligence": 0,
     "spirit": 250
   }
+},{
+  "name": "Shuto",
+  "rank": "drop",
+  "class": "Voleur",
+  "label": "65148",
+  "type": "Mh",
+  "description": "Coup de karaté contenue dans une lame",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 1500,
+    "constitution": 100,
+    "strength": 2500,
+    "agility": 2000,
+    "intelligence": 1000,
+    "spirit": 0
+  }
+},{
+  "name": "Shuta",
+  "rank": "drop",
+  "class": "Voleur",
+  "label": "964871",
+  "type": "Oh",
+  "description": "Coup de karaté contenue dans une lame",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 1500,
+    "constitution": 1000,
+    "strength": 2500,
+    "agility": 2000,
+    "intelligence": 1000,
+    "spirit": 0
+  }
+},{
+  "name": "Arbalete",
+  "rank": "drop",
+  "class": "Chasseur",
+  "label": "648153",
+  "type": "Mh",
+  "description": "Arbalete",
+  "cost": 2000000,
+  "stats": {
+    "vitality": 3000,
+    "constitution": 2000,
+    "strength": 5000,
+    "agility": 4000,
+    "intelligence": 2000,
+    "spirit": 0
+  }
+},{
+  "name": "Exa cube",
+  "rank": "drop",
+  "class": "Mage",
+  "label": "497861",
+  "type": "Mh",
+  "description": "Cube magique",
+  "cost": 2000000,
+  "stats": {
+    "vitality": 3000,
+    "constitution": 2000,
+    "strength": 0,
+    "agility": 4000,
+    "intelligence": 2000,
+    "spirit": 5000
+  }
+},{
+  "name": "Gungnir",
+  "rank": "drop",
+  "class": "Chasseur, Barbare",
+  "label": "665448",
+  "type": "Mh",
+  "description": "Lance de Odin",
+  "cost": 5000000,
+  "stats": {
+    "vitality": 7000,
+    "constitution": 10000,
+    "strength": 10000,
+    "agility": 5000,
+    "intelligence": 5000,
+    "spirit": 5000
+  }
+},{
+  "name": "Mjöllnir",
+  "rank": "drop",
+  "class": "Paladin, Barbare",
+  "label": "68719",
+  "type": "Mh",
+  "description": "Marteau de Thor",
+  "cost": 5000000,
+  "stats": {
+    "vitality": 7000,
+    "constitution": 10000,
+    "strength": 10000,
+    "agility": 5000,
+    "intelligence": 5000,
+    "spirit": 5000
+  }
+},{
+  "name": "Death Scythe",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "59862",
+  "type": "Mh",
+  "description": "Faux de la mort",
+  "cost": 10000000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 10000,
+    "strength": 12500,
+    "agility": 5000,
+    "intelligence": 5000,
+    "spirit": 12500
+  }
 }]

@@ -56,7 +56,7 @@ const monster = (client) => {
     createMonster("Elyon", 16, "Boss", 2300, 1300, 1000, 150, 150, 300, 300);//loot
     createMonster("Dracula", 16, "Boss", 2500, 1500, 1200, 100, 200, 500, 900);//loot
     createMonster("Bowser", 16, "Boss", 2500, 1500, 1200, 100, 200, 300, 600);//loot
-    createMonster("Fake Kami", 20, "Boss", 3500, 5000, 1500, 300, 300, 1000, 1000);//loot
+    createMonster("Fake Kami", 20, "Boss", 3500, 5000, 1500, 300, 300, 1000, 1000,0,["Shuto","Shuta"]);//loot
     createMonster("Shogun", 30, "Boss", 5000, 10000, 2000, 300, 350, 1500, 2000);//loot
     createMonster("The Gleam Eyes", 40, "Boss", 10000, 30000, 4000, 200, 500, 1000, 2500);
     createMonster("Hellwraith", 50, "Monster", 15000, 35000, 5000, 280, 500, 3000, 2000);
@@ -68,12 +68,12 @@ const monster = (client) => {
     createMonster("Charybdis", 100, "Calimity", 100000, 100000, 10000, 1000, 1000, 1000, 10000);//loot
     createMonster("Yuusha", 250, "Héro", 200000, 500000, 25000, 1500, 1500, 10000, 10000);//loot
     createMonster("Demon Lord", 250, "Démon", 215000, 500000, 25000, 1300, 2000, 10000, 10000);//loot
-    createMonster("Maho", 300, "Demon", 500000, 750000, 30000, 1500, 2000, 2000, 4000);//loot
+    createMonster("Maho", 300, "Demon", 500000, 750000, 30000, 1500, 2000, 2000, 4000,0,["Exa cube"]);//loot
     createMonster("Norico", 320, "Calamity", 750000, 1000000, 35000, 2000, 3000, 3000, 5000,0,["Arbalete"]);//loot
-    createMonster("Thor", 350, "Divinity", 50000000, 5000000, 40000, 2500, 2500, 3000, 3000);//loot
-    createMonster("Odin", 400, "divinity", 100000000, 10000000, 8000, 4000, 4000, 3000, 3000);//loot
-    createMonster("Reaper", 425, "Demon", 500000000, 20000000, 100000, 4500, 6000, 5000, 5000,0);//loot
-    createMonster("Kami", 500, "Divinity", 1000000000, 50000000, 200000, 6000, 6000, 10000, 10000, 1,["Shuto","Shuta"]);
+    createMonster("Thor", 350, "Divinity", 50000000, 5000000, 40000, 2500, 2500, 3000, 3000,0,["Mjöllnir"]);//loot
+    createMonster("Odin", 400, "divinity", 100000000, 10000000, 8000, 4000, 4000, 3000, 3000,0,["Gungnir"]);//loot
+    createMonster("Reaper", 425, "Demon", 500000000, 20000000, 100000, 4500, 6000, 5000, 5000,0,["Death Scythe"]);//loot
+    createMonster("Kami", 500, "Divinity", 1000000000, 50000000, 200000, 6000, 6000, 10000, 10000, 1,);
 
     fs.appendFileSync('./assets/npc/hostile.json', "]")
 }
