@@ -24,7 +24,7 @@ module.exports = client => {
         let data = await client.getGuild(guild);
         if (typeof data !== "object") data = {};
         for (const key in settings) {
-            if (data[key] !== settings[key]) data[key] = settings[key];
+            data[key] = settings[key];
         }
         return data.updateOne(settings);
     };

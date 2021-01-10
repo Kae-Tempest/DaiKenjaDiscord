@@ -1,0 +1,18 @@
+{
+  "name": "daikanja",
+  "version": "5.0.0",
+  "description": "",
+  "main": "Bot.js",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 Bot.js"
+  },
+  "author": "Kae",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.0",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.10.10",
+    "ms": "^2.1.2",
+    "pm2": "^4.5.0"
+  }
+}

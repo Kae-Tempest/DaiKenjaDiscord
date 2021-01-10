@@ -12,39 +12,11 @@ const calculateUserStatsEquip = async (client, message) => {
         const itemStats = getItemInfo[itemInfoPosition].stats;
         const itemType = getItemInfo[itemInfoPosition].type
         for (stats in itemStats) {
-            switch (stats) {
-                case "strength":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.strength": userStats.strength += itemStats[stats],
-                    })
-                    break;
-                case "agility":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.agility": userStats.agility += itemStats[stats],
-                    })
-                    break;
-                case "intelligence":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.intelligence": userStats.intelligence += itemStats[stats],
-                    })
-                    break;
-                case "spirit":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.spirit": userStats.spirit += itemStats[stats],
-                    })
-                    break;
-                case "constitution":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.constitution": userStats.constitution += itemStats[stats],
-                    })
-                    break;
-                case "vitality":
-                        client.updateUserInfo(message.member, {
-                            "users.$.stats.vitality": userStats.vitality += itemStats[stats],
-                            "users.$.statsMax.vitality": userStats.vitality
-                        });
-                    break;
-            }
+            let statsName = `users.$.stats.${stats}`;
+            client.updateUserInfo(message.member, {
+                statsName: userStats[stats] += itemStats[stats],
+                "users.$.statsMax.vitality": userStats.vitality
+            });
         }
     }
     return userStats;
