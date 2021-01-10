@@ -6,7 +6,6 @@ const battle = async (client, message, player, hostile, userInfo) => {
 
     async function level() {
         while (player.level !== 0 && player.level !== 1001) {
-            await levelup(client, message, player);
             if (player.level <= 10) {
                 if (player.experience < player.level * 250 - 1) break;
                 if (player.experience < player.level * player.prestige * 10 * 250 - 1) break;
@@ -314,6 +313,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
+            await levelup(client, message, player);
         }
     }
 
@@ -342,19 +342,19 @@ const battle = async (client, message, player, hostile, userInfo) => {
     }
 
     async function fight(atk) {
-        let PlayerHP = player.stats.vitality;
+        let playerHP = player.stats.vitality;
         for (let i = 1; hostileHP > 0; i++) {
-            let HostileAtk = hostileStrengh - consti;
+            let hostileAtk = hostileStrengh - consti;
             let PlayerAtk = atk - hostileConsti
-            if (HostileAtk < 0) HostileAtk = 0;
+            if (hostileAtk < 0) hostileAtk = 0;
             if (PlayerAtk < 0) PlayerAtk = 0;
-            if (PlayerAtk === 0 && HostileAtk === 0) return message.reply("Vous vous entretuez ( ou pas ) !")
+            if (PlayerAtk === 0 && hostileAtk === 0) return message.reply("Vous vous entretuez ( ou pas ) !")
 
             if (agility > hostileAgility) {
-                if (HostileAtk !== 0) {
+                if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
-                        HostileAtk = 0
-                        if (HostileAtk === 0) message.channel.send(`tour ${i}: Tu as esquivé le coup !`);
+                        hostileAtk = 0
+                        if (hostileAtk === 0) message.channel.send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -369,19 +369,19 @@ const battle = async (client, message, player, hostile, userInfo) => {
             await deleting(message, i);
             if (intelligence > hostileIntel) {
                 hostileHP -= PlayerAtk
-                PlayerHP -= HostileAtk
+                playerHP -= hostileAtk
                 if (hostileHP <= 0) hostileHP = 0;
-                const playerMessage = `tour ${i}: la bataille fait rage. Tu attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${HostileAtk} de dégâts! Il te reste ${PlayerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
+                const playerMessage = `tour ${i}: la bataille fait rage. Tu attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Il te reste ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
                 await message.channel.send(playerMessage)
-                if (PlayerAtk === 0 && HostileAtk === 0) await message.channel.bulkDelete(1);
+                if (PlayerAtk === 0 && hostileAtk === 0) await message.channel.bulkDelete(1);
             } else {
-                PlayerHP -= HostileAtk
+                playerHP -= hostileAtk
                 hostileHP -= PlayerAtk
-                const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${HostileAtk} de dégâts et tu riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et il te reste ${PlayerHP}HP`
+                const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et tu riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et il te reste ${playerHP}HP`
                 await message.channel.send(playerMessage)
-                if (PlayerAtk === 0 && HostileAtk === 0) await message.channel.bulkDelete(1);
+                if (PlayerAtk === 0 && hostileAtk === 0) await message.channel.bulkDelete(1);
             }
-            if (PlayerHP <= 0) {
+            if (playerHP <= 0) {
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": 0
                 });
@@ -389,12 +389,12 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 return message.reply("Tu es mort");
             }
             if (hostileHP <= 0) {
-                PlayerHP += HostileAtk
+                playerHP += hostileAtk
                 player.po += hostilePo;
                 player.experience += hostileExp;
                 if (hostile.category !== "Monster") {
-                    const loot = Math.floor(Math.random() * Math.floor(11))
-                    if (loot > 5) {
+                    const loot = Math.floor(Math.random() * Math.floor(101 * (player.prestige + 1)))
+                    if (loot > 90 * (player.prestige + 1)) {
                         const userInventory = userInfo.inventory
                         const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length -1))]
                         userInventory.push(drop)
@@ -405,18 +405,18 @@ const battle = async (client, message, player, hostile, userInfo) => {
                     }
                 }
                 client.updateUserInfo(message.member, {
-                    "users.$.stats.vitality": PlayerHP,
+                    "users.$.stats.vitality": playerHP,
                     "users.$.po": player.po,
                     "users.$.experience": player.experience
                 });
                 if (intelligence > hostileIntel) {
                     if (hostileHP <= 0) await message.channel.bulkDelete(1);
                     await level();
-                    return message.channel.send(`Félicitation, la bataille est terminée après ${i - 1} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return message.channel.send(`Félicitation, la bataille est terminée après ${i - 1} tours, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 } else {
                     if (hostileHP <= 0) await message.channel.bulkDelete(1)
                     await level();
-                    return message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, il te reste ${PlayerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 }
             }
         }
