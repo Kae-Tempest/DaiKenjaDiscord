@@ -6,7 +6,6 @@ const battle = async (client, message, player, hostile, userInfo) => {
 
     async function level() {
         while (player.level !== 0 && player.level !== 1001) {
-            await levelup(client, message, player);
             if (player.level <= 10) {
                 if (player.experience < player.level * 250 - 1) break;
                 if (player.experience < player.level * player.prestige * 10 * 250 - 1) break;
@@ -314,6 +313,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
+            await levelup(client, message, player);
         }
     }
 
