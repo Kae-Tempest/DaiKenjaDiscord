@@ -830,4 +830,20 @@
     "intelligence": 5000,
     "spirit": 12500
   }
+},{
+  "name": "Caliburn",
+  "rank": "drop",
+  "class": "Barbare, Paladin",
+  "label": "68451",
+  "type": "Mh",
+  "description": "Epée du roi Arthur obtenue par Kirito dans une quete",
+  "cost": 10000000,
+  "stats": {
+    "vitality": 12500,
+    "constitution": 12500,
+    "strength": 15000,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 0
+  }
 }]

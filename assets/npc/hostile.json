@@ -654,6 +654,9 @@
   "type": "hostile",
   "experience": 1000000000,
   "po": 50000000,
+  "loot": [
+    "Caliburn"
+  ],
   "stats": {
     "vitality": 200000,
     "constitution": 6000,

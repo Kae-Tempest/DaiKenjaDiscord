@@ -40,12 +40,19 @@ const items = (client) => {
             fs.appendFileSync('./assets/shop/accessory.json', data);
             if (!last) writingDot("accessory.json")
         }
+        if (type === "potion") {
+            fs.appendFileSync('./assets/shop/consomable.json', data);
+            if (!last) writingDot("consomable.json")
+        }
     }
 
     fs.appendFileSync('./assets/shop/shop.json', '[');
     fs.appendFileSync('./assets/shop/weapon.json', '[');
     fs.appendFileSync('./assets/shop/armor.json', '[');
     fs.appendFileSync('./assets/shop/accessory.json', '[');
+    fs.appendFileSync('./assets/shop/consomable.json', '[');
+
+    //ARMES
 
     createItems("Short sword", "commun", "Voleur", "1", "Mh", "Epée courte", 200, 1, 1, 0, 0, 0, 0);
 
@@ -137,6 +144,8 @@ const items = (client) => {
 
     createItems("Demoniac hammer", "Demoniac", "Paladin", "45", "Mh", "Marteau démioniaque", 750000, 250, 0, 0, 250, 300, 0);
 
+    //ARMURE
+
     createItems("Armure en cuir", "commun", "Barbare, Voleur, Paladin, Chasseur", "46", "armor", "Armure en cuir", 350, 0, 2, 0, 0, 30, 9);
 
     createItems("Armure legère en fer", "commun", "Voleur, Chasseur", "47", "armor", "Armure legère en fer", 400, 0, 1, 0, 0, 35, 10);
@@ -174,6 +183,8 @@ const items = (client) => {
     createItems("God armor", "heroique", "toute classe", "63", "armor", "Armure de dieux", 500000, 0, 0, 0, 0, 800, 400);
 
     createItems("Demoniac armor", "heroique", "toute classe", "64", "armor", "Armure du roi démon", 750000, 0, 0, 0, 0, 1200, 600, 1);
+
+    //ACCESSOIRES
 
     createItems("Iron rings", "commun", "toute classe", "65", "rings", "Anneaux en fer", 200, 0, 0, 0, 0, 20, 5);
 
@@ -231,7 +242,15 @@ const items = (client) => {
 
     createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000, 1);
 
-    //drop items
+    //CONSOMABLE
+
+    createItems("Potion basic","commun","toute classe","93","potion","Heal de 50 HP",50,0,0,0,0,50,0);
+
+    createItems("Potion medium","rare","toute classe","94","potion","Heal de 500 HP",500,0,0,0,0,500,0);
+
+    createItems("Legendary potion","lengendaire","toute classe","95","potion","heal de 1500 HP",5000,0,0,0,0,1500,0,1)
+
+    //DROP ITEMS
 
     createItems("Shuto", "drop", "Voleur", "65148", "Mh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 100);
 
@@ -245,13 +264,15 @@ const items = (client) => {
 
     createItems("Mjöllnir", "drop", "Paladin, Barbare", "68719", "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Death Scythe", "drop", "toute classe", "59862","Mh","Faux de la mort",10000000,12500,5000,5000,12500,10000,10000,1,1);
+    createItems("Death Scythe", "drop", "toute classe", "59862", "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
+
+    createItems("Caliburn", "drop", "Barbare, Paladin", "68451", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500, 1,1);
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');
     fs.appendFileSync('./assets/shop/armor.json', ']');
     fs.appendFileSync('./assets/shop/accessory.json', ']');
-
+    fs.appendFileSync('./assets/shop/consomable.json', ']');
 }
 
 

@@ -1471,6 +1471,54 @@
     "spirit": 1000
   }
 },{
+  "name": "Potion basic",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "93",
+  "type": "potion",
+  "description": "Heal de 50 HP",
+  "cost": 50,
+  "stats": {
+    "vitality": 50,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Potion medium",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "94",
+  "type": "potion",
+  "description": "Heal de 500 HP",
+  "cost": 500,
+  "stats": {
+    "vitality": 500,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Legendary potion",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "95",
+  "type": "potion",
+  "description": "heal de 1500 HP",
+  "cost": 5000,
+  "stats": {
+    "vitality": 1500,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
   "name": "Shuto",
   "rank": "drop",
   "class": "Voleur",
@@ -1581,5 +1629,21 @@
     "agility": 5000,
     "intelligence": 5000,
     "spirit": 12500
+  }
+},{
+  "name": "Caliburn",
+  "rank": "drop",
+  "class": "Barbare, Paladin",
+  "label": "68451",
+  "type": "Mh",
+  "description": "Epée du roi Arthur obtenue par Kirito dans une quete",
+  "cost": 10000000,
+  "stats": {
+    "vitality": 12500,
+    "constitution": 12500,
+    "strength": 15000,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 0
   }
 }]

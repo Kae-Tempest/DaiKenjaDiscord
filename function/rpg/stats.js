@@ -10,6 +10,7 @@ const calculateUserStatsEquip = async (client, message) => {
 
         const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(userEquipment[property]);
         const itemStats = getItemInfo[itemInfoPosition].stats;
+        const itemType = getItemInfo[itemInfoPosition].type
         for (stats in itemStats) {
             switch (stats) {
                 case "strength":
@@ -38,10 +39,16 @@ const calculateUserStatsEquip = async (client, message) => {
                     })
                     break;
                 case "vitality":
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.vitality": userStats.vitality += itemStats[stats],
-                        "users.$.statsMax.vitality": userStats.vitality
-                    })
+                    if(itemType !== "potion") {
+                        client.updateUserInfo(message.member, {
+                            "users.$.stats.vitality": userStats.vitality += itemStats[stats],
+                            "users.$.statsMax.vitality": userStats.vitality
+                        });
+                    } else {
+                        client.updateUserInfo(message.member, {
+                            "users.$.stats.vitality": userStats.vitality += itemStats[stats],
+                        });
+                    }
                     break;
             }
         }
@@ -103,22 +110,24 @@ const calculateUserStatsUequip = async (client, message) => {
                         client.updateUserInfo(message.member, {
                             "users.$.stats.spirit": userStats2.spirit -= itemStats[stats],
                         })
-                    }  if (userStats2.spirit < 0) {
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.spirit": 0,
-                    })
-                }
+                    }
+                    if (userStats2.spirit < 0) {
+                        client.updateUserInfo(message.member, {
+                            "users.$.stats.spirit": 0,
+                        })
+                    }
                     break;
                 case "constitution":
                     if (userStats2.constitution > itemStats[stats]) {
                         client.updateUserInfo(message.member, {
                             "users.$.stats.constitution": userStats2.constitution -= itemStats[stats],
                         })
-                    }  if (userStats2.constitution < 0) {
-                    client.updateUserInfo(message.member, {
-                        "users.$.stats.constitution": userStats2.constitution = 0,
-                    })
-                }
+                    }
+                    if (userStats2.constitution < 0) {
+                        client.updateUserInfo(message.member, {
+                            "users.$.stats.constitution": userStats2.constitution = 0,
+                        })
+                    }
                     break;
                 case "vitality":
                     if (userStats2.vitality > itemStats[stats]) {
@@ -126,11 +135,12 @@ const calculateUserStatsUequip = async (client, message) => {
                             "users.$.stats.vitality": userStats2.vitality -= itemStats[stats],
                             "users.$.statsMax.vitality": userStats2.vitality
                         })
-                    } if (userStats2.vitality < 50) {
-                    client.updateUserInfo(message.member, {
-                        "users.$.statsMax.vitality": 50
-                    })
-                }
+                    }
+                    if (userStats2.vitality < 50) {
+                        client.updateUserInfo(message.member, {
+                            "users.$.statsMax.vitality": 50
+                        })
+                    }
                     break;
             }
         }
