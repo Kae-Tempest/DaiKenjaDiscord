@@ -46,4 +46,52 @@
     "intelligence": 0,
     "spirit": 0
   }
+},{
+  "name": "Slime potion",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "96",
+  "type": "potion",
+  "description": "heal de 5000 HP",
+  "cost": 30000,
+  "stats": {
+    "vitality": 5000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divin potion",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "97",
+  "type": "potion",
+  "description": "heal de 10000 HP",
+  "cost": 100000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac potion",
+  "rank": "Demoniaque",
+  "class": "toute classe",
+  "label": "98",
+  "type": "potion",
+  "description": "heal de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 50000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
 }]

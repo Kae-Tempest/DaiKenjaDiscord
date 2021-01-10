@@ -1,27 +1,33 @@
 const {capitalize} = require('../../function/other/string');
 const getItemInfo = require('../../assets/shop/shop.json');
-const {calculateUserStatsEquip} = require('../../function/rpg/stats')
 
 module.exports.run = async (client, message, args, userInfo) => {
     const q = args.join(" ");
     const userInventory = userInfo.inventory
     const userInventoryItemPosition = userInventory.indexOf(capitalize(q))
+    if (userInfo.stats.vitality === userInfo.statsMax.vitality) return message.reply('Tu as déjà toute ta vie !');
     if (userInventoryItemPosition === -1) return message.reply("Vous ne possédez pas cet objet dans votre inventaire (ou alors, vous l'avez mal orthographié)");
     const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(capitalize(q));
-    const healPoint = getItemInfo.map(h => h.stats.vitality).indexOf(capitalize(q));
+    const healPoint = getItemInfo[itemInfoPosition].stats.vitality;
+    console.log(healPoint);
     let heal
     if (userInfo.stats.vitality + healPoint > userInfo.statsMax.vitality) {
         heal = userInfo.statsMax.vitality - userInfo.stats.vitality;
+        console.log("1")
+        console.log(heal)
     } else {
         heal = healPoint
+        console.log("2")
+        console.log(heal)
     }
     if (q[getItemInfo[itemInfoPosition].type] === 'potion') return message.reply("Tu ne peux pas boire un objet !")
     userInventory.splice(userInventoryItemPosition, 1);
     client.updateUserInfo(message.member, {
-        "users.$.inventory": userInventory
+        "users.$.inventory": userInventory,
+        "users.$.stats.vitality": userInfo.stats.vitality + heal
     });
-    await calculateUserStatsEquip(client, message);
-    return message.reply(`Tu as bien bu ta potion ! tu as récupéré ${heal}`);
+
+    return message.reply(`Tu as bien bu ta potion ! tu as récupéré ${heal}HP`);
 
 }
 

@@ -39,16 +39,10 @@ const calculateUserStatsEquip = async (client, message) => {
                     })
                     break;
                 case "vitality":
-                    if(itemType !== "potion") {
                         client.updateUserInfo(message.member, {
                             "users.$.stats.vitality": userStats.vitality += itemStats[stats],
                             "users.$.statsMax.vitality": userStats.vitality
                         });
-                    } else {
-                        client.updateUserInfo(message.member, {
-                            "users.$.stats.vitality": userStats.vitality += itemStats[stats],
-                        });
-                    }
                     break;
             }
         }

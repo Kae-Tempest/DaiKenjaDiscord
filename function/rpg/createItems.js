@@ -244,29 +244,35 @@ const items = (client) => {
 
     //CONSOMABLE
 
-    createItems("Potion basic","commun","toute classe","93","potion","Heal de 50 HP",50,0,0,0,0,50,0);
+    createItems("Potion basic", "commun", "toute classe", "93", "potion", "Heal de 50 HP", 50, 0, 0, 0, 0, 50, 0);
 
-    createItems("Potion medium","rare","toute classe","94","potion","Heal de 500 HP",500,0,0,0,0,500,0);
+    createItems("Potion medium", "rare", "toute classe", "94", "potion", "Heal de 500 HP", 500, 0, 0, 0, 0, 500, 0);
 
-    createItems("Legendary potion","lengendaire","toute classe","95","potion","heal de 1500 HP",5000,0,0,0,0,1500,0,1)
+    createItems("Legendary potion", "lengendaire", "toute classe", "95", "potion", "heal de 1500 HP", 5000, 0, 0, 0, 0, 1500, 0)
+
+    createItems("Slime potion", "heroique", "toute classe", "96", "potion", "heal de 5000 HP", 30000, 0, 0, 0, 0, 5000, 0)
+
+    createItems("Divin potion", "Divinity", "toute classe", "97", "potion", "heal de 10000 HP", 100000, 0, 0, 0, 0, 10000, 0);
+
+    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000", 1000000, 0, 0, 0, 0, 50000,0,1);
 
     //DROP ITEMS
 
-    createItems("Shuto", "drop", "Voleur", "65148", "Mh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 100);
+    createItems("Shuto", "drop", "Voleur", "", "Mh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 100);
 
-    createItems("Shuta", "drop", "Voleur", "964871", "Oh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
+    createItems("Shuta", "drop", "Voleur", "", "Oh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
 
-    createItems("Arbalete", "drop", "Chasseur", "648153", "Mh", "Arbalete", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
+    createItems("Arbalete", "drop", "Chasseur", "", "Mh", "Arbalete", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
 
-    createItems("Exa cube", "drop", "Mage", "497861", "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
+    createItems("Exa cube", "drop", "Mage", "", "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
 
-    createItems("Gungnir", "drop", "Chasseur, Barbare", "665448", "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Gungnir", "drop", "Chasseur, Barbare", "", "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Mjöllnir", "drop", "Paladin, Barbare", "68719", "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Mjöllnir", "drop", "Paladin, Barbare", "", "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Death Scythe", "drop", "toute classe", "59862", "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
+    createItems("Death Scythe", "drop", "toute classe", "", "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
 
-    createItems("Caliburn", "drop", "Barbare, Paladin", "68451", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500, 1,1);
+    createItems("Caliburn", "drop", "Barbare, Paladin", "", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500, 1, 1);
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');
