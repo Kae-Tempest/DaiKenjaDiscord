@@ -20,7 +20,7 @@ module.exports = client => {
     fs.unlink('./assets/shop/accessory.json', (err) => {
         if (err) throw err
     })
-    fs.unlink('./assets/shop/consomable.json', (err) => {
+    fs.unlink('./assets/shop/consommable.json', (err) => {
         if (err) throw err
     })
     items(client);

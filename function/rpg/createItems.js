@@ -41,8 +41,8 @@ const items = (client) => {
             if (!last) writingDot("accessory.json")
         }
         if (type === "potion") {
-            fs.appendFileSync('./assets/shop/consomable.json', data);
-            if (!last) writingDot("consomable.json")
+            fs.appendFileSync('./assets/shop/consommable.json', data);
+            if (!last) writingDot("consommable.json")
         }
     }
 
@@ -50,7 +50,7 @@ const items = (client) => {
     fs.appendFileSync('./assets/shop/weapon.json', '[');
     fs.appendFileSync('./assets/shop/armor.json', '[');
     fs.appendFileSync('./assets/shop/accessory.json', '[');
-    fs.appendFileSync('./assets/shop/consomable.json', '[');
+    fs.appendFileSync('./assets/shop/consommable.json', '[');
 
     //ARMES
 
@@ -272,7 +272,7 @@ const items = (client) => {
     fs.appendFileSync('./assets/shop/weapon.json', ']');
     fs.appendFileSync('./assets/shop/armor.json', ']');
     fs.appendFileSync('./assets/shop/accessory.json', ']');
-    fs.appendFileSync('./assets/shop/consomable.json', ']');
+    fs.appendFileSync('./assets/shop/consommable.json', ']');
 }
 
 

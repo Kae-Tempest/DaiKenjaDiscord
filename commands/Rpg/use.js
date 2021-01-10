@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args, userInfo) => {
         "users.$.inventory": userInventory
     });
     await calculateUserStatsEquip(client, message);
-    return message.reply(`Tu as bien bu ta potion ! tu as recuperer ${heal}`);
+    return message.reply(`Tu as bien bu ta potion ! tu as récupéré ${heal}`);
 
 }
 
