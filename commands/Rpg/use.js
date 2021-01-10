@@ -9,16 +9,11 @@ module.exports.run = async (client, message, args, userInfo) => {
     if (userInventoryItemPosition === -1) return message.reply("Vous ne possédez pas cet objet dans votre inventaire (ou alors, vous l'avez mal orthographié)");
     const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(capitalize(q));
     const healPoint = getItemInfo[itemInfoPosition].stats.vitality;
-    console.log(healPoint);
     let heal
     if (userInfo.stats.vitality + healPoint > userInfo.statsMax.vitality) {
         heal = userInfo.statsMax.vitality - userInfo.stats.vitality;
-        console.log("1")
-        console.log(heal)
     } else {
         heal = healPoint
-        console.log("2")
-        console.log(heal)
     }
     if (q[getItemInfo[itemInfoPosition].type] === 'potion') return message.reply("Tu ne peux pas boire un objet !")
     userInventory.splice(userInventoryItemPosition, 1);
