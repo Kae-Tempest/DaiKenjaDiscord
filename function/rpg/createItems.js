@@ -254,7 +254,7 @@ const items = (client) => {
 
     createItems("Divin potion", "Divinity", "toute classe", "97", "potion", "heal de 10000 HP", 100000, 0, 0, 0, 0, 10000, 0);
 
-    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000", 1000000, 0, 0, 0, 0, 50000,0,1);
+    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000", 1000000, 0, 0, 0, 0, 50000, 0, 1);
 
     //DROP ITEMS
 
@@ -266,13 +266,19 @@ const items = (client) => {
 
     createItems("Exa cube", "drop", "Mage", "", "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
 
+    createItems("Exa aura","drop","Mage","","Oh","Aura magique",2000000,0,4000,2000,5000,2000,3000);
+
     createItems("Gungnir", "drop", "Chasseur, Barbare", "", "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
     createItems("Mjöllnir", "drop", "Paladin, Barbare", "", "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
     createItems("Death Scythe", "drop", "toute classe", "", "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
 
-    createItems("Caliburn", "drop", "Barbare, Paladin", "", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500, 1, 1);
+    createItems("Caliburn", "drop", "Barbare, Paladin", "", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+
+    createItems("Excalibur", "drop", "Barbare, Paladin", "", "Mh", "Ancienne épée du roi Arthur", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+
+    createItems("Aegis","drop","toute classe","","Oh","Bouclier divin",10000000,0,0,0,0,10000,10000,1,1)
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');

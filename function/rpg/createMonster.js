@@ -68,12 +68,12 @@ const monster = (client) => {
     createMonster("Charybdis", 100, "Calimity", 100000, 100000, 10000, 1000, 1000, 1000, 10000);
     createMonster("Yuusha", 250, "Héro", 200000, 500000, 25000, 1500, 1500, 10000, 10000);
     createMonster("Demon Lord", 250, "Démon", 215000, 500000, 25000, 1300, 2000, 10000, 10000);
-    createMonster("Maho", 300, "Demon", 500000, 750000, 30000, 1500, 2000, 2000, 4000,0,["Exa cube"]);
+    createMonster("Maho", 300, "Demon", 500000, 750000, 30000, 1500, 2000, 2000, 4000,0,["Exa cube","Exa aura"]);
     createMonster("Norico", 320, "Calamity", 750000, 1000000, 35000, 2000, 3000, 3000, 5000,0,["Arbalete"]);
     createMonster("Thor", 350, "Divinity", 50000000, 5000000, 40000, 2500, 2500, 3000, 3000,0,["Mjöllnir"]);
     createMonster("Odin", 400, "divinity", 100000000, 10000000, 8000, 4000, 4000, 3000, 3000,0,["Gungnir"]);
     createMonster("Reaper", 425, "Demon", 500000000, 20000000, 100000, 4500, 6000, 5000, 5000,0,["Death Scythe"]);
-    createMonster("Kami", 500, "Divinity", 1000000000, 50000000, 200000, 6000, 6000, 10000, 10000, 1,["Caliburn"]);
+    createMonster("Kami", 500, "Divinity", 1000000000, 50000000, 200000, 6000, 6000, 10000, 10000, 1,["Caliburn", "Excalibur", "Aegis"]);
 
     fs.appendFileSync('./assets/npc/hostile.json', "]")
 }
