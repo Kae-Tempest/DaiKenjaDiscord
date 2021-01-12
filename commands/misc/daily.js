@@ -11,7 +11,7 @@ module.exports.run = async (client, message) => {
         if (player.prestige === 0) {
             pay = 250
         } else {
-            pay = 250 * (player.prestige +1 )
+            pay = 250 * (player.prestige + 1 )
         }
         return pay
     }
@@ -22,7 +22,7 @@ module.exports.run = async (client, message) => {
         "users.$.po": newBalance,
         "users.$.daily": daily
     })
-    return message.reply("Tu as bien pris ta récompense journalière de 250<:GoldCoin:781575067108507648> ! À demain :)")
+    return message.reply(`Tu as bien pris ta récompense journalière de ${recompense()}<:GoldCoin:781575067108507648> ! À demain :)`)
 };
 
 module.exports.help = {

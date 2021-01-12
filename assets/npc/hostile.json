@@ -570,7 +570,8 @@
   "experience": 500000,
   "po": 750000,
   "loot": [
-    "Exa cube"
+    "Exa cube",
+    "Exa aura"
   ],
   "stats": {
     "vitality": 30000,
@@ -655,7 +656,9 @@
   "experience": 1000000000,
   "po": 50000000,
   "loot": [
-    "Caliburn"
+    "Caliburn",
+    "Excalibur",
+    "Aegis"
   ],
   "stats": {
     "vitality": 200000,
