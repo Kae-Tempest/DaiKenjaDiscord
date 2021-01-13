@@ -6,6 +6,9 @@ Necessary module : fs,mongoose,ms
 Language support : French
 
 Discord Join => https://discord.gg/V9t5k5z
+# Warning !
+Vous ne pouvez avoir qu'un seul personnage ( multi-serveur non config ) si vous êtes sur plusieurs serveurs avec le bot, jouer **uniquement** sur celui ou vous avez creer votre personnage !!
+
 # Info Utile:
 Parler pour créer son profil dans la base de donnée.
 
