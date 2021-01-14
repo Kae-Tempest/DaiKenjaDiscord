@@ -10,6 +10,7 @@ module.exports.run = async (client, message) => {
         }
     }
 
+
     if (player.level !== 1000) return message.reply(`tu ne peux pas monter en prestige car ton niveaux est trop faible ${player.level} < 1000`);
     if (player.po < cost) return message.reply(`tu n'as pas assez de <:GoldCoin:781575067108507648> pour passer un prestige`)
     if (player.prestige === 10) return message.reply("Tu as atteint le prestige max !")
