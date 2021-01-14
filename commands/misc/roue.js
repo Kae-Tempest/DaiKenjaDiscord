@@ -11,7 +11,6 @@ module.exports.run = async (client, message) => {
     let recompense;
 
     function roue(po, min, max) {
-        console.log(random);
         if (random <= max && random > min) {
             if (player.prestige === 0) {
                 recompense = po

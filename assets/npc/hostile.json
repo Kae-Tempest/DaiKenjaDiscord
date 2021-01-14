@@ -397,6 +397,10 @@
   "type": "hostile",
   "experience": 3500,
   "po": 5000,
+  "loot": [
+    "Shuto",
+    "Shuta"
+  ],
   "stats": {
     "vitality": 1500,
     "constitution": 300,
@@ -565,6 +569,10 @@
   "type": "hostile",
   "experience": 500000,
   "po": 750000,
+  "loot": [
+    "Exa cube",
+    "Exa aura"
+  ],
   "stats": {
     "vitality": 30000,
     "constitution": 1500,
@@ -579,6 +587,9 @@
   "type": "hostile",
   "experience": 750000,
   "po": 1000000,
+  "loot": [
+    "Arbalete"
+  ],
   "stats": {
     "vitality": 35000,
     "constitution": 2000,
@@ -593,6 +604,9 @@
   "type": "hostile",
   "experience": 50000000,
   "po": 5000000,
+  "loot": [
+    "Mjöllnir"
+  ],
   "stats": {
     "vitality": 40000,
     "constitution": 2500,
@@ -607,6 +621,9 @@
   "type": "hostile",
   "experience": 100000000,
   "po": 10000000,
+  "loot": [
+    "Gungnir"
+  ],
   "stats": {
     "vitality": 8000,
     "constitution": 4000,
@@ -621,6 +638,9 @@
   "type": "hostile",
   "experience": 500000000,
   "po": 20000000,
+  "loot": [
+    "Death Scythe"
+  ],
   "stats": {
     "vitality": 100000,
     "constitution": 4500,
@@ -635,6 +655,11 @@
   "type": "hostile",
   "experience": 1000000000,
   "po": 50000000,
+  "loot": [
+    "Caliburn",
+    "Excalibur",
+    "Aegis"
+  ],
   "stats": {
     "vitality": 200000,
     "constitution": 6000,

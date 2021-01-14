@@ -1,6 +1,7 @@
 const {monster} = require("../../function/rpg/createMonster");
 const {items} = require("../../function/rpg/createItems");
 const fs = require('fs');
+const tokenDB = require('../../config')
 module.exports = client => {
     fs.unlink('./assets/npc/hostile.json', (err) => {
         if (err) throw err
@@ -19,11 +20,14 @@ module.exports = client => {
     fs.unlink('./assets/shop/accessory.json', (err) => {
         if (err) throw err
     })
+    fs.unlink('./assets/shop/consommable.json', (err) => {
+        if (err) throw err
+    })
     items(client);
     console.log("Items crées !")
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
-    client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
+    if(tokenDB.DBCONNECTION !== "mongodb://localhost:27017/test") client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
     const guild = [];
     client.guilds.cache.map(e => guild.push(e));
     guild.forEach(async g => {

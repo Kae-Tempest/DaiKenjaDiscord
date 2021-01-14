@@ -4,27 +4,25 @@ module.exports.run = async (client, message) => {
     const dayCD = 8.64e+7;
     const dailyCD = player.daily + dayCD;
     const cdTime = dayCD - (Date.now() - player.daily)
-
     if (dailyCD > Date.now()) return message.reply(`Il reste ${Math.floor(cdTime / (1000 * 60 * 60) % 24)} hrs, ${Math.floor(cdTime / (1000 * 60) % 60)} minutes et ${Math.floor(cdTime / 1000 % 60)} secondes avant de pourvoir recupérer la prochaine récompense !`);
 
-
-    function recompense(prestige) {
+    function recompense() {
         let pay;
-        if (prestige === 0) {
+        if (player.prestige === 0) {
             pay = 250
         } else {
-            pay = 250 * prestige
+            pay = 250 * (player.prestige + 1 )
         }
         return pay
     }
 
-    const newBalance = player.po + recompense(player.prestige);
+    const newBalance = player.po + recompense();
 
     client.updateUserInfo(message.member, {
         "users.$.po": newBalance,
         "users.$.daily": daily
     })
-    return message.reply("Tu as bien pris ta récompense journalière de 250<:GoldCoin:781575067108507648> ! À demain :)")
+    return message.reply(`Tu as bien pris ta récompense journalière de ${recompense()}<:GoldCoin:781575067108507648> ! À demain :)`)
 };
 
 module.exports.help = {

@@ -1,15 +1,12 @@
 const {Collection} = require('discord.js');
 module.exports = async (client, message) => {
-    if (message.channel.type === "dm") return;
-    if (message.author.bot) return;
+    if (message.channel.type === "dm" || message.author.bot || !message.content.startsWith((client.config.PREFIX))) return;
 
     const data = await client.getGuild(message.guild);
     const position = await data.users.map(e => e.id).indexOf(message.member.id);
     const userInfo = data.users[position];
 
     if (message.guild && position === -1) client.createUserProfile(message.member, message.guild);
-
-    if (!message.content.startsWith(client.config.PREFIX)) return;
 
     const args = message.content.slice(client.config.PREFIX.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
