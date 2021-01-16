@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: 'battle',
-    aliases: ["battle"],
+    aliases: ["battle","Battle","BATTLE"],
     category: 'rpg',
     description: 'Bataille avec un monstre',
     cd: 5,

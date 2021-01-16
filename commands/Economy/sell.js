@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: "sell",
-    aliases: ["sell"],
+    aliases: ["sell","Sell","SELL"],
     category: 'economy',
     description: "affiche le shop",
     cd: 3,

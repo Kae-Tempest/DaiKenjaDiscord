@@ -149,7 +149,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: 'profile',
-    aliases: ["profile", "profil"],
+    aliases: ["profile", "profil","Profile","Profil","PROFILE","PROFIL"],
     category: 'rpg',
     description: 'Renvoie le profile de votre personnage',
     cd: 5,

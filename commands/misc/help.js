@@ -29,7 +29,7 @@ module.exports.run = (client, message, args, settings) => {
 
 module.exports.help = {
     name: "help",
-    aliases: ["help"],
+    aliases: ["help","Help","HELP"],
     category: 'misc',
     description: "affiche l'aide",
     cd: 10,

@@ -41,7 +41,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: 'heal',
-    aliases: ["heal"],
+    aliases: ["heal","Heal","HEAL"],
     category: 'rpg',
     description: 'Soigne le joueur celon son niveaux (Cout : 50 à 1000<:GoldCoin:781575067108507648>) - [Le soin ne donneras pas plus de points de vie que tu peux en avoir]',
     cd: 3,

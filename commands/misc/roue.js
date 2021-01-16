@@ -41,7 +41,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: "roue",
-    aliases: ["roue", "rdc"],
+    aliases: ["roue", "rdc","Roue","Rdc","ROUE","RDC"],
     category: 'misc',
     description: 'lance la roue de la chance',
     cd: 1,

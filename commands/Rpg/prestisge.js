@@ -40,7 +40,7 @@ module.exports.run = async (client, message) => {
 module.exports.help = {
     name: 'prestige',
     category: 'rpg',
-    aliases: ["prestige"],
+    aliases: ["prestige","Prestige","PRESTIGE"],
     description: 'Permet de reset le niveaux de la classe mais en gardant les stats',
     cd: 1,
     usage: "<object>",

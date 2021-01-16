@@ -23,6 +23,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: 'equip',
+    aliases: ["Equip","equip","EQUIP"],
     category: 'rpg',
     description: 'Equipe un objet sur votre personnage',
     cd: 1,

@@ -15,7 +15,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: "consomable",
-    aliases: ["consomable","cons"],
+    aliases: ["consomable","cons","Consomable","Cons","CONSOMABLE","CONS"],
     category: 'economy',
     description: "affiche les potions",
     cd: 3,

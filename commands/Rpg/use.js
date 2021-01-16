@@ -28,6 +28,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: 'use',
+    aliases: ["use","Use","USE"],
     category: 'rpg',
     description: 'Permet de boire une potion',
     cd: 1,

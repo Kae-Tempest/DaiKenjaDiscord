@@ -20,7 +20,7 @@ module.exports.run = (client, message, args) => {
 
 module.exports.help = {
     name: "ticket",
-    aliases: ["ticket"],
+    aliases: ["ticket","Ticket","TICKET"],
     category: 'admin',
     description: "envoie un ticket au staff",
     cd: 500,

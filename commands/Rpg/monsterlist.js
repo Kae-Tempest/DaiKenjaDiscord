@@ -15,7 +15,7 @@ module.exports.run = (client, message) => {
 
 module.exports.help = {
     name: "monsterlist",
-    aliases: ["monsterlist", "ml", "moblist"],
+    aliases: ["monsterlist", "ml", "MONSTERLIST","ML","Monsterlist","Ml"],
     category: 'rpg',
     description: "affiche la liste des monstres",
     cd: 3,

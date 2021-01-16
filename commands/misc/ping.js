@@ -9,7 +9,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: "ping",
-    aliases: ["ping"],
+    aliases: ["ping","Ping","PING"],
     category: 'misc',
     description: "affiche le ping",
     cd: 10,

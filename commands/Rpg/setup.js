@@ -68,7 +68,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: 'setup',
-    aliases: ["setup"],
+    aliases: ["setup","Setup","SETUP"],
     category: 'rpg',
     description: 'Créer le profile votre personnage',
     cd: 1,

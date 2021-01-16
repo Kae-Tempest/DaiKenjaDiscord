@@ -27,7 +27,7 @@ module.exports.run = async (client, message) => {
 
 module.exports.help = {
     name: "daily",
-    aliases: ["daily"],
+    aliases: ["daily","Daily","DAILY"],
     category: 'misc',
     description: 'Paye pour les combatant !',
     cd: 1,

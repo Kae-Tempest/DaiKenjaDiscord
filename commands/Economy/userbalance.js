@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args, userInfo) => {
 
 module.exports.help = {
     name: "userbalance",
-    aliases: ["userbalance", "ubalance"],
+    aliases: ["userbalance", "ubalance","Userbalance","Ubalance","USERBALANCE","UBALANCE"],
     category: 'economy',
     description: "Affiche le porte monnaie de l'utilisateur",
     cd: 10,
