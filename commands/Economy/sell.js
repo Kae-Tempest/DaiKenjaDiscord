@@ -4,6 +4,7 @@ module.exports.run = async (client, message, args, userInfo) => {
         client.createMissingInfoOnUser(message.member, {
             "users.inventory": {"inventory": []}
         });
+        return message.reply("Ton inventaire est vide !")
     }
     const shop = require('../../assets/shop/shop.json');
     const q = args.join(" ")
