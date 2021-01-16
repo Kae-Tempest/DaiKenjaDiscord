@@ -4,4 +4,5 @@
 /.idea/
 /package.json
 /package-lock.json
-/function/rpg/delete.js
+
+/function/rpg/delete.js/

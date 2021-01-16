@@ -370,12 +370,12 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 playerHP -= hostileAtk
                 if (hostileHP <= 0) hostileHP = 0;
                 const playerMessage = `tour ${i}: la bataille fait rage. Tu attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Il te reste ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
-                await client.channels.cache.get("800027258379042886").send(playerMessage)
+                client.channels.cache.get("800027258379042886").send(playerMessage)
             } else {
                 playerHP -= hostileAtk
                 hostileHP -= PlayerAtk
                 const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et tu riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et il te reste ${playerHP}HP`
-                await client.channels.cache.get("800027258379042886").send(playerMessage)
+                client.channels.cache.get("800027258379042886").send(playerMessage)
             }
             if (playerHP <= 0) {
                 client.updateUserInfo(message.member, {
@@ -391,7 +391,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                     const loot = Math.floor(Math.random() * Math.floor(101 * (player.prestige + 1)))
                     if (loot > 90 * (player.prestige + 1)) {
                         const userInventory = userInfo.inventory
-                        const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length -1))]
+                        const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
                         userInventory.push(drop)
                         client.updateUserInfo(message.member, {
                             "users.$.inventory": userInventory
@@ -406,10 +406,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours,${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours,${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 }
             }
         }
