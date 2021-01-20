@@ -9,9 +9,6 @@ const leveling = (client, message, player) => {
                         "users.$.level": player.level,
                         "users.$.experience": player.experience
                     });
-                    if (player.level !== 1) {
-                        message.reply(`Tu es maintenant level => ${player.level}`);
-                    }
                 }
             }
             if (player.prestige !== 0) {
@@ -22,9 +19,6 @@ const leveling = (client, message, player) => {
                         "users.$.level": player.level,
                         "users.$.experience": player.experience
                     });
-                    if (player.level !== 1) {
-                        message.reply(`Tu es maintenant level => ${player.level}`);
-                    }
                 }
             }
         }

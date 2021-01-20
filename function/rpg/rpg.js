@@ -314,6 +314,9 @@ const battle = async (client, message, player, hostile, userInfo) => {
             }
             message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
+            if (player.level !== 1) {
+                message.reply(`Tu es maintenant level => ${player.level}`);
+            }
         }
     }
 
