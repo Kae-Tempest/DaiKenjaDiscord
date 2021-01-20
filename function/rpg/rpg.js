@@ -312,6 +312,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
+            message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
         }
     }
@@ -353,7 +354,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         hostileAtk = 0
-                        if (hostileAtk === 0) message.channel.send(`tour ${i}: Tu as esquivé le coup !`);
+                        if (hostileAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -361,7 +362,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (PlayerAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (hostileAgility - (hostileAgility / 2)) + 1) === 0) {
                         PlayerAtk = 0
-                        if (PlayerAtk === 0) message.channel.send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
+                        if (PlayerAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
                     }
                 }
             }
