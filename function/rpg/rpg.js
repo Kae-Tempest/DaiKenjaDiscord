@@ -312,13 +312,14 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
-            message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
-            if (player.level !== 1) {
-                message.reply(`Tu es maintenant level => ${player.level}`);
-            }
+        }
+        message.reply('Calcule du level en cours....')
+        if (player.level !== 1) {
+            message.reply(`Tu es maintenant level => ${player.level}`);
         }
     }
+
 
     const strength = player.stats.strength
     const spirit = player.stats.spirit
@@ -357,7 +358,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         hostileAtk = 0
-                        if (hostileAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
+                        if (hostileAtk === 0) client.channels.cache.get("778288246806806558").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -365,7 +366,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (PlayerAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (hostileAgility - (hostileAgility / 2)) + 1) === 0) {
                         PlayerAtk = 0
-                        if (PlayerAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
+                        if (PlayerAtk === 0) client.channels.cache.get("778288246806806558").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
                     }
                 }
             }
@@ -374,12 +375,12 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 playerHP -= hostileAtk
                 if (hostileHP <= 0) hostileHP = 0;
                 const playerMessage = `tour ${i}: la bataille fait rage. ${player.username} attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Il te reste ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
-                client.channels.cache.get("800027258379042886").send(playerMessage + '\n' + "--------")
+                client.channels.cache.get("778288246806806558").send(playerMessage + '\n' + "--------")
             } else {
                 playerHP -= hostileAtk
                 hostileHP -= PlayerAtk
                 const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et ${player.username} riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et il te reste ${playerHP}HP`
-                client.channels.cache.get("800027258379042886").send(playerMessage)
+                client.channels.cache.get("778288246806806558").send(playerMessage)
             }
             if (playerHP <= 0) {
                 client.updateUserInfo(message.member, {
@@ -410,10 +411,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("778288246806806558").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("778288246806806558").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 }
             }
         }
