@@ -140,7 +140,7 @@ module.exports.run = async (client, message, args, userInfo) => {
         )
         .addField("Inventaire :",
             `${userInfo.po}<:GoldCoin:781575067108507648>
-                   ${userInfo.inventory.lenght !== 0 ? userInfo.inventory.join(", ") : "L'iventaire est vide"}`
+                   ${userInfo.inventory.length !== 0 ? userInfo.inventory.join(", ") : "L'iventaire est vide"}`
         )
         .addField("Equipement :", `${Object.entries(userInfo.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
 
