@@ -411,10 +411,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("800027258379042886").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("800027258379042886").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP et tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et tu gagne ${hostileExp}exp !`);
                 }
             }
         }
