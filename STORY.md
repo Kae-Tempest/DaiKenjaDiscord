@@ -1,0 +1,2 @@
+#Story of Daikenja RPG
+
