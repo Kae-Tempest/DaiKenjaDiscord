@@ -314,6 +314,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
             }
             await levelup(client, message, player);
         }
+        message.reply('Calcule du level en cours....')
+        if (player.level !== 1) {
+            message.reply(`Tu es maintenant level => ${player.level}`);
+        }
     }
 
 
@@ -329,16 +333,16 @@ const battle = async (client, message, player, hostile, userInfo) => {
     let hostileAgility = hostile.stats.agility + (player.prestige * 10000);
     let hostileIntel = hostile.stats.intelligence + (player.prestige * 10000);
     let hostilePo = hostile.po;
-    let hostileExp = hostile.experience;
+    let hostileExp = hostile.experience * 2500 ;
 
     if (player.level >= 500) {
         hostileExp = hostile.experience * 2;
         if (player.prestige !== 0) {
-            hostileExp = hostile.experience + (hostile.experience * player.prestige)
+            hostileExp = hostile.experience + (hostile.experience * player.prestige) * 2500
         }
     }
     if (player.prestige !== 0 && player.level < 500) {
-        hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience)
+        hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 2500
     }
 
     async function fight(atk) {
@@ -392,12 +396,14 @@ const battle = async (client, message, player, hostile, userInfo) => {
                     const loot = Math.floor(Math.random() * Math.floor(101 * (player.prestige + 1)))
                     if (loot > 90 * (player.prestige + 1)) {
                         const userInventory = userInfo.inventory
-                        const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
-                        userInventory.push(drop)
-                        client.updateUserInfo(message.member, {
-                            "users.$.inventory": userInventory
-                        });
-                        message.reply(`Tu viens de looter sur \`${hostile.name}\` => **${drop}**`);
+                        if (hostile.loot !== undefined) {
+                            const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
+                            userInventory.push(drop)
+                            client.updateUserInfo(message.member, {
+                                "users.$.inventory": userInventory
+                            });
+                            message.reply(`Tu viens de looter sur \`${hostile.name}\` => **${drop}**`);
+                        }
                     }
                 }
                 client.updateUserInfo(message.member, {
