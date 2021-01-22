@@ -1,10 +1,10 @@
 # Story of Daikenja RPG
 
-Un jour dans le monde paisible de JavaScript apparu(e) un(e) jeune héro afin de combattre les forces du mal,
-qui commencèrent à apparaitre dans JavaScript, afin de conquérir ce dernier ! Le Roi-Démon Rimuru Tempest décida
-d'invoquer ce dit héro, afin de sauver le monde de JavaScript des dangereux monstres et autres créatures qui sont
-apparue. Malheureusement le héro ne fut pas invoqué correctement et apparu dans une grotte seul, et du donc commencer
-a se battre contre de faible monstre afin d'aller tuer Kami qui menacer le monde de JavaScript.
+Un jour dans le monde paisible de JavaScript apparu(e) un(e) jeune héros dont le but était de combattre les forces du mal
+qui commencèrent à apparaitre pour conquérir ce dernier !Le Roi-Démon Rimuru Tempest décida d'invoquer ce dit héros,
+dans l'optique de sauver le monde de JavaScript des dangereux monstres et autres créatures qui sont apparus.
+Malheureusement le héros ne fut pas invoqué correctement et se retrouva dans une grotte seul(e),
+il/elle dû donc, commencer à se battre contre de faible monstre afin de progresser et d'aller tuer Kami qui menacait ce monde
 
-Durant son aventure pour aller trouver Rimuru, le héro tomba sur une petite hutte habité par...
-Un jeune chauve et barbu du nom de Skarab qui croyait en le dieu du JavaScript créateur du monde de Javascript !
+Durant son aventure pour aller trouver Rimuru, le héros tomba sur une petite hutte habitée par... 
+Un jeune chauve et barbu du nom de Skarab qui croyait en le dieu du JavaScript créateur de ce monde !
