@@ -8,3 +8,6 @@ il/elle dû donc, commencer à se battre contre de faible monstre afin de progre
 
 Durant son aventure pour aller trouver Rimuru, le héros tomba sur une petite hutte habitée par...
 Un jeune chauve et barbu du nom de Skarab qui croyait en le dieu du JavaScript créateur de ce monde !
+
+Après plusieurs semaines à s'entrainer avec Skarab grand magicien du Javascript, notre héros continua sa quête pour
+combattre les forces du mal, il/elle tomba nez à nez devant le Roi des Slimes dans une salle de donjon lugubre !
