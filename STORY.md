@@ -6,5 +6,8 @@ dans l'optique de sauver le monde de JavaScript des dangereux monstres et autres
 Malheureusement le héros ne fut pas invoqué correctement et se retrouva dans une grotte seul(e),
 il/elle dû donc, commencer à se battre contre de faible monstre afin de progresser et d'aller tuer Kami qui menacait ce monde
 
-Durant son aventure pour aller trouver Rimuru, le héros tomba sur une petite hutte habitée par... 
+Durant son aventure pour aller trouver Rimuru, le héros tomba sur une petite hutte habitée par...
 Un jeune chauve et barbu du nom de Skarab qui croyait en le dieu du JavaScript créateur de ce monde !
+
+Après plusieurs semaines à s'entrainer avec Skarab grand magicien du Javascript, notre héros continua sa quête pour
+combattre les forces du mal, il/elle tomba nez à nez devant le Roi des Slimes dans une salle de donjon lugubre !
