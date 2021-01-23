@@ -240,7 +240,7 @@ const items = (client) => {
 
     createItems("Divin broach", "commun", "toute classe", "91", "broach", "Broche de dieu", 150000, 500, 500, 500, 500, 500, 500);
 
-    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000, 1);
+    createItems("Demoniac broach", "commun", "toute classe", "92", "broach", "Broche du roi démon", 1000000, 1000, 1000, 1000, 1000, 1000, 1000);
 
     //CONSOMABLE
 
@@ -266,7 +266,7 @@ const items = (client) => {
 
     createItems("Exa cube", "drop", "Mage", "", "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
 
-    createItems("Exa aura","drop","Mage","","Oh","Aura magique",2000000,0,4000,2000,5000,2000,3000);
+    createItems("Exa aura", "drop", "Mage", "", "Oh", "Aura magique", 2000000, 0, 4000, 2000, 5000, 2000, 3000);
 
     createItems("Gungnir", "drop", "Chasseur, Barbare", "", "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
@@ -278,7 +278,17 @@ const items = (client) => {
 
     createItems("Excalibur", "drop", "Barbare, Paladin", "", "Mh", "Ancienne épée du roi Arthur", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
 
-    createItems("Aegis","drop","toute classe","","Oh","Bouclier divin",10000000,0,0,0,0,10000,10000,1,1)
+    createItems("Aegis", "drop", "toute classe", "", "Oh", "Bouclier divin", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
+
+    createItems("Divino démoniac armor", "drop", "toute classe", "", "armor", "Armure Divino Démoniaque", 10000000, 0, 10000, 10000, 0, 30000, 30000);
+
+    createItems("Divino démoniac broach", "drop", "toute classe", "", "broach", "Broche Divino Démoniaque", 15000000, 10000, 10000, 10000, 10000, 10000, 10000);
+
+    createItems("Divino démoniac rings", "drop", "toute classe", "", "rings", "Anneaux Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0)
+
+    createItems("Divino démoniac earrings", "drop", "toute classe", "", "earrings", "Boucles d'oreilles Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0);
+
+    createItems("Divino démoniac belt", "drop", "toute classe", "", "belt", "Ceinture Divino Démoniaque", 20000000, 0, 0, 0, 0, 15000, 15000, 1, 1)
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');
