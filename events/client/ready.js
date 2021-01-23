@@ -3,7 +3,7 @@ const {items} = require("../../function/rpg/createItems");
 const fs = require('fs');
 const tokenDB = require('../../config')
 module.exports = client => {
-    client.mongoose = require("../../util/mongoose");
+    //client.mongoose = require("../../util/mongoose");
     let Daikenja = {
         'id': client.user.id,
         'username': client.user.username,
@@ -13,7 +13,12 @@ module.exports = client => {
     console.clear();
     console.log('\033[2J');
     console.log(`${Daikenja.username} (${Daikenja.id}) connected at ${now} on ${Daikenja.server_name}`);
-    client.mongoose.init();
+    const {db,sqlite3} = require('../../util/sqlite3');
+    //client.mongoose.init();
+    console.log(db.get('SELECT * FROM users', (err, result)=>{
+        if (err) console.log(err)
+        else console.log(result);
+    }));
     fs.unlink('./assets/npc/hostile.json', (err) => {
         if (err) throw err
     })
