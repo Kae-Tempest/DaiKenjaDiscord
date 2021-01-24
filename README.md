@@ -60,7 +60,7 @@ _Heal_: Heal le joueur selon son niveau. `(commande payante en po)`
 
 _Monsterlist_: Affiche la liste des monstres disponible à combattre. `(attention à la difficulté des monstres)`
 
-_Prestige_: Reset les niveaux en gardant les stats. `(Prérequis : lvl 1000, cout: 1Milliard jusqu'à 10Milliard, Prestige max: 10, Les monstres deviennent plus fort si votre prestige monte)`
+_Prestige_: Reset les niveaux en gardant les stats. `(Prérequis : lvl 1000, cout: 1Milliard jusqu'à beaucoup de PO, Prestige max: 10, Les monstres deviennent plus fort si votre prestige monte)`
 
 _Profil_: Affiche le profil du joueur.
 
