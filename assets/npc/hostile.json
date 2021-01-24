@@ -658,7 +658,12 @@
   "loot": [
     "Caliburn",
     "Excalibur",
-    "Aegis"
+    "Aegis",
+    "Divino démoniac armor",
+    "Divino démoniac broach",
+    "Divino démoniac rings",
+    "Divino démoniac earrings",
+    "Divino démoniac belt"
   ],
   "stats": {
     "vitality": 200000,
