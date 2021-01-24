@@ -314,9 +314,11 @@ const battle = async (client, message, player, hostile, userInfo) => {
             }
             await levelup(client, message, player);
         }
-        message.reply('Calcule du level en cours....')
-        if (player.level !== 1) {
-            message.reply(`Tu es maintenant level => ${player.level}`);
+        if (player.level !== 1000) {
+            message.reply('Calcule du level en cours....')
+            if (player.level !== 1) {
+                message.reply(`Tu es maintenant level => ${player.level}`);
+            }
         }
     }
 
@@ -327,22 +329,20 @@ const battle = async (client, message, player, hostile, userInfo) => {
     const agility = player.stats.agility
     const intelligence = player.stats.intelligence
 
-    let hostileStrengh = hostile.stats.strength + (player.prestige * 10000);
-    let hostileHP = hostile.stats.vitality + (player.prestige * 10000);
-    let hostileConsti = hostile.stats.constitution + (player.prestige * 10000);
-    let hostileAgility = hostile.stats.agility + (player.prestige * 10000);
-    let hostileIntel = hostile.stats.intelligence + (player.prestige * 10000);
+    let hostileStrengh = hostile.stats.strength + (player.prestige * 10500);
+    let hostileHP = hostile.stats.vitality + (player.prestige * 10500);
+    let hostileConsti = hostile.stats.constitution + (player.prestige * 10500);
+    let hostileAgility = hostile.stats.agility + (player.prestige * 10500);
+    let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500);
     let hostilePo = hostile.po;
-    let hostileExp = hostile.experience * 2500 ;
+    let hostileExp = hostile.experience * 1750;
 
-    if (player.level >= 500) {
-        hostileExp = hostile.experience * 2;
-        if (player.prestige !== 0) {
-            hostileExp = hostile.experience + (hostile.experience * player.prestige) * 2500
-        }
-    }
-    if (player.prestige !== 0 && player.level < 500) {
-        hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 2500
+    if (player.level <= 500 && player.prestige !== 0) {
+        hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
+        hostilePo = hostile.po * player.prestige
+    } else {
+        hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 1750
+        hostilePo = hostile.po * player.prestige
     }
 
     async function fight(atk) {
@@ -393,8 +393,8 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 player.po += hostilePo;
                 player.experience += hostileExp;
                 if (hostile.category !== "Monster") {
-                    const loot = Math.floor(Math.random() * Math.floor(101 * (player.prestige + 1)))
-                    if (loot > 90 * (player.prestige + 1)) {
+                    const loot = Math.floor(Math.random() * Math.floor(101))
+                    if (loot > 95) {
                         const userInventory = userInfo.inventory
                         if (hostile.loot !== undefined) {
                             const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]

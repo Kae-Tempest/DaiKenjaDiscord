@@ -302,4 +302,20 @@
     "intelligence": 0,
     "spirit": 0
   }
-}]
+}{
+  "name": "Divino démoniac armor",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "",
+  "type": "armor",
+  "description": "Armure Divino Démoniaque",
+  "cost": 10000000,
+  "stats": {
+    "vitality": 30000,
+    "constitution": 30000,
+    "strength": 0,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 0
+  }
+},]

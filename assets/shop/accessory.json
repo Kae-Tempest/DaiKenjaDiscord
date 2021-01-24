@@ -446,4 +446,68 @@
     "intelligence": 1000,
     "spirit": 1000
   }
+},{
+  "name": "Divino démoniac broach",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "",
+  "type": "broach",
+  "description": "Broche Divino Démoniaque",
+  "cost": 15000000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 10000,
+    "strength": 10000,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 10000
+  }
+},{
+  "name": "Divino démoniac rings",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "",
+  "type": "rings",
+  "description": "Anneaux Divino Démoniaque",
+  "cost": 15000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 10000,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 1000
+  }
+},{
+  "name": "Divino démoniac earrings",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "",
+  "type": "earrings",
+  "description": "Boucles d'oreilles Divino Démoniaque",
+  "cost": 15000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 10000,
+    "agility": 10000,
+    "intelligence": 10000,
+    "spirit": 1000
+  }
+},{
+  "name": "Divino démoniac belt",
+  "rank": "drop",
+  "class": "toute classe",
+  "label": "",
+  "type": "belt",
+  "description": "Ceinture Divino Démoniaque",
+  "cost": 20000000,
+  "stats": {
+    "vitality": 15000,
+    "constitution": 15000,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
 }]
