@@ -666,9 +666,9 @@
     "Divino démoniac belt"
   ],
   "stats": {
-    "vitality": 200000,
-    "constitution": 6000,
-    "strength": 6000,
+    "vitality": 500000,
+    "constitution": 10000,
+    "strength": 10000,
     "agility": 10000,
     "intelligence": 10000
   }
