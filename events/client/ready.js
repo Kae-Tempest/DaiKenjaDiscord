@@ -1,9 +1,5 @@
-const {monster} = require("../../function/rpg/createMonster");
-const {items} = require("../../function/rpg/createItems");
-const fs = require('fs');
 const tokenDB = require('../../config')
 module.exports = client => {
-    client.mongoose = require("../../util/mongoose");
     let Daikenja = {
         'id': client.user.id,
         'username': client.user.username,
@@ -13,42 +9,7 @@ module.exports = client => {
     console.clear();
     console.log('\033[2J');
     console.log(`${Daikenja.username} (${Daikenja.id}) connected at ${now} on ${Daikenja.server_name}`);
-    //const {db,sqlite3} = require('../../util/sqlite3');
-    client.mongoose.init();
-    //console.log(db.get('SELECT * FROM users', (err, result)=>{
-    //    if (err) console.log(err)
-    //    else console.log(result);
-    //}));
-    fs.unlink('./assets/npc/hostile.json', (err) => {
-        if (err) throw err
-    })
-    monster(client);
-    console.log("Monstres crées !")
-    fs.unlink('./assets/shop/shop.json', (err) => {
-        if (err) throw err
-    })
-    fs.unlink('./assets/shop/weapon.json', (err) => {
-        if (err) throw err
-    })
-    fs.unlink('./assets/shop/armor.json', (err) => {
-        if (err) throw err
-    })
-    fs.unlink('./assets/shop/accessory.json', (err) => {
-        if (err) throw err
-    })
-    fs.unlink('./assets/shop/consommable.json', (err) => {
-        if (err) throw err
-    })
-    items(client);
-    console.log("Items crées !")
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
     if (tokenDB.DBCONNECTION !== "mongodb://localhost:27017/test") client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
-    const guild = [];
-    client.guilds.cache.map(e => guild.push(e));
-    guild.forEach(async g => {
-        const data = await client.getGuild(g);
-        if (!data) client.createGuild({guildID: g.id});
-    });
-
 }

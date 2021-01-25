@@ -1,4 +1,5 @@
 const fs = require('fs')
+const {db, sqlite3} = require('../../util/sqlite3');
 const items = (client) => {
     function writingDot(file) {
         fs.appendFileSync("./assets/shop/" + file, ",");
@@ -22,6 +23,11 @@ const items = (client) => {
                 spirit: spirit,
             }
         };
+
+        let itemssql = db.prepare("INSERT INTO items (id,'name',rank, class, 'type', description, cost, strength, agility, intelligence,spirit, constitution, vitality) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        itemssql.run(label, name, rank, classe, type, desc, cost, force, agi, intel, spirit, consti, vita);
+
+
         let data = JSON.stringify(items, null, 2);
 
         fs.appendFileSync('./assets/shop/shop.json', data);
@@ -102,13 +108,13 @@ const items = (client) => {
 
     createItems("Masse en mythril", "legendaire", "Paladin", "24", "Mh", "Masse en mythril", 3500, 25, -7, 0, 0, 0, 0);
 
-    createItems("Vaton en chêne rouge magique", "legendaire", "Mage", "25", "Mh", "Bâton en chêne rouge magique", 3500, 0, 0, 20, 20, 0, 0);
+    createItems("Baton en chêne rouge magique", "legendaire", "Mage", "25", "Mh", "Bâton en chêne rouge magique", 3500, 0, 0, 20, 20, 0, 0);
 
     createItems("Divin aura", "legendaire", "Mage", "26", "Oh", "Divin aura", 3500, 0, 0, 10, 10, 0, 25);
 
     createItems("Elucidator", "heroique", "Barbare", "27", "Mh", "Premiere Epée de Kirito !", 10000, 200, 0, 0, 0, 100, 0);
 
-    createItems("Dark repulser", "heroique", "Barbare", "27", "Oh", "Seconde Epée de Kirito", 10000, 200, 0, 0, 0, 100, 0);
+    createItems("Dark repulser", "heroique", "Barbare", "28", "Oh", "Seconde Epée de Kirito", 10000, 200, 0, 0, 0, 100, 0);
 
     createItems("Master sword", "heroique", "Barbare", "29", "Mh", "Epée de Link !", 20000, 300, 0, 0, 0, 150, 0);
 
@@ -258,37 +264,37 @@ const items = (client) => {
 
     //DROP ITEMS
 
-    createItems("Shuto", "drop", "Voleur", "", "Mh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 100);
+    createItems("Shuto", "drop", "Voleur", null, "Mh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 100);
 
-    createItems("Shuta", "drop", "Voleur", "", "Oh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
+    createItems("Shuta", "drop", "Voleur", null, "Oh", "Coup de karaté contenue dans une lame", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
 
-    createItems("Arbalete", "drop", "Chasseur", "", "Mh", "Arbalete", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
+    createItems("Arbalete", "drop", "Chasseur", null, "Mh", "Arbalete", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
 
-    createItems("Exa cube", "drop", "Mage", "", "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
+    createItems("Exa cube", "drop", "Mage", null, "Mh", "Cube magique", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
 
-    createItems("Exa aura", "drop", "Mage", "", "Oh", "Aura magique", 2000000, 0, 4000, 2000, 5000, 2000, 3000);
+    createItems("Exa aura", "drop", "Mage", null, "Oh", "Aura magique", 2000000, 0, 4000, 2000, 5000, 2000, 3000);
 
-    createItems("Gungnir", "drop", "Chasseur, Barbare", "", "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Gungnir", "drop", "Chasseur, Barbare", null, "Mh", "Lance de Odin", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Mjöllnir", "drop", "Paladin, Barbare", "", "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Mjöllnir", "drop", "Paladin, Barbare", null, "Mh", "Marteau de Thor", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Death Scythe", "drop", "toute classe", "", "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
+    createItems("Death Scythe", "drop", "toute classe", null, "Mh", "Faux de la mort", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
 
-    createItems("Caliburn", "drop", "Barbare, Paladin", "", "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+    createItems("Caliburn", "drop", "Barbare, Paladin", null, "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
 
-    createItems("Excalibur", "drop", "Barbare, Paladin", "", "Mh", "Ancienne épée du roi Arthur", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+    createItems("Excalibur", "drop", "Barbare, Paladin", null, "Mh", "Ancienne épée du roi Arthur", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
 
-    createItems("Aegis", "drop", "toute classe", "", "Oh", "Bouclier divin", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
+    createItems("Aegis", "drop", "toute classe", null, "Oh", "Bouclier divin", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
 
-    createItems("Divino démoniac armor", "drop", "toute classe", "", "armor", "Armure Divino Démoniaque", 10000000, 0, 10000, 10000, 0, 30000, 30000);
+    createItems("Divino démoniac armor", "drop", "toute classe", null, "armor", "Armure Divino Démoniaque", 10000000, 0, 10000, 10000, 0, 30000, 30000);
 
-    createItems("Divino démoniac broach", "drop", "toute classe", "", "broach", "Broche Divino Démoniaque", 15000000, 10000, 10000, 10000, 10000, 10000, 10000);
+    createItems("Divino démoniac broach", "drop", "toute classe", null, "broach", "Broche Divino Démoniaque", 15000000, 10000, 10000, 10000, 10000, 10000, 10000);
 
-    createItems("Divino démoniac rings", "drop", "toute classe", "", "rings", "Anneaux Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0)
+    createItems("Divino démoniac rings", "drop", "toute classe", null, "rings", "Anneaux Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0)
 
-    createItems("Divino démoniac earrings", "drop", "toute classe", "", "earrings", "Boucles d'oreilles Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0);
+    createItems("Divino démoniac earrings", "drop", "toute classe", null, "earrings", "Boucles d'oreilles Divino Démoniaque", 15000000, 10000, 10000, 10000, 1000, 0, 0);
 
-    createItems("Divino démoniac belt", "drop", "toute classe", "", "belt", "Ceinture Divino Démoniaque", 20000000, 0, 0, 0, 0, 15000, 15000, 1, 1)
+    createItems("Divino démoniac belt", "drop", "toute classe", null, "belt", "Ceinture Divino Démoniaque", 20000000, 0, 0, 0, 0, 15000, 15000, 1, 1)
 
     fs.appendFileSync('./assets/shop/shop.json', ']');
     fs.appendFileSync('./assets/shop/weapon.json', ']');
