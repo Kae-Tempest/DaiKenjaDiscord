@@ -1,6 +1,6 @@
-const mongoose = require("mongoose")
+const mongoose = require('./mongoose')
 const {Guild} = require("../models/index")
-
+const {db, sqlite3} = require('./sqlite3');
 module.exports = client => {
     //New Guild
     client.createGuild = async guild => {
@@ -17,6 +17,11 @@ module.exports = client => {
     client.getUser = async member => {
         const data = await client.getGuild(member.guild);
         const position = await data.users.map(e => e.id).indexOf(member.id);
+        //const users = db.each('SELECT * FROM users', function (err, row) {
+        //    console.log(row)
+        //    return row
+        //});
+        //return users
         return data.users[position];
     }
 
@@ -71,7 +76,5 @@ module.exports = client => {
 
     client.createMissingInfoOnUser = (member, missingInfo = {}) => {
         Guild.updateOne({"users.id": member.id}, {$set: missingInfo}).then();
-    };
-
-
 };
+}
