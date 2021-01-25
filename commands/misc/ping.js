@@ -2,8 +2,8 @@ module.exports.run = async (client, message) => {
     const msg = await message.channel.send("Ping!");
     msg.edit(
         `Pong!
-        Latence du bot: ${msg.createdTimestamp - message.createdTimestamp}ms
-        Latende de L'API: ${Math.round(client.ws.ping)}ms`
+        Latence du serveur: ${msg.createdTimestamp - message.createdTimestamp}ms
+        Latende du bot: ${Math.round(client.ws.ping)}ms`
     )
 };
 

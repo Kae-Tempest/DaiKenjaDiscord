@@ -312,13 +312,9 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
+            if (player.level !== 1000) message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
-        }
-        if (player.level !== 1000) {
-            message.reply('Calcule du level en cours....')
-            if (player.level !== 1) {
-                message.reply(`Tu es maintenant level => ${player.level}`);
-            }
+            if (player.level !== 1 && player.level !== 1000) await message.reply(`Tu es maintenant level => ${player.level}`);
         }
     }
 
@@ -375,7 +371,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 playerHP -= hostileAtk
                 if (hostileHP <= 0) hostileHP = 0;
                 const playerMessage = `tour ${i}: la bataille fait rage. ${player.username} attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Il te reste ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
-                client.channels.cache.get("800027258379042886").send(playerMessage + '\n' + "--------")
+                client.channels.cache.get("800027258379042886").send(playerMessage)
             } else {
                 playerHP -= hostileAtk
                 hostileHP -= PlayerAtk
@@ -394,7 +390,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 player.experience += hostileExp;
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(101))
-                    if (loot > 95) {
+                    if (loot > 89 + player.prestige) {
                         const userInventory = userInfo.inventory
                         if (hostile.loot !== undefined) {
                             const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
