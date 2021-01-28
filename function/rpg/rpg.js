@@ -312,8 +312,8 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
-            if (player.level !== 1000) message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
+            if (player.level !== 1000) message.reply('Calcule du level en cours....')
             if (player.level !== 1 && player.level !== 1000) await message.reply(`Tu es maintenant level => ${player.level}`);
         }
     }
@@ -331,12 +331,12 @@ const battle = async (client, message, player, hostile, userInfo) => {
     let hostileAgility = hostile.stats.agility + (player.prestige * 10500);
     let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500);
     let hostilePo = hostile.po;
-    let hostileExp = hostile.experience * 1750;
+    let hostileExp = hostile.experience ;
 
     if (player.level <= 500 && player.prestige !== 0) {
         hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
         hostilePo = hostile.po * player.prestige
-    } else {
+    } else if (player.level >= 500 && player.prestige !== 0){
         hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 1750
         hostilePo = hostile.po * player.prestige
     }
