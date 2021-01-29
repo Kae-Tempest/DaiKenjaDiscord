@@ -390,7 +390,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 player.experience += hostileExp;
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(101))
-                    if (loot > 89 + player.prestige) {
+                    if (loot > 99 - player.prestige) {
                         const userInventory = userInfo.inventory
                         if (hostile.loot !== undefined) {
                             const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
