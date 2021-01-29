@@ -312,10 +312,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
+            if (player.level !== 1000) await message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
-            if (player.level !== 1000) message.reply('Calcule du level en cours....')
-            if (player.level !== 1 && player.level !== 1000) await message.reply(`Tu es maintenant level => ${player.level}`);
         }
+        if (player.level !== 1 && player.level !== 1000) await message.reply(`Tu es maintenant level => ${player.level}`);
     }
 
 
