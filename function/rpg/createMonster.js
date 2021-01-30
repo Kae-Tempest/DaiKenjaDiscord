@@ -1,5 +1,4 @@
 const fs = require('fs')
-const {db, sqlite3} = require('../../util/sqlite3');
 const monster = (client) => {
     function writingDot() {
         fs.appendFileSync('./assets/npc/hostile.json', ",")
@@ -22,8 +21,6 @@ const monster = (client) => {
                 intelligence: intel
             }
         };
-        //let monstersql = db.prepare("INSERT INTO monster (monstername,difficulty, category, experience, po, loot, vitality, constitution, strength, agility,intelligence) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-        //monstersql.run(name, difficulty, category, exp, po, loot, vita, consti, force, agi, intel);
         let data = JSON.stringify(monster, null, 2);
         fs.appendFileSync('./assets/npc/hostile.json', data)
         if (!last) writingDot()

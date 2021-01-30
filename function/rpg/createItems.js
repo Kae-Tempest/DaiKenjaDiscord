@@ -1,5 +1,4 @@
 const fs = require('fs')
-const {db, sqlite3} = require('../../util/sqlite3');
 const items = (client) => {
     function writingDot(file) {
         fs.appendFileSync("./assets/shop/" + file, ",");
@@ -23,10 +22,6 @@ const items = (client) => {
                 spirit: spirit,
             }
         };
-
-        let itemssql = db.prepare("INSERT INTO items (id,'name',rank, class, 'type', description, cost, strength, agility, intelligence,spirit, constitution, vitality) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-        itemssql.run(label, name, rank, classe, type, desc, cost, force, agi, intel, spirit, consti, vita);
-
 
         let data = JSON.stringify(items, null, 2);
 
