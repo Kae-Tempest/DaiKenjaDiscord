@@ -16,7 +16,7 @@ module.exports.help = {
     aliases: ["battle","Battle","BATTLE"],
     category: 'rpg',
     description: 'Bataille avec un monstre',
-    cd: 20,
+    cd: 1,
     usage: "<enemy_name>",
     isUserAdmin: false,
     permissions: false,

@@ -8,13 +8,68 @@ module.exports.run = async (client, message, args, userInfo) => {
 
     function exp(lvlmin, lvlmax, exp) {
         if (player.level <= lvlmax && player.level > lvlmin) {
-            if (player.prestige === 0) {
+            if(player.prestige === 0) {
                 if (player.experience < player.level * exp - 1) {
-                    return player.level * exp
+                    return  player.level * exp;
                 }
-            } else {
+            }
+            if (player.prestige === 1) {
                 if (player.experience < player.level * player.prestige * 10 * exp - 1) {
-                    return player.level * player.prestige * 10 * exp
+                    return  player.level * player.prestige * 10 * exp;
+
+                }
+            }
+             if (player.prestige === 2) {
+                if (player.experience < player.level * player.prestige * 50 * exp - 1) {
+                    return  player.level * player.prestige * 50 * exp;
+
+                }
+            }
+            if (player.prestige === 3) {
+                if (player.experience < player.level * player.prestige * 100 * exp - 1) {
+                    return  player.level * player.prestige * 100 * exp;
+ 
+                }
+            }
+            if (player.prestige === 4) {
+                if (player.experience < player.level * player.prestige * 150 * exp - 1) {
+                    return  player.level * player.prestige * 150 * exp;
+ 
+                }
+            }
+            if (player.prestige === 5) {
+                if (player.experience < player.level * player.prestige * 200 * exp - 1) {
+                    return player.level * player.prestige * 200 * exp
+
+                }
+            }
+            if (player.prestige === 6) {
+                if (player.experience < player.level * player.prestige * 250 * exp - 1) {
+                    return  player.level * player.prestige * 250 * exp;
+
+                }
+            }
+            if (player.prestige === 7) {
+                if (player.experience < player.level * player.prestige * 300 * exp - 1) {
+                    return  player.level * player.prestige * 300 * exp;
+
+                }
+            }
+            if (player.prestige === 8) {
+                if (player.experience < player.level * player.prestige * 350 * exp - 1) {
+                    return  player.level * player.prestige * 350 * exp;
+
+                }
+            }
+             if (player.prestige === 9) {
+                if (player.experience < player.level * player.prestige * 400 * exp - 1) {
+                    return  player.level * player.prestige * 400 * exp;
+
+                }
+            }
+             if (player.prestige === 10) {
+                if (player.experience < player.level * player.prestige * 500 * exp - 1) {
+                    return player.level * player.prestige * 500 * exp;
                 }
             }
         }
@@ -126,6 +181,7 @@ module.exports.run = async (client, message, args, userInfo) => {
     let exptotalFinal = 0
     exptotal.forEach(exp => {
         exptotalFinal += exp
+
     })
 
     const position = classes.map(e => e.name.toLowerCase()).indexOf(userInfo.class.toLowerCase());
@@ -136,7 +192,7 @@ module.exports.run = async (client, message, args, userInfo) => {
         .setDescription(`${userInfo.description !== "" ? classe.description : userInfo.description}`)
         .addField("Statistique :",
             `${Object.entries(userInfo.stats).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join('\n')}
-            ${userInfo.experience} points d'experiences (${((userInfo.experience / exptotalFinal) * 100).toFixed(2)}%)`
+            ${userInfo.experience} points d'experiences (${userInfo.experience === 0 ? 0 : (( player.experience / exptotalFinal) * 100).toFixed(2)}%)`
         )
         .addField("Inventaire :",
             `${userInfo.po}<:GoldCoin:781575067108507648>

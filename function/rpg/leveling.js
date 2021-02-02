@@ -1,20 +1,110 @@
-const leveling = (client, message, player) => {
+const leveling =  (client, message, player) => {
     function level(lvlmin, lvlmax, exp) {
         if (player.level <= lvlmax && player.level > lvlmin) {
             if(player.prestige === 0) {
                 if (player.experience >= player.level * exp - 1) {
                     player.experience -= player.level * exp;
-                    player.level = Number(player.level) + 1
+                    player.level += 1
                     client.updateUserInfo(message.member, {
                         "users.$.level": player.level,
                         "users.$.experience": player.experience
                     });
                 }
             }
-            if (player.prestige !== 0) {
+            if (player.prestige === 1) {
                 if (player.experience >= player.level * player.prestige * 10 * exp - 1) {
                     player.experience -= player.level * player.prestige * 10 * exp;
-                    player.level = Number(player.level) + 1
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 2) {
+                if (player.experience >= player.level * player.prestige * 50 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 50 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 3) {
+                if (player.experience >= player.level * player.prestige * 100 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 100 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 4) {
+                if (player.experience >= player.level * player.prestige * 150 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 150 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 5) {
+                if (player.experience >= player.level * player.prestige * 200 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 200 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 6) {
+                if (player.experience >= player.level * player.prestige * 250 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 250 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 7) {
+                if (player.experience >= player.level * player.prestige * 300 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 300 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 8) {
+                if (player.experience >= player.level * player.prestige * 350 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 350 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 9) {
+                if (player.experience >= player.level * player.prestige * 400 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 400 * exp;
+                    player.level += 1
+                    client.updateUserInfo(message.member, {
+                        "users.$.level": player.level,
+                        "users.$.experience": player.experience
+                    });
+                }
+            }
+            if (player.prestige === 10) {
+                if (player.experience >= player.level * player.prestige * 500 * exp - 1) {
+                    player.experience -= player.level * player.prestige * 500 * exp;
+                    player.level += 1
                     client.updateUserInfo(message.member, {
                         "users.$.level": player.level,
                         "users.$.experience": player.experience

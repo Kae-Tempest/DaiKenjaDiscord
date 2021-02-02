@@ -56,7 +56,6 @@ const levelup = async (client, message, player) => {
             });
         }
     }
-
     lvlstats(player.level);
 }
 
