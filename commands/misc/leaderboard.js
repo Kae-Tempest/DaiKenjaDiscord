@@ -1,17 +1,20 @@
-const { MessageEmbed, Guild } = require("discord.js");
-let now = new Date().toLocaleString('fr-FR');
+const { MessageEmbed, MessageAttachment } = require("discord.js");
+const leaderboard = new MessageAttachment('./imgembed/leaderboard.png');
 module.exports.run = async (client, message) => {
     const players = await client.getGuild(message.guild);
-    const playersInfo = players.users.map(p => p.username + " => level " + p.level + ' (presitge '+ p.prestige +')');
+    players.users.sort((a, b) => b.prestige - a.prestige);
+    const playerInfo = players.users.map(p => "***"+p.username + "*** => level : " + p.level + "     | ( prestige : " + p.prestige + " )" ).slice(0,9)
+
     const user = message.author;
     const embed = new MessageEmbed()
+        .attachFiles(leaderboard)
         .setTitle("LeaderBoard")
         .setColor("RANDOM")
-        .setDescription("Panneaux d'affichage des meilleurs joueurs du serveur ♥")
-        .setThumbnail(user.avatarURL())
-        .setFooter(user.username, user.avatarURL())
+        .setDescription("Panneaux d'affichage des 10 meilleurs joueurs du serveur ♥")
+        .setThumbnail(`attachment://leaderboard.png`)
+        .setFooter(`Leaderboard`, user.avatarURL())
         .setTimestamp()
-        .addField("ranking",`${playersInfo.join("\n")}`)
+        .addField("ranking",`${playerInfo.join("\n")}`)
     message.channel.send(embed);
 };
 
