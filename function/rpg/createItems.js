@@ -255,7 +255,7 @@ const items = (client) => {
 
     createItems("Divin potion", "Divinity", "toute classe", "97", "potion", "heal de 10000 HP", 100000, 0, 0, 0, 0, 10000, 0);
 
-    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000", 1000000, 0, 0, 0, 0, 50000, 0, 1);
+    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000 HP", 1000000, 0, 0, 0, 0, 50000, 0, 1);
 
     //DROP ITEMS
 
