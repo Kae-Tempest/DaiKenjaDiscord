@@ -649,12 +649,54 @@
     "intelligence": 5000
   }
 },{
-  "name": "Kami",
+  "name": "Rimuru",
   "difficulty": 500,
-  "category": "Divinity",
+  "category": "Slime",
   "type": "hostile",
   "experience": 1000000000,
   "po": 50000000,
+  "stats": {
+    "vitality": 500000,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": 1000,
+    "intelligence": 1000
+  }
+},{
+  "name": "Skarab",
+  "difficulty": 500,
+  "category": "Maître du JS",
+  "type": "hostile",
+  "experience": 1000000000,
+  "po": 50000000,
+  "stats": {
+    "vitality": 500000,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": 1000,
+    "intelligence": 1000
+  }
+},{
+  "name": "Naminoe",
+  "difficulty": 550,
+  "category": "Graphiste de génie",
+  "type": "hostile",
+  "experience": 1250000000,
+  "po": 50000000,
+  "stats": {
+    "vitality": 750000,
+    "constitution": 1500,
+    "strength": 1500,
+    "agility": 1500,
+    "intelligence": 1500
+  }
+},{
+  "name": "Kami",
+  "difficulty": 600,
+  "category": "Divinity",
+  "type": "hostile",
+  "experience": 1500000000,
+  "po": 75000000,
   "loot": [
     "Caliburn",
     "Excalibur",
@@ -666,10 +708,10 @@
     "Divino démoniac belt"
   ],
   "stats": {
-    "vitality": 500000,
-    "constitution": 10000,
-    "strength": 10000,
-    "agility": 10000,
-    "intelligence": 10000
+    "vitality": 1000000,
+    "constitution": 20000,
+    "strength": 20000,
+    "agility": 20000,
+    "intelligence": 20000
   }
 }]
