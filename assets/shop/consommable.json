@@ -84,7 +84,7 @@
   "class": "toute classe",
   "label": "98",
   "type": "potion",
-  "description": "heal de 50000",
+  "description": "heal de 50000 HP",
   "cost": 1000000,
   "stats": {
     "vitality": 50000,
