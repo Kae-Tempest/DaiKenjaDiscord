@@ -5,32 +5,35 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
 
     async function level() {
         while (player.level !== 0 && player.level !== 1001) {
-            if (player.level <= 10) {
-                if (player.experience < player.level * 250 - 1) break;
-                if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 250 - 1) break;
-                if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 250 - 1) break;
-                if (player.prestige === 3 && player.experience < player.level * player.prestige * 200 * 250 - 1) break;
-                if (player.prestige === 4 && player.experience < player.level * player.prestige * 150 * 250 - 1) break;
-                if (player.prestige === 5 && player.experience < player.level * player.prestige * 200 * 250 - 1) break;
-                if (player.prestige === 6 && player.experience < player.level * player.prestige * 250 * 250 - 1) break;
-                if (player.prestige === 7 && player.experience < player.level * player.prestige * 300 * 250 - 1) break;
-                if (player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 250 - 1) break;
-                if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 250 - 1) break;
-                if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 250 - 1) break;
-            } else if (player.level <= 20 && player.level > 10) {
-                if (player.experience < player.level * 500 - 1) break;
-                 if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 500 - 1) break;
-                 if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 500 - 1) break;
-                 if (player.prestige === 3 && player.experience < player.level * player.prestige * 200 * 500 - 1) break;
-                 if (player.prestige === 4 && player.experience < player.level * player.prestige * 150 * 500 - 1) break;
-                 if (player.prestige === 5 && player.experience < player.level * player.prestige * 200 * 500 - 1) break;
-                 if (player.prestige === 6 && player.experience < player.level * player.prestige * 250 * 500 - 1) break;
-                 if (player.prestige === 7 && player.experience < player.level * player.prestige * 300 * 500 - 1) break;
-                 if (player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 500 - 1) break;
-                 if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 500 - 1) break;
-                 if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 500 - 1) break;
-            } else if (player.level <= 30 && player.level > 20) {
-                if (player.experience < player.level * 750 - 1) break;
+            if (player.level <= 10 && player2.level <= 10) {
+                if (player.experience < player.level * 250 - 1 && player2.experience < player2.level * 250 - 1) break;
+                if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 250 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 250 - 1) break;
+                if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 250 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 250 - 1) break;
+                if (player.prestige === 3 && player.experience < player.level * player.prestige * 200 * 250 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 200 * 250 - 1) break;
+                if (player.prestige === 4 && player.experience < player.level * player.prestige * 150 * 250 - 1 && player2.prestige === 4 && player2.experience < player2.level * player2.prestige * 150 * 250 - 1) break;
+                if (player.prestige === 5 && player.experience < player.level * player.prestige * 200 * 250 - 1 && player2.prestige === 5 && player2.experience < player2.level * player2.prestige * 200 * 250 - 1) break;
+                if (player.prestige === 6 && player.experience < player.level * player.prestige * 250 * 250 - 1 && player2.prestige === 6 && player2.experience < player2.level * player2.prestige * 250 * 250 - 1) break;
+                if (player.prestige === 7 && player.experience < player.level * player.prestige * 300 * 250 - 1 && player2.prestige === 7 && player2.experience < player2.level * player2.prestige * 300 * 250 - 1) break;
+                if (player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 250 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 250 - 1) break;
+                if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 250 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 250 - 1) break;
+                if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 250 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 250 - 1) break;
+            } 
+            else if (player.level <= 20 && player.level > 10 && player2.level <= 20 && player2.level > 10) {
+                if (player.experience < player.level * 500 - 1 && player2.experience < player2.level * 500 - 1 ) break;
+                 if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 500 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 500 - 1) break;
+                 if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 500 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 500 - 1) break;
+                 if (player.prestige === 3 && player.experience < player.level * player.prestige * 200 * 500 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 200 * 500 - 1) break;
+                 if (player.prestige === 4 && player.experience < player.level * player.prestige * 150 * 500 - 1 && player2.prestige === 4 && player2.experience < player2.level * player2.prestige * 150 * 500 - 1) break;
+                 if (player.prestige === 5 && player.experience < player.level * player.prestige * 200 * 500 - 1 && player2.prestige === 5 && player2.experience < player2.level * player2.prestige * 200 * 500 - 1) break;
+                 if (player.prestige === 6 && player.experience < player.level * player.prestige * 250 * 500 - 1 && player2.prestige === 6 && player2.experience < player2.level * player2.prestige * 250 * 500 - 1) break;
+                 if (player.prestige === 7 && player.experience < player.level * player.prestige * 300 * 500 - 1 && player2.prestige === 7 && player2.experience < player2.level * player2.prestige * 300 * 500 - 1) break;
+                 if (player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 500 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 500 - 1) break;
+                 if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 500 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 500 - 1 ) break;
+                 if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 500 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 500 - 1) break;
+            } 
+            else if (player.level <= 30 && player.level > 20 && player2.level <= 30 && player2.level > 20) {
+
+                if (player.experience < player.level * 750 - 1 && player2.experience < player2.level * 750 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 750 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 750 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 200 * 750 - 1) break;
