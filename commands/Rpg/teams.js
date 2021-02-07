@@ -24,14 +24,7 @@ module.exports.run = async (client, message, args) => {
                     "users.$.teams": username1
                 });
             }
-            const embed = new MessageEmbed()
-            .setTitle(`Equipe de ${player1.username}`)
-            .setDescription(`${player1.username} est en duo avec ***${player1.teams}***`)
-            .setColor('RANDOM')
-            .setFooter(`Duo`, message.author.avatarURL())
-            .setTimestamp();
             message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
-            return message.channel.send(embed)
         }
     catch (e) {
         message.channel.send(`Creation de l'équipe annulé. Merci de confirmé votre la création de l'équipe en répondant \`oui\` la prochaine fois!`)
@@ -64,13 +57,13 @@ module.exports.run = async (client, message, args) => {
     }
     else{
     if (player1.teams === "None") return message.reply("tu n'as pas d'équipier !!")
-    const embed1 = new MessageEmbed()
+    const embed = new MessageEmbed()
     .setTitle(`Equipe de ${player1.username}`)
     .setDescription(`${player1.username} est en duo avec ***${player1.teams}***`)
     .setColor('RANDOM')
     .setFooter(`Duo`, message.author.avatarURL())
     .setTimestamp();
-    message.channel.send(embed1);
+    message.channel.send(embed);
     }    
 }
 
@@ -79,7 +72,7 @@ module.exports.help = {
     aliases: ["teams","Teams","TEAMS"],
     category: 'rpg',
     description: "affiche le duo ou créer un duo !",
-    cd: 10,
+    cd: 5,
     usage: "[create <mentionedUser>]",
     isUserAdmin: false,
     permission: false,
