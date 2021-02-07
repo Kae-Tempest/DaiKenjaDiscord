@@ -2,7 +2,7 @@ const {battleduo} = require('../../function/rpg/duo');
 const hostile = require('../../assets/npc/hostile.json');
 const {capitalize} = require ('../../function/other/string')
 
-module.exports.run = async (client, message, args, userInfo) => {
+module.exports.run = async (client, message, args) => {
     const player = await client.getUser(message.member);
     const user = message.guild.member(message.mentions.users.first());
     if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args, userInfo) => {
     const position = hostile.map(e => e.name).indexOf(capitalize(q));
     if (q && position === -1) return message.reply ('Ce monstre n\'existe pas !')
     const monster = hostile[position];
-    battleduo(client, message,player ,player2 ,monster, userInfo, user);
+    battleduo(client, message,player ,player2 ,monster, user);
 };
 
 module.exports.help = {

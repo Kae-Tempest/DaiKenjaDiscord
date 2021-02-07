@@ -1,6 +1,6 @@
 const {levelup} = require('./levelup');
 
-const battleduo = async (client, message,player ,player2 ,hostile, userInfo, user) => {
+const battleduo = async (client, message,player ,player2 ,hostile, user) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
@@ -1243,9 +1243,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, userInfo, use
         hostileExp = hostile.experience + (hostile.experience * prestige - hostile.experience) * 1750
         hostilePo = hostile.po * prestige
     }
-//TODO PLAYER 1 & PLAYER 2 HP GESTION
     async function fight(atk) {
         let playerHP = player.stats.vitality + player2.stats.vitality;
+        let player1HP = player.stats.vitality;
+        let player2HP = player2.stats.vitality;
         for (let i = 1; hostileHP > 0; i++) {
             let hostileAtk = hostileStrengh - consti;
             let PlayerAtk = atk - hostileConsti
@@ -1272,14 +1273,55 @@ const battleduo = async (client, message,player ,player2 ,hostile, userInfo, use
             if (intelligence > hostileIntel) {
                 hostileHP -= PlayerAtk
                 playerHP -= hostileAtk
+                player1HP -= ( hostileAtk / 2 )
+                player2HP -= ( hostileAtk / 2 )
                 if (hostileHP <= 0) hostileHP = 0;
                 const playerMessage = `tour ${i}: la bataille fait rage. ${player.username} & ${player2.username} attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Ils vous restent ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
                 client.channels.cache.get("778288246806806558").send(playerMessage)
             } else {
                 playerHP -= hostileAtk
+                player1HP -= ( hostileAtk / 2 )
+                player2HP -= ( hostileAtk / 2 )
                 hostileHP -= PlayerAtk
                 const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et ${player.username} & ${player2.username} riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et ils vous restent ${playerHP}HP`
                 client.channels.cache.get("778288246806806558").send(playerMessage)
+            }
+            
+            if (player1HP <= 0 || player2HP <= 0){
+                if(player1HP <= 0){
+                    try{
+                        message.channel.send(`Souhaitez vous prendre la fuite face à ${hostile.name} (oui) (30 secondes pour répondre)`);
+                        const filter = m => (user.id === m.author.id);
+                        const userEntry = await message.channel.awaitMessages(filter, {
+                            max: 1, time: 30000, errors: ['time']
+                        });
+                        if (userEntry.first().content.toLowerCase() === "oui") {
+                            client.updateUserInfo(message.member, {
+                                "users.$.stats.vitality": 0
+                            });
+                            return message.reply(`Vous prenez la fuite ${player.username} est mort, ${player2.username} fuis en prennant son compagnon avec lui !`)
+                        }
+                    } catch (e) {
+                        message.reply(`${player2.username} n'a pas répondu assez vite donc le combat continie !`)
+                    }
+                }
+                if(player2HP <= 0){
+                    try{
+                        message.channel.send(`Souhaitez vous prendre la fuite face à ${hostile.name} (oui) (30 secondes pour répondre)`);
+                        const filter = m => (message.author.id === m.author.id);
+                        const userEntry = await message.channel.awaitMessages(filter, {
+                            max: 1, time: 30000, errors: ['time']
+                        });
+                        if (userEntry.first().content.toLowerCase() === "oui") {
+                            client.updateUserInfo(user, {
+                                "users.$.stats.vitality": 0
+                            });
+                            return message.reply(`Vous prenez la fuite ${player.username} est mort, ${player2.username} fuis en prennant son compagnon avec lui !`)
+                        }
+                    } catch (e) {
+                        message.reply(`${player2.username} n'a pas répondu assez vite donc le combat continie !`)
+                    }
+                }
             }
             if (playerHP <= 0) {
                 client.updateUserInfo(message.member, {
