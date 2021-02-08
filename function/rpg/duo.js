@@ -3,6 +3,12 @@ const {levelup} = require('./levelup');
 const battleduo = async (client, message,player ,player2 ,hostile, user) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
+
+    function checkup(player, prestige,  mutlipliyer1, mutlipliyer2) {
+        if (player.prestige === prestige && player.experience < player.level * player.prestige * mutlipliyer1 * mutlipliyer2 - 1) break;
+    }
+
+
     async function level() {
         while (player.level !== 0 && player.level !== 1001) {
             if (player.level <= 10 && player2.level <= 10) {
