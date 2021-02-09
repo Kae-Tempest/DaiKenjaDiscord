@@ -58,7 +58,7 @@ module.exports.help = {
     category: 'economy',
     description: "affiche le shop",
     cd: 3,
-    usage: "[buy/show][<object>]",
+    usage: "[buy/show][<id_object>]",
     isUserAdmin: false,
     permission: false,
     args: true,
