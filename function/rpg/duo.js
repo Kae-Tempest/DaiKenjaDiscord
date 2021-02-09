@@ -2,10 +2,11 @@ const {levelup} = require('./levelup');
 
 const battleduo = async (client, message,player ,player2 ,hostile, user) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
-
+|
     async function level() {
         while (player.level !== 0 && player.level !== 1001) {
-            if (player.level <= 10 && player2.level <= 10) {
+            if (player.level <= 10 || player2.level <= 10) {
+
                 if (player.experience < player.level * 250 - 1 && player2.experience < player2.level * 250 - 1) break;
                 if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 250 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 250 - 1) break;
                 if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 250 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 250 - 1) break;
@@ -18,7 +19,8 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 250 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 250 - 1) break;
                 if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 250 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 250 - 1) break;
             } 
-            else if (player.level <= 20 && player.level > 10 && player2.level <= 20 && player2.level > 10) {
+            else if (player.level <= 20 && player.level > 10 || player2.level <= 20 && player2.level > 10) {
+
                 if (player.experience < player.level * 500 - 1 && player2.experience < player2.level * 500 - 1 ) break;
                  if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 500 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 500 - 1) break;
                  if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 500 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 500 - 1) break;
@@ -31,7 +33,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                  if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 500 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 500 - 1 ) break;
                  if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 500 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 500 - 1) break;
             } 
-            else if (player.level <= 30 && player.level > 20 && player2.level <= 30 && player2.level > 20) {
+            else if (player.level <= 30 && player.level > 20 || player2.level <= 30 && player2.level > 20) {
 
                 if (player.experience < player.level * 750 - 1 && player2.experience < player2.level * 750 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 750 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 750 - 1) break;
@@ -45,7 +47,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 750 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 750 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 750 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 750 - 1) break;
             } 
-            else if (player.level <= 40 && player.level > 30 && player2.level <= 40 && player2.level > 30) {
+            else if (player.level <= 40 && player.level > 30 || player2.level <= 40 && player2.level > 30) {
 
                 if (player.experience < player.level * 1000 - 1 && player2.experience < player2.level * 1000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 1000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 1000 - 1) break;
@@ -59,7 +61,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 1000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 1000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 1000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 1000 - 1) break;
             } 
-            else if (player.level <= 50 && player.level > 40 && player2.level <= 50 && player2.level > 40) {
+            else if (player.level <= 50 && player.level > 40 || player2.level <= 50 && player2.level > 40) {
 
                 if (player.experience < player.level * 3000 - 1 && player2.experience < player2.level * 3000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 3000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 3000 - 1) break;
@@ -73,7 +75,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 3000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 3000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 3000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 3000 - 1) break;
             } 
-            else if (player.level <= 60 && player.level > 50 && player2.level <= 60 && player2.level > 50) {
+            else if (player.level <= 60 && player.level > 50 || player2.level <= 60 && player2.level > 50) {
 
                 if(player.experience < player.level * 5000 - 1 && player2.experience < player.level * 5000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 5000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 5000 - 1) break;
@@ -87,7 +89,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 5000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 5000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 5000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 5000 - 1) break;
             } 
-            else if (player.level <= 70 && player.level > 60 && player2.level <= 70 && player2.level > 60) {
+            else if (player.level <= 70 && player.level > 60 || player2.level <= 70 && player2.level > 60) {
 
                 if(player.experience < player.level * 7000 - 1 && player2.experience < player2.level * 7000 - 1 ) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 7000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 7000 - 1) break;
@@ -101,7 +103,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 7000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 7000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 7000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 7000 - 1) break;
             } 
-            else if (player.level <= 80 && player.level > 70 && player2.level <= 80 && player2.level > 70 ) {
+            else if (player.level <= 80 && player.level > 70 || player2.level <= 80 && player2.level > 70 ) {
 
                 if (player.experience < player.level * 9000 - 1 && player.experience < player.level * 9000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 9000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 9000 - 1) break;
@@ -115,7 +117,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 9000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 9000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 9000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 9000 - 1) break;
             } 
-            else if (player.level <= 90 && player.level > 80 && player2.level <= 90 && player2.level > 80)  {
+            else if (player.level <= 90 && player.level > 80 || player2.level <= 90 && player2.level > 80)  {
 
                 if (player.experience < player.level * 15000 - 1 && player.experience < player.level * 15000 - 1 && player2.experience < player2.level * 15000 - 1 && player2.experience < player2.level * 15000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 15000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 15000 - 1) break;
@@ -129,7 +131,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 15000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 15000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 15000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 15000 - 1) break;
             } 
-            else if (player.level <= 100 && player.level > 90 && player2.level <= 100 && player2.level > 90) {
+            else if (player.level <= 100 && player.level > 90 || player2.level <= 100 && player2.level > 90) {
 
                 if (player.experience < player.level * 20000 - 1 && player.experience < player.level * 20000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 20000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 20000 - 1) break;
@@ -143,7 +145,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 20000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 20000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 20000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 20000 - 1) break;
             } 
-            else if (player.level <= 110 && player.level > 100 && player2.level <= 110 && player2.level > 100) {
+            else if (player.level <= 110 && player.level > 100 || player2.level <= 110 && player2.level > 100) {
 
                 if (player.experience < player.level * 30000 - 1 && player2.experience < player2.level * 30000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 30000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 30000 - 1) break;
@@ -157,7 +159,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 30000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 30000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 30000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 30000 - 1) break;
             } 
-            else if (player.level <= 120 && player.level > 110 && player2.level <= 120 && player2.level > 110) {
+            else if (player.level <= 120 && player.level > 110 || player2.level <= 120 && player2.level > 110) {
 
                 if (player.experience < player.level * 40000 - 1 && player2.experience < player2.level * 40000 - 1 ) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 40000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 40000 - 1) break;
@@ -171,7 +173,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 40000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 40000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 40000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 40000 - 1) break;
             } 
-            else if (player.level <= 130 && player.level > 120 && player2.level <= 130 && player2.level > 120) {
+            else if (player.level <= 130 && player.level > 120 || player2.level <= 130 && player2.level > 120) {
 
                 if (player.experience < player.level * 50000 - 1 && player2.experience < player2.level * 50000 - 1) break;
 
@@ -186,7 +188,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 50000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 50000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 50000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 50000 - 1) break;
             } 
-            else if (player.level <= 140 && player.level > 130 && player2.level <= 140 && player2.level > 130) {
+            else if (player.level <= 140 && player.level > 130 || player2.level <= 140 && player2.level > 130) {
 
                 if (player.experience < player.level * 60000 - 1 && player2.experience < player2.level * 60000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 60000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 60000 - 1) break;
@@ -200,7 +202,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 60000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 60000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 60000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 60000 - 1) break;
             } 
-            else if (player.level <= 150 && player.level > 140 && player.level <= 150 && player.level > 140) {
+            else if (player.level <= 150 && player.level > 140 || player.level <= 150 && player.level > 140) {
 
                 if (player.experience < player.level * 70000 - 1 && player2.experience < player2.level * 70000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 70000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 70000 - 1) break;
@@ -214,7 +216,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 70000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 70000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 70000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 70000 - 1) break;
             } 
-            else if (player.level <= 160 && player.level > 150 && player2.level <= 160 && player2.level > 150) {
+            else if (player.level <= 160 && player.level > 150 || player2.level <= 160 && player2.level > 150) {
                 
                 if (player.experience < player.level * 80000 - 1 && player2.experience < player2.level * 80000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 80000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 80000 - 1) break;
@@ -228,7 +230,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 80000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 80000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 80000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 80000 - 1) break;
             } 
-            else if (player.level <= 170 && player.level > 160 && player2.level <= 170 && player2.level > 160) {
+            else if (player.level <= 170 && player.level > 160 || player2.level <= 170 && player2.level > 160) {
 
                 if (player.experience < player.level * 90000 - 1 && player2.experience < player2.level * 90000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 30000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 30000 - 1) break;
@@ -242,7 +244,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 30000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 30000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 30000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 30000 - 1) break;
             } 
-            else if (player.level <= 180 && player.level > 170 && player2.level <= 180 && player2.level > 170) {
+            else if (player.level <= 180 && player.level > 170 || player2.level <= 180 && player2.level > 170) {
 
                 if (player.experience < player.level * 100000 - 1 && player2.experience < player2.level * 100000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 90000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 90000 - 1) break;
@@ -256,7 +258,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 90000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 90000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 90000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 90000 - 1) break;
             } 
-            else if (player.level <= 190 && player.level > 180 && player2.level <= 190 && player2.level > 180) {
+            else if (player.level <= 190 && player.level > 180 || player2.level <= 190 && player2.level > 180) {
 
                 if (player.experience < player.level * 110000 - 1 && player2.experience < player2.level * 110000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 110000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 110000 - 1) break;
@@ -270,7 +272,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 110000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 110000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 110000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 110000 - 1) break;
             } 
-            else if (player.level <= 200 && player.level > 190 && player2.level <= 200 && player0.level > 190 ) {
+            else if (player.level <= 200 && player.level > 190 || player2.level <= 200 && player0.level > 190 ) {
 
                 if (player.experience < player.level * 120000 - 1 && player2.experience < player2.level * 120000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 120000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 120000 - 1) break;
@@ -284,7 +286,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 120000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 120000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 120000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 120000 - 1) break;
             } 
-            else if (player.level <= 210 && player.level > 200 && player2.level <= 210 && player2.level > 200) {
+            else if (player.level <= 210 && player.level > 200 || player2.level <= 210 && player2.level > 200) {
 
                 if (player.experience < player.level * 130000 - 1 && player2.experience < player2.level * 130000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 130000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 130000 - 1) break;
@@ -298,7 +300,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 130000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 130000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 130000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 130000 - 1) break;
             } 
-            else if (player.level <= 220 && player.level > 210 && player2.level <= 220 && player2.level > 210) {
+            else if (player.level <= 220 && player.level > 210 || player2.level <= 220 && player2.level > 210) {
 
                 if (player.experience < player.level * 140000 - 1 && player2.experience < player2.level * 140000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 140000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 140000 - 1) break;
@@ -312,7 +314,7 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 140000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 140000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 140000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 140000 - 1) break;
             } 
-            else if (player.level <= 230 && player.level > 220 && player2.level <= 230 && player2.level > 220) {
+            else if (player.level <= 230 && player.level > 220 || player2.level <= 230 && player2.level > 220) {
 
                 if (player.experience < player.level * 150000 - 1 && player2.experience < player2.level * 150000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 150000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 150000 - 1) break;
@@ -325,8 +327,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 150000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 150000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 150000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 150000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 150000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 150000 - 1) break;
-            } else if (player.level <= 240 && player.level > 230) {
-                if (player.experience < player.level * 160000 - 1) break;
+            } 
+            else if (player.level <= 240 && player.level > 230 || player2.level <= 240 && player2.level > 230) {
+
+                if (player.experience < player.level * 160000 - 1 && player2.experience < player2.level * 160000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 160000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 160000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 160000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 160000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 160000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 160000 - 1) break;
@@ -337,8 +341,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 160000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 160000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 160000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 160000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 160000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 160000 - 1) break;
-            } else if (player.level <= 250 && player.level > 240) {
-                if (player.experience < player.level * 170000 - 1) break;
+            } 
+            else if (player.level <= 250 && player.level > 240 || player2.level <= 250 && player2.level > 240) {
+
+                if (player.experience < player.level * 170000 - 1 && player2.experience < player2.level * 170000 - 1 ) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 170000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 170000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 170000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 170000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 170000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 170000 - 1) break;
@@ -349,8 +355,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 170000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 170000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 170000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 170000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 170000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 170000 - 1) break;
-            } else if (player.level <= 260 && player.level > 250) {
-                if (player.experience < player.level * 180000 - 1) break;
+            } 
+            else if (player.level <= 260 && player.level > 250 || player2.level <= 260 && player2.level > 260) {
+
+                if (player.experience < player.level * 180000 - 1 && player2.experience < player2.level * 180000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 180000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 180000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 180000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 180000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 180000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 180000 - 1) break;
@@ -361,8 +369,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 180000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 180000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 180000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 180000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 180000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 180000 - 1) break;
-            } else if (player.level <= 270 && player.level > 260) {
-                if (player.experience < player.level * 190000 - 1) break;
+            } 
+            else if (player.level <= 270 && player.level > 260 || player2.level <= 270 && player2.level > 260) {
+
+                if (player.experience < player.level * 190000 - 1 && player2.experience < player2.level * 190000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 190000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 190000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 190000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 190000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 190000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 190000 - 1) break;
@@ -373,8 +383,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 190000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 190000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 190000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 190000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 190000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 190000 - 1) break;
-            } else if (player.level <= 280 && player.level > 270) {
-                if (player.experience < player.level * 200000 - 1) break;
+            } 
+            else if (player.level <= 280 && player.level > 270 || player2.level <= 280 && player2.level > 270) {
+                
+                if (player.experience < player.level * 200000 - 1 && player2.experience < player2.level * 200000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 200000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 200000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 200000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 200000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 200000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 200000 - 1) break;
@@ -385,8 +397,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 200000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 200000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 200000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 200000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 200000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 200000 - 1) break;
-            } else if (player.level <= 290 && player.level > 280) {
-                if (player.experience < player.level * 210000 - 1) break;
+            } 
+            else if (player.level <= 290 && player.level > 280 || player2.level <= 290 && player2.level > 280) {
+
+                if (player.experience < player.level * 210000 - 1 && player2.experience < player2.level * 210000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 210000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 210000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 210000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 210000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 210000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 210000 - 1) break;
@@ -397,8 +411,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 210000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 210000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 210000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 210000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 210000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 210000 - 1) break;
-            } else if (player.level <= 300 && player.level > 290) {
-                if (player.experience < player.level * 220000 - 1) break;
+            } 
+            else if (player.level <= 300 && player.level > 290 || player2.level <= 300 && player2.level > 290) {
+
+                if (player.experience < player.level * 220000 - 1 && player2.experience < player2.level * 220000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 220000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 220000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 220000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 220000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 220000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 220000 - 1) break;
@@ -409,8 +425,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 220000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 220000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 220000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 220000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 220000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 220000 - 1) break;
-            } else if (player.level <= 310 && player.level > 300) {
-                if (player.experience < player.level * 230000 - 1) break;
+            } 
+            else if (player.level <= 310 && player.level > 300 || player2.level <= 310 && player2.level > 300) {
+
+                if (player.experience < player.level * 230000 - 1 && player2.experience < player2.level * 230000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 230000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 230000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 230000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 230000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 230000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 230000 - 1) break;
@@ -421,8 +439,10 @@ const battleduo = async (client, message,player ,player2 ,hostile, user) => {
                 if(player.prestige === 8 && player.experience < player.level * player.prestige * 350 * 230000 - 1 && player2.prestige === 8 && player2.experience < player2.level * player2.prestige * 350 * 230000 - 1) break;
                 if(player.prestige === 9 && player.experience < player.level * player.prestige * 400 * 230000 - 1 && player2.prestige === 9 && player2.experience < player2.level * player2.prestige * 400 * 230000 - 1) break;
                 if(player.prestige === 10 && player.experience < player.level * player.prestige * 500 * 230000 - 1 && player2.prestige === 10 && player2.experience < player2.level * player2.prestige * 500 * 230000 - 1) break;
-            } else if (player.level <= 320 && player.level > 310) {
-                if (player.experience < player.level * 240000 - 1) break;
+            } 
+            else if (player.level <= 320 && player.level > 310 || player2.level <= 320 && player2.level > 310) {
+                
+                if (player.experience < player.level * 240000 - 1 && player2.experience < player2.level * 240000 - 1) break;
                 if(player.prestige === 1 && player.experience < player.level * player.prestige * 10 * 240000 - 1 && player2.prestige === 1 && player2.experience < player2.level * player2.prestige * 10 * 240000 - 1) break;
                 if(player.prestige === 2 && player.experience < player.level * player.prestige * 50 * 240000 - 1 && player2.prestige === 2 && player2.experience < player2.level * player2.prestige * 50 * 240000 - 1) break;
                 if(player.prestige === 3 && player.experience < player.level * player.prestige * 100 * 240000 - 1 && player2.prestige === 3 && player2.experience < player2.level * player2.prestige * 100 * 240000 - 1) break;
