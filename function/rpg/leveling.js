@@ -1,7 +1,7 @@
-const leveling =  (client, message, player) => {
+const leveling = (client, message, player, player2 , user) => {
     function level(lvlmin, lvlmax, exp) {
         if (player.level <= lvlmax && player.level > lvlmin) {
-            if(player.prestige === 0) {
+            if(player.prestige === 0 || player2.prestige === 0) {
                 if (player.experience >= player.level * exp - 1) {
                     player.experience -= player.level * exp;
                     player.level += 1
@@ -10,8 +10,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * exp - 1) {
+                    player2.experience -= player2.level * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 1) {
+            if (player.prestige === 1 || player2.prestige === 1) {
                 if (player.experience >= player.level * player.prestige * 10 * exp - 1) {
                     player.experience -= player.level * player.prestige * 10 * exp;
                     player.level += 1
@@ -20,8 +28,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 10 * exp - 1) {
+                    player2.experience -= player2.level * 10 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 2) {
+            if (player.prestige === 2 || player2.prestige === 2 ) {
                 if (player.experience >= player.level * player.prestige * 50 * exp - 1) {
                     player.experience -= player.level * player.prestige * 50 * exp;
                     player.level += 1
@@ -30,8 +46,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 50 * exp - 1) {
+                    player2.experience -= player2.level * 50 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 3) {
+            if (player.prestige === 3 || player2.prestige === 3 ) {
                 if (player.experience >= player.level * player.prestige * 100 * exp - 1) {
                     player.experience -= player.level * player.prestige * 100 * exp;
                     player.level += 1
@@ -40,8 +64,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 100 * exp - 1) {
+                    player2.experience -= player2.level * 100 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 4) {
+            if (player.prestige === 4 || player2.prestige === 4) {
                 if (player.experience >= player.level * player.prestige * 150 * exp - 1) {
                     player.experience -= player.level * player.prestige * 150 * exp;
                     player.level += 1
@@ -50,8 +82,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 150 * exp - 1) {
+                    player2.experience -= player2.level * 150 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 5) {
+            if (player.prestige === 5 || player2.prestige === 5 ) {
                 if (player.experience >= player.level * player.prestige * 200 * exp - 1) {
                     player.experience -= player.level * player.prestige * 200 * exp;
                     player.level += 1
@@ -60,8 +100,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 200 * exp - 1) {
+                    player2.experience -= player2.level * 200 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 6) {
+            if (player.prestige === 6 || player2.prestige === 6 ) {
                 if (player.experience >= player.level * player.prestige * 250 * exp - 1) {
                     player.experience -= player.level * player.prestige * 250 * exp;
                     player.level += 1
@@ -70,8 +118,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 250 * exp - 1) {
+                    player2.experience -= player2.level * 250 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 7) {
+            if (player.prestige === 7 || player2.prestige === 7 ) {
                 if (player.experience >= player.level * player.prestige * 300 * exp - 1) {
                     player.experience -= player.level * player.prestige * 300 * exp;
                     player.level += 1
@@ -80,8 +136,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 300 * exp - 1) {
+                    player2.experience -= player2.level * 300 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 8) {
+            if (player.prestige === 8 || player2.prestige === 8 ) {
                 if (player.experience >= player.level * player.prestige * 350 * exp - 1) {
                     player.experience -= player.level * player.prestige * 350 * exp;
                     player.level += 1
@@ -90,8 +154,16 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 350 * exp - 1) {
+                    player2.experience -= player2.level * 350 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 9) {
+            if (player.prestige === 9 || player2.prestige === 9 ) {
                 if (player.experience >= player.level * player.prestige * 400 * exp - 1) {
                     player.experience -= player.level * player.prestige * 400 * exp;
                     player.level += 1
@@ -100,14 +172,30 @@ const leveling =  (client, message, player) => {
                         "users.$.experience": player.experience
                     });
                 }
+                if (player2.experience >= player2.level * 400 * exp - 1) {
+                    player2.experience -= player2.level * 400 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
+                    });
+                }
             }
-            if (player.prestige === 10) {
+            if (player.prestige === 10 || player2.prestige === 10 ) {
                 if (player.experience >= player.level * player.prestige * 500 * exp - 1) {
                     player.experience -= player.level * player.prestige * 500 * exp;
                     player.level += 1
                     client.updateUserInfo(message.member, {
                         "users.$.level": player.level,
                         "users.$.experience": player.experience
+                    });
+                }
+                if (player2.experience >= player2.level * 500 * exp - 1) {
+                    player2.experience -= player2.level * 500 * exp;
+                    player2.level += 1
+                    client.updateUserInfo(user, {
+                        "users.$.level": player2.level,
+                        "users.$.experience": player2.experience
                     });
                 }
             }
