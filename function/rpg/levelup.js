@@ -54,6 +54,15 @@ const levelup = async (client, message, player) => {
                 "users.$.stats.intelligence": player.stats.intelligence += get_intelligence(lvl),
                 "users.$.stats.spirit": player.stats.spirit += get_spirit(lvl),
             });
+            client.updateUserInfo(user, {
+                "users.$.stats.vitality": player2.stats.vitality += get_vita(lvl),
+                "users.$.statsMax.vitality": player2.stats.vitality += get_vita(lvl),
+                "users.$.stats.constitution": player2.stats.constitution += get_consti(lvl),
+                "users.$.stats.strength": player2.stats.strength += get_strength(lvl),
+                "users.$.stats.agility": player2.stats.agility += get_agility(lvl),
+                "users.$.stats.intelligence": player2.stats.intelligence += get_intelligence(lvl),
+                "users.$.stats.spirit": player2.stats.spirit += get_spirit(lvl),
+            });
         }
     }
     lvlstats(player.level);
