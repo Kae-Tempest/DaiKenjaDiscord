@@ -210,6 +210,10 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                     "users.$.level": 1000,
                     "users.$.experience": 0
                 });
+                client.updateUserInfo(user,{
+                    "users.$.level": 1000,
+                    "users.$.experience": 0
+                })
                 break;
             }
             await levelup(client, message, player, player2, user);
@@ -385,6 +389,11 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
     }
     if (player.level === 1000 && player.prestige === 10) {
         client.updateUserInfo(message.member, {
+            "users.$.experience": 0
+        })
+    }
+    if (player2.level === 1000 && player2.prestige === 10) {
+        client.updateUserInfo(user, {
             "users.$.experience": 0
         })
     }
