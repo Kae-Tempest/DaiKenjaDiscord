@@ -345,7 +345,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 player2.experience += hostileExp;
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(101))
-                    if (loot > 99 - prestige) {
+                    if (loot > 99 - (prestige / 2) ) {
                         const player1Inventory = player.inventory
                         const player2Inventory = player2.inventory
                         if (hostile.loot !== undefined) {
@@ -373,10 +373,10 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 }
             }
         }
