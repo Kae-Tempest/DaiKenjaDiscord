@@ -2,7 +2,8 @@ const { MessageEmbed, MessageAttachment } = require("discord.js");
 const leaderboard = new MessageAttachment('./imgembed/leaderboard.png');
 module.exports.run = async (client, message) => {
     const players = await client.getGuild(message.guild);
-    players.users.sort((a, b) => b.prestige - a.prestige, (c,d) => c.level - d.level);
+    players.users.sort((a, b) => b.level - a.level);
+    players.users.sort((a, b) => b.prestige - a.prestige);
     const playerInfo = players.users.map(p => "***"+p.username + "*** => level : " + p.level + " | ( prestige : " + p.prestige + " )" ).slice(0,9)
 
     const user = message.author;
