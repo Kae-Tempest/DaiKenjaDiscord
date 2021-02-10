@@ -2,8 +2,8 @@ const {MessageEmbed} = require('discord.js');
 const {capitalize} = require('../../function/other/string');
 const classes = require("../../assets/rpg/classes.json");
 
-module.exports.run = async (client, message, args, userInfo) => {
-    if (!userInfo.class === "") return message.reply('tu dois d\'abord utiliser la commande \`setup\` pour créer ton personnage');
+module.exports.run = async (client, message, userInfo) => {
+    if (userInfo.class === "") return message.reply('tu dois d\'abord utiliser la commande \`setup\` pour créer ton personnage');
     const player = await client.getUser(message.member);
 
     function exp(lvlmin, lvlmax, exp) {
