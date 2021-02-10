@@ -1,310 +1,210 @@
-const {levelup} = require('./levelup');
+const { levelup, isWhithin, prestigeForest } = require('./levelup');
 
 const battle = async (client, message, player, hostile, userInfo) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
-        while (player.level !== 0 && player.level !== 1001) {
-            if (player.level <= 10) {
-                if (player.experience < player.level * 250 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 250 - 1) break;
-            } else if (player.level <= 20 && player.level > 10) {
-                if (player.experience < player.level * 500 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 500 - 1) break;
-            } else if (player.level <= 30 && player.level > 20) {
-                if (player.experience < player.level * 750 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 750 - 1) break;
-            } else if (player.level <= 40 && player.level > 30) {
-                if (player.experience < player.level * 1000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 1000 - 1) break;
-            } else if (player.level <= 50 && player.level > 40) {
-                if (player.experience < player.level * 3000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 3000 - 1) break;
-            } else if (player.level <= 60 && player.level > 50) {
-                if (player.experience < player.level * 5000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 5000 - 1) break;
-            } else if (player.level <= 70 && player.level > 60) {
-                if (player.experience < player.level * 7000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 7000 - 1) break;
-            } else if (player.level <= 80 && player.level > 70) {
-                if (player.experience < player.level * 9000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 9000 - 1) break;
-            } else if (player.level <= 90 && player.level > 80) {
-                if (player.experience < player.level * 15000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 15000 - 1) break;
-            } else if (player.level <= 100 && player.level > 90) {
-                if (player.experience < player.level * 20000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 20000 - 1) break;
-            } else if (player.level <= 110 && player.level > 100) {
-                if (player.experience < player.level * 30000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 30000 - 1) break;
-            } else if (player.level <= 120 && player.level > 110) {
-                if (player.experience < player.level * 40000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 40000 - 1) break;
-            } else if (player.level <= 130 && player.level > 120) {
-                if (player.experience < player.level * 50000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 50000 - 1) break;
-            } else if (player.level <= 140 && player.level > 130) {
-                if (player.experience < player.level * 60000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 60000 - 1) break;
-            } else if (player.level <= 150 && player.level > 140) {
-                if (player.experience < player.level * 70000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 70000 - 1) break;
-            } else if (player.level <= 160 && player.level > 150) {
-                if (player.experience < player.level * 80000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 80000 - 1) break;
-            } else if (player.level <= 170 && player.level > 160) {
-                if (player.experience < player.level * 90000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 90000 - 1) break;
-            } else if (player.level <= 180 && player.level > 170) {
-                if (player.experience < player.level * 100000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 100000 - 1) break;
-            } else if (player.level <= 190 && player.level > 180) {
-                if (player.experience < player.level * 110000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 110000 - 1) break;
-            } else if (player.level <= 200 && player.level > 190) {
-                if (player.experience < player.level * 120000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 120000 - 1) break;
-            } else if (player.level <= 210 && player.level > 200) {
-                if (player.experience < player.level * 130000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 130000 - 1) break;
-            } else if (player.level <= 220 && player.level > 210) {
-                if (player.experience < player.level * 140000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 140000 - 1) break;
-            } else if (player.level <= 230 && player.level > 220) {
-                if (player.experience < player.level * 150000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 150000 - 1) break;
-            } else if (player.level <= 240 && player.level > 230) {
-                if (player.experience < player.level * 160000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 160000 - 1) break;
-            } else if (player.level <= 250 && player.level > 240) {
-                if (player.experience < player.level * 170000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 170000 - 1) break;
-            } else if (player.level <= 260 && player.level > 250) {
-                if (player.experience < player.level * 180000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 180000 - 1) break;
-            } else if (player.level <= 270 && player.level > 260) {
-                if (player.experience < player.level * 190000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 190000 - 1) break;
-            } else if (player.level <= 280 && player.level > 270) {
-                if (player.experience < player.level * 200000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 200000 - 1) break;
-            } else if (player.level <= 290 && player.level > 280) {
-                if (player.experience < player.level * 210000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 210000 - 1) break;
-            } else if (player.level <= 300 && player.level > 290) {
-                if (player.experience < player.level * 220000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 220000 - 1) break;
-            } else if (player.level <= 310 && player.level > 300) {
-                if (player.experience < player.level * 230000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 230000 - 1) break;
-            } else if (player.level <= 320 && player.level > 310) {
-                if (player.experience < player.level * 240000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 240000 - 1) break;
-            } else if (player.level <= 330 && player.level > 320) {
-                if (player.experience < player.level * 250000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 250000 - 1) break;
-            } else if (player.level <= 340 && player.level > 330) {
-                if (player.experience < player.level * 260000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 260000 - 1) break;
-            } else if (player.level <= 350 && player.level > 340) {
-                if (player.experience < player.level * 270000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 270000 - 1) break;
-            } else if (player.level <= 360 && player.level > 350) {
-                if (player.experience < player.level * 280000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 280000 - 1) break;
-            } else if (player.level <= 370 && player.level > 360) {
-                if (player.experience < player.level * 290000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 290000 - 1) break;
-            } else if (player.level <= 380 && player.level > 370) {
-                if (player.experience < player.level * 300000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 300000 - 1) break;
-            } else if (player.level <= 390 && player.level > 380) {
-                if (player.experience < player.level * 310000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 310000 - 1) break;
-            } else if (player.level <= 400 && player.level > 390) {
-                if (player.experience < player.level * 320000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 320000 - 1) break;
-            } else if (player.level <= 410 && player.level > 400) {
-                if (player.experience < player.level * 330000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 330000 - 1) break;
-            } else if (player.level <= 420 && player.level > 410) {
-                if (player.experience < player.level * 340000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 340000 - 1) break;
-            } else if (player.level <= 430 && player.level > 420) {
-                if (player.experience < player.level * 350000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 350000 - 1) break;
-            } else if (player.level <= 440 && player.level > 430) {
-                if (player.experience < player.level * 360000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 360000 - 1) break;
-            } else if (player.level <= 450 && player.level > 440) {
-                if (player.experience < player.level * 370000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 370000 - 1) break;
-            } else if (player.level <= 460 && player.level > 450) {
-                if (player.experience < player.level * 380000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 380000 - 1) break;
-            } else if (player.level <= 470 && player.level > 460) {
-                if (player.experience < player.level * 390000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 390000 - 1) break;
-            } else if (player.level <= 480 && player.level > 470) {
-                if (player.experience < player.level * 400000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 400000 - 1) break;
-            } else if (player.level <= 490 && player.level > 480) {
-                if (player.experience < player.level * 410000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 410000 - 1) break;
-            } else if (player.level <= 500 && player.level > 490) {
-                if (player.experience < player.level * 420000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 420000 - 1) break;
-            } else if (player.level <= 510 && player.level > 500) {
-                if (player.experience < player.level * 430000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 430000 - 1) break;
-            } else if (player.level <= 520 && player.level > 510) {
-                if (player.experience < player.level * 440000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 440000 - 1) break;
-            } else if (player.level <= 530 && player.level > 520) {
-                if (player.experience < player.level * 450000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 450000 - 1) break;
-            } else if (player.level <= 540 && player.level > 530) {
-                if (player.experience < player.level * 460000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 460000 - 1) break;
-            } else if (player.level <= 550 && player.level > 540) {
-                if (player.experience < player.level * 470000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 470000 - 1) break;
-            } else if (player.level <= 560 && player.level > 550) {
-                if (player.experience < player.level * 480000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 480000 - 1) break;
-            } else if (player.level <= 570 && player.level > 560) {
-                if (player.experience < player.level * 490000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 490000 - 1) break;
-            } else if (player.level <= 580 && player.level > 570) {
-                if (player.experience < player.level * 500000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 500000 - 1) break;
-            } else if (player.level <= 590 && player.level > 580) {
-                if (player.experience < player.level * 510000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 510000 - 1) break;
-            } else if (player.level <= 600 && player.level > 590) {
-                if (player.experience < player.level * 520000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 520000 - 1) break;
-            } else if (player.level <= 610 && player.level > 600) {
-                if (player.experience < player.level * 530000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 530000 - 1) break;
-            } else if (player.level <= 620 && player.level > 610) {
-                if (player.experience < player.level * 540000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 540000 - 1) break;
-            } else if (player.level <= 630 && player.level > 620) {
-                if (player.experience < player.level * 550000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 550000 - 1) break;
-            } else if (player.level <= 640 && player.level > 630) {
-                if (player.experience < player.level * 560000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 560000 - 1) break;
-            } else if (player.level <= 650 && player.level > 640) {
-                if (player.experience < player.level * 570000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 570000 - 1) break;
-            } else if (player.level <= 660 && player.level > 650) {
-                if (player.experience < player.level * 580000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 580000 - 1) break;
-            } else if (player.level <= 670 && player.level > 660) {
-                if (player.experience < player.level * 590000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 590000 - 1) break;
-            } else if (player.level <= 680 && player.level > 670) {
-                if (player.experience < player.level * 600000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 600000 - 1) break;
-            } else if (player.level <= 690 && player.level > 680) {
-                if (player.experience < player.level * 610000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 610000 - 1) break;
-            } else if (player.level <= 700 && player.level > 690) {
-                if (player.experience < player.level * 620000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 620000 - 1) break;
-            } else if (player.level <= 710 && player.level > 700) {
-                if (player.experience < player.level * 630000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 630000 - 1) break;
-            } else if (player.level <= 720 && player.level > 710) {
-                if (player.experience < player.level * 640000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 640000 - 1) break;
-            } else if (player.level <= 730 && player.level > 720) {
-                if (player.experience < player.level * 650000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 650000 - 1) break;
-            } else if (player.level <= 740 && player.level > 730) {
-                if (player.experience < player.level * 660000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 660000 - 1) break;
-            } else if (player.level <= 750 && player.level > 740) {
-                if (player.experience < player.level * 670000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 670000 - 1) break;
-            } else if (player.level <= 760 && player.level > 750) {
-                if (player.experience < player.level * 680000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 680000 - 1) break;
-            } else if (player.level <= 770 && player.level > 760) {
-                if (player.experience < player.level * 690000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 690000 - 1) break;
-            } else if (player.level <= 780 && player.level > 770) {
-                if (player.experience < player.level * 700000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 700000 - 1) break;
-            } else if (player.level <= 790 && player.level > 780) {
-                if (player.experience < player.level * 710000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 710000 - 1) break;
-            } else if (player.level <= 800 && player.level > 790) {
-                if (player.experience < player.level * 720000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 720000 - 1) break;
-            } else if (player.level <= 810 && player.level > 800) {
-                if (player.experience < player.level * 730000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 730000 - 1) break;
-            } else if (player.level <= 820 && player.level > 810) {
-                if (player.experience < player.level * 740000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 740000 - 1) break;
-            } else if (player.level <= 830 && player.level > 820) {
-                if (player.experience < player.level * 750000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 750000 - 1) break;
-            } else if (player.level <= 840 && player.level > 830) {
-                if (player.experience < player.level * 760000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 760000 - 1) break;
-            } else if (player.level <= 850 && player.level > 840) {
-                if (player.experience < player.level * 770000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 770000 - 1) break;
-            } else if (player.level <= 860 && player.level > 850) {
-                if (player.experience < player.level * 780000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 780000 - 1) break;
-            } else if (player.level <= 870 && player.level > 860) {
-                if (player.experience < player.level * 790000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 790000 - 1) break;
-            } else if (player.level <= 880 && player.level > 870) {
-                if (player.experience < player.level * 800000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 800000 - 1) break;
-            } else if (player.level <= 890 && player.level > 880) {
-                if (player.experience < player.level * 810000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 810000 - 1) break;
-            } else if (player.level <= 900 && player.level > 890) {
-                if (player.experience < player.level * 820000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 820000 - 1) break;
-            } else if (player.level <= 910 && player.level > 900) {
-                if (player.experience < player.level * 830000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 830000 - 1) break;
-            } else if (player.level <= 920 && player.level > 910) {
-                if (player.experience < player.level * 840000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 840000 - 1) break;
-            } else if (player.level <= 930 && player.level > 920) {
-                if (player.experience < player.level * 850000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 850000 - 1) break;
-            } else if (player.level <= 940 && player.level > 930) {
-                if (player.experience < player.level * 860000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 860000 - 1) break;
-            } else if (player.level <= 950 && player.level > 940) {
-                if (player.experience < player.level * 870000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 870000 - 1) break;
-            } else if (player.level <= 960 && player.level > 950) {
-                if (player.experience < player.level * 880000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 880000 - 1) break;
-            } else if (player.level <= 970 && player.level > 960) {
-                if (player.experience < player.level * 890000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 890000 - 1) break;
-            } else if (player.level <= 980 && player.level > 970) {
-                if (player.experience < player.level * 900000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 900000 - 1) break;
-            } else if (player.level <= 990 && player.level > 980) {
-                if (player.experience < player.level * 910000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 910000 - 1) break;
-            } else if (player.level <= 999 && player.level > 990) {
-                if (player.experience < player.level * 920000 - 1) break;
-                if (player.experience < player.level * player.prestige * 10 * 920000 - 1) break;
+        while (player.level !== 0 && player.level !== 1000) {
+            if (isWhithin(player, 0, 10)) {
+                if (prestigeForest(player, 250)) break;
+            } else if (isWhithin(player, 10, 20)) {
+                if (prestigeForest(player, 500)) break;
+            } else if (isWhithin(player, 20, 30)) {
+                if (prestigeForest(player, 750)) break;
+            } else if (isWhithin(player, 30, 40)) {
+                if (prestigeForest(player, 1000)) break;
+            } else if (isWhithin(player, 40, 50)) {
+                if (prestigeForest(player, 3000)) break;
+            } else if (isWhithin(player, 50, 60)) {
+                if (prestigeForest(player, 5000)) break;
+            } else if (isWhithin(player, 60, 70)) {
+                if (prestigeForest(player, 7000)) break;
+            } else if (isWhithin(player, 70, 80)) {
+                if (prestigeForest(player, 9000)) break;
+            } else if (isWhithin(player, 80, 90)) {
+                if (prestigeForest(player, 15000)) break;
+            } else if (isWhithin(player, 90, 100)) {
+                if (prestigeForest(player, 20000)) break;
+            } else if (isWhithin(player, 100, 110)) {
+                if (prestigeForest(player, 30000)) break;
+            } else if (isWhithin(player, 110, 120)) {
+                if (prestigeForest(player, 40000)) break;
+            } else if (isWhithin(player, 120, 130)) {
+                if (prestigeForest(player, 50000)) break;
+            } else if (isWhithin(player, 130, 140)) {
+                if (prestigeForest(player, 60000)) break;
+            } else if (isWhithin(player, 140, 150)) {
+                if (prestigeForest(player, 70000)) break;
+            } else if (isWhithin(player, 150, 160)) {
+                if (prestigeForest(player, 80000)) break;
+            } else if (isWhithin(player, 160, 170)) {
+                if (prestigeForest(player, 90000)) break;
+            } else if (isWhithin(player, 170, 180)) {
+                if (prestigeForest(player, 100000)) break;
+            } else if (isWhithin(player, 180, 190)) {
+                if (prestigeForest(player, 110000)) break;
+            } else if (isWhithin(player, 190, 200)) {
+                if (prestigeForest(player, 120000)) break;
+            } else if (isWhithin(player, 200, 210)) {
+                if (prestigeForest(player, 130000)) break;
+            } else if (isWhithin(player, 210, 220)) {
+                if (prestigeForest(player, 140000)) break;
+            } else if (isWhithin(player, 220, 230)) {
+                if (prestigeForest(player, 150000)) break;
+            } else if (isWhithin(player, 230, 240)) {
+                if (prestigeForest(player, 160000)) break;
+            } else if (isWhithin(player, 240, 250)) {
+                if (prestigeForest(player, 170000)) break;
+            } else if (isWhithin(player, 250, 260)) {
+                if (prestigeForest(player, 180000)) break;
+            } else if (isWhithin(player, 260, 270)) {
+                if (prestigeForest(player, 190000)) break;
+            } else if (isWhithin(player, 270, 280)) {
+                if (prestigeForest(player, 200000)) break;
+            } else if (isWhithin(player, 280, 290)) {
+                if (prestigeForest(player, 210000)) break;
+            } else if (isWhithin(player, 290, 300)) {
+                if (prestigeForest(player, 220000)) break;
+            } else if (isWhithin(player, 300, 310)) {
+                if (prestigeForest(player, 230000)) break;
+            } else if (isWhithin(player, 310, 320)) {
+                if (prestigeForest(player, 240000)) break;
+            } else if (isWhithin(player, 320, 330)) {
+                if (prestigeForest(player, 250000)) break;
+            } else if (isWhithin(player, 330, 340)) {
+                if (prestigeForest(player, 260000)) break;
+            } else if (isWhithin(player, 340, 350)) {
+                if (prestigeForest(player, 270000)) break;
+            } else if (isWhithin(player, 350, 360)) {
+                if (prestigeForest(player, 280000)) break;
+            } else if (isWhithin(player, 360, 370)) {
+                if (prestigeForest(player, 290000)) break;
+            } else if (isWhithin(player, 370, 380)) {
+                if (prestigeForest(player, 300000)) break;
+            } else if (isWhithin(player, 380, 390)) {
+                if (prestigeForest(player, 310000)) break;
+            } else if (isWhithin(player, 390, 400)) {
+                if (prestigeForest(player, 320000)) break;
+            } else if (isWhithin(player, 400, 410)) {
+                if (prestigeForest(player, 330000)) break;
+            } else if (isWhithin(player, 410, 420)) {
+                if (prestigeForest(player, 340000)) break;
+            } else if (isWhithin(player, 420, 430)) {
+                if (prestigeForest(player, 350000)) break;
+            } else if (isWhithin(player, 430, 440)) {
+                if (prestigeForest(player, 360000)) break;
+            } else if (isWhithin(player, 440, 450)) {
+                if (prestigeForest(player, 370000)) break;
+            } else if (isWhithin(player, 450, 460)) {
+                if (prestigeForest(player, 380000)) break;
+            } else if (isWhithin(player, 460, 470)) {
+                if (prestigeForest(player, 390000)) break;
+            } else if (isWhithin(player, 470, 480)) {
+                if (prestigeForest(player, 400000)) break;
+            } else if (isWhithin(player, 480, 490)) {
+                if (prestigeForest(player, 410000)) break;
+            } else if (isWhithin(player, 490, 500)) {
+                if (prestigeForest(player, 420000)) break;
+            } else if (isWhithin(player, 500, 510)) {
+                if (prestigeForest(player, 430000)) break;
+            } else if (isWhithin(player, 510, 520)) {
+                if (prestigeForest(player, 440000)) break;
+            } else if (isWhithin(player, 520, 530)) {
+                if (prestigeForest(player, 450000)) break;
+            } else if (isWhithin(player, 530, 540)) {
+                if (prestigeForest(player, 460000)) break;
+            } else if (isWhithin(player, 540, 550)) {
+                if (prestigeForest(player, 470000)) break;
+            } else if (isWhithin(player, 550, 560)) {
+                if (prestigeForest(player, 480000)) break;
+            } else if (isWhithin(player, 560, 570)) {
+                if (prestigeForest(player, 490000)) break;
+            } else if (isWhithin(player, 570, 580)) {
+                if (prestigeForest(player, 500000)) break;
+            } else if (isWhithin(player, 580, 590)) {
+                if (prestigeForest(player, 510000)) break;
+            } else if (isWhithin(player, 590, 600)) {
+                if (prestigeForest(player, 520000)) break;
+            } else if (isWhithin(player, 600, 610)) {
+                if (prestigeForest(player, 530000)) break;
+            } else if (isWhithin(player, 610, 620)) {
+                if (prestigeForest(player, 540000)) break;
+            } else if (isWhithin(player, 620, 630)) {
+                if (prestigeForest(player, 550000)) break;
+            } else if (isWhithin(player, 630, 640)) {
+                if (prestigeForest(player, 560000)) break;
+            } else if (isWhithin(player, 640, 650)) {
+                if (prestigeForest(player, 570000)) break;
+            } else if (isWhithin(player, 650, 660)) {
+                if (prestigeForest(player, 580000)) break;
+            } else if (isWhithin(player, 660, 670)) {
+                if (prestigeForest(player, 590000)) break;
+            } else if (isWhithin(player, 670, 680)) {
+                if (prestigeForest(player, 600000)) break;
+            } else if (isWhithin(player, 680, 690)) {
+                if (prestigeForest(player, 610000)) break;
+            } else if (isWhithin(player, 690, 700)) {
+                if (prestigeForest(player, 620000)) break;
+            } else if (isWhithin(player, 700, 710)) {
+                if (prestigeForest(player, 630000)) break;
+            } else if (isWhithin(player, 710, 720)) {
+                if (prestigeForest(player, 640000)) break;
+            } else if (isWhithin(player, 720, 730)) {
+                if (prestigeForest(player, 650000)) break;
+            } else if (isWhithin(player, 730, 740)) {
+                if (prestigeForest(player, 660000)) break;
+            } else if (isWhithin(player, 740, 750)) {
+                if (prestigeForest(player, 670000)) break;
+            } else if (isWhithin(player, 750, 760)) {
+                if (prestigeForest(player, 680000)) break;
+            } else if (isWhithin(player, 760, 770)) {
+                if (prestigeForest(player, 690000)) break;
+            } else if (isWhithin(player, 770, 780)) {
+                if (prestigeForest(player, 700000)) break;
+            } else if (isWhithin(player, 780, 790)) {
+                if (prestigeForest(player, 710000)) break;
+            } else if (isWhithin(player, 790, 800)) {
+                if (prestigeForest(player, 720000)) break;
+            } else if (isWhithin(player, 800, 810)) {
+                if (prestigeForest(player, 730000)) break;
+            } else if (isWhithin(player, 810, 820)) {
+                if (prestigeForest(player, 740000)) break;
+            } else if (isWhithin(player, 820, 830)) {
+                if (prestigeForest(player, 750000)) break;
+            } else if (isWhithin(player, 830, 840)) {
+                if (prestigeForest(player, 760000)) break;
+            } else if (isWhithin(player, 840, 850)) {
+                if (prestigeForest(player, 770000)) break;
+            } else if (isWhithin(player, 850, 860)) {
+                if (prestigeForest(player, 780000)) break;
+            } else if (isWhithin(player, 860, 870)) {
+                if (prestigeForest(player, 790000)) break;
+            } else if (isWhithin(player, 870, 880)) {
+                if (prestigeForest(player, 800000)) break;
+            } else if (isWhithin(player, 880, 890)) {
+                if (prestigeForest(player, 810000)) break;
+            } else if (isWhithin(player, 890, 900)) {
+                if (prestigeForest(player, 820000)) break;
+            } else if (isWhithin(player, 900, 910)) {
+                if (prestigeForest(player, 830000)) break;
+            } else if (isWhithin(player, 910, 920)) {
+                if (prestigeForest(player, 840000)) break;
+            } else if (isWhithin(player, 920, 930)) {
+                if (prestigeForest(player, 850000)) break;
+            } else if (isWhithin(player, 930, 940)) {
+                if (prestigeForest(player, 860000)) break;
+            } else if (isWhithin(player, 940, 950)) {
+                if (prestigeForest(player, 870000)) break;
+            } else if (isWhithin(player, 950, 960)) {
+                if (prestigeForest(player, 880000)) break;
+            } else if (isWhithin(player, 960, 970)) {
+                if (prestigeForest(player, 890000)) break;
+            } else if (isWhithin(player, 970, 980)) {
+                if (prestigeForest(player, 900000)) break;
+            } else if (isWhithin(player, 980, 990)) {
+                if (prestigeForest(player, 910000)) break;
+            } else if (isWhithin(player, 990, 999)) {
+                if (prestigeForest(player, 920000)) break;
             } else {
                 client.updateUserInfo(message.member, {
                     "users.$.level": 1000,
@@ -312,9 +212,11 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 break;
             }
-            if (player.level !== 1000) await message.reply('Calcule du level en cours....')
             await levelup(client, message, player);
-            if (player.level !== 1 && player.level !== 1000) await message.reply(`Tu es maintenant level => ${player.level}`);
+        }
+        if (player.level !== 1000 && player !== 1) {
+            message.channel.send('Calcule du level en cours....')
+            message.channel.send(`Tu es maintenant level => ***${player.level}***`);
         }
     }
 
@@ -331,12 +233,12 @@ const battle = async (client, message, player, hostile, userInfo) => {
     let hostileAgility = hostile.stats.agility + (player.prestige * 10500);
     let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500);
     let hostilePo = hostile.po;
-    let hostileExp = hostile.experience ;
+    let hostileExp = hostile.experience;
 
     if (player.level <= 500 && player.prestige !== 0) {
         hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
         hostilePo = hostile.po * player.prestige
-    } else if (player.level >= 500 && player.prestige !== 0){
+    } else if (player.level >= 500 && player.prestige !== 0) {
         hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 1750
         hostilePo = hostile.po * player.prestige
     }
@@ -409,10 +311,10 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo}<:GoldCoin:781575067108507648> et ${hostileExp}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 }
             }
         }

@@ -183,7 +183,7 @@ const items = (client) => {
 
     createItems("God armor", "heroique", "toute classe", "63", "armor", "Armure de dieux", 500000, 0, 0, 0, 0, 800, 400);
 
-    createItems("Demoniac armor", "heroique", "toute classe", "64", "armor", "Armure du roi démon", 750000, 0, 0, 0, 0, 1200, 600, 1);
+    createItems("Demoniac armor", "heroique", "toute classe", "64", "armor", "Armure du roi démon", 750000, 0, 0, 0, 0, 1200, 600);
 
     //ACCESSOIRES
 
@@ -255,7 +255,7 @@ const items = (client) => {
 
     createItems("Divin potion", "Divinity", "toute classe", "97", "potion", "heal de 10000 HP", 100000, 0, 0, 0, 0, 10000, 0);
 
-    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000", 1000000, 0, 0, 0, 0, 50000, 0, 1);
+    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000 HP", 1000000, 0, 0, 0, 0, 50000, 0, 1);
 
     //DROP ITEMS
 
@@ -281,7 +281,7 @@ const items = (client) => {
 
     createItems("Aegis", "drop", "toute classe", null, "Oh", "Bouclier divin", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
 
-    createItems("Divino démoniac armor", "drop", "toute classe", null, "armor", "Armure Divino Démoniaque", 10000000, 0, 10000, 10000, 0, 30000, 30000);
+    createItems("Divino démoniac armor", "drop", "toute classe", null, "armor", "Armure Divino Démoniaque", 10000000, 0, 10000, 10000, 0, 30000, 30000, 1);
 
     createItems("Divino démoniac broach", "drop", "toute classe", null, "broach", "Broche Divino Démoniaque", 15000000, 10000, 10000, 10000, 10000, 10000, 10000);
 

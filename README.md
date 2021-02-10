@@ -52,6 +52,10 @@ _Ping_: Permet de voir le ping du Bot et de l'API.
 
 _Battle_: Permet de lancer un combat avec le nom du monstre que vous voulez combattre.
 
+_Battleduo_: Permet de lancer un combat avec son teammate ( il faut le ping )
+
+_Teams_: Permet de créer, dissoudre ou voir son groupe !
+
 _Equip_: Permet de s'équiper d'un objet avec le nom de celui-ci dans son inventaire.
 
 _Uequip_: Permet de retirer un objet avec son nom quand il est équipé.
