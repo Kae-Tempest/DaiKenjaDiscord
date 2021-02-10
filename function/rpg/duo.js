@@ -4,7 +4,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
-        while (player.level !== 0 && player.level !== 1000) {
+        while (player.level !== 0 && player.level !== 1000 && player2.level !== 0 && player2.level !== 1000) {
             if (isWhithin(player, 0, 10) || isWhithin(player2, 0, 10)) {
                 if (prestigeForest(player, 250) && prestigeForest(player2, 250)) break;
             } else if (isWhithin(player, 10, 20) || isWhithin(player2, 10, 20)) {
@@ -205,11 +205,13 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 if (prestigeForest(player, 910000) && prestigeForest(player2, 910000)) break;
             } else if (isWhithin(player, 990, 999) || isWhithin(player2, 990, 999)) {
                 if (prestigeForest(player, 920000) && prestigeForest(player2, 920000)) break;
-            } else {
+            } else if (player.level >= 1000){
                 client.updateUserInfo(message.member, {
                     "users.$.level": 1000,
                     "users.$.experience": 0
                 });
+                break
+            } else if (player2.level >= 1000) {
                 client.updateUserInfo(user,{
                     "users.$.level": 1000,
                     "users.$.experience": 0
