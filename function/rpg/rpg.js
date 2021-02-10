@@ -4,7 +4,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
-        while (player.level !== 0 && player.level !== 1001) {
+        while (player.level !== 0 && player.level !== 1000) {
             if (isWhithin(player, 0, 10)) {
                 if (prestigeForest(player, 250)) break;
             } else if (isWhithin(player, 10, 20)) {
