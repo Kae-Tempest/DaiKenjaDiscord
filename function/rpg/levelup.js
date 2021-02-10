@@ -1,8 +1,8 @@
-const {leveling} = require('./leveling');
+const { leveling } = require('./leveling');
 
-const levelup = async (client, message, player, player2 , user) => {
-//Aumentation des niveaux
-    leveling(client, message, player, player2 , user);
+const levelup = async (client, message, player, player2, user) => {
+    //Aumentation des niveaux
+    leveling(client, message, player, player2, user);
 
     function get_vita(lvl) {
         const vita = [0, 0, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500, 5, 5, 3, 6, 8, 3, 4, 3, 6, 10, 2, 8, 2, 5, 4, 5, 2, 6, 5, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 25, 4, 8, 2, 5, 3, 6, 8, 3, 4, 10, 6, 4, 3, 8, 2, 5, 4, 5, 2, 10, 5, 4, 8, 5, 4, 5, 4, 9, 3, 10, 3, 6, 8, 2, 5, 2, 2, 3, 5, 10, 8, 2, 6, 2, 8, 5, 5, 4, 5, 500]
@@ -68,6 +68,33 @@ const levelup = async (client, message, player, player2 , user) => {
     lvlstats(player.level);
 }
 
+
+const isWhithin = (player, min, max) => {
+    if (min <= 0) {
+        if (player.level <= max) return true;
+    } else {
+        if (min < player.level && player.level <= max) return true;
+    }
+    return false
+}
+
+const prestigeForest = (player, factor) => {
+    if (player.experience < player.level * factor - 1) return true;
+    if (player.prestige === 1 && player.experience < player.level * player.prestige * 10 * factor - 1) return true;
+    if (player.prestige === 2 && player.experience < player.level * player.prestige * 50 * factor - 1) return true;
+    if (player.prestige === 3 && player.experience < player.level * player.prestige * 200 * factor - 1) return true;
+    if (player.prestige === 4 && player.experience < player.level * player.prestige * 150 * factor - 1) return true;
+    if (player.prestige === 5 && player.experience < player.level * player.prestige * 200 * factor - 1) return true;
+    if (player.prestige === 6 && player.experience < player.level * player.prestige * 250 * factor - 1) return true;
+    if (player.prestige === 7 && player.experience < player.level * player.prestige * 300 * factor - 1) return true;
+    if (player.prestige === 8 && player.experience < player.level * player.prestige * 350 * factor - 1) return true;
+    if (player.prestige === 9 && player.experience < player.level * player.prestige * 400 * factor - 1) return true;
+    if (player.prestige === 10 && player.experience < player.level * player.prestige * 500 * factor - 1) return true;
+    return false
+}
+
 module.exports = {
-    levelup
+    levelup,
+    isWhithin,
+    prestigeForest
 }
