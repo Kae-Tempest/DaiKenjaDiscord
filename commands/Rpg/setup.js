@@ -33,6 +33,7 @@ module.exports.run = async (client, message, args, userInfo) => {
                                     rdc: 0,
                                     daily: 0,
                                     po: 200,
+                                    teams: "None",
                                     class: classe.name,
                                     stats: classe.stats,
                                     statsMax: classe.stats,

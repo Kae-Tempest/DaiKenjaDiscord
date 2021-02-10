@@ -42,6 +42,7 @@ module.exports = client => {
                         rdc: 0,
                         daily: 0,
                         po: 200,
+                        teams: "None",
                         class: "",
                         stats: {},
                         statsMax: {},
