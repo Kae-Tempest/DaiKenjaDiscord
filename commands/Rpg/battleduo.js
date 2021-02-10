@@ -21,7 +21,7 @@ module.exports.help = {
     aliases: ["battleduo","Battleduo","BATTLEDUO","bd","Bd","BD"],
     category: 'rpg',
     description: 'Bataille avec un monstre avec votre duo !',
-    cd: 1,
+    cd: 20,
     usage: "<@your_teammate> <enemy_name>",
     isUserAdmin: false,
     permissions: false,

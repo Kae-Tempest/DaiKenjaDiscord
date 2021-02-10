@@ -63,7 +63,7 @@ module.exports.run = async (client, message, args, userInfo) => {
             message.channel.send(`Vous avez pris trop de temps pour choisir votre classe !`)
         }
     } else {
-        message.channel.send(`Veuillez choisir votre classe (syntax: \`setup nom_de_classe\`)! Les classes disposible: ${classes.map(e => `${e.name}`).join(', ')}`);
+        message.channel.send(`Veuillez choisir votre classe (syntax: \`!setup nom_de_classe\`)! Les classes disposible: ${classes.map(e => `${e.name}`).join(', ')}`);
     }
 }
 
