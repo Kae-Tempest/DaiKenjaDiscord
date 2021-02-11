@@ -228,7 +228,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
             }
             await levelup(client, message, player, player2, user);
         }
-        if (player.level !== 1000 && player.level !== 1 && player2.level !== 1000 && player.level !== 1) {
+        if (player.level !== 1000 && player.level !== 1 || player2.level !== 1000 && player.level !== 1) {
             message.channel.send('Calcule du level en cours....')
             message.channel.send(`${player.username} est maintenant level => ***${player.level}***`);
             message.channel.send(`${player2.username} est maintenant level => ***${player2.level}***`);
