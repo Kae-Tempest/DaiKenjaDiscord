@@ -184,21 +184,21 @@ module.exports.run = async (client, message, userInfo) => {
 
     })
 
-    const position = classes.map(e => e.name.toLowerCase()).indexOf(userInfo.class.toLowerCase());
+    const position = classes.map(e => e.name.toLowerCase()).indexOf(player.class.toLowerCase());
     const classe = classes[position];
     const embed = new MessageEmbed()
-        .setAuthor(`${message.author.username} | ${userInfo.class} de niveau ${userInfo.level} et de prestige ${userInfo.prestige}`, message.author.displayAvatarURL())
+        .setAuthor(`${message.author.username} | ${player.class} de niveau ${player.level} et de prestige ${player.prestige}`, message.author.displayAvatarURL())
         .setThumbnail(classe.icon)
-        .setDescription(`${userInfo.description !== "" ? classe.description : userInfo.description}`)
+        .setDescription(`${player.description !== "" ? classe.description : player.description}`)
         .addField("Statistique :",
-            `${Object.entries(userInfo.stats).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join('\n')}
-            ${userInfo.experience} points d'experiences (${userInfo.experience === 0 ? 0 : (( player.experience / exptotalFinal) * 100).toFixed(2)}%)`
+            `${Object.entries(player.stats).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join('\n')}
+            ${player.experience} points d'experiences (${player.experience === 0 ? 0 : (( player.experience / exptotalFinal) * 100).toFixed(2)}%)`
         )
         .addField("Inventaire :",
-            `${userInfo.po}<:GoldCoin:781575067108507648>
-                   ${userInfo.inventory.length !== 0 ? userInfo.inventory.join(", ") : "L'iventaire est vide"}`
+            `${player.po}<:GoldCoin:781575067108507648>
+                   ${player.inventory.length !== 0 ? player.inventory.join(", ") : "L'inventaire est vide"}`
         )
-        .addField("Equipement :", `${Object.entries(userInfo.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
+        .addField("Equipement :", `${Object.entries(player.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
 
     message.channel.send(embed);
 };

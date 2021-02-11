@@ -210,8 +210,16 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                     "users.$.level": 1000,
                     "users.$.experience": 0
                 });
-                break
             } else if (player2.level >= 1000) {
+                client.updateUserInfo(user,{
+                    "users.$.level": 1000,
+                    "users.$.experience": 0
+                })
+            } else if (player.level >= 1000 && player2.level >= 1000) {
+                client.updateUserInfo(message.member, {
+                    "users.$.level": 1000,
+                    "users.$.experience": 0
+                });
                 client.updateUserInfo(user,{
                     "users.$.level": 1000,
                     "users.$.experience": 0
@@ -220,7 +228,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
             }
             await levelup(client, message, player, player2, user);
         }
-        if (player.level !== 1000 && player !== 1) {
+        if (player.level !== 1000 && player.level !== 1 && player2.level !== 1000 && player.level !== 1) {
             message.channel.send('Calcule du level en cours....')
             message.channel.send(`${player.username} est maintenant level => ***${player.level}***`);
             message.channel.send(`${player2.username} est maintenant level => ***${player2.level}***`);

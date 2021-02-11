@@ -1,4 +1,4 @@
-const {levelingduo } = require('./leveling');
+const {levelingduo} = require('./leveling');
 
 const levelup = async (client, message, player, player2, user) => {
     //Aumentation des niveaux
@@ -41,7 +41,7 @@ const levelup = async (client, message, player, player2, user) => {
     }
 
     function lvlstats(lvl) {
-        if (lvl === 1000) {
+        if (lvl >= 1000) {
             return message.reply("Tu es level max !");
         }
         if (player.level === lvl) {
