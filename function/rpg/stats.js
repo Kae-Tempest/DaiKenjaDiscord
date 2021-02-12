@@ -10,9 +10,8 @@ const calculateUserStatsEquip = async (client, message) => {
 
         const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(userEquipment[property]);
         const itemStats = getItemInfo[itemInfoPosition].stats;
-        const itemType = getItemInfo[itemInfoPosition].type
         for (stats in itemStats) {
-            console.log(userInfo.unsername + "prout")
+            console.log(userInfo.username + " prout")
             switch (stats) {
                 case "strength":
                     client.updateUserInfo(message.member, {
@@ -63,7 +62,7 @@ const calculateUserStatsUequip = async (client, message) => {
         const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(userEquipment[property]);
         const itemStats = getItemInfo[itemInfoPosition].stats;
         for (stats in itemStats) {
-            console.log(userInfo.unsername + "prout2")
+            console.log(userInfo.username + " prout2")
             switch (stats) {
                 case "strength":
                     if (userStats2.strength > itemStats[stats]) {
