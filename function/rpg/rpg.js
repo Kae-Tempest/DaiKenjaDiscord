@@ -1,6 +1,6 @@
 const { levelup, isWhithin, prestigeForest } = require('./levelup');
 
-const battle = async (client, message, player, hostile, userInfo) => {
+const battle = async (client, message, player, hostile) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');
 
     async function level() {
@@ -293,7 +293,7 @@ const battle = async (client, message, player, hostile, userInfo) => {
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(101))
                     if (loot > 99 - player.prestige) {
-                        const userInventory = userInfo.inventory
+                        const userInventory = player.inventory
                         if (hostile.loot !== undefined) {
                             const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
                             userInventory.push(drop)
