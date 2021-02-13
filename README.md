@@ -72,6 +72,6 @@ _Ressusrection:_ Permet de retourner à la vie si on meurt au combat. `(commande
 
 _Setup_: Permet de créer son personnage.
 
-_Use_: Permet des objets de type => **potion**
+_Use_: Permet d'utiliser des objets de type => **potion** && **scroll**
 
 Created by Kae Tempest / Correct by Malvina
