@@ -1,7 +1,6 @@
 const {Collection} = require('discord.js');
 module.exports = async (client, message) => {
     if (message.channel.type === "dm" || message.author.bot || !message.content.startsWith((client.config.PREFIX))) return;
-    //if (message.guild.id !== "762363733539946496" || message.guild.id !== "778284574479482910") return message.reply("Go fork my project don't steal my bot (https://github.com/Kae-Tempest/DaiKenjaDiscord)")
 
     const data = await client.getGuild(message.guild);
     const position = await data.users.map(e => e.id).indexOf(message.member.id);
