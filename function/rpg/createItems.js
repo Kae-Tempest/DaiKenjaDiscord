@@ -41,7 +41,7 @@ const items = (client) => {
             fs.appendFileSync('./assets/shop/accessory.json', data);
             if (!last) writingDot("accessory.json")
         }
-        if (type === "potion") {
+        if (type === "potion" || type === "scroll") {
             fs.appendFileSync('./assets/shop/consommable.json', data);
             if (!last) writingDot("consommable.json")
         }
@@ -255,7 +255,81 @@ const items = (client) => {
 
     createItems("Divin potion", "Divinity", "toute classe", "97", "potion", "heal de 10000 HP", 100000, 0, 0, 0, 0, 10000, 0);
 
-    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000 HP", 1000000, 0, 0, 0, 0, 50000, 0, 1);
+    createItems("Demoniac potion", "Demoniaque", "toute classe", "98", "potion", "heal de 50000 HP", 1000000, 0, 0, 0, 0, 50000);
+
+    //SCROLL
+
+    createItems("Basic strength scroll", "commun", "toute classe","99","scroll","Augmente la force de 50", 1000, 50 ,0,0,0,0,0);
+
+    createItems("Basic agility scroll", "commun", "toute classe","100","scroll","Augmente la agility de 50", 1000, 0,50,0,0,0,0);
+
+    createItems("Basic intelligence scroll", "commun", "toute classe","101","scroll","Augmente la intelligence de 50", 1000,0,0,50,0,0,0 );
+
+    createItems("Basic spirit scroll", "commun", "toute classe","102","scroll","Augmente la spirit de 50", 1000,0,0,0,50,0,0 );
+
+    createItems("Basic vitality scroll", "commun", "toute classe","103","scroll","Augmente la vitality de 50", 1000, 0,0,0,0,50,0);
+
+    createItems("Basic constitution scroll", "commun", "toute classe","104","scroll","Augmente la constitution de 50", 1000, 0,0,0,0,0,50);
+    
+    createItems("Rare strength scroll", "rare", "toute classe","105","scroll","Augmente la force de 200", 5000, 200 ,0,0,0,0,0);
+
+    createItems("Rare agility scroll", "rare", "toute classe","106","scroll","Augmente la agility de 200", 5000, 0,200,0,0,0,0);
+
+    createItems("Rare intelligence scroll", "rare", "toute classe","107","scroll","Augmente la intelligence de 200", 5000,0,0,200,0,0,0 );
+
+    createItems("Rare spirit scroll", "rare", "toute classe","108","scroll","Augmente la spirit de 200", 5000,0,0,0,200,0,0 );
+
+    createItems("Rare vitality scroll", "rare", "toute classe","109","scroll","Augmente la vitality de 200", 5000, 0,0,0,0,200,0);
+
+    createItems("Rare constitution scroll", "rare", "toute classe","110","scroll","Augmente la constitution de 200", 5000, 0,0,0,0,0,200);
+
+    createItems("Lengendaire strength scroll", "lengendaire", "toute classe","111","scroll","Augmente la force de 1000", 10000, 1000 ,0,0,0,0,0);
+
+    createItems("Lengendaire agility scroll", "lengendaire", "toute classe","112","scroll","Augmente la agility de 1000", 10000, 0,1000,0,0,0,0);
+
+    createItems("Lengendaire intelligence scroll", "lengendaire", "toute classe","113","scroll","Augmente la intelligence de 1000", 10000,0,0,1000,0,0,0 );
+
+    createItems("Lengendaire spirit scroll", "lengendaire", "toute classe","114","scroll","Augmente la spirit de 1000", 10000,0,0,0,1000,0,0 );
+
+    createItems("Lengendaire vitality scroll", "lengendaire", "toute classe","115","scroll","Augmente la vitality de 1000", 10000, 0,0,0,0,1000,0);
+
+    createItems("Lengendaire constitution scroll", "lengendaire", "toute classe","116","scroll","Augmente la constitution de 1000", 10000, 0,0,0,0,0,1000);
+
+    createItems("Heroique strength scroll", "heroique", "toute classe","117","scroll","Augmente la force de 10000", 500000, 10000 ,0,0,0,0,0);
+
+    createItems("Heroique agility scroll", "heroique", "toute classe","118","scroll","Augmente la agility de 10000", 500000, 0,10000,0,0,0,0);
+
+    createItems("Heroique intelligence scroll", "heroique", "toute classe","118","scroll","Augmente la intelligence de 10000", 500000,0,0,10000,0,0,0 );
+
+    createItems("Heroique spirit scroll", "heroique", "toute classe","119","scroll","Augmente la spirit de 10000", 500000,0,0,0,10000,0,0 );
+
+    createItems("Heroique vitality scroll", "heroique", "toute classe","120","scroll","Augmente la vitality de 10000", 500000, 0,0,0,0,10000,0);
+
+    createItems("Heroique constitution scroll", "heroique", "toute classe","121","scroll","Augmente la constitution de 10000", 500000, 0,0,0,0,0,10000);
+
+    createItems("Divinity strength scroll", "Divinity", "toute classe","122","scroll","Augmente la force de 50000", 1000000, 50000 ,0,0,0,0,0);
+
+    createItems("Divinity agility scroll", "Divinity", "toute classe","123","scroll","Augmente la agility de 50000", 1000000, 0,50000,0,0,0,0);
+
+    createItems("Divinity intelligence scroll", "Divinity", "toute classe","124","scroll","Augmente la intelligence de 50000", 1000000,0,0,50000,0,0,0 );
+
+    createItems("Divinity spirit scroll", "Divinity", "toute classe","125","scroll","Augmente la spirit de 50000", 1000000,0,0,0,50000,0,0 );
+
+    createItems("Divinity vitality scroll", "Divinity", "toute classe","126","scroll","Augmente la vitality de 50000", 1000000, 0,0,0,0,50000,0);
+
+    createItems("Divinity constitution scroll", "Divinity", "toute classe","127","scroll","Augmente la constitution de 50000", 1000000, 0,0,0,0,0,50000);
+
+    createItems("Demoniac strength scroll", "Démoniaque", "toute classe","128","scroll","Augmente la force de 100000", 500000, 100000 ,0,0,0,0,0);
+
+    createItems("Demoniac agility scroll", "Démoniaque", "toute classe","129","scroll","Augmente la agility de 100000", 500000, 0,100000,0,0,0,0);
+
+    createItems("Demoniac intelligence scroll", "Démoniaque", "toute classe","130","scroll","Augmente la intelligence de 100000", 500000,0,0,100000,0,0,0 );
+
+    createItems("Demoniac spirit scroll", "Démoniaque", "toute classe","131","scroll","Augmente la spirit de 100000", 500000,0,0,0,100000,0,0 );
+
+    createItems("Demoniac vitality scroll", "Démoniaque", "toute classe","132","scroll","Augmente la vitality de 100000", 500000, 0,0,0,0,100000,0);
+
+    createItems("Demoniac constitution scroll", "Démoniaque", "toute classe","133","scroll","Augmente la constitution de 100000", 500000, 0,0,0,0,0,100000,1);
 
     //DROP ITEMS
 

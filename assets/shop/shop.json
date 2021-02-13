@@ -1560,7 +1560,582 @@
   "cost": 1000000,
   "stats": {
     "vitality": 50000,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Basic strength scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "99",
+  "type": "scroll",
+  "description": "Augmente la force de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
     "constitution": 0,
+    "strength": 50,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Basic agility scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "100",
+  "type": "scroll",
+  "description": "Augmente la agility de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 50,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Basic intelligence scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "101",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 50,
+    "spirit": 0
+  }
+},{
+  "name": "Basic spirit scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "102",
+  "type": "scroll",
+  "description": "Augmente la spirit de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 50
+  }
+},{
+  "name": "Basic vitality scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "103",
+  "type": "scroll",
+  "description": "Augmente la vitality de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 50,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Basic constitution scroll",
+  "rank": "commun",
+  "class": "toute classe",
+  "label": "104",
+  "type": "scroll",
+  "description": "Augmente la constitution de 50",
+  "cost": 1000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 50,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Rare strength scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "105",
+  "type": "scroll",
+  "description": "Augmente la force de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 200,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Rare agility scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "106",
+  "type": "scroll",
+  "description": "Augmente la agility de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 200,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Rare intelligence scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "107",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 200,
+    "spirit": 0
+  }
+},{
+  "name": "Rare spirit scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "108",
+  "type": "scroll",
+  "description": "Augmente la spirit de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 200
+  }
+},{
+  "name": "Rare vitality scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "109",
+  "type": "scroll",
+  "description": "Augmente la vitality de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 200,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Rare constitution scroll",
+  "rank": "rare",
+  "class": "toute classe",
+  "label": "110",
+  "type": "scroll",
+  "description": "Augmente la constitution de 200",
+  "cost": 5000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 200,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Lengendaire strength scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "111",
+  "type": "scroll",
+  "description": "Augmente la force de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 1000,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Lengendaire agility scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "112",
+  "type": "scroll",
+  "description": "Augmente la agility de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 1000,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Lengendaire intelligence scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "113",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 1000,
+    "spirit": 0
+  }
+},{
+  "name": "Lengendaire spirit scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "114",
+  "type": "scroll",
+  "description": "Augmente la spirit de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 1000
+  }
+},{
+  "name": "Lengendaire vitality scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "115",
+  "type": "scroll",
+  "description": "Augmente la vitality de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 1000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Lengendaire constitution scroll",
+  "rank": "lengendaire",
+  "class": "toute classe",
+  "label": "116",
+  "type": "scroll",
+  "description": "Augmente la constitution de 1000",
+  "cost": 10000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 1000,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Heroique strength scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "117",
+  "type": "scroll",
+  "description": "Augmente la force de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 10000,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Heroique agility scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "118",
+  "type": "scroll",
+  "description": "Augmente la agility de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 10000,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Heroique intelligence scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "118",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 10000,
+    "spirit": 0
+  }
+},{
+  "name": "Heroique spirit scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "119",
+  "type": "scroll",
+  "description": "Augmente la spirit de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 10000
+  }
+},{
+  "name": "Heroique vitality scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "120",
+  "type": "scroll",
+  "description": "Augmente la vitality de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 10000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Heroique constitution scroll",
+  "rank": "heroique",
+  "class": "toute classe",
+  "label": "121",
+  "type": "scroll",
+  "description": "Augmente la constitution de 10000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 10000,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divinity strength scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "122",
+  "type": "scroll",
+  "description": "Augmente la force de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 50000,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divinity agility scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "123",
+  "type": "scroll",
+  "description": "Augmente la agility de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 50000,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divinity intelligence scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "124",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 50000,
+    "spirit": 0
+  }
+},{
+  "name": "Divinity spirit scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "125",
+  "type": "scroll",
+  "description": "Augmente la spirit de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 50000
+  }
+},{
+  "name": "Divinity vitality scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "126",
+  "type": "scroll",
+  "description": "Augmente la vitality de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 50000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Divinity constitution scroll",
+  "rank": "Divinity",
+  "class": "toute classe",
+  "label": "127",
+  "type": "scroll",
+  "description": "Augmente la constitution de 50000",
+  "cost": 1000000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 50000,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac strength scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "128",
+  "type": "scroll",
+  "description": "Augmente la force de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 100000,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac agility scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "129",
+  "type": "scroll",
+  "description": "Augmente la agility de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 100000,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac intelligence scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "130",
+  "type": "scroll",
+  "description": "Augmente la intelligence de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 100000,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac spirit scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "131",
+  "type": "scroll",
+  "description": "Augmente la spirit de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 100000
+  }
+},{
+  "name": "Demoniac vitality scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "132",
+  "type": "scroll",
+  "description": "Augmente la vitality de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 100000,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "spirit": 0
+  }
+},{
+  "name": "Demoniac constitution scroll",
+  "rank": "Démoniaque",
+  "class": "toute classe",
+  "label": "133",
+  "type": "scroll",
+  "description": "Augmente la constitution de 100000",
+  "cost": 500000,
+  "stats": {
+    "vitality": 0,
+    "constitution": 100000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
