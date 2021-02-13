@@ -10,7 +10,7 @@ module.exports.run = (client, message) => {
             {name:'Utilisateurs' , value:`${client.guilds.cache.map(g => g.memberCount).reduce((a,b) => a + b)}`, inline: true},
             {name:'Support' , value:`[Invite](https://discord.gg/WQP2Tt4bwE)`, inline: true},
             {name:'\u200b' , value:`\u200b`, inline: true},
-            {name:'Version' , value:`Dai Kenja V6.1`, inline: true}
+            {name:'Version' , value:`Dai Kenja V6.2`, inline: true}
         )
     message.channel.send(embed);
 };
