@@ -270,7 +270,7 @@
   "category": "Monster",
   "type": "hostile",
   "experience": 350,
-  "po": 3300,
+  "po": 330,
   "stats": {
     "vitality": 190,
     "constitution": 40,
