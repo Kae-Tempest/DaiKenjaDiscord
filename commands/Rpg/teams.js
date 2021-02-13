@@ -18,10 +18,10 @@ module.exports.run = async (client, message, args) => {
                 const teammate1 = [player1.username, player1.id]
                 const teammate2 = [player2.username, player2.id]
                 client.updateUserInfo(message.member, {
-                    "users.$.teams": teammate1
+                    "users.$.teams": teammate2
                 });
                 client.updateUserInfo(user, {
-                    "users.$.teams": teammate2
+                    "users.$.teams": teammate1
                 });
             }
             message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
