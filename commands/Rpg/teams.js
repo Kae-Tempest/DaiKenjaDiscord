@@ -23,8 +23,8 @@ module.exports.run = async (client, message, args) => {
                 client.updateUserInfo(user, {
                     "users.$.teams": teammate1
                 });
-            }
             message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
+            }
         }
     catch (e) {
         message.channel.send(`Creation de l'équipe annulé. Merci de confirmé votre la création de l'équipe en répondant \`oui\` la prochaine fois!`)
