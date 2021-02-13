@@ -15,13 +15,13 @@ module.exports.run = async (client, message, args) => {
                 max: 1, time: 10000, errors: ['time']
             });
             if (userEntry.first().content.toLowerCase() === "oui"){
-                const username1 = player1.username
-                const username2 = player2.username
+                const teammate1 = [player1.username, player1.id]
+                const teammate2 = [player2.username, player2.id]
                 client.updateUserInfo(message.member, {
-                    "users.$.teams": username2
+                    "users.$.teams": teammate1
                 });
                 client.updateUserInfo(user, {
-                    "users.$.teams": username1
+                    "users.$.teams": teammate2
                 });
             }
             message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
@@ -59,7 +59,7 @@ module.exports.run = async (client, message, args) => {
     if (player1.teams === "None") return message.reply("tu n'as pas d'équipier !!")
     const embed = new MessageEmbed()
     .setTitle(`Equipe de ${player1.username}`)
-    .setDescription(`${player1.username} est en duo avec ***${player1.teams}***`)
+    .setDescription(`${player1.username} est en duo avec ***${player1.teams[0]}***`)
     .setColor('RANDOM')
     .setFooter(`Duo`, message.author.avatarURL())
     .setTimestamp();
