@@ -14,7 +14,6 @@ module.exports = client => {
     console.clear();
     console.log('\033[2J');
     console.log(`${Daikenja.username} (${Daikenja.id}) connected at ${now} on ${Daikenja.server_name}`);
-    client.mongoose.init();
     fs.unlink('./assets/npc/hostile.json', (err) => {
         if (err) throw err
     })
@@ -37,11 +36,15 @@ module.exports = client => {
     })
     items(client);
     console.log("Items crées !")
+    client.mongoose.init();
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
     if (tokenDB.DBCONNECTION !== "mongodb://localhost:27017/test") client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
     const guild = [];
     client.guilds.cache.map(e => guild.push(e));
     guild.forEach(async g => {
+        const data = await client.getGuild(g);
+        if (!data) client.createGuild({guildID: g.id});
     });
+
 }
