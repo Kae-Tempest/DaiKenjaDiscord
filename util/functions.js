@@ -3,7 +3,7 @@ const {Guild} = require("../models/index")
 module.exports = client => {
     //New Guild
     client.createGuild = async guild => {
-        const merged = Object.assign({_id: mongoose.Types.ObjectId()}, guild);
+        const merged = Object.assign(guild);
         const createGuild = await new Guild(merged);
         createGuild.save()
     };
