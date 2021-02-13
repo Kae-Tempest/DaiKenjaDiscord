@@ -7,7 +7,7 @@ module.exports.run = (client, message) => {
 
     const embed = new MessageEmbed()
         .setTitle('Liste des monstres !')
-        .setColor('#F5F5F5')
+        .setColor('RANDOM')
         .setDescription(`Voici les differents monstre combattable :\n${monsters.map(monster => `${monster}`).join("\n")}`)
         .setFooter(`Kono sekai no kamigami ni yoru to`)
     message.channel.send(embed)
