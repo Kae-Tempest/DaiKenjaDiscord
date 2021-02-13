@@ -372,12 +372,12 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                     }
                 }
                 client.updateUserInfo(message.member, {
-                    "users.$.stats.vitality": playerHP,
+                    "users.$.stats.vitality": player1HP,
                     "users.$.po": player.po,
                     "users.$.experience": player.experience
                 });
                 client.updateUserInfo(user, {
-                    "users.$.stats.vitality": playerHP,
+                    "users.$.stats.vitality": player2HP,
                     "users.$.po": player2.po,
                     "users.$.experience": player2.experience
                 });
