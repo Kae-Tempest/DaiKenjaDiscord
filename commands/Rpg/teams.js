@@ -30,7 +30,7 @@ module.exports.run = async (client, message, args) => {
         message.channel.send(`Creation de l'équipe annulé. Merci de confirmé votre la création de l'équipe en répondant \`oui\` la prochaine fois!`)
         }
     }
-    if (args[0] === "delete"){
+    else if (args[0] === "delete"){
         const user = message.guild.member(message.mentions.users.first());
         if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
         const mentionedUser = await client.getUser(user);
