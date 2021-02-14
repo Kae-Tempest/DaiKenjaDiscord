@@ -360,7 +360,8 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                         const player2Inventory = player2.inventory
                         if (hostile.loot !== undefined) {
                             const drop = hostile.loot[Math.round(Math.random() * (hostile.loot.length - 1))]
-                            userInventory.push(drop)
+                            player1Inventory.push(drop);
+                            player2Inventory.push(drop);
                             client.updateUserInfo(message.member, {
                                 "users.$.inventory": player1Inventory
                             });
