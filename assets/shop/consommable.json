@@ -100,7 +100,7 @@
   "label": "99",
   "type": "scroll",
   "description": "Augmente la force de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -116,7 +116,7 @@
   "label": "100",
   "type": "scroll",
   "description": "Augmente la agility de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -132,7 +132,7 @@
   "label": "101",
   "type": "scroll",
   "description": "Augmente la intelligence de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -148,7 +148,7 @@
   "label": "102",
   "type": "scroll",
   "description": "Augmente la spirit de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -164,7 +164,7 @@
   "label": "103",
   "type": "scroll",
   "description": "Augmente la vitality de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 50,
     "constitution": 0,
@@ -180,7 +180,7 @@
   "label": "104",
   "type": "scroll",
   "description": "Augmente la constitution de 50",
-  "cost": 1000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
     "constitution": 50,
@@ -196,7 +196,7 @@
   "label": "105",
   "type": "scroll",
   "description": "Augmente la force de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -212,7 +212,7 @@
   "label": "106",
   "type": "scroll",
   "description": "Augmente la agility de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -228,7 +228,7 @@
   "label": "107",
   "type": "scroll",
   "description": "Augmente la intelligence de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -244,7 +244,7 @@
   "label": "108",
   "type": "scroll",
   "description": "Augmente la spirit de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -260,7 +260,7 @@
   "label": "109",
   "type": "scroll",
   "description": "Augmente la vitality de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 200,
     "constitution": 0,
@@ -276,7 +276,7 @@
   "label": "110",
   "type": "scroll",
   "description": "Augmente la constitution de 200",
-  "cost": 5000,
+  "cost": 500000,
   "stats": {
     "vitality": 0,
     "constitution": 200,
@@ -292,7 +292,7 @@
   "label": "111",
   "type": "scroll",
   "description": "Augmente la force de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -308,7 +308,7 @@
   "label": "112",
   "type": "scroll",
   "description": "Augmente la agility de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -324,7 +324,7 @@
   "label": "113",
   "type": "scroll",
   "description": "Augmente la intelligence de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -340,7 +340,7 @@
   "label": "114",
   "type": "scroll",
   "description": "Augmente la spirit de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -356,7 +356,7 @@
   "label": "115",
   "type": "scroll",
   "description": "Augmente la vitality de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 1000,
     "constitution": 0,
@@ -372,7 +372,7 @@
   "label": "116",
   "type": "scroll",
   "description": "Augmente la constitution de 1000",
-  "cost": 10000,
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
     "constitution": 1000,
@@ -388,7 +388,7 @@
   "label": "117",
   "type": "scroll",
   "description": "Augmente la force de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -404,7 +404,7 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la agility de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -420,7 +420,7 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la intelligence de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -436,7 +436,7 @@
   "label": "119",
   "type": "scroll",
   "description": "Augmente la spirit de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -452,7 +452,7 @@
   "label": "120",
   "type": "scroll",
   "description": "Augmente la vitality de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 10000,
     "constitution": 0,
@@ -468,7 +468,7 @@
   "label": "121",
   "type": "scroll",
   "description": "Augmente la constitution de 10000",
-  "cost": 500000,
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
     "constitution": 10000,
@@ -484,7 +484,7 @@
   "label": "122",
   "type": "scroll",
   "description": "Augmente la force de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -500,7 +500,7 @@
   "label": "123",
   "type": "scroll",
   "description": "Augmente la agility de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -516,7 +516,7 @@
   "label": "124",
   "type": "scroll",
   "description": "Augmente la intelligence de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -532,7 +532,7 @@
   "label": "125",
   "type": "scroll",
   "description": "Augmente la spirit de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -548,7 +548,7 @@
   "label": "126",
   "type": "scroll",
   "description": "Augmente la vitality de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 50000,
     "constitution": 0,
@@ -564,7 +564,7 @@
   "label": "127",
   "type": "scroll",
   "description": "Augmente la constitution de 50000",
-  "cost": 1000000,
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
     "constitution": 50000,
@@ -580,7 +580,7 @@
   "label": "128",
   "type": "scroll",
   "description": "Augmente la force de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -596,7 +596,7 @@
   "label": "129",
   "type": "scroll",
   "description": "Augmente la agility de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -612,7 +612,7 @@
   "label": "130",
   "type": "scroll",
   "description": "Augmente la intelligence de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -628,7 +628,7 @@
   "label": "131",
   "type": "scroll",
   "description": "Augmente la spirit de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
     "constitution": 0,
@@ -644,7 +644,7 @@
   "label": "132",
   "type": "scroll",
   "description": "Augmente la vitality de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 100000,
     "constitution": 0,
@@ -660,7 +660,7 @@
   "label": "133",
   "type": "scroll",
   "description": "Augmente la constitution de 100000",
-  "cost": 500000,
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
     "constitution": 100000,

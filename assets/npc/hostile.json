@@ -285,6 +285,9 @@
   "type": "hostile",
   "experience": 1000,
   "po": 500,
+  "loot": [
+    "Heroique vitality scroll"
+  ],
   "stats": {
     "vitality": 500,
     "constitution": 40,
@@ -299,6 +302,9 @@
   "type": "hostile",
   "experience": 1100,
   "po": 500,
+  "loot": [
+    "Heroique constitution scroll"
+  ],
   "stats": {
     "vitality": 50,
     "constitution": 45,
@@ -313,6 +319,9 @@
   "type": "hostile",
   "experience": 1500,
   "po": 510,
+  "loot": [
+    "Heroique strength scroll"
+  ],
   "stats": {
     "vitality": 520,
     "constitution": 40,
@@ -327,6 +336,9 @@
   "type": "hostile",
   "experience": 1500,
   "po": 510,
+  "loot": [
+    "Heroique agility scroll"
+  ],
   "stats": {
     "vitality": 510,
     "constitution": 40,
@@ -341,6 +353,9 @@
   "type": "hostile",
   "experience": 2000,
   "po": 1000,
+  "loot": [
+    "Heroique spirit scroll"
+  ],
   "stats": {
     "vitality": 800,
     "constitution": 80,
@@ -355,6 +370,9 @@
   "type": "hostile",
   "experience": 2300,
   "po": 1300,
+  "loot": [
+    "Heroique intelligence scroll"
+  ],
   "stats": {
     "vitality": 1000,
     "constitution": 150,
@@ -369,6 +387,9 @@
   "type": "hostile",
   "experience": 2500,
   "po": 1500,
+  "loot": [
+    "Divinity vitality scroll"
+  ],
   "stats": {
     "vitality": 1200,
     "constitution": 100,
@@ -383,6 +404,9 @@
   "type": "hostile",
   "experience": 2500,
   "po": 1500,
+  "loot": [
+    "Divinity constitution scroll"
+  ],
   "stats": {
     "vitality": 1200,
     "constitution": 100,
@@ -399,7 +423,8 @@
   "po": 5000,
   "loot": [
     "Shuto",
-    "Shuta"
+    "Shuta",
+    "Divinity agility scroll"
   ],
   "stats": {
     "vitality": 1500,
@@ -415,6 +440,9 @@
   "type": "hostile",
   "experience": 5000,
   "po": 10000,
+  "loot": [
+    "Divinity intelligence scroll"
+  ],
   "stats": {
     "vitality": 2000,
     "constitution": 300,
@@ -429,6 +457,9 @@
   "type": "hostile",
   "experience": 10000,
   "po": 30000,
+  "loot": [
+    "Divinity strength scroll"
+  ],
   "stats": {
     "vitality": 4000,
     "constitution": 200,
@@ -513,6 +544,9 @@
   "type": "hostile",
   "experience": 100000,
   "po": 100000,
+  "loot": [
+    "Demoniac strength scroll"
+  ],
   "stats": {
     "vitality": 10000,
     "constitution": 1000,
@@ -527,6 +561,9 @@
   "type": "hostile",
   "experience": 100000,
   "po": 100000,
+  "loot": [
+    "Demoniac strength scroll"
+  ],
   "stats": {
     "vitality": 10000,
     "constitution": 1000,
@@ -541,6 +578,9 @@
   "type": "hostile",
   "experience": 200000,
   "po": 500000,
+  "loot": [
+    "Demoniac agility scroll"
+  ],
   "stats": {
     "vitality": 25000,
     "constitution": 1500,
@@ -555,6 +595,9 @@
   "type": "hostile",
   "experience": 215000,
   "po": 500000,
+  "loot": [
+    "Demoniac agility scroll"
+  ],
   "stats": {
     "vitality": 25000,
     "constitution": 1300,
@@ -571,7 +614,8 @@
   "po": 750000,
   "loot": [
     "Exa cube",
-    "Exa aura"
+    "Exa aura",
+    "Demoniac spirit scroll"
   ],
   "stats": {
     "vitality": 30000,
@@ -655,6 +699,9 @@
   "type": "hostile",
   "experience": 1000000000,
   "po": 50000000,
+  "loot": [
+    "Demoniac constitution scroll"
+  ],
   "stats": {
     "vitality": 500000,
     "constitution": 1000,
@@ -669,6 +716,9 @@
   "type": "hostile",
   "experience": 1000000000,
   "po": 50000000,
+  "loot": [
+    "Demoniac vitality scroll"
+  ],
   "stats": {
     "vitality": 500000,
     "constitution": 1000,
@@ -683,6 +733,9 @@
   "type": "hostile",
   "experience": 1250000000,
   "po": 50000000,
+  "loot": [
+    "Demoniac intelligence scroll"
+  ],
   "stats": {
     "vitality": 750000,
     "constitution": 1500,
