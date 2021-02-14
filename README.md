@@ -1,7 +1,7 @@
 # Dai Kenja
 **Bot Discord RPG/Moderation**
 
-Necessary module : fs,mongoose,ms
+Necessary module : discord.js, fs,mongoose,ms
 
 Language support : French
 
