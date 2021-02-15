@@ -368,7 +368,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                             client.updateUserInfo(user, {
                                 "users.$.inventory": player2Inventory
                             });
-                            message.reply(`Vous venez de looter sur \`${hostile.name}\` => **${drop}**`);
+                            client.channels.cache.get("781579158437888081").send(`Vous venez de looter sur \`${hostile.name}\` => **${drop}**`);
                         }
                     }
                 }
