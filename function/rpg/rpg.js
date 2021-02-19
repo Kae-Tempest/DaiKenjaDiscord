@@ -256,7 +256,7 @@ const battle = async (client, message, player, hostile) => {
                 if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         hostileAtk = 0
-                        if (hostileAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
+                        client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -272,13 +272,9 @@ const battle = async (client, message, player, hostile) => {
                 hostileHP -= PlayerAtk
                 playerHP -= hostileAtk
                 if (hostileHP <= 0) hostileHP = 0;
-                const playerMessage = `tour ${i}: la bataille fait rage. ${player.username} attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Il te reste ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
-                client.channels.cache.get("800027258379042886").send(playerMessage)
             } else {
                 playerHP -= hostileAtk
                 hostileHP -= PlayerAtk
-                const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et ${player.username} riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et il te reste ${playerHP}HP`
-                client.channels.cache.get("800027258379042886").send(playerMessage)
             }
             if (playerHP <= 0) {
                 client.updateUserInfo(message.member, {

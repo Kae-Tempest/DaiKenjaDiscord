@@ -290,16 +290,11 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 playerHP -= hostileAtk
                 player1HP -= (hostileAtk / 2)
                 player2HP -= (hostileAtk / 2)
-                if (hostileHP <= 0) hostileHP = 0;
-                const playerMessage = `tour ${i}: la bataille fait rage. ${player.username} & ${player2.username} attaque pour ${PlayerAtk} dégâts et le ${hostile.name} riposte pour ${hostileAtk} de dégâts! Ils vous restent ${playerHP}HP et il reste ${hostileHP}HP à ${hostile.name}`
-                client.channels.cache.get("800027258379042886").send(playerMessage)
             } else {
                 playerHP -= hostileAtk
                 player1HP -= (hostileAtk / 2)
                 player2HP -= (hostileAtk / 2)
                 hostileHP -= PlayerAtk
-                const playerMessage = `tour ${i}: la bataille fait rage. ${hostile.name} attaque pour ${hostileAtk} de dégâts et ${player.username} & ${player2.username} riposte pour ${PlayerAtk} dégâts! Il reste ${hostileHP}HP à ${hostile.name} et ils vous restent ${playerHP}HP`
-                client.channels.cache.get("800027258379042886").send(playerMessage)
             }
 
             if (player1HP <= 0 || player2HP <= 0) {
