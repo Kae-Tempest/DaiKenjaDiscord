@@ -223,7 +223,7 @@ const donjon = (client, message, player) => {
         }
     }
 
-    function setBoss(name) {
+   function setBoss(name) {
         let BossName = name
         const position = hostile.map(n => n.name).indexOf(capitalize(BossName))
         const Boss = hostile[position]
@@ -239,22 +239,103 @@ const donjon = (client, message, player) => {
     let playerHP = player.stats.vitality;
     const nameOfBoss = hostile.map(n => n.name)
     
-    function dj (atk){
+        async function dj (atk){
         for(let i = 1; playerHP > 0 ; i++) {
             let floorBoss = nameOfBoss[Math.floor(Math.random() * (nameOfBoss.length - 1) )]
             const boss = setBoss(floorBoss)
-            message.reply(`Vous etes étages ${i} et vous tombez sur ${floorBoss}`)
-            let bossHP = boss.stats.vitality;
-            const bossAtk = boss.stats.strength - consti
-            const playerAtk = atk - boss.stats.constitution;
+            message.channel.send(`Vous etes étages ${i} et vous tombez sur ***${floorBoss}***`)
+            let bossHP = boss.stats.vitality + (player.prestige * 12500);
+            let bossStrength = boss.stats.strength + (player.prestige * 12500);
+            let bossConsti = boss.stats.constitution + (player.prestige * 12500);
+            let bossAgility = boss.stats.agility + (player.prestige * 12500);
+            let bossIntel = boss.stats.intelligence + (player.prestige * 12500);
+            let bossPo = boss.po;
+            let bossExp = boss.experience;
+            let bossAtk = bossStrength - consti
+            let playerAtk = atk - bossConsti;
+
+            if (player.level <= 500 && player.prestige !== 0) {
+                hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
+                hostilePo = hostile.po * player.prestige
+            } else if (player.level >= 500 && player.prestige !== 0) {
+                hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 1750
+                hostilePo = hostile.po * player.prestige
+            }
 
             if (bossAtk < 0 ) bossATK = 0;
             if (playerAtk < 0 ) playerAtk = 0;
-            if (PlayerAtk === 0 && bossAtk === 0){
+            if (playerAtk === 0 && bossAtk === 0){
                  message.reply(`Vous et ${floorBoss} perrisez a l'étage ${i}`)
                  client.updateUserInfo(message.member,{
                      "users.$.stats.vitality": 0
                 });
+            }
+            if (agility > bossAgility) {
+                if(bossAtk !== 0) {
+                    if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
+                        bossAtk = 0 
+                        client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
+                    }
+                }
+            }
+            if (intelligence > bossIntel) {
+                bossHP -= playerAtk
+                playerHP -= bossAtk
+            } else {
+                playerHP -= bossAtk
+                bossHP -= playerAtk
+            }
+            if (playerHP <= 0) {
+                client.updateUserInfo(message.member, {
+                    "users.$.stats.vitality": 0
+                });
+                return message.reply("Tu es mort");
+            }
+            if (bossHP <= 0) {
+                playerHP += bossAtk
+                player.po += bossPo;
+                player.experience += bossExp;
+                if (hostile.category !== "Monster") {
+                    const loot = Math.floor(Math.random() * Math.floor(101))
+                    if (loot > 89 - player.prestige) {
+                        const userInventory = player.inventory
+                        if (boss.loot !== undefined) {
+                            const drop = boss.loot[Math.round(Math.random() * (boss.loot.length - 1))]
+                            userInventory.push(drop)
+                            client.updateUserInfo(message.member, {
+                                "users.$.inventory": userInventory
+                            });
+                            message.reply(`Tu viens de looter sur \`${floorBoss}\` => **${drop}**`);
+                        }
+                    }
+                }
+                client.updateUserInfo(message.member, {
+                    "users.$.stats.vitality": playerHP,
+                    "users.$.po": player.po,
+                    "users.$.experience": player.experience
+                });
+                if (intelligence > bossIntel) {
+                    await level();
+                    message.channel.send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                } else {
+                    await level();
+                    message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                }
+            }
+            if( i === 100) return message.reply(`Vous avez finis les 100 étages du donjon ! Il vous reste ${playerHP}HP`)
+            if ( i % 10 === 0 ) {
+                try {
+                    message.reply(`Voulez vous quitter le donjon a l'étage ${i} ? (240s)`);
+                    const filter = m => (message.author.id === m.author.id);
+                    const userEntry = await message.channel.awaitMessages(filter, {
+                        max: 1, time: 240000, errors: ['time']
+                    });
+                    if (userEntry.first().content.toLowerCase() === "oui") {
+                       return message.reply(`Vous quittez le donjon à l'étage ${i}. Il vous reste ${playerHP}HP`)
+                    } else throw errors
+                } catch (e) {
+                    message.reply("Vous continuez le combat !")
+                }
             }
         }
     }
