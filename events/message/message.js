@@ -21,7 +21,7 @@ module.exports = async (client, message) => {
     if (command.help.permission && !message.member.hasPermission('BAN_MEMBERS')) return message.reply("Tu n'as pas les permissions pour taper cette commande");
 
     if (command.help.args && !args.length) {
-        let noArgsReplay = `il nous fait des argument pour cette commande, ${message.author}!`;
+        let noArgsReplay = `il nous faut des arguments pour cette commande, ${message.author}!`;
         if (command.help.usage) noArgsReplay += `\nVoici comment utiliser la commande: \`${client.config.PREFIX}${command.help.name} ${command.help.usage}\``;
         return message.channel.send(noArgsReplay);
     }
