@@ -243,7 +243,7 @@ const donjon = (client, message, player) => {
         for(let i = 1; playerHP > 0 ; i++) {
             let floorBoss = nameOfBoss[Math.floor(Math.random() * (nameOfBoss.length - 1) )]
             const boss = setBoss(floorBoss)
-            message.channel.send(`Vous etes étages ${i} et vous tombez sur ***${floorBoss}***`)
+            message.channels.get("813056123216330763").send(`Vous etes étages ${i} et vous tombez sur ***${floorBoss}***`)
             let bossHP = boss.stats.vitality + (player.prestige * 12500);
             let bossStrength = boss.stats.strength + (player.prestige * 12500);
             let bossConsti = boss.stats.constitution + (player.prestige * 12500);
@@ -274,7 +274,7 @@ const donjon = (client, message, player) => {
                 if(bossAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         bossAtk = 0 
-                        client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
+                        client.channels.cache.get("813056123216330763").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -316,10 +316,10 @@ const donjon = (client, message, player) => {
                 });
                 if (intelligence > bossIntel) {
                     await level();
-                    message.channel.send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                    message.channels.get("813056123216330763").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 } else {
                     await level();
-                    message.channel.send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                    message.channels.get("813056123216330763").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 }
             }
             if( i === 100) return message.reply(`Vous avez finis les 100 étages du donjon ! Il vous reste ${playerHP}HP`)
@@ -339,8 +339,6 @@ const donjon = (client, message, player) => {
             }
         }
     }
-
-
     if (player.class === "Mage") {
         dj(spirit);
     } else {
