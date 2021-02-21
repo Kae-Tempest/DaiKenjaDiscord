@@ -1,6 +1,7 @@
 const { MessageEmbed, MessageAttachment } = require("discord.js");
 const leaderboard = new MessageAttachment('./imgembed/leaderboard.png');
-module.exports.run = async (client, message) => {
+module.exports = {
+    run: async (client, message) => {
     const players = await client.getGuild(message.guild);
     players.users.sort((a, b) => b.level - a.level);
     players.users.sort((a, b) => b.prestige - a.prestige);
@@ -17,17 +18,16 @@ module.exports.run = async (client, message) => {
         .setTimestamp()
         .addField("ranking",`${playerInfo.join("\n")}`)
     message.channel.send(embed);
-};
-
-module.exports.help = {
-    name: "leaderboard",
-    aliases: ["leaderboard","Leaderboard","LEADERBOARD","ld","Ld","LD"],
-    category: 'misc',
-    description: "affiche le Leaderboard",
-    cd: 10,
-    usage: "",
-    isUserAdmin: false,
-    permission: false,
-    args: false,
-    profile: false
-};
+    }, help: {
+        name: "leaderboard",
+        aliases: ["leaderboard","Leaderboard","LEADERBOARD","ld","Ld","LD"],
+        category: 'misc',
+        description: "affiche le Leaderboard",
+        cd: 10,
+        usage: "",
+        isUserAdmin: false,
+        permission: false,
+        args: false,
+        profile: false
+    }
+}

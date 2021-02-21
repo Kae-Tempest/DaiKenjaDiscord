@@ -1,8 +1,8 @@
 const {battleduo} = require('../../function/rpg/duo');
 const hostile = require('../../assets/npc/hostile.json');
 const {capitalize} = require ('../../function/other/string')
-
-module.exports.run = async (client, message, args) => {
+module.exports = {
+    run: async (client, message, args) => {
     const player = await client.getUser(message.member);
     if(args[0] === "tm") user = message.guild.member(player.teams[1]);
     if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
@@ -14,9 +14,7 @@ module.exports.run = async (client, message, args) => {
     if (q && position === -1) return message.reply ('Ce monstre n\'existe pas !')
     const monster = hostile[position];
     battleduo(client, message,player ,player2 ,monster, user);
-};
-
-module.exports.help = {
+}, help: {
     name: 'battleDuo',
     aliases: ["battleduo","Battleduo","BATTLEDUO","bd","Bd","BD"],
     category: 'rpg',
@@ -27,4 +25,5 @@ module.exports.help = {
     permissions: false,
     args: true,
     profile: true
-};
+    }
+}

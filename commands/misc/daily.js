@@ -1,4 +1,5 @@
-module.exports.run = async (client, message) => {
+module.exports = {
+    run : async (client, message) => {
     const player = await client.getUser(message.member);
     const daily = Date.now();
     const dayCD = 8.64e+7;
@@ -23,9 +24,7 @@ module.exports.run = async (client, message) => {
         "users.$.daily": daily
     })
     return message.reply(`Tu as bien pris ta récompense journalière de ${recompense()}<:GoldCoin:781575067108507648> ! À demain :)`)
-};
-
-module.exports.help = {
+}, help: {
     name: "daily",
     aliases: ["daily","Daily","DAILY"],
     category: 'misc',
@@ -36,4 +35,5 @@ module.exports.help = {
     permission: false,
     args: false,
     profile: true
+    }
 };

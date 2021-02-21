@@ -1,9 +1,8 @@
 const {MessageEmbed} = require('discord.js');
 const {readdirSync} = require('fs')
 const categoryList = readdirSync('./commands')
-
-
-module.exports.run = (client, message, args, settings) => {
+module.exports = {
+    run: (client, message, args) => {
     if (!args.length) {
         const embed = new MessageEmbed()
             .setColor('#00FF00')
@@ -25,17 +24,16 @@ module.exports.run = (client, message, args, settings) => {
         if (command.help.aliases.length > 1) embed.addField("Alias", `${command.help.aliases.join(', ')}`, true)
         return message.channel.send(embed);
     }
-};
-
-module.exports.help = {
-    name: "help",
-    aliases: ["help","Help","HELP"],
-    category: 'misc',
-    description: "affiche l'aide",
-    cd: 10,
-    usage: "",
-    isUserAdmin: false,
-    permission: false,
-    args: false,
-    profile: false
+    }, help: {
+        name: "help",
+        aliases: ["help","Help","HELP"],
+        category: 'misc',
+        description: "affiche l'aide",
+        cd: 10,
+        usage: "",
+        isUserAdmin: false,
+        permission: false,
+        args: false,
+        profile: false
+    }
 };

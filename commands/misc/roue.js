@@ -1,4 +1,5 @@
-module.exports.run = async (client, message) => {
+module.exports = {
+    run: async (client, message) => {
     const player = await client.getUser(message.member);
     const user = message.guild.member(message.member)
     const userPo = await client.getUser(user);
@@ -35,11 +36,7 @@ module.exports.run = async (client, message) => {
     roue(150, 70, 80);
     roue(350, 80, 90);
     roue(1000, 90, 100);
-
-
-};
-
-module.exports.help = {
+}, help: {
     name: "roue",
     aliases: ["roue", "rdc","Roue","Rdc","ROUE","RDC"],
     category: 'misc',
@@ -50,4 +47,5 @@ module.exports.help = {
     permission: false,
     args: false,
     profile: true
-};
+    }
+}
