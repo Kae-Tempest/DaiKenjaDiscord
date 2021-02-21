@@ -5,7 +5,6 @@ module.exports = {
                 return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
             return text;
         }
-
         if (message.author.id !== "401337448120057859") return channel.send("tu n'as pas les droits pour utilisé cette commande !");
         const code = args.join(" ");
         const evaled = eval(code);
