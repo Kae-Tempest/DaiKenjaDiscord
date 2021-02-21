@@ -167,7 +167,7 @@ const items = (client) => {
 
     createItems("Magic toge", "rare", "Mage", "55", "armor", "Toge magique", 1200, 0, 0, 8, 8, 60, 16);
 
-    createItems("Armure en crocodile rendorcé", "legendaire", "Barbare, Voleur, Paladin, Chasseur", "56", "armor", "Armure en cuir de crocodile renforcé", 3750, 0, 13, 0, 0, 75, 35);
+    createItems("Armure en crocodile renforcé", "legendaire", "Barbare, Voleur, Paladin, Chasseur", "56", "armor", "Armure en cuir de crocodile renforcé", 3750, 0, 13, 0, 0, 75, 35);
 
     createItems("Armure legère en mythril", "legendaire", "Voleur, Chasseur", "57", "armor", "Armure legère en mythril", 3800, 0, 10, 0, 0, 80, 38);
 
