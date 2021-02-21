@@ -1,6 +1,6 @@
 const {MessageEmbed} = require ('discord.js');
-
-module.exports.run = (client, message) => {
+module.exports = {
+    run: (client, message) => {
     const embed = new MessageEmbed()
         .setColor('RANDOM')
         .setAuthor(`${client.user.username} Info`, client.user.avatarURL())
@@ -13,17 +13,16 @@ module.exports.run = (client, message) => {
             {name:'Version' , value:`Dai Kenja V6.3`, inline: true}
         )
     message.channel.send(embed);
+        }, help: {
+            name: "botinfo",
+            aliases: ["botinfo", "binfo","BOTINFO","BINFO","Botinfo","Binfo"],
+            category:'misc',
+            description: "Renvoie des informations sur le bot.",
+            cd: 10,
+            usage: "",
+            isUserAdmin: false,
+            permission: false,
+            args: false,
+            profile: false
+        }
 };
-
-module.exports.help = {
-    name: "botinfo",
-    aliases: ["botinfo", "binfo","BOTINFO","BINFO","Botinfo","Binfo"],
-    category:'misc',
-    description: "Renvoie des informations sur le bot.",
-    cd: 10,
-    usage: "",
-    isUserAdmin: false,
-    permission: false,
-    args: false,
-    profile: false
-}

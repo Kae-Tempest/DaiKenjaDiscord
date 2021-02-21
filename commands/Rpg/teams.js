@@ -1,81 +1,79 @@
 const { MessageEmbed } = require("discord.js");
-
-module.exports.run = async (client, message, args) => {
-    const player1 = await client.getUser(message.member);
-    
-    if(args[0] === "create") {
-        const user = message.guild.member(message.mentions.users.first());
-        if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
-        const mentionedUser = await client.getUser(user);
-        const player2 = mentionedUser;
-        try{
-            message.channel.send(`Confirmez-vous la mise en équipe de ${message.author} (oui) (10 secondes pour répondre)`);
-            const filter = m => (user.id === m.author.id);
-            const userEntry = await message.channel.awaitMessages(filter, {
-                max: 1, time: 10000, errors: ['time']
-            });
-            if (userEntry.first().content.toLowerCase() === "oui"){
-                const teammate1 = [player1.username, player1.id]
-                const teammate2 = [player2.username, player2.id]
-                client.updateUserInfo(message.member, {
-                    "users.$.teams": teammate2
+module.exports = {
+    run: async (client, message, args) => {
+        const player1 = await client.getUser(message.member);
+        if(args[0] === "create") {
+            const user = message.guild.member(message.mentions.users.first());
+            if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
+            const mentionedUser = await client.getUser(user);
+            const player2 = mentionedUser;
+            try{
+                message.channel.send(`Confirmez-vous la mise en équipe de ${message.author} (oui) (10 secondes pour répondre)`);
+                const filter = m => (user.id === m.author.id);
+                const userEntry = await message.channel.awaitMessages(filter, {
+                    max: 1, time: 10000, errors: ['time']
                 });
-                client.updateUserInfo(user, {
-                    "users.$.teams": teammate1
-                });
-            message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
+                if (userEntry.first().content.toLowerCase() === "oui"){
+                    const teammate1 = [player1.username, player1.id]
+                    const teammate2 = [player2.username, player2.id]
+                    client.updateUserInfo(message.member, {
+                        "users.$.teams": teammate2
+                    });
+                    client.updateUserInfo(user, {
+                        "users.$.teams": teammate1
+                    });
+                message.reply(`Le duo avec ${player2.username} a été créé avec succès !!`)
+                }
+            }
+        catch (e) {
+            message.channel.send(`Creation de l'équipe annulé. Merci de confirmé votre la création de l'équipe en répondant \`oui\` la prochaine fois!`)
             }
         }
-    catch (e) {
-        message.channel.send(`Creation de l'équipe annulé. Merci de confirmé votre la création de l'équipe en répondant \`oui\` la prochaine fois!`)
-        }
-    }
-    else if (args[0] === "delete"){
-        const user = message.guild.member(message.mentions.users.first());
-        if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
-        const mentionedUser = await client.getUser(user);
-        const player2 = mentionedUser;
-        try{
-            message.channel.send(`Confirmez-vous la dissolution de l'équipe équipe de ${message.author} (oui) (5 secondes pour répondre)`);
-            const filter = m => (message.author.id === m.author.id);
-            const userEntry = await message.channel.awaitMessages(filter, {
-                max: 1, time: 5000, errors: ['time']
-            });
-            if (userEntry.first().content.toLowerCase() === "oui"){
-                client.updateUserInfo(message.member, {
-                    "users.$.teams": "None"
+        else if (args[0] === "delete"){
+            const user = message.guild.member(message.mentions.users.first());
+            if(user === undefined) return message.reply("Cette personne n'est pas sur le serveur !");
+            const mentionedUser = await client.getUser(user);
+            const player2 = mentionedUser;
+            try{
+                message.channel.send(`Confirmez-vous la dissolution de l'équipe équipe de ${message.author} (oui) (5 secondes pour répondre)`);
+                const filter = m => (message.author.id === m.author.id);
+                const userEntry = await message.channel.awaitMessages(filter, {
+                    max: 1, time: 5000, errors: ['time']
                 });
-                client.updateUserInfo(user, {
-                    "users.$.teams": "None"
-                });
+                if (userEntry.first().content.toLowerCase() === "oui"){
+                    client.updateUserInfo(message.member, {
+                        "users.$.teams": "None"
+                    });
+                    client.updateUserInfo(user, {
+                        "users.$.teams": "None"
+                    });
+                }
+                message.reply(`Le duo avec ${player2.username} a bien été dissous !!`)
             }
-            message.reply(`Le duo avec ${player2.username} a bien été dissous !!`)
+        catch (e) {
+            message.channel.send(`La dissolution de l'équipe à été annulé. Merci de confirmé la dissolution de l'équipe en répondant \`oui\` la prochaine fois!`)
+            }
         }
-    catch (e) {
-        message.channel.send(`La dissolution de l'équipe à été annulé. Merci de confirmé la dissolution de l'équipe en répondant \`oui\` la prochaine fois!`)
-        }
+        else{
+        if (player1.teams === "None") return message.reply("tu n'as pas d'équipier !!")
+        const embed = new MessageEmbed()
+        .setTitle(`Equipe de ${player1.username}`)
+        .setDescription(`${player1.username} est en duo avec ***${player1.teams[0]}***`)
+        .setColor('RANDOM')
+        .setFooter(`Duo`, message.author.avatarURL())
+        .setTimestamp();
+        message.channel.send(embed);
+        }    
+    }, help: {
+        name: "teams",
+        aliases: ["teams","Teams","TEAMS"],
+        category: 'rpg',
+        description: "affiche le duo ou créer un duo !",
+        cd: 5,
+        usage: "[create <mentionedUser>]",
+        isUserAdmin: false,
+        permission: false,
+        args: false,
+        profile: true
     }
-    else{
-    if (player1.teams === "None") return message.reply("tu n'as pas d'équipier !!")
-    const embed = new MessageEmbed()
-    .setTitle(`Equipe de ${player1.username}`)
-    .setDescription(`${player1.username} est en duo avec ***${player1.teams[0]}***`)
-    .setColor('RANDOM')
-    .setFooter(`Duo`, message.author.avatarURL())
-    .setTimestamp();
-    message.channel.send(embed);
-    }    
-}
-
-module.exports.help = {
-    name: "teams",
-    aliases: ["teams","Teams","TEAMS"],
-    category: 'rpg',
-    description: "affiche le duo ou créer un duo !",
-    cd: 5,
-    usage: "[create <mentionedUser>]",
-    isUserAdmin: false,
-    permission: false,
-    args: false,
-    profile: true
-}
+};

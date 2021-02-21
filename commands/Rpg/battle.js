@@ -1,17 +1,15 @@
 const {battle} = require('../../function/rpg/rpg');
 const hostile = require('../../assets/npc/hostile.json');
 const {capitalize} = require ('../../function/other/string')
-
-module.exports.run = async (client, message, args) => {
+module.exports = {
+    run: async (client, message, args) => {
     const player = await client.getUser(message.member);
     const q = args.join(" ")
     const position = hostile.map(e => e.name).indexOf(capitalize(q));
     if (q && position === -1) return message.reply ('Ce monstre n\'existe pas !')
     const monster = hostile[position];
     battle(client, message, player, monster);
-};
-
-module.exports.help = {
+}, help: {
     name: 'battle',
     aliases: ["battle","Battle","BATTLE"],
     category: 'rpg',
@@ -22,4 +20,5 @@ module.exports.help = {
     permissions: false,
     args: true,
     profile: true
+    }
 };
