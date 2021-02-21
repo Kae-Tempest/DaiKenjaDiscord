@@ -345,7 +345,4 @@ const donjon = (client, message, player) => {
         dj(strength);
     }
 }
-
-
-
 module.exports = {donjon}
