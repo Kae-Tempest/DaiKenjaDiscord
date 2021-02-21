@@ -117,9 +117,9 @@ const items = (client) => {
 
     createItems("Mirror of the dark night", "heroique", "toute classe", "31", "Oh", "Bouclier de Maple", 20000, 0, 0, 0, 0, 175, 300);
 
-    createItems("Athamé", "heroique", "Voleur", "32", "Mh", "Dague d'une voleuse qui accompgna un héro !", 10000, 100, 100, 0, 0, 100, 0);
+    createItems("Athamé", "heroique", "Voleur", "32", "Mh", "Dague d'une voleuse qui accompgna un héros !", 10000, 100, 100, 0, 0, 100, 0);
 
-    createItems("Tantō", "heroique", "Voleur", "33", "Oh", "Dague d'une voleuse qui accompgna un héro !", 10000, 100, 100, 0, 0, 100, 0);
+    createItems("Tantō", "heroique", "Voleur", "33", "Oh", "Dague d'une voleuse qui accompgna un héros !", 10000, 100, 100, 0, 0, 100, 0);
 
     createItems("Khukuri", "heroique", "Voleur", "34", "Mh", "Dague d'une Héroïne", 20000, 150, 150, 0, 0, 150, 0);
 
@@ -133,9 +133,9 @@ const items = (client) => {
 
     createItems("Venuzdnor", "Demoniaque", "Barbare", "39", "Mh", "Venuzdnor epée de Anos Voldigoad", 750000, 800, 0, 0, 0, 400, 0);
 
-    createItems("Chu'zhi", "Divino-legendaire", "Voleur", "40", "Mh", "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.", 375000, 250, 250, 0, 0, 400, 0);
+    createItems("Chu'zhi", "Divino-legendaire", "Voleur", "40", "Mh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.", 375000, 250, 250, 0, 0, 400, 0);
 
-    createItems("Chi'zhu", "Divino-legendaire", "Voleur", "41", "Oh", "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.", 375000, 250, 250, 0, 0, 400, 0);
+    createItems("Chi'zhu", "Divino-legendaire", "Voleur", "41", "Oh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.", 375000, 250, 250, 0, 0, 400, 0);
 
     createItems("Typhoon", "Divino-Legendaire", "toute classe", "42", "Oh", "Bouclier qui absorbe des typhoons", 750000, 0, 0, 0, 0, 800, 800);
 
