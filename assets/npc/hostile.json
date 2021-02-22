@@ -5,6 +5,14 @@
   "type": "hostile",
   "experience": 5,
   "po": 10,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10,
     "constitution": 1,
@@ -19,6 +27,14 @@
   "type": "hostile",
   "experience": 10,
   "po": 12,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 8,
     "constitution": 0,
@@ -33,6 +49,14 @@
   "type": "hostile",
   "experience": 10,
   "po": 10,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10,
     "constitution": 2,
@@ -47,6 +71,14 @@
   "type": "hostile",
   "experience": 10,
   "po": 18,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10,
     "constitution": 2,
@@ -61,6 +93,14 @@
   "type": "hostile",
   "experience": 25,
   "po": 25,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 15,
     "constitution": 8,
@@ -75,6 +115,14 @@
   "type": "hostile",
   "experience": 30,
   "po": 20,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10,
     "constitution": 14,
@@ -89,6 +137,14 @@
   "type": "hostile",
   "experience": 30,
   "po": 28,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10,
     "constitution": 14,
@@ -103,6 +159,14 @@
   "type": "hostile",
   "experience": 30,
   "po": 28,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 20,
     "constitution": 5,
@@ -117,6 +181,14 @@
   "type": "hostile",
   "experience": 45,
   "po": 30,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 25,
     "constitution": 5,
@@ -131,6 +203,14 @@
   "type": "hostile",
   "experience": 65,
   "po": 50,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 50,
     "constitution": 12,
@@ -145,6 +225,14 @@
   "type": "hostile",
   "experience": 100,
   "po": 90,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 60,
     "constitution": 20,
@@ -159,6 +247,14 @@
   "type": "hostile",
   "experience": 125,
   "po": 95,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 65,
     "constitution": 25,
@@ -173,6 +269,14 @@
   "type": "hostile",
   "experience": 150,
   "po": 100,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 70,
     "constitution": 22,
@@ -187,6 +291,14 @@
   "type": "hostile",
   "experience": 150,
   "po": 100,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 65,
     "constitution": 25,
@@ -201,6 +313,14 @@
   "type": "hostile",
   "experience": 175,
   "po": 115,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 70,
     "constitution": 25,
@@ -215,6 +335,14 @@
   "type": "hostile",
   "experience": 300,
   "po": 250,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 500,
     "constitution": 35,
@@ -229,6 +357,14 @@
   "type": "hostile",
   "experience": 250,
   "po": 130,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 80,
     "constitution": 22,
@@ -243,6 +379,14 @@
   "type": "hostile",
   "experience": 300,
   "po": 250,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 100,
     "constitution": 30,
@@ -257,6 +401,14 @@
   "type": "hostile",
   "experience": 325,
   "po": 270,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 150,
     "constitution": 35,
@@ -271,6 +423,14 @@
   "type": "hostile",
   "experience": 350,
   "po": 330,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 190,
     "constitution": 40,
@@ -288,6 +448,14 @@
   "loot": [
     "Heroique vitality scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 500,
     "constitution": 40,
@@ -305,6 +473,14 @@
   "loot": [
     "Heroique constitution scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 50,
     "constitution": 45,
@@ -322,6 +498,14 @@
   "loot": [
     "Heroique strength scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 520,
     "constitution": 40,
@@ -339,6 +523,14 @@
   "loot": [
     "Heroique agility scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 510,
     "constitution": 40,
@@ -356,6 +548,14 @@
   "loot": [
     "Heroique spirit scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 800,
     "constitution": 80,
@@ -373,6 +573,14 @@
   "loot": [
     "Heroique intelligence scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 1000,
     "constitution": 150,
@@ -390,6 +598,14 @@
   "loot": [
     "Divinity vitality scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 1200,
     "constitution": 100,
@@ -407,6 +623,14 @@
   "loot": [
     "Divinity constitution scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 1200,
     "constitution": 100,
@@ -419,19 +643,21 @@
   "difficulty": 20,
   "category": "Boss",
   "type": "hostile",
-  "experience": 3500,
-  "po": 5000,
-  "loot": [
-    "Shuto",
-    "Shuta",
-    "Divinity agility scroll"
-  ],
+  "experience": 1500,
+  "po": 300,
+  "attribut": {
+    "resistance": 3500,
+    "faiblesse": 5000
+  },
   "stats": {
-    "vitality": 1500,
-    "constitution": 300,
-    "strength": 300,
-    "agility": 1000,
-    "intelligence": 1000
+    "vitality": 300,
+    "constitution": 1000,
+    "strength": 1000,
+    "agility": [
+      "Shuto",
+      "Shuta",
+      "Divinity agility scroll"
+    ]
   }
 },{
   "name": "Shogun",
@@ -443,6 +669,14 @@
   "loot": [
     "Divinity intelligence scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 2000,
     "constitution": 300,
@@ -460,6 +694,14 @@
   "loot": [
     "Divinity strength scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 4000,
     "constitution": 200,
@@ -474,6 +716,14 @@
   "type": "hostile",
   "experience": 15000,
   "po": 35000,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 5000,
     "constitution": 280,
@@ -488,6 +738,14 @@
   "type": "hostile",
   "experience": 20000,
   "po": 40000,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 5000,
     "constitution": 300,
@@ -502,6 +760,14 @@
   "type": "hostile",
   "experience": 25000,
   "po": 48000,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 6500,
     "constitution": 280,
@@ -516,6 +782,14 @@
   "type": "hostile",
   "experience": 28000,
   "po": 55000,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 8000,
     "constitution": 450,
@@ -530,6 +804,14 @@
   "type": "hostile",
   "experience": 30000,
   "po": 80000,
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10000,
     "constitution": 500,
@@ -547,6 +829,14 @@
   "loot": [
     "Demoniac strength scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10000,
     "constitution": 1000,
@@ -564,6 +854,14 @@
   "loot": [
     "Demoniac strength scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 10000,
     "constitution": 1000,
@@ -581,6 +879,14 @@
   "loot": [
     "Demoniac agility scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 25000,
     "constitution": 1500,
@@ -598,6 +904,14 @@
   "loot": [
     "Demoniac agility scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 25000,
     "constitution": 1300,
@@ -617,6 +931,14 @@
     "Exa aura",
     "Demoniac spirit scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 30000,
     "constitution": 1500,
@@ -634,6 +956,14 @@
   "loot": [
     "Arbalete"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 35000,
     "constitution": 2000,
@@ -651,6 +981,14 @@
   "loot": [
     "Mjöllnir"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 40000,
     "constitution": 2500,
@@ -668,6 +1006,14 @@
   "loot": [
     "Gungnir"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 8000,
     "constitution": 4000,
@@ -685,6 +1031,14 @@
   "loot": [
     "Death Scythe"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 100000,
     "constitution": 4500,
@@ -702,6 +1056,14 @@
   "loot": [
     "Demoniac constitution scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 500000,
     "constitution": 1000,
@@ -719,6 +1081,14 @@
   "loot": [
     "Demoniac vitality scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 500000,
     "constitution": 1000,
@@ -736,6 +1106,14 @@
   "loot": [
     "Demoniac intelligence scroll"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 750000,
     "constitution": 1500,
@@ -760,6 +1138,14 @@
     "Divino démoniac earrings",
     "Divino démoniac belt"
   ],
+  "attribut": {
+    "resistance": [
+      "None"
+    ],
+    "faiblesse": [
+      "None"
+    ]
+  },
   "stats": {
     "vitality": 1000000,
     "constitution": 20000,

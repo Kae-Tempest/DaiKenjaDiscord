@@ -5,6 +5,7 @@
   "label": "1",
   "type": "Mh",
   "description": "Epée courte",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -21,6 +22,7 @@
   "label": "2",
   "type": "Mh",
   "description": "Dague",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -37,6 +39,7 @@
   "label": "3",
   "type": "Mh",
   "description": "Epée longue",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -53,6 +56,7 @@
   "label": "4",
   "type": "Oh",
   "description": "Bouclier en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -69,6 +73,7 @@
   "label": "5",
   "type": "Mh",
   "description": "Arc",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -85,6 +90,7 @@
   "label": "6",
   "type": "Mh",
   "description": "Masse",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 0,
@@ -101,6 +107,7 @@
   "label": "7",
   "type": "Mh",
   "description": "Baton magique",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -117,6 +124,7 @@
   "label": "8",
   "type": "Oh",
   "description": "Magic aura",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -133,6 +141,7 @@
   "label": "9",
   "type": "Mh",
   "description": "Epée courte en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -149,6 +158,7 @@
   "label": "10",
   "type": "Mh",
   "description": "Dague en fer blanc pour la Main hand",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -165,6 +175,7 @@
   "label": "11",
   "type": "Oh",
   "description": "Dague en fer blanc pour la Off hand",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -181,6 +192,7 @@
   "label": "12",
   "type": "Mh",
   "description": "Epée longue en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -197,6 +209,7 @@
   "label": "13",
   "type": "Oh",
   "description": "Bouclier en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -213,6 +226,7 @@
   "label": "14",
   "type": "Mh",
   "description": "Arc en chêne rouge",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -229,6 +243,7 @@
   "label": "15",
   "type": "Mh",
   "description": "Masse lourde",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -245,6 +260,7 @@
   "label": "16",
   "type": "Mh",
   "description": "Bâton magique",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -261,6 +277,7 @@
   "label": "17",
   "type": "Oh",
   "description": "Magic shield",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -277,6 +294,7 @@
   "label": "18",
   "type": "Mh",
   "description": "Epée  courte en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -293,6 +311,7 @@
   "label": "19",
   "type": "Mh",
   "description": "Dague en mythril pour Main hand",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -309,6 +328,7 @@
   "label": "20",
   "type": "Oh",
   "description": "Dague en mythril pour Off hand",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -325,6 +345,7 @@
   "label": "21",
   "type": "Mh",
   "description": "Epée longue en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -341,6 +362,7 @@
   "label": "22",
   "type": "Oh",
   "description": "Bouclier en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -357,6 +379,7 @@
   "label": "23",
   "type": "Mh",
   "description": "Arc en fer à poulis",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -373,6 +396,7 @@
   "label": "24",
   "type": "Mh",
   "description": "Masse en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -389,6 +413,7 @@
   "label": "25",
   "type": "Mh",
   "description": "Bâton en chêne rouge magique",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -405,6 +430,7 @@
   "label": "26",
   "type": "Oh",
   "description": "Divin aura",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -421,6 +447,7 @@
   "label": "27",
   "type": "Mh",
   "description": "Premiere Epée de Kirito !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -437,6 +464,7 @@
   "label": "28",
   "type": "Oh",
   "description": "Seconde Epée de Kirito",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -453,6 +481,7 @@
   "label": "29",
   "type": "Mh",
   "description": "Epée de Link !",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -469,6 +498,7 @@
   "label": "30",
   "type": "Mh",
   "description": "Epée courte de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -485,6 +515,7 @@
   "label": "31",
   "type": "Oh",
   "description": "Bouclier de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 175,
@@ -500,7 +531,8 @@
   "class": "Voleur",
   "label": "32",
   "type": "Mh",
-  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "description": "Dague d'une voleuse qui accompgna un héros !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -516,7 +548,8 @@
   "class": "Voleur",
   "label": "33",
   "type": "Oh",
-  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "description": "Dague d'une voleuse qui accompgna un héros !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -533,6 +566,7 @@
   "label": "34",
   "type": "Mh",
   "description": "Dague d'une Héroïne",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -549,6 +583,7 @@
   "label": "35",
   "type": "Oh",
   "description": "Dague d'une Héroïne",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -565,6 +600,7 @@
   "label": "36",
   "type": "Mh",
   "description": "Baguette de Harry Potter",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -581,6 +617,7 @@
   "label": "37",
   "type": "Oh",
   "description": "Bouclier d'Athéna",
+  "attribut": "None",
   "cost": 21000,
   "stats": {
     "vitality": 200,
@@ -597,6 +634,7 @@
   "label": "38",
   "type": "Mh",
   "description": "Evansmana épée spation-temporelle",
+  "attribut": "None",
   "cost": 50000,
   "stats": {
     "vitality": 350,
@@ -613,6 +651,7 @@
   "label": "39",
   "type": "Mh",
   "description": "Venuzdnor epée de Anos Voldigoad",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 400,
@@ -628,7 +667,8 @@
   "class": "Voleur",
   "label": "40",
   "type": "Mh",
-  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
+  "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
+  "attribut": "None",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -644,7 +684,8 @@
   "class": "Voleur",
   "label": "41",
   "type": "Oh",
-  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
+  "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
+  "attribut": "None",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -661,6 +702,7 @@
   "label": "42",
   "type": "Oh",
   "description": "Bouclier qui absorbe des typhoons",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 800,
@@ -677,6 +719,7 @@
   "label": "43",
   "type": "Mh",
   "description": "Livre Magique",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -693,6 +736,7 @@
   "label": "44",
   "type": "Mh",
   "description": "Arc démoniaque",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -709,6 +753,7 @@
   "label": "45",
   "type": "Mh",
   "description": "Marteau démioniaque",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -725,6 +770,7 @@
   "label": "46",
   "type": "armor",
   "description": "Armure en cuir",
+  "attribut": "None",
   "cost": 350,
   "stats": {
     "vitality": 30,
@@ -741,6 +787,7 @@
   "label": "47",
   "type": "armor",
   "description": "Armure legère en fer",
+  "attribut": "None",
   "cost": 400,
   "stats": {
     "vitality": 35,
@@ -757,6 +804,7 @@
   "label": "48",
   "type": "armor",
   "description": "Armure Lourde en fer",
+  "attribut": "None",
   "cost": 400,
   "stats": {
     "vitality": 35,
@@ -773,6 +821,7 @@
   "label": "49",
   "type": "armor",
   "description": "Cotte de maille",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 30,
@@ -789,6 +838,7 @@
   "label": "50",
   "type": "armor",
   "description": "Toge magique",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 35,
@@ -805,6 +855,7 @@
   "label": "51",
   "type": "armor",
   "description": "Amure en cuir renforcé",
+  "attribut": "None",
   "cost": 1250,
   "stats": {
     "vitality": 55,
@@ -821,6 +872,7 @@
   "label": "52",
   "type": "armor",
   "description": "Armure legère en fer blanc",
+  "attribut": "None",
   "cost": 1300,
   "stats": {
     "vitality": 60,
@@ -837,6 +889,7 @@
   "label": "53",
   "type": "armor",
   "description": "Armure lourde en fer blanc",
+  "attribut": "None",
   "cost": 1400,
   "stats": {
     "vitality": 60,
@@ -853,6 +906,7 @@
   "label": "54",
   "type": "armor",
   "description": "Cotte de maille en fer blanc",
+  "attribut": "None",
   "cost": 1200,
   "stats": {
     "vitality": 60,
@@ -869,6 +923,7 @@
   "label": "55",
   "type": "armor",
   "description": "Toge magique",
+  "attribut": "None",
   "cost": 1200,
   "stats": {
     "vitality": 60,
@@ -879,12 +934,13 @@
     "spirit": 8
   }
 },{
-  "name": "Armure en crocodile rendorcé",
+  "name": "Armure en crocodile renforcé",
   "rank": "legendaire",
   "class": "Barbare, Voleur, Paladin, Chasseur",
   "label": "56",
   "type": "armor",
   "description": "Armure en cuir de crocodile renforcé",
+  "attribut": "None",
   "cost": 3750,
   "stats": {
     "vitality": 75,
@@ -901,6 +957,7 @@
   "label": "57",
   "type": "armor",
   "description": "Armure legère en mythril",
+  "attribut": "None",
   "cost": 3800,
   "stats": {
     "vitality": 80,
@@ -917,6 +974,7 @@
   "label": "58",
   "type": "armor",
   "description": "Armure lourde en mythril",
+  "attribut": "None",
   "cost": 3900,
   "stats": {
     "vitality": 80,
@@ -933,6 +991,7 @@
   "label": "59",
   "type": "armor",
   "description": "Cotte de maille en mythril",
+  "attribut": "None",
   "cost": 3700,
   "stats": {
     "vitality": 75,
@@ -949,6 +1008,7 @@
   "label": "60",
   "type": "armor",
   "description": "Toge béni",
+  "attribut": "None",
   "cost": 3700,
   "stats": {
     "vitality": 80,
@@ -965,6 +1025,7 @@
   "label": "61",
   "type": "armor",
   "description": "Armure bestial",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 150,
@@ -981,6 +1042,7 @@
   "label": "62",
   "type": "armor",
   "description": "Armure de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 200,
@@ -997,6 +1059,7 @@
   "label": "63",
   "type": "armor",
   "description": "Armure de dieux",
+  "attribut": "None",
   "cost": 500000,
   "stats": {
     "vitality": 800,
@@ -1013,6 +1076,7 @@
   "label": "64",
   "type": "armor",
   "description": "Armure du roi démon",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 1200,
@@ -1029,6 +1093,7 @@
   "label": "65",
   "type": "rings",
   "description": "Anneaux en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 20,
@@ -1045,6 +1110,7 @@
   "label": "66",
   "type": "rings",
   "description": "Anneaux en or",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 50,
@@ -1061,6 +1127,7 @@
   "label": "67",
   "type": "rings",
   "description": "Anneaux en titanium",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 80,
@@ -1077,6 +1144,7 @@
   "label": "68",
   "type": "rings",
   "description": "Anneaux en diamant",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 150,
@@ -1093,6 +1161,7 @@
   "label": "69",
   "type": "rings",
   "description": "Anneaux en emeraude",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 200,
@@ -1109,6 +1178,7 @@
   "label": "70",
   "type": "rings",
   "description": "Anneaux de dieu",
+  "attribut": "None",
   "cost": 75000,
   "stats": {
     "vitality": 500,
@@ -1125,6 +1195,7 @@
   "label": "71",
   "type": "rings",
   "description": "Anneaux du roi démon",
+  "attribut": "None",
   "cost": 150000,
   "stats": {
     "vitality": 600,
@@ -1141,6 +1212,7 @@
   "label": "72",
   "type": "earrings",
   "description": "Boucle d'oreils en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 20,
@@ -1157,6 +1229,7 @@
   "label": "73",
   "type": "earrings",
   "description": "bloucle d'oreils en or",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 40,
@@ -1173,6 +1246,7 @@
   "label": "74",
   "type": "earrings",
   "description": "boucles d'oreils en titanium",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 60,
@@ -1189,6 +1263,7 @@
   "label": "75",
   "type": "earrings",
   "description": "Boucles d'oreils en diamant",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 200,
@@ -1205,6 +1280,7 @@
   "label": "76",
   "type": "earrings",
   "description": "Boucles d'oreils en emeraude",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 400,
@@ -1221,6 +1297,7 @@
   "label": "77",
   "type": "earrings",
   "description": "Boucles d'oreils de dieu",
+  "attribut": "None",
   "cost": 75000,
   "stats": {
     "vitality": 1200,
@@ -1237,6 +1314,7 @@
   "label": "78",
   "type": "earrings",
   "description": "Boucles d'oreils du roi démon",
+  "attribut": "None",
   "cost": 150000,
   "stats": {
     "vitality": 2000,
@@ -1253,6 +1331,7 @@
   "label": "79",
   "type": "belt",
   "description": "Ceinture en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 20,
@@ -1269,6 +1348,7 @@
   "label": "80",
   "type": "belt",
   "description": "Ceinture en or",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 60,
@@ -1285,6 +1365,7 @@
   "label": "81",
   "type": "belt",
   "description": "Ceinture en titanium",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 80,
@@ -1301,6 +1382,7 @@
   "label": "82",
   "type": "belt",
   "description": "Ceinture en diamant",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 150,
@@ -1317,6 +1399,7 @@
   "label": "83",
   "type": "belt",
   "description": "Ceinture en emeraude",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 200,
@@ -1333,14 +1416,14 @@
   "label": "84",
   "type": "belt",
   "description": "Ceinture de dieu",
-  "cost": 75000,
+  "attribut": 75000,
+  "cost": 0,
   "stats": {
     "vitality": 400,
-    "constitution": 400,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 400
   }
 },{
   "name": "Demoniac belt",
@@ -1349,6 +1432,7 @@
   "label": "85",
   "type": "belt",
   "description": "Ceinture du roi démon",
+  "attribut": "None",
   "cost": 150000,
   "stats": {
     "vitality": 600,
@@ -1365,6 +1449,7 @@
   "label": "86",
   "type": "broach",
   "description": "Broche en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 30,
@@ -1381,6 +1466,7 @@
   "label": "87",
   "type": "broach",
   "description": "Broche en or",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 60,
@@ -1397,6 +1483,7 @@
   "label": "88",
   "type": "broach",
   "description": "Broche en titanium",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 80,
@@ -1413,6 +1500,7 @@
   "label": "89",
   "type": "broach",
   "description": "Broche en diamant",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 150,
@@ -1429,6 +1517,7 @@
   "label": "90",
   "type": "broach",
   "description": "Broche en emeraude",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 200,
@@ -1445,6 +1534,7 @@
   "label": "91",
   "type": "broach",
   "description": "Broche de dieu",
+  "attribut": "None",
   "cost": 150000,
   "stats": {
     "vitality": 500,
@@ -1461,6 +1551,7 @@
   "label": "92",
   "type": "broach",
   "description": "Broche du roi démon",
+  "attribut": "None",
   "cost": 1000000,
   "stats": {
     "vitality": 1000,
@@ -1477,14 +1568,14 @@
   "label": "93",
   "type": "potion",
   "description": "Heal de 50 HP",
-  "cost": 50,
+  "attribut": 50,
+  "cost": 0,
   "stats": {
-    "vitality": 50,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 50
   }
 },{
   "name": "Potion medium",
@@ -1493,14 +1584,14 @@
   "label": "94",
   "type": "potion",
   "description": "Heal de 500 HP",
-  "cost": 500,
+  "attribut": 500,
+  "cost": 0,
   "stats": {
-    "vitality": 500,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 500
   }
 },{
   "name": "Legendary potion",
@@ -1509,14 +1600,14 @@
   "label": "95",
   "type": "potion",
   "description": "heal de 1500 HP",
-  "cost": 5000,
+  "attribut": 5000,
+  "cost": 0,
   "stats": {
-    "vitality": 1500,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 1500
   }
 },{
   "name": "Slime potion",
@@ -1525,14 +1616,14 @@
   "label": "96",
   "type": "potion",
   "description": "heal de 5000 HP",
-  "cost": 30000,
+  "attribut": 30000,
+  "cost": 0,
   "stats": {
-    "vitality": 5000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 5000
   }
 },{
   "name": "Divin potion",
@@ -1541,14 +1632,14 @@
   "label": "97",
   "type": "potion",
   "description": "heal de 10000 HP",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
-    "vitality": 10000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 10000
   }
 },{
   "name": "Demoniac potion",
@@ -1557,13 +1648,13 @@
   "label": "98",
   "type": "potion",
   "description": "heal de 50000 HP",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
-    "vitality": 50000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 50000
   }
 },{
   "name": "Basic strength scroll",
@@ -1572,11 +1663,11 @@
   "label": "99",
   "type": "scroll",
   "description": "Augmente la force de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 50,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 50,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1588,12 +1679,12 @@
   "label": "100",
   "type": "scroll",
   "description": "Augmente la agility de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 50,
+    "strength": 50,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1604,13 +1695,13 @@
   "label": "101",
   "type": "scroll",
   "description": "Augmente la intelligence de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 50,
+    "agility": 50,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -1620,14 +1711,14 @@
   "label": "102",
   "type": "scroll",
   "description": "Augmente la spirit de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 50
+    "intelligence": 50,
+    "spirit": 0
   }
 },{
   "name": "Basic vitality scroll",
@@ -1636,14 +1727,14 @@
   "label": "103",
   "type": "scroll",
   "description": "Augmente la vitality de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
-    "vitality": 50,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 50
   }
 },{
   "name": "Basic constitution scroll",
@@ -1652,10 +1743,10 @@
   "label": "104",
   "type": "scroll",
   "description": "Augmente la constitution de 50",
-  "cost": 100000,
+  "attribut": 100000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 50,
+    "vitality": 50,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1668,11 +1759,11 @@
   "label": "105",
   "type": "scroll",
   "description": "Augmente la force de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 200,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 200,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1684,12 +1775,12 @@
   "label": "106",
   "type": "scroll",
   "description": "Augmente la agility de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 200,
+    "strength": 200,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1700,13 +1791,13 @@
   "label": "107",
   "type": "scroll",
   "description": "Augmente la intelligence de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 200,
+    "agility": 200,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -1716,14 +1807,14 @@
   "label": "108",
   "type": "scroll",
   "description": "Augmente la spirit de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 200
+    "intelligence": 200,
+    "spirit": 0
   }
 },{
   "name": "Rare vitality scroll",
@@ -1732,14 +1823,14 @@
   "label": "109",
   "type": "scroll",
   "description": "Augmente la vitality de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 0,
   "stats": {
-    "vitality": 200,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 200
   }
 },{
   "name": "Rare constitution scroll",
@@ -1748,10 +1839,10 @@
   "label": "110",
   "type": "scroll",
   "description": "Augmente la constitution de 200",
-  "cost": 500000,
+  "attribut": 500000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 200,
+    "vitality": 200,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1764,11 +1855,11 @@
   "label": "111",
   "type": "scroll",
   "description": "Augmente la force de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 1000,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 1000,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1780,12 +1871,12 @@
   "label": "112",
   "type": "scroll",
   "description": "Augmente la agility de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 1000,
+    "strength": 1000,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1796,13 +1887,13 @@
   "label": "113",
   "type": "scroll",
   "description": "Augmente la intelligence de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 1000,
+    "agility": 1000,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -1812,14 +1903,14 @@
   "label": "114",
   "type": "scroll",
   "description": "Augmente la spirit de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 1000
+    "intelligence": 1000,
+    "spirit": 0
   }
 },{
   "name": "Lengendaire vitality scroll",
@@ -1828,14 +1919,14 @@
   "label": "115",
   "type": "scroll",
   "description": "Augmente la vitality de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
-    "vitality": 1000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 1000
   }
 },{
   "name": "Lengendaire constitution scroll",
@@ -1844,10 +1935,10 @@
   "label": "116",
   "type": "scroll",
   "description": "Augmente la constitution de 1000",
-  "cost": 1000000,
+  "attribut": 1000000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 1000,
+    "vitality": 1000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1860,11 +1951,11 @@
   "label": "117",
   "type": "scroll",
   "description": "Augmente la force de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 10000,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 10000,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1876,12 +1967,12 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la agility de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 10000,
+    "strength": 10000,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1892,13 +1983,13 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la intelligence de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 10000,
+    "agility": 10000,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -1908,14 +1999,14 @@
   "label": "119",
   "type": "scroll",
   "description": "Augmente la spirit de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 10000
+    "intelligence": 10000,
+    "spirit": 0
   }
 },{
   "name": "Heroique vitality scroll",
@@ -1924,14 +2015,14 @@
   "label": "120",
   "type": "scroll",
   "description": "Augmente la vitality de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 0,
   "stats": {
-    "vitality": 10000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 10000
   }
 },{
   "name": "Heroique constitution scroll",
@@ -1940,10 +2031,10 @@
   "label": "121",
   "type": "scroll",
   "description": "Augmente la constitution de 10000",
-  "cost": 50000000,
+  "attribut": 50000000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 10000,
+    "vitality": 10000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1956,11 +2047,11 @@
   "label": "122",
   "type": "scroll",
   "description": "Augmente la force de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 50000,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 50000,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1972,12 +2063,12 @@
   "label": "123",
   "type": "scroll",
   "description": "Augmente la agility de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 50000,
+    "strength": 50000,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1988,13 +2079,13 @@
   "label": "124",
   "type": "scroll",
   "description": "Augmente la intelligence de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 50000,
+    "agility": 50000,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -2004,14 +2095,14 @@
   "label": "125",
   "type": "scroll",
   "description": "Augmente la spirit de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 50000
+    "intelligence": 50000,
+    "spirit": 0
   }
 },{
   "name": "Divinity vitality scroll",
@@ -2020,14 +2111,14 @@
   "label": "126",
   "type": "scroll",
   "description": "Augmente la vitality de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 0,
   "stats": {
-    "vitality": 50000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 50000
   }
 },{
   "name": "Divinity constitution scroll",
@@ -2036,10 +2127,10 @@
   "label": "127",
   "type": "scroll",
   "description": "Augmente la constitution de 50000",
-  "cost": 100000000,
+  "attribut": 100000000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 50000,
+    "vitality": 50000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -2052,11 +2143,11 @@
   "label": "128",
   "type": "scroll",
   "description": "Augmente la force de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 100000,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 100000,
+    "strength": 0,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -2068,12 +2159,12 @@
   "label": "129",
   "type": "scroll",
   "description": "Augmente la agility de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
-    "strength": 0,
-    "agility": 100000,
+    "strength": 100000,
+    "agility": 0,
     "intelligence": 0,
     "spirit": 0
   }
@@ -2084,13 +2175,13 @@
   "label": "130",
   "type": "scroll",
   "description": "Augmente la intelligence de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
-    "agility": 0,
-    "intelligence": 100000,
+    "agility": 100000,
+    "intelligence": 0,
     "spirit": 0
   }
 },{
@@ -2100,14 +2191,14 @@
   "label": "131",
   "type": "scroll",
   "description": "Augmente la spirit de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 0,
   "stats": {
     "vitality": 0,
-    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 0,
-    "spirit": 100000
+    "intelligence": 100000,
+    "spirit": 0
   }
 },{
   "name": "Demoniac vitality scroll",
@@ -2116,14 +2207,14 @@
   "label": "132",
   "type": "scroll",
   "description": "Augmente la vitality de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 0,
   "stats": {
-    "vitality": 100000,
-    "constitution": 0,
+    "vitality": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 0
+    "spirit": 100000
   }
 },{
   "name": "Demoniac constitution scroll",
@@ -2132,10 +2223,11 @@
   "label": "133",
   "type": "scroll",
   "description": "Augmente la constitution de 100000",
-  "cost": 5000000000,
+  "attribut": 5000000000,
+  "cost": 0,
   "stats": {
-    "vitality": 0,
-    "constitution": 100000,
+    "vitality": 100000,
+    "constitution": 1,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -2148,6 +2240,7 @@
   "label": null,
   "type": "Mh",
   "description": "Coup de karaté contenue dans une lame",
+  "attribut": "None",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -2164,6 +2257,7 @@
   "label": null,
   "type": "Oh",
   "description": "Coup de karaté contenue dans une lame",
+  "attribut": "None",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -2180,6 +2274,7 @@
   "label": null,
   "type": "Mh",
   "description": "Arbalete",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -2196,6 +2291,7 @@
   "label": null,
   "type": "Mh",
   "description": "Cube magique",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -2212,6 +2308,7 @@
   "label": null,
   "type": "Oh",
   "description": "Aura magique",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 2000,
@@ -2228,6 +2325,7 @@
   "label": null,
   "type": "Mh",
   "description": "Lance de Odin",
+  "attribut": "None",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -2244,6 +2342,7 @@
   "label": null,
   "type": "Mh",
   "description": "Marteau de Thor",
+  "attribut": "None",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -2260,6 +2359,7 @@
   "label": null,
   "type": "Mh",
   "description": "Faux de la mort",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
@@ -2276,6 +2376,7 @@
   "label": null,
   "type": "Mh",
   "description": "Epée du roi Arthur obtenue par Kirito dans une quete",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -2292,6 +2393,7 @@
   "label": null,
   "type": "Mh",
   "description": "Ancienne épée du roi Arthur",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -2308,6 +2410,7 @@
   "label": null,
   "type": "Oh",
   "description": "Bouclier divin",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
@@ -2324,6 +2427,7 @@
   "label": null,
   "type": "armor",
   "description": "Armure Divino Démoniaque",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 30000,
@@ -2340,6 +2444,7 @@
   "label": null,
   "type": "broach",
   "description": "Broche Divino Démoniaque",
+  "attribut": "None",
   "cost": 15000000,
   "stats": {
     "vitality": 10000,
@@ -2356,6 +2461,7 @@
   "label": null,
   "type": "rings",
   "description": "Anneaux Divino Démoniaque",
+  "attribut": "None",
   "cost": 15000000,
   "stats": {
     "vitality": 0,
@@ -2372,6 +2478,7 @@
   "label": null,
   "type": "earrings",
   "description": "Boucles d'oreilles Divino Démoniaque",
+  "attribut": "None",
   "cost": 15000000,
   "stats": {
     "vitality": 0,
@@ -2388,6 +2495,7 @@
   "label": null,
   "type": "belt",
   "description": "Ceinture Divino Démoniaque",
+  "attribut": "None",
   "cost": 20000000,
   "stats": {
     "vitality": 15000,

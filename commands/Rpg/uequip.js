@@ -6,15 +6,19 @@ module.exports = {
         const q = args.join(" ");
         const userEquipment = userInfo.equipments;
         const userInventory = userInfo.inventory;
+        const userAttribut = userInfo.attribut
         const itemInfoPosition = getItemInfo.map(e => e.name).indexOf(capitalize(q));
+        const itemAttribut = getItemInfo[itemInfoPosition].attribut
         if (itemInfoPosition === -1) return message.reply("Cet objet n'existe pas !")
         if (userEquipment[getItemInfo[itemInfoPosition].type] !== capitalize(q)) return message.reply("Cette objet n'est pas équipé");
         userEquipment[getItemInfo[itemInfoPosition].type] = 'None'
         userInventory.push(capitalize(q));
+        userAttribut.splice(itemAttribut, 1)
         await calculateUserStatsUequip(client, message);
         client.updateUserInfo(message.member, {
             "users.$.equipments": userEquipment,
-            "users.$.inventory": userInventory
+            "users.$.inventory": userInventory,
+            "users.$.attribut": userAttribut
         })
         await calculateUserStatsEquip(client, message);
         return message.reply(`Tu as bien enlever l'objet!`);
