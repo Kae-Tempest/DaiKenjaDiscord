@@ -1568,14 +1568,15 @@
   "label": "93",
   "type": "potion",
   "description": "Heal de 50 HP",
-  "attribut": 50,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50,
   "stats": {
-    "vitality": 0,
+    "vitality": 50,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 50
+    "spirit": 0
   }
 },{
   "name": "Potion medium",
@@ -1584,14 +1585,15 @@
   "label": "94",
   "type": "potion",
   "description": "Heal de 500 HP",
-  "attribut": 500,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500,
   "stats": {
-    "vitality": 0,
+    "vitality": 500,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 500
+    "spirit": 0
   }
 },{
   "name": "Legendary potion",
@@ -1600,14 +1602,15 @@
   "label": "95",
   "type": "potion",
   "description": "heal de 1500 HP",
-  "attribut": 5000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000,
   "stats": {
-    "vitality": 0,
+    "vitality": 1500,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 1500
+    "spirit": 0
   }
 },{
   "name": "Slime potion",
@@ -1616,14 +1619,15 @@
   "label": "96",
   "type": "potion",
   "description": "heal de 5000 HP",
-  "attribut": 30000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 30000,
   "stats": {
-    "vitality": 0,
+    "vitality": 5000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 5000
+    "spirit": 0
   }
 },{
   "name": "Divin potion",
@@ -1632,14 +1636,15 @@
   "label": "97",
   "type": "potion",
   "description": "heal de 10000 HP",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
-    "vitality": 0,
+    "vitality": 10000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 10000
+    "spirit": 0
   }
 },{
   "name": "Demoniac potion",
@@ -1648,13 +1653,14 @@
   "label": "98",
   "type": "potion",
   "description": "heal de 50000 HP",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
+    "vitality": 50000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 50000
+    "spirit": 0
   }
 },{
   "name": "Basic strength scroll",
@@ -1663,11 +1669,12 @@
   "label": "99",
   "type": "scroll",
   "description": "Augmente la force de 50",
-  "attribut": 100000,
-  "cost": 50,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 50,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1679,12 +1686,13 @@
   "label": "100",
   "type": "scroll",
   "description": "Augmente la agility de 50",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
     "vitality": 0,
-    "strength": 50,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 50,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1695,13 +1703,14 @@
   "label": "101",
   "type": "scroll",
   "description": "Augmente la intelligence de 50",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 50,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 50,
     "spirit": 0
   }
 },{
@@ -1711,14 +1720,15 @@
   "label": "102",
   "type": "scroll",
   "description": "Augmente la spirit de 50",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 50,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 50
   }
 },{
   "name": "Basic vitality scroll",
@@ -1727,14 +1737,15 @@
   "label": "103",
   "type": "scroll",
   "description": "Augmente la vitality de 50",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
-    "vitality": 0,
+    "vitality": 50,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 50
+    "spirit": 0
   }
 },{
   "name": "Basic constitution scroll",
@@ -1743,10 +1754,11 @@
   "label": "104",
   "type": "scroll",
   "description": "Augmente la constitution de 50",
-  "attribut": 100000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000,
   "stats": {
-    "vitality": 50,
+    "vitality": 0,
+    "constitution": 50,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1759,11 +1771,12 @@
   "label": "105",
   "type": "scroll",
   "description": "Augmente la force de 200",
-  "attribut": 500000,
-  "cost": 200,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 200,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1775,12 +1788,13 @@
   "label": "106",
   "type": "scroll",
   "description": "Augmente la agility de 200",
-  "attribut": 500000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
     "vitality": 0,
-    "strength": 200,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 200,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1791,13 +1805,14 @@
   "label": "107",
   "type": "scroll",
   "description": "Augmente la intelligence de 200",
-  "attribut": 500000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 200,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 200,
     "spirit": 0
   }
 },{
@@ -1807,14 +1822,15 @@
   "label": "108",
   "type": "scroll",
   "description": "Augmente la spirit de 200",
-  "attribut": 500000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 200,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 200
   }
 },{
   "name": "Rare vitality scroll",
@@ -1823,14 +1839,15 @@
   "label": "109",
   "type": "scroll",
   "description": "Augmente la vitality de 200",
-  "attribut": 500000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
-    "vitality": 0,
+    "vitality": 200,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 200
+    "spirit": 0
   }
 },{
   "name": "Rare constitution scroll",
@@ -1839,10 +1856,11 @@
   "label": "110",
   "type": "scroll",
   "description": "Augmente la constitution de 200",
-  "attribut": 500000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 500000,
   "stats": {
-    "vitality": 200,
+    "vitality": 0,
+    "constitution": 200,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1855,11 +1873,12 @@
   "label": "111",
   "type": "scroll",
   "description": "Augmente la force de 1000",
-  "attribut": 1000000,
-  "cost": 1000,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 1000,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1871,12 +1890,13 @@
   "label": "112",
   "type": "scroll",
   "description": "Augmente la agility de 1000",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
-    "strength": 1000,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 1000,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1887,13 +1907,14 @@
   "label": "113",
   "type": "scroll",
   "description": "Augmente la intelligence de 1000",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 1000,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 1000,
     "spirit": 0
   }
 },{
@@ -1903,14 +1924,15 @@
   "label": "114",
   "type": "scroll",
   "description": "Augmente la spirit de 1000",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 1000,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 1000
   }
 },{
   "name": "Lengendaire vitality scroll",
@@ -1919,14 +1941,15 @@
   "label": "115",
   "type": "scroll",
   "description": "Augmente la vitality de 1000",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
-    "vitality": 0,
+    "vitality": 1000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 1000
+    "spirit": 0
   }
 },{
   "name": "Lengendaire constitution scroll",
@@ -1935,10 +1958,11 @@
   "label": "116",
   "type": "scroll",
   "description": "Augmente la constitution de 1000",
-  "attribut": 1000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 1000000,
   "stats": {
-    "vitality": 1000,
+    "vitality": 0,
+    "constitution": 1000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -1951,11 +1975,12 @@
   "label": "117",
   "type": "scroll",
   "description": "Augmente la force de 10000",
-  "attribut": 50000000,
-  "cost": 10000,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 10000,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -1967,12 +1992,13 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la agility de 10000",
-  "attribut": 50000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
-    "strength": 10000,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 10000,
     "intelligence": 0,
     "spirit": 0
   }
@@ -1983,13 +2009,14 @@
   "label": "118",
   "type": "scroll",
   "description": "Augmente la intelligence de 10000",
-  "attribut": 50000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 10000,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 10000,
     "spirit": 0
   }
 },{
@@ -1999,14 +2026,15 @@
   "label": "119",
   "type": "scroll",
   "description": "Augmente la spirit de 10000",
-  "attribut": 50000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 10000,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 10000
   }
 },{
   "name": "Heroique vitality scroll",
@@ -2015,14 +2043,15 @@
   "label": "120",
   "type": "scroll",
   "description": "Augmente la vitality de 10000",
-  "attribut": 50000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
-    "vitality": 0,
+    "vitality": 10000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 10000
+    "spirit": 0
   }
 },{
   "name": "Heroique constitution scroll",
@@ -2031,10 +2060,11 @@
   "label": "121",
   "type": "scroll",
   "description": "Augmente la constitution de 10000",
-  "attribut": 50000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 50000000,
   "stats": {
-    "vitality": 10000,
+    "vitality": 0,
+    "constitution": 10000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -2047,11 +2077,12 @@
   "label": "122",
   "type": "scroll",
   "description": "Augmente la force de 50000",
-  "attribut": 100000000,
-  "cost": 50000,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 50000,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -2063,12 +2094,13 @@
   "label": "123",
   "type": "scroll",
   "description": "Augmente la agility de 50000",
-  "attribut": 100000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
-    "strength": 50000,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 50000,
     "intelligence": 0,
     "spirit": 0
   }
@@ -2079,13 +2111,14 @@
   "label": "124",
   "type": "scroll",
   "description": "Augmente la intelligence de 50000",
-  "attribut": 100000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 50000,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 50000,
     "spirit": 0
   }
 },{
@@ -2095,14 +2128,15 @@
   "label": "125",
   "type": "scroll",
   "description": "Augmente la spirit de 50000",
-  "attribut": 100000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 50000,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 50000
   }
 },{
   "name": "Divinity vitality scroll",
@@ -2111,14 +2145,15 @@
   "label": "126",
   "type": "scroll",
   "description": "Augmente la vitality de 50000",
-  "attribut": 100000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
-    "vitality": 0,
+    "vitality": 50000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 50000
+    "spirit": 0
   }
 },{
   "name": "Divinity constitution scroll",
@@ -2127,10 +2162,11 @@
   "label": "127",
   "type": "scroll",
   "description": "Augmente la constitution de 50000",
-  "attribut": 100000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 100000000,
   "stats": {
-    "vitality": 50000,
+    "vitality": 0,
+    "constitution": 50000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
@@ -2143,11 +2179,12 @@
   "label": "128",
   "type": "scroll",
   "description": "Augmente la force de 100000",
-  "attribut": 5000000000,
-  "cost": 100000,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
-    "strength": 0,
+    "constitution": 0,
+    "strength": 100000,
     "agility": 0,
     "intelligence": 0,
     "spirit": 0
@@ -2159,12 +2196,13 @@
   "label": "129",
   "type": "scroll",
   "description": "Augmente la agility de 100000",
-  "attribut": 5000000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
-    "strength": 100000,
-    "agility": 0,
+    "constitution": 0,
+    "strength": 0,
+    "agility": 100000,
     "intelligence": 0,
     "spirit": 0
   }
@@ -2175,13 +2213,14 @@
   "label": "130",
   "type": "scroll",
   "description": "Augmente la intelligence de 100000",
-  "attribut": 5000000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
-    "agility": 100000,
-    "intelligence": 0,
+    "agility": 0,
+    "intelligence": 100000,
     "spirit": 0
   }
 },{
@@ -2191,14 +2230,15 @@
   "label": "131",
   "type": "scroll",
   "description": "Augmente la spirit de 100000",
-  "attribut": 5000000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
     "vitality": 0,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
-    "intelligence": 100000,
-    "spirit": 0
+    "intelligence": 0,
+    "spirit": 100000
   }
 },{
   "name": "Demoniac vitality scroll",
@@ -2207,14 +2247,15 @@
   "label": "132",
   "type": "scroll",
   "description": "Augmente la vitality de 100000",
-  "attribut": 5000000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
-    "vitality": 0,
+    "vitality": 100000,
+    "constitution": 0,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 100000
+    "spirit": 0
   }
 },{
   "name": "Demoniac constitution scroll",
@@ -2223,11 +2264,11 @@
   "label": "133",
   "type": "scroll",
   "description": "Augmente la constitution de 100000",
-  "attribut": 5000000000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 5000000000,
   "stats": {
-    "vitality": 100000,
-    "constitution": 1,
+    "vitality": 0,
+    "constitution": 100000,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
