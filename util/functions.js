@@ -43,6 +43,7 @@ module.exports = client => {
                         daily: 0,
                         po: 200,
                         teams: "None",
+                        attribute: [],
                         class: "",
                         stats: {},
                         statsMax: {},

@@ -5,6 +5,7 @@
   "label": "46",
   "type": "armor",
   "description": "Armure en cuir",
+  "attribut": "None",
   "cost": 350,
   "stats": {
     "vitality": 30,
@@ -21,6 +22,7 @@
   "label": "47",
   "type": "armor",
   "description": "Armure legère en fer",
+  "attribut": "None",
   "cost": 400,
   "stats": {
     "vitality": 35,
@@ -37,6 +39,7 @@
   "label": "48",
   "type": "armor",
   "description": "Armure Lourde en fer",
+  "attribut": "None",
   "cost": 400,
   "stats": {
     "vitality": 35,
@@ -53,6 +56,7 @@
   "label": "49",
   "type": "armor",
   "description": "Cotte de maille",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 30,
@@ -69,6 +73,7 @@
   "label": "50",
   "type": "armor",
   "description": "Toge magique",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 35,
@@ -85,6 +90,7 @@
   "label": "51",
   "type": "armor",
   "description": "Amure en cuir renforcé",
+  "attribut": "None",
   "cost": 1250,
   "stats": {
     "vitality": 55,
@@ -101,6 +107,7 @@
   "label": "52",
   "type": "armor",
   "description": "Armure legère en fer blanc",
+  "attribut": "None",
   "cost": 1300,
   "stats": {
     "vitality": 60,
@@ -117,6 +124,7 @@
   "label": "53",
   "type": "armor",
   "description": "Armure lourde en fer blanc",
+  "attribut": "None",
   "cost": 1400,
   "stats": {
     "vitality": 60,
@@ -133,6 +141,7 @@
   "label": "54",
   "type": "armor",
   "description": "Cotte de maille en fer blanc",
+  "attribut": "None",
   "cost": 1200,
   "stats": {
     "vitality": 60,
@@ -149,6 +158,7 @@
   "label": "55",
   "type": "armor",
   "description": "Toge magique",
+  "attribut": "None",
   "cost": 1200,
   "stats": {
     "vitality": 60,
@@ -159,12 +169,13 @@
     "spirit": 8
   }
 },{
-  "name": "Armure en crocodile rendorcé",
+  "name": "Armure en crocodile renforcé",
   "rank": "legendaire",
   "class": "Barbare, Voleur, Paladin, Chasseur",
   "label": "56",
   "type": "armor",
   "description": "Armure en cuir de crocodile renforcé",
+  "attribut": "None",
   "cost": 3750,
   "stats": {
     "vitality": 75,
@@ -181,6 +192,7 @@
   "label": "57",
   "type": "armor",
   "description": "Armure legère en mythril",
+  "attribut": "None",
   "cost": 3800,
   "stats": {
     "vitality": 80,
@@ -197,6 +209,7 @@
   "label": "58",
   "type": "armor",
   "description": "Armure lourde en mythril",
+  "attribut": "None",
   "cost": 3900,
   "stats": {
     "vitality": 80,
@@ -213,6 +226,7 @@
   "label": "59",
   "type": "armor",
   "description": "Cotte de maille en mythril",
+  "attribut": "None",
   "cost": 3700,
   "stats": {
     "vitality": 75,
@@ -229,6 +243,7 @@
   "label": "60",
   "type": "armor",
   "description": "Toge béni",
+  "attribut": "None",
   "cost": 3700,
   "stats": {
     "vitality": 80,
@@ -245,6 +260,7 @@
   "label": "61",
   "type": "armor",
   "description": "Armure bestial",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 150,
@@ -261,6 +277,7 @@
   "label": "62",
   "type": "armor",
   "description": "Armure de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 200,
@@ -277,6 +294,7 @@
   "label": "63",
   "type": "armor",
   "description": "Armure de dieux",
+  "attribut": "None",
   "cost": 500000,
   "stats": {
     "vitality": 800,
@@ -293,6 +311,7 @@
   "label": "64",
   "type": "armor",
   "description": "Armure du roi démon",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 1200,
@@ -309,6 +328,7 @@
   "label": null,
   "type": "armor",
   "description": "Armure Divino Démoniaque",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 30000,

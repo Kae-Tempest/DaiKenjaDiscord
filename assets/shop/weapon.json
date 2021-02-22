@@ -5,6 +5,7 @@
   "label": "1",
   "type": "Mh",
   "description": "Epée courte",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -21,6 +22,7 @@
   "label": "2",
   "type": "Mh",
   "description": "Dague",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -37,6 +39,7 @@
   "label": "3",
   "type": "Mh",
   "description": "Epée longue",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -53,6 +56,7 @@
   "label": "4",
   "type": "Oh",
   "description": "Bouclier en fer",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -69,6 +73,7 @@
   "label": "5",
   "type": "Mh",
   "description": "Arc",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -85,6 +90,7 @@
   "label": "6",
   "type": "Mh",
   "description": "Masse",
+  "attribut": "None",
   "cost": 300,
   "stats": {
     "vitality": 0,
@@ -101,6 +107,7 @@
   "label": "7",
   "type": "Mh",
   "description": "Baton magique",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -117,6 +124,7 @@
   "label": "8",
   "type": "Oh",
   "description": "Magic aura",
+  "attribut": "None",
   "cost": 200,
   "stats": {
     "vitality": 0,
@@ -133,6 +141,7 @@
   "label": "9",
   "type": "Mh",
   "description": "Epée courte en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -149,6 +158,7 @@
   "label": "10",
   "type": "Mh",
   "description": "Dague en fer blanc pour la Main hand",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -165,6 +175,7 @@
   "label": "11",
   "type": "Oh",
   "description": "Dague en fer blanc pour la Off hand",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -181,6 +192,7 @@
   "label": "12",
   "type": "Mh",
   "description": "Epée longue en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -197,6 +209,7 @@
   "label": "13",
   "type": "Oh",
   "description": "Bouclier en fer blanc",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -213,6 +226,7 @@
   "label": "14",
   "type": "Mh",
   "description": "Arc en chêne rouge",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -229,6 +243,7 @@
   "label": "15",
   "type": "Mh",
   "description": "Masse lourde",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -245,6 +260,7 @@
   "label": "16",
   "type": "Mh",
   "description": "Bâton magique",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -261,6 +277,7 @@
   "label": "17",
   "type": "Oh",
   "description": "Magic shield",
+  "attribut": "None",
   "cost": 1000,
   "stats": {
     "vitality": 0,
@@ -277,6 +294,7 @@
   "label": "18",
   "type": "Mh",
   "description": "Epée  courte en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -293,6 +311,7 @@
   "label": "19",
   "type": "Mh",
   "description": "Dague en mythril pour Main hand",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -309,6 +328,7 @@
   "label": "20",
   "type": "Oh",
   "description": "Dague en mythril pour Off hand",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -325,6 +345,7 @@
   "label": "21",
   "type": "Mh",
   "description": "Epée longue en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -341,6 +362,7 @@
   "label": "22",
   "type": "Oh",
   "description": "Bouclier en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -357,6 +379,7 @@
   "label": "23",
   "type": "Mh",
   "description": "Arc en fer à poulis",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -373,6 +396,7 @@
   "label": "24",
   "type": "Mh",
   "description": "Masse en mythril",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -389,6 +413,7 @@
   "label": "25",
   "type": "Mh",
   "description": "Bâton en chêne rouge magique",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -405,6 +430,7 @@
   "label": "26",
   "type": "Oh",
   "description": "Divin aura",
+  "attribut": "None",
   "cost": 3500,
   "stats": {
     "vitality": 0,
@@ -421,6 +447,7 @@
   "label": "27",
   "type": "Mh",
   "description": "Premiere Epée de Kirito !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -437,6 +464,7 @@
   "label": "28",
   "type": "Oh",
   "description": "Seconde Epée de Kirito",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -453,6 +481,7 @@
   "label": "29",
   "type": "Mh",
   "description": "Epée de Link !",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -469,6 +498,7 @@
   "label": "30",
   "type": "Mh",
   "description": "Epée courte de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -485,6 +515,7 @@
   "label": "31",
   "type": "Oh",
   "description": "Bouclier de Maple",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 175,
@@ -500,7 +531,8 @@
   "class": "Voleur",
   "label": "32",
   "type": "Mh",
-  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "description": "Dague d'une voleuse qui accompgna un héros !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -516,7 +548,8 @@
   "class": "Voleur",
   "label": "33",
   "type": "Oh",
-  "description": "Dague d'une voleuse qui accompgna un héro !",
+  "description": "Dague d'une voleuse qui accompgna un héros !",
+  "attribut": "None",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -533,6 +566,7 @@
   "label": "34",
   "type": "Mh",
   "description": "Dague d'une Héroïne",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -549,6 +583,7 @@
   "label": "35",
   "type": "Oh",
   "description": "Dague d'une Héroïne",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -565,6 +600,7 @@
   "label": "36",
   "type": "Mh",
   "description": "Baguette de Harry Potter",
+  "attribut": "None",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -581,6 +617,7 @@
   "label": "37",
   "type": "Oh",
   "description": "Bouclier d'Athéna",
+  "attribut": "None",
   "cost": 21000,
   "stats": {
     "vitality": 200,
@@ -597,6 +634,7 @@
   "label": "38",
   "type": "Mh",
   "description": "Evansmana épée spation-temporelle",
+  "attribut": "None",
   "cost": 50000,
   "stats": {
     "vitality": 350,
@@ -613,6 +651,7 @@
   "label": "39",
   "type": "Mh",
   "description": "Venuzdnor epée de Anos Voldigoad",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 400,
@@ -628,7 +667,8 @@
   "class": "Voleur",
   "label": "40",
   "type": "Mh",
-  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
+  "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
+  "attribut": "None",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -644,7 +684,8 @@
   "class": "Voleur",
   "label": "41",
   "type": "Oh",
-  "description": "Dague permetant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
+  "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
+  "attribut": "None",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -661,6 +702,7 @@
   "label": "42",
   "type": "Oh",
   "description": "Bouclier qui absorbe des typhoons",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 800,
@@ -677,6 +719,7 @@
   "label": "43",
   "type": "Mh",
   "description": "Livre Magique",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -693,6 +736,7 @@
   "label": "44",
   "type": "Mh",
   "description": "Arc démoniaque",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -709,6 +753,7 @@
   "label": "45",
   "type": "Mh",
   "description": "Marteau démioniaque",
+  "attribut": "None",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -725,6 +770,7 @@
   "label": null,
   "type": "Mh",
   "description": "Coup de karaté contenue dans une lame",
+  "attribut": "None",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -741,6 +787,7 @@
   "label": null,
   "type": "Oh",
   "description": "Coup de karaté contenue dans une lame",
+  "attribut": "None",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -757,6 +804,7 @@
   "label": null,
   "type": "Mh",
   "description": "Arbalete",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -773,6 +821,7 @@
   "label": null,
   "type": "Mh",
   "description": "Cube magique",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -789,6 +838,7 @@
   "label": null,
   "type": "Oh",
   "description": "Aura magique",
+  "attribut": "None",
   "cost": 2000000,
   "stats": {
     "vitality": 2000,
@@ -805,6 +855,7 @@
   "label": null,
   "type": "Mh",
   "description": "Lance de Odin",
+  "attribut": "None",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -821,6 +872,7 @@
   "label": null,
   "type": "Mh",
   "description": "Marteau de Thor",
+  "attribut": "None",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -837,6 +889,7 @@
   "label": null,
   "type": "Mh",
   "description": "Faux de la mort",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
@@ -853,6 +906,7 @@
   "label": null,
   "type": "Mh",
   "description": "Epée du roi Arthur obtenue par Kirito dans une quete",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -869,6 +923,7 @@
   "label": null,
   "type": "Mh",
   "description": "Ancienne épée du roi Arthur",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -885,6 +940,7 @@
   "label": null,
   "type": "Oh",
   "description": "Bouclier divin",
+  "attribut": "None",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
