@@ -57,7 +57,6 @@ module.exports = {
             )
             .addField("Equipement :", `${Object.entries(player.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
         message.channel.send(embed);
-        console.log(player.attribut)
     }, help: {
         name: 'profile',
         aliases: ["profile", "profil","Profile","Profil","PROFILE","PROFIL"],
