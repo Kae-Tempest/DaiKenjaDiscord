@@ -51,10 +51,10 @@
   "po": 10,
   "attribut": {
     "resistance": [
-      "None"
+      "Terre"
     ],
     "faiblesse": [
-      "None"
+      "Feu"
     ]
   },
   "stats": {
@@ -73,10 +73,12 @@
   "po": 18,
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére",
+      "Terre",
+      "Feu"
     ]
   },
   "stats": {
@@ -95,10 +97,10 @@
   "po": 25,
   "attribut": {
     "resistance": [
-      "None"
+      "Terre"
     ],
     "faiblesse": [
-      "None"
+      "Feu"
     ]
   },
   "stats": {
@@ -117,10 +119,13 @@
   "po": 20,
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre",
+      "Feu",
+      "Foudre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére",
+      "Terre"
     ]
   },
   "stats": {
@@ -139,10 +144,10 @@
   "po": 28,
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére"
     ]
   },
   "stats": {
@@ -164,7 +169,7 @@
       "None"
     ],
     "faiblesse": [
-      "None"
+      "Terre"
     ]
   },
   "stats": {
@@ -183,10 +188,10 @@
   "po": 30,
   "attribut": {
     "resistance": [
-      "None"
+      "Terre"
     ],
     "faiblesse": [
-      "None"
+      "Feu"
     ]
   },
   "stats": {
@@ -205,10 +210,11 @@
   "po": 50,
   "attribut": {
     "resistance": [
-      "None"
+      "Terre"
     ],
     "faiblesse": [
-      "None"
+      "Eau",
+      "Foudre"
     ]
   },
   "stats": {
@@ -340,7 +346,7 @@
       "None"
     ],
     "faiblesse": [
-      "None"
+      "Lumière"
     ]
   },
   "stats": {
@@ -359,10 +365,10 @@
   "po": 130,
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumière"
     ]
   },
   "stats": {
@@ -425,10 +431,10 @@
   "po": 330,
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumière"
     ]
   },
   "stats": {
@@ -475,10 +481,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére"
     ]
   },
   "stats": {
@@ -500,10 +506,15 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre",
+      "Lumiére"
     ],
     "faiblesse": [
-      "None"
+      "Terre",
+      "Eau",
+      "Air",
+      "Foudre",
+      "Feu"
     ]
   },
   "stats": {
@@ -525,10 +536,11 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre",
+      "Lumiére"
     ],
     "faiblesse": [
-      "None"
+      "Feu"
     ]
   },
   "stats": {
@@ -550,10 +562,12 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Feu",
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére",
+      "Foudre"
     ]
   },
   "stats": {
@@ -575,10 +589,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Lumiére"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre"
     ]
   },
   "stats": {
@@ -856,10 +870,15 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Terre",
+      "Eau",
+      "Air",
+      "Foudre",
+      "Feu"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre",
+      "Lumiére"
     ]
   },
   "stats": {
@@ -881,10 +900,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Lumiére"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre"
     ]
   },
   "stats": {
@@ -906,10 +925,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére"
     ]
   },
   "stats": {
@@ -933,10 +952,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
-      "None"
+      "Lumiére"
     ]
   },
   "stats": {
@@ -983,10 +1002,11 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Lumiére",
+      "Foudre"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre"
     ]
   },
   "stats": {
@@ -1008,10 +1028,11 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Lumiére",
+      "Foudre"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre"
     ]
   },
   "stats": {
@@ -1033,7 +1054,7 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Ténébre"
     ],
     "faiblesse": [
       "None"
@@ -1140,10 +1161,10 @@
   ],
   "attribut": {
     "resistance": [
-      "None"
+      "Lumiére"
     ],
     "faiblesse": [
-      "None"
+      "Ténébre"
     ]
   },
   "stats": {

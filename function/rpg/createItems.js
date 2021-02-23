@@ -108,43 +108,43 @@ const items = (client) => {
 
     createItems("Divin aura", "legendaire", "Mage", "26", "Oh", "Divin aura", "None", 3500, 0, 0, 10, 10, 0, 25);
 
-    createItems("Elucidator", "heroique", "Barbare", "27", "Mh", "Premiere Epée de Kirito !", "None", 10000, 200, 0, 0, 0, 100, 0);
+    createItems("Elucidator", "heroique", "Barbare", "27", "Mh", "Premiere Epée de Kirito !", "Feu", 10000, 200, 0, 0, 0, 100, 0);
 
-    createItems("Dark repulser", "heroique", "Barbare", "28", "Oh", "Seconde Epée de Kirito", "None", 10000, 200, 0, 0, 0, 100, 0);
+    createItems("Dark repulser", "heroique", "Barbare", "28", "Oh", "Seconde Epée de Kirito", "Eau", 10000, 200, 0, 0, 0, 100, 0);
 
-    createItems("Master sword", "heroique", "Barbare", "29", "Mh", "Epée de Link !", "None", 20000, 300, 0, 0, 0, 150, 0);
+    createItems("Master sword", "heroique", "Barbare", "29", "Mh", "Epée de Link !", "Lumiére", 20000, 300, 0, 0, 0, 150, 0);
 
-    createItems("New moon", "heroique", "Paladin et Voleur", "30", "Mh", "Epée courte de Maple", "None", 20000, 150, 150, 0, 150, 150, 0);
+    createItems("New moon", "heroique", "Paladin et Voleur", "30", "Mh", "Epée courte de Maple", "Ténébre", 20000, 150, 150, 0, 150, 150, 0);
 
-    createItems("Mirror of the dark night", "heroique", "toute classe", "31", "Oh", "Bouclier de Maple", "None", 20000, 0, 0, 0, 0, 175, 300);
+    createItems("Mirror of the dark night", "heroique", "toute classe", "31", "Oh", "Bouclier de Maple", "Ténébre", 20000, 0, 0, 0, 0, 175, 300);
 
-    createItems("Athamé", "heroique", "Voleur", "32", "Mh", "Dague d'une voleuse qui accompgna un héros !", "None", 10000, 100, 100, 0, 0, 100, 0);
+    createItems("Athamé", "heroique", "Voleur", "32", "Mh", "Dague d'une voleuse qui accompgna un héros !", "Terre", 10000, 100, 100, 0, 0, 100, 0);
 
-    createItems("Tantō", "heroique", "Voleur", "33", "Oh", "Dague d'une voleuse qui accompgna un héros !", "None", 10000, 100, 100, 0, 0, 100, 0);
+    createItems("Tantō", "heroique", "Voleur", "33", "Oh", "Dague d'une voleuse qui accompgna un héros !", "Air", 10000, 100, 100, 0, 0, 100, 0);
 
-    createItems("Khukuri", "heroique", "Voleur", "34", "Mh", "Dague d'une Héroïne", "None", 20000, 150, 150, 0, 0, 150, 0);
+    createItems("Khukuri", "heroique", "Voleur", "34", "Mh", "Dague d'une Héroïne", "Feu", 20000, 150, 150, 0, 0, 150, 0);
 
-    createItems("Kusanagi", "heroique", "Voleur", "35", "Oh", "Dague d'une Héroïne", "None", 20000, 150, 150, 0, 0, 150, 0);
+    createItems("Kusanagi", "heroique", "Voleur", "35", "Oh", "Dague d'une Héroïne", "Eau", 20000, 150, 150, 0, 0, 150, 0);
 
-    createItems("Baguette de sureau", "heroique", "Mage", "36", "Mh", "Baguette de Harry Potter", "None", 20000, 0, 0, 150, 150, 150, 0);
+    createItems("Baguette de sureau", "heroique", "Mage", "36", "Mh", "Baguette de Harry Potter", "Foudre", 20000, 0, 0, 150, 150, 150, 0);
 
-    createItems("Bouclier d'athena", "heroique", "toute classe", "37", "Oh", "Bouclier d'Athéna", "None", 21000, 0, 0, 0, 0, 200, 300);
+    createItems("Bouclier d'athena", "heroique", "toute classe", "37", "Oh", "Bouclier d'Athéna", "Terre", 21000, 0, 0, 0, 0, 200, 300);
 
-    createItems("Evansmana", "Divin", "Barbare", "38", "Mh", "Evansmana épée spation-temporelle", "None", 50000, 500, 0, 0, 0, 350, 0);
+    createItems("Evansmana", "Divin", "Barbare", "38", "Mh", "Evansmana épée spation-temporelle", "Lumiére", 50000, 500, 0, 0, 0, 350, 0);
 
-    createItems("Venuzdnor", "Demoniaque", "Barbare", "39", "Mh", "Venuzdnor epée de Anos Voldigoad", "None", 750000, 800, 0, 0, 0, 400, 0);
+    createItems("Venuzdnor", "Demoniaque", "Barbare", "39", "Mh", "Venuzdnor epée de Anos Voldigoad", "Ténébre", 750000, 800, 0, 0, 0, 400, 0);
 
-    createItems("Chu'zhi", "Divino-legendaire", "Voleur", "40", "Mh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.", "None", 375000, 250, 250, 0, 0, 400, 0);
+    createItems("Chu'zhi", "Divino-legendaire", "Voleur", "40", "Mh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.", "Terre", 375000, 250, 250, 0, 0, 400, 0);
 
-    createItems("Chi'zhu", "Divino-legendaire", "Voleur", "41", "Oh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.", "None", 375000, 250, 250, 0, 0, 400, 0);
+    createItems("Chi'zhu", "Divino-legendaire", "Voleur", "41", "Oh", "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.", "Terre", 375000, 250, 250, 0, 0, 400, 0);
 
-    createItems("Typhoon", "Divino-Legendaire", "toute classe", "42", "Oh", "Bouclier qui absorbe des typhoons", "None", 750000, 0, 0, 0, 0, 800, 800);
+    createItems("Typhoon", "Divino-Legendaire", "toute classe", "42", "Oh", "Bouclier qui absorbe des typhoons", "Eau", 750000, 0, 0, 0, 0, 800, 800);
 
-    createItems("Crimson book", "Divino-legendaire", "Mage", "43", "Mh", "Livre Magique", "None", 750000, 0, 0, 250, 250, 300, 0);
+    createItems("Crimson book", "Divino-legendaire", "Mage", "43", "Mh", "Livre Magique", "Feu", 750000, 0, 0, 250, 250, 300, 0);
 
-    createItems("Demoniac Bow", "Demoniac", "Chasseur", "44", "Mh", "Arc démoniaque", "None", 750000, 250, 0, 250, 0, 300, 0);
+    createItems("Demoniac Bow", "Demoniac", "Chasseur", "44", "Mh", "Arc démoniaque", "Ténébre", 750000, 250, 0, 250, 0, 300, 0);
 
-    createItems("Demoniac hammer", "Demoniac", "Paladin", "45", "Mh", "Marteau démioniaque", "None", 750000, 250, 0, 0, 250, 300, 0);
+    createItems("Demoniac hammer", "Demoniac", "Paladin", "45", "Mh", "Marteau démioniaque", "Ténébre", 750000, 250, 0, 0, 250, 300, 0);
 
     //ARMURE
 
@@ -334,27 +334,27 @@ const items = (client) => {
 
     //DROP ITEMS
 
-    createItems("Shuto", "drop", "Voleur", null, "Mh", "Coup de karaté contenue dans une lame", "None", 1000000, 2500, 2000, 1000, 0, 1500, 100);
+    createItems("Shuto", "drop", "Voleur", null, "Mh", "Coup de karaté contenue dans une lame", "Terre", 1000000, 2500, 2000, 1000, 0, 1500, 100);
 
-    createItems("Shuta", "drop", "Voleur", null, "Oh", "Coup de karaté contenue dans une lame", "None", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
+    createItems("Shuta", "drop", "Voleur", null, "Oh", "Coup de karaté contenue dans une lame", "Air", 1000000, 2500, 2000, 1000, 0, 1500, 1000);
 
-    createItems("Arbalete", "drop", "Chasseur", null, "Mh", "Arbalete", "None", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
+    createItems("Arbalete", "drop", "Chasseur", null, "Mh", "Arbalete", "Terre", 2000000, 5000, 4000, 2000, 0, 3000, 2000);
 
-    createItems("Exa cube", "drop", "Mage", null, "Mh", "Cube magique", "None", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
+    createItems("Exa cube", "drop", "Mage", null, "Mh", "Cube magique", "Feu", 2000000, 0, 4000, 2000, 5000, 3000, 2000);
 
-    createItems("Exa aura", "drop", "Mage", null, "Oh", "Aura magique", "None", 2000000, 0, 4000, 2000, 5000, 2000, 3000);
+    createItems("Exa aura", "drop", "Mage", null, "Oh", "Aura magique", "Foudre", 2000000, 0, 4000, 2000, 5000, 2000, 3000);
 
-    createItems("Gungnir", "drop", "Chasseur, Barbare", null, "Mh", "Lance de Odin", "None", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Gungnir", "drop", "Chasseur, Barbare", null, "Mh", "Lance de Odin", "Foudre", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Mjöllnir", "drop", "Paladin, Barbare", null, "Mh", "Marteau de Thor", "None", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
+    createItems("Mjöllnir", "drop", "Paladin, Barbare", null, "Mh", "Marteau de Thor", "Foudre", 5000000, 10000, 5000, 5000, 5000, 7000, 10000);
 
-    createItems("Death Scythe", "drop", "toute classe", null, "Mh", "Faux de la mort", "None", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
+    createItems("Death Scythe", "drop", "toute classe", null, "Mh", "Faux de la mort", "Ténébre", 10000000, 12500, 5000, 5000, 12500, 10000, 10000);
 
-    createItems("Caliburn", "drop", "Barbare, Paladin", null, "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", "None", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+    createItems("Caliburn", "drop", "Barbare, Paladin", null, "Mh", "Epée du roi Arthur obtenue par Kirito dans une quete", "Lumiére", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
 
-    createItems("Excalibur", "drop", "Barbare, Paladin", null, "Mh", "Ancienne épée du roi Arthur", "None", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
+    createItems("Excalibur", "drop", "Barbare, Paladin", null, "Mh", "Ancienne épée du roi Arthur", "Lumiére", 10000000, 15000, 10000, 10000, 0, 12500, 12500);
 
-    createItems("Aegis", "drop", "toute classe", null, "Oh", "Bouclier divin", "None", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
+    createItems("Aegis", "drop", "toute classe", null, "Oh", "Bouclier divin", "Air", 10000000, 0, 0, 0, 0, 10000, 10000, 1);
 
     createItems("Divino démoniac armor", "drop", "toute classe", null, "armor", "Armure Divino Démoniaque", "None", 10000000, 0, 10000, 10000, 0, 30000, 30000, 1);
 
