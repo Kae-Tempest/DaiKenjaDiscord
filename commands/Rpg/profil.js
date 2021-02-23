@@ -53,8 +53,9 @@ module.exports = {
             )
             .addField("Inventaire :",
                 `${player.po}<:GoldCoin:781575067108507648>
-                    ${player.inventory.length !== 0 ? player.inventory.join(", ") : "L'inventaire est vide"}`
+                 ${player.inventory.length !== 0 ? player.inventory.join(" | ") : "L'inventaire est vide"}`
             )
+            .addField("Attribut :", `${player.attribut.length !== 0 ? player.attribut.join(" | ") : "Vous n'avez aucun attribut"}`)
             .addField("Equipement :", `${Object.entries(player.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
         message.channel.send(embed);
     }, help: {
