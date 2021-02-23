@@ -185,7 +185,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         hostileAtk = 0
-                        if (hostileAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: Tu as esquivé le coup !`);
+                        if (hostileAtk === 0) client.channels.cache.get("781579158437888081").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -193,7 +193,7 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
                 if (PlayerAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (hostileAgility - (hostileAgility / 2)) + 1) === 0) {
                         PlayerAtk = 0
-                        if (PlayerAtk === 0) client.channels.cache.get("800027258379042886").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
+                        if (PlayerAtk === 0) client.channels.cache.get("781579158437888081").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
                     }
                 }
             }

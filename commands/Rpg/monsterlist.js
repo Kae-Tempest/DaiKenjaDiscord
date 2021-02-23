@@ -9,6 +9,7 @@ module.exports = {
         const q = args.slice(1).join(" ")
         const position = hostile.map(n => n.name).indexOf(capitalize(q))
         const hostiles = hostile[position]
+        if(q && position === -1) return message.reply("Ce monstre n'existe pas !")
         const showEmbed = new MessageEmbed()
         .setTitle(`${hostiles.name} `)
         .setColor('RANDOM')

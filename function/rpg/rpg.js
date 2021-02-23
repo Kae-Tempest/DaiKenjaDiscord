@@ -168,7 +168,7 @@ const battle = async (client, message, player, hostile) => {
                 if (hostileAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (agility - (agility / 2)) + 1) === 0) {
                         hostileAtk = 0
-                        client.channels.cache.get("778288246806806558").send(`tour ${i}: Tu as esquivé le coup !`);
+                        client.channels.cache.get("781579158437888081").send(`tour ${i}: Tu as esquivé le coup !`);
                     }
                 }
             }
@@ -176,7 +176,7 @@ const battle = async (client, message, player, hostile) => {
                 if (PlayerAtk !== 0) {
                     if (agility % Math.floor(Math.random() * (hostileAgility - (hostileAgility / 2)) + 1) === 0) {
                         PlayerAtk = 0
-                        if (PlayerAtk === 0) client.channels.cache.get("778288246806806558").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
+                        if (PlayerAtk === 0) client.channels.cache.get("781579158437888081").send(`tour ${i}: ${hostile.name} a esquivé le coup !`);
                     }
                 }
             }
@@ -219,10 +219,10 @@ const battle = async (client, message, player, hostile) => {
                 });
                 if (intelligence > hostileIntel) {
                     await level();
-                    return client.channels.cache.get("778288246806806558").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i - 1} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 } else {
                     await level();
-                    return client.channels.cache.get("778288246806806558").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
+                    return client.channels.cache.get("781579158437888081").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${hostilePo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${hostileExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 }
             }
         }
