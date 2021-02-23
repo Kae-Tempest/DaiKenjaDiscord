@@ -447,7 +447,7 @@
   "label": "27",
   "type": "Mh",
   "description": "Premiere Epée de Kirito !",
-  "attribut": "None",
+  "attribut": "Feu",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -464,7 +464,7 @@
   "label": "28",
   "type": "Oh",
   "description": "Seconde Epée de Kirito",
-  "attribut": "None",
+  "attribut": "Eau",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -481,7 +481,7 @@
   "label": "29",
   "type": "Mh",
   "description": "Epée de Link !",
-  "attribut": "None",
+  "attribut": "Lumiére",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -498,7 +498,7 @@
   "label": "30",
   "type": "Mh",
   "description": "Epée courte de Maple",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -515,7 +515,7 @@
   "label": "31",
   "type": "Oh",
   "description": "Bouclier de Maple",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 20000,
   "stats": {
     "vitality": 175,
@@ -532,7 +532,7 @@
   "label": "32",
   "type": "Mh",
   "description": "Dague d'une voleuse qui accompgna un héros !",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -549,7 +549,7 @@
   "label": "33",
   "type": "Oh",
   "description": "Dague d'une voleuse qui accompgna un héros !",
-  "attribut": "None",
+  "attribut": "Air",
   "cost": 10000,
   "stats": {
     "vitality": 100,
@@ -566,7 +566,7 @@
   "label": "34",
   "type": "Mh",
   "description": "Dague d'une Héroïne",
-  "attribut": "None",
+  "attribut": "Feu",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -583,7 +583,7 @@
   "label": "35",
   "type": "Oh",
   "description": "Dague d'une Héroïne",
-  "attribut": "None",
+  "attribut": "Eau",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -600,7 +600,7 @@
   "label": "36",
   "type": "Mh",
   "description": "Baguette de Harry Potter",
-  "attribut": "None",
+  "attribut": "Foudre",
   "cost": 20000,
   "stats": {
     "vitality": 150,
@@ -617,7 +617,7 @@
   "label": "37",
   "type": "Oh",
   "description": "Bouclier d'Athéna",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 21000,
   "stats": {
     "vitality": 200,
@@ -634,7 +634,7 @@
   "label": "38",
   "type": "Mh",
   "description": "Evansmana épée spation-temporelle",
-  "attribut": "None",
+  "attribut": "Lumiére",
   "cost": 50000,
   "stats": {
     "vitality": 350,
@@ -651,7 +651,7 @@
   "label": "39",
   "type": "Mh",
   "description": "Venuzdnor epée de Anos Voldigoad",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 750000,
   "stats": {
     "vitality": 400,
@@ -668,7 +668,7 @@
   "label": "40",
   "type": "Mh",
   "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Jade.",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -685,7 +685,7 @@
   "label": "41",
   "type": "Oh",
   "description": "Dague permettant des fantastiques attaques élémentaires, elle scintille d’un vert de Malachite.",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 375000,
   "stats": {
     "vitality": 400,
@@ -702,7 +702,7 @@
   "label": "42",
   "type": "Oh",
   "description": "Bouclier qui absorbe des typhoons",
-  "attribut": "None",
+  "attribut": "Eau",
   "cost": 750000,
   "stats": {
     "vitality": 800,
@@ -719,7 +719,7 @@
   "label": "43",
   "type": "Mh",
   "description": "Livre Magique",
-  "attribut": "None",
+  "attribut": "Feu",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -736,7 +736,7 @@
   "label": "44",
   "type": "Mh",
   "description": "Arc démoniaque",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -753,7 +753,7 @@
   "label": "45",
   "type": "Mh",
   "description": "Marteau démioniaque",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 750000,
   "stats": {
     "vitality": 300,
@@ -2281,7 +2281,7 @@
   "label": null,
   "type": "Mh",
   "description": "Coup de karaté contenue dans une lame",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -2298,7 +2298,7 @@
   "label": null,
   "type": "Oh",
   "description": "Coup de karaté contenue dans une lame",
-  "attribut": "None",
+  "attribut": "Air",
   "cost": 1000000,
   "stats": {
     "vitality": 1500,
@@ -2315,7 +2315,7 @@
   "label": null,
   "type": "Mh",
   "description": "Arbalete",
-  "attribut": "None",
+  "attribut": "Terre",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -2332,7 +2332,7 @@
   "label": null,
   "type": "Mh",
   "description": "Cube magique",
-  "attribut": "None",
+  "attribut": "Feu",
   "cost": 2000000,
   "stats": {
     "vitality": 3000,
@@ -2349,7 +2349,7 @@
   "label": null,
   "type": "Oh",
   "description": "Aura magique",
-  "attribut": "None",
+  "attribut": "Foudre",
   "cost": 2000000,
   "stats": {
     "vitality": 2000,
@@ -2366,7 +2366,7 @@
   "label": null,
   "type": "Mh",
   "description": "Lance de Odin",
-  "attribut": "None",
+  "attribut": "Foudre",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -2383,7 +2383,7 @@
   "label": null,
   "type": "Mh",
   "description": "Marteau de Thor",
-  "attribut": "None",
+  "attribut": "Foudre",
   "cost": 5000000,
   "stats": {
     "vitality": 7000,
@@ -2400,7 +2400,7 @@
   "label": null,
   "type": "Mh",
   "description": "Faux de la mort",
-  "attribut": "None",
+  "attribut": "Ténébre",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
@@ -2417,7 +2417,7 @@
   "label": null,
   "type": "Mh",
   "description": "Epée du roi Arthur obtenue par Kirito dans une quete",
-  "attribut": "None",
+  "attribut": "Lumiére",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -2434,7 +2434,7 @@
   "label": null,
   "type": "Mh",
   "description": "Ancienne épée du roi Arthur",
-  "attribut": "None",
+  "attribut": "Lumiére",
   "cost": 10000000,
   "stats": {
     "vitality": 12500,
@@ -2451,7 +2451,7 @@
   "label": null,
   "type": "Oh",
   "description": "Bouclier divin",
-  "attribut": "None",
+  "attribut": "Air",
   "cost": 10000000,
   "stats": {
     "vitality": 10000,
