@@ -118,7 +118,7 @@ const battle = async (client, message, player, hostile) => {
         }
         if (player.level !== 1000 && player !== 1 && levelsend === true) {
             message.channel.send('Calcule du level en cours....')
-            message.channel.send(`Tu es maintenant level => ***${player.level}***`);
+            message.reply(`Tu es maintenant level => ***${player.level}***`);
         }
     }
 
