@@ -29,7 +29,7 @@ module.exports = {
                                         daily: 0,
                                         po: 200,
                                         teams: "None",
-                                        attribute: ["None"],
+                                        attribut: ["None"],
                                         class: classe.name,
                                         stats: classe.stats,
                                         statsMax: classe.stats,
