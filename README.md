@@ -54,6 +54,8 @@ _Battle_: Permet de lancer un combat avec le nom du monstre que vous voulez comb
 
 _Battleduo_: Permet de lancer un combat avec son teammate ( il faut le ping )
 
+_Donjon_: Permet de faire des donjons ,avec possibilité de sortir pour les 10 étages ! (Attention a la diffulté !)
+
 _Teams_: Permet de créer, dissoudre ou voir son groupe !
 
 _Equip_: Permet de s'équiper d'un objet avec le nom de celui-ci dans son inventaire.
