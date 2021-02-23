@@ -129,8 +129,6 @@ const battle = async (client, message, player, hostile) => {
     const agility = player.stats.agility
     const intelligence = player.stats.intelligence
     const attribut = player.attribut
-    console.log('attribut', attribut)
-    console.log(typeof(attribut))
 
     let hostileStrengh = hostile.stats.strength + (player.prestige * 10500);
     let hostileHP = hostile.stats.vitality + (player.prestige * 10500);
@@ -139,12 +137,11 @@ const battle = async (client, message, player, hostile) => {
     let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500);
     let hostilePo = hostile.po;
     let hostileExp = hostile.experience;
-    const hostileResi = hostile.attribut.resistance;
-    console.log('Resistance',hostileResi);
-    console.log(typeof(hostileResi));
-    const hostileFaib = hostile.attribut.faiblesse;
-    console.log('Faiblesse',hostileFaib);
-    console.log(typeof(hostileFaib));
+    const hostileResistance = hostile.attribut.resistance;
+    let hostileResi = attribut.find(element => element === hostileResistance[0])
+
+    const hostileFaiblesse = hostile.attribut.faiblesse;
+    let hostileFaib = attribut.find(element => element === hostileFaiblesse[0])
 
     if (player.level <= 500 && player.prestige !== 0) {
         hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
@@ -158,10 +155,10 @@ const battle = async (client, message, player, hostile) => {
         let playerHP = player.stats.vitality;
         let hostileAtk = hostileStrengh - consti
         let PlayerAtk;
-        if ( attribut === hostileResi) {PlayerAtk = (atk - hostileConsti) / 2; console.log('prout1')}
-        else if (attribut === hostileFaib) {PlayerAtk = (atk - hostileConsti) * 2 ; console.log('prout2')}
-        else if (attribut === hostileResi && attribut === hostileFaib) {PlayerAtk = atk - hostileConsti; console.log('prout3')}
-        else if (attribut !== hostileResi && attribut !== hostileFaib){PlayerAtk = atk - hostileConsti; console.log('prout4')}
+        if (hostileResi !== undefined) PlayerAtk = (atk - hostileConsti) / 2;
+        if (hostileFaib !== undefined) PlayerAtk = (atk - hostileConsti) * 2;
+        if (hostileResi === undefined && hostileFaib === undefined) PlayerAtk = atk - hostileConsti;
+        if (hostileResi !== undefined && hostileFaib !== undefined) PlayerAtk = atk - hostileConsti;
         for (let i = 1; hostileHP > 0; i++) {
             if (hostileAtk < 0) hostileAtk = 0;
             if (PlayerAtk < 0) PlayerAtk = 0;
