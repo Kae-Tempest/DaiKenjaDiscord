@@ -226,7 +226,7 @@ const items = (client) => {
 
     createItems("Emerald belt", "heroique", "toute classe", "83", "belt", "Ceinture en emeraude", "None", 20000, 0, 0, 0, 0, 200, 200);
 
-    createItems("Divin belt", "Divinity", "toute classe", "84", "belt", "Ceinture de dieu", 75000, 0, 0, 0, 0, 400, 400);
+    createItems("Divin belt", "Divinity", "toute classe", "84", "belt", "Ceinture de dieu", "None", 75000, 0, 0, 0, 0, 400, 400);
 
     createItems("Demoniac belt", "Demoniaque", "toute classe", "85", "belt", "Ceinture du roi démon", "None", 150000, 0, 0, 0, 0, 600, 600);
 
