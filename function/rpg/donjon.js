@@ -138,12 +138,12 @@ const donjon = (client, message, player) => {
     const consti = player.stats.constitution;
     const agility = player.stats.agility;
     const intelligence = player.stats.intelligence;
-    let playerHP = player.stats.vitality;
     const attribut = player.attribut
     const nameOfBoss = hostile.map(n => n.name)
     
         async function dj (atk){
         for(let i = 1; playerHP > 0 ; i++) {
+            let playerHP = player.stats.vitality;
             let floorBoss = nameOfBoss[Math.floor(Math.random() * (nameOfBoss.length - 1) )]
             const boss = setBoss(floorBoss)
             client.channels.cache.get("813056123216330763").send(`Vous etes étages ${i} et vous tombez sur ***${floorBoss}***`)
