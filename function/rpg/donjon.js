@@ -181,7 +181,7 @@ const donjon = (client, message, player) => {
                 hostilePo = hostile.po * player.prestige
             }
 
-            if (bossAtk < 0 ) bossATK = 0;
+            if (bossAtk < 0 ) bossAtk = 0;
             if (playerAtk < 0 ) playerAtk = 0;
             if (playerAtk === 0 && bossAtk === 0){
                  message.reply(`Vous et ${floorBoss} perrisez a l'étage ${i}`)
