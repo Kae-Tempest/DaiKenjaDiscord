@@ -328,14 +328,15 @@
   "label": "84",
   "type": "belt",
   "description": "Ceinture de dieu",
-  "attribut": 75000,
-  "cost": 0,
+  "attribut": "None",
+  "cost": 75000,
   "stats": {
     "vitality": 400,
+    "constitution": 400,
     "strength": 0,
     "agility": 0,
     "intelligence": 0,
-    "spirit": 400
+    "spirit": 0
   }
 },{
   "name": "Demoniac belt",
