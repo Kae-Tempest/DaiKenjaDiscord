@@ -138,11 +138,12 @@ const donjon = (client, message, player) => {
     const consti = player.stats.constitution;
     const agility = player.stats.agility;
     const intelligence = player.stats.intelligence;
+    const PlayerHP = player.stats.vitality;
     const attribut = player.attribut
     const nameOfBoss = hostile.map(n => n.name)
     
         async function dj (atk){
-        for(let i = 1; playerHP > 0 ; i++) {
+        for(let i = 1; PlayerHP > 0 ; i++) {
             let playerHP = player.stats.vitality;
             let floorBoss = nameOfBoss[Math.floor(Math.random() * (nameOfBoss.length - 1) )]
             const boss = setBoss(floorBoss)
