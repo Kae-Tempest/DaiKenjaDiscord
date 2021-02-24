@@ -1,7 +1,7 @@
-const tokenDB = require('../../config')
-const fs = require('fs')
 const {monster} = require('../../function/rpg/createMonster')
 const {items} = require('../../function/rpg/createItems')
+const tokenDB = require('../../config')
+const fs = require('fs')
 
 module.exports = client => {
     client.mongoose = require("../../util/mongoose");
