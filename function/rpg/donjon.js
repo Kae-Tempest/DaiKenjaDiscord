@@ -172,7 +172,8 @@ const donjon = (client, message, player) => {
             if (hostileFaib !== undefined) playerAtk = (atk - bossConsti) * 2;
             if (hostileResi === undefined && hostileFaib === undefined) playerAtk = atk - bossConsti;
             if (hostileResi !== undefined && hostileFaib !== undefined) playerAtk = atk - bossConsti;
-
+            let poGain;
+            let expGain
             if (player.level <= 500 && player.prestige !== 0) {
                 hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
                 hostilePo = hostile.po * player.prestige
@@ -212,7 +213,9 @@ const donjon = (client, message, player) => {
             }
             if (bossHP <= 0) {
                 player.po += bossPo;
+                poGain += bossPo;
                 player.experience += bossExp;
+                expGain += bossExp
                 if (hostile.category !== "Monster") {
                     const loot = Math.floor(Math.random() * Math.floor(101))
                     if (loot > 89 - player.prestige) {
@@ -249,7 +252,7 @@ const donjon = (client, message, player) => {
                         max: 1, time: 240000, errors: ['time']
                     });
                     if (userEntry.first().content.toLowerCase() === "oui") {
-                       return message.reply(`Vous quittez le donjon à l'étage ${i}. Il vous reste ${playerHP}HP`)
+                       return message.reply(`Vous quittez le donjon à l'étage ${i}. Il vous reste ${playerHP}HP, tu as gagné ${poGain}<:GoldCoin:781575067108507648> et ${expGain}exp`)
                     } else throw errors
                 } catch (e) {
                     message.reply("Vous continuez le combat !")
