@@ -243,7 +243,7 @@ const donjon = (client, message, player) => {
                     await client.channels.cache.get("813056123216330763").send(`Félicitation, la bataille est terminée après ${i} tours, ${player.username}, il te reste ${playerHP}HP. Tu gagne ${bossPo.toLocaleString({ minimumFractionDigits: 2 })}<:GoldCoin:781575067108507648> et ${bossExp.toLocaleString({ minimumFractionDigits: 2 })}exp !`);
                 }
             }
-            if( i === 100) return message.reply(`Vous avez finis les 100 étages du donjon ! Il vous reste ${playerHP}HP`)
+            if( i === 100) return message.reply(`Vous avez finis les 100 étages du donjon ! Il vous reste ${playerHP}HP, tu as gagné ${poGain}<:GoldCoin:781575067108507648> et ${expGain}exp`)
             if ( i % 10 === 0 ) {
                 try {
                     message.reply(`Voulez vous quitter le donjon a l'étage ${i} ? (240s)`);
