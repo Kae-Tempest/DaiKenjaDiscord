@@ -141,6 +141,8 @@ const donjon = (client, message, player) => {
     const PlayerHP = player.stats.vitality;
     const attribut = player.attribut
     const nameOfBoss = hostile.map(n => n.name)
+    let poGain = 0;
+    let expGain = 0;
     
         async function dj (atk){
         for(let i = 1; PlayerHP > 0 ; i++) {
@@ -172,8 +174,6 @@ const donjon = (client, message, player) => {
             if (hostileFaib !== undefined) playerAtk = (atk - bossConsti) * 2;
             if (hostileResi === undefined && hostileFaib === undefined) playerAtk = atk - bossConsti;
             if (hostileResi !== undefined && hostileFaib !== undefined) playerAtk = atk - bossConsti;
-            let poGain = 0;
-            let expGain = 0;
             if (player.level <= 500 && player.prestige !== 0) {
                 hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
                 hostilePo = hostile.po * player.prestige

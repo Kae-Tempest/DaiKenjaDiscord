@@ -11,7 +11,7 @@ module.exports = {
                 } else {
                     player.po -= cost
                     client.updateUserInfo(message.member, {"users.$.stats.vitality": PlayerMaxHP, "userS.po": player.po});
-                    return message.reply("Bon retour parmis nous ! Fait pmus attetion la prochaine fois");
+                    return message.reply("Bon retour parmis nous ! Fait plus attetion la prochaine fois");
                 }
             }
         }
