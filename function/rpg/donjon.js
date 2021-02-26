@@ -265,5 +265,10 @@ const donjon = (client, message, player) => {
     } else {
         dj(strength);
     }
+    if (player.level === 1000 && player.prestige === 10) {
+        client.updateUserInfo(message.member, {
+            "users.$.experience": 0
+        })
+    }
 }
 module.exports = {donjon}
