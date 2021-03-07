@@ -23,8 +23,7 @@ module.exports = {
                 const propostition = await message.channel.awaitMessages(filter,{
                     max: 1 ,errors:['max']
                 });
-
-            if (propostition in soluce) {
+            if (soluce.search(propostition) !== undefined) {
                 letter_found = letter_found + propostitions
                 message.reply("Bien joué")
             } else {
@@ -37,7 +36,7 @@ module.exports = {
 
             affichage = ""
             for (x in soluce) {
-                if (x in letter_found) affichage += x + " "
+                if (letter_found.search(propostitions)) affichage += propostitions + " "
                 else affichage += "- "
             }
             if(affichage === soluce) {
