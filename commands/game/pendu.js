@@ -20,33 +20,46 @@ module.exports = {
             await message.reply("Proposé une lettre !")
             try{
                 const filter = m => (message.author.id === m.author.id);
-                const propostition = await message.channel.awaitMessages(filter,{
+                const userEntry = await message.channel.awaitMessages(filter,{
                     max: 1 ,errors:['max']
                 });
-            if (soluce.search(propostition) !== undefined) {
-                letter_found = letter_found + propostitions
-                message.reply("Bien joué")
-            } else {
-                life -= 1
-                message.reply("Loupé ! Cherche encore ! ")
-                if (life === 0 ) message.reply(`tu as ${life}vie ! tu as perdu !`)
+                let propostition = userEntry.first().content
+                console.log(propostition)
+                console.log(typeof(soluce))
+                if (propostition in [soluce]) {
+                    letter_found = letter_found + propostitions
+                    message.reply("Bien joué")
+                } else {
+                    life -= 1
+                    message.reply("Loupé ! Cherche encore ! ")
+                    if (life === 0 ) message.reply(`tu as ${life}vie ! tu as perdu !`)
+                }
+                propostitions = propostitions + propostition
+                message.reply(`tu as déjà proposé ${Object.entries(propostitions).map(([key,value]) => `*${value}*`)}`);
+                affichage = ""
+                for (propostition in [soluce]) {
+                    console.log([soluce])
+                    console.log(propostition in [soluce])
+                    console.log("prout")
+                    if (propostition in [letter_found]) {
+                        console.log(propostition in [letter_found])
+                        affichage += propostitions + " "
+                        console.log("prout2")
+                    }
+                    else {
+                        affichage += "- "
+                        console.log("prout3")
+                    }
+                }
+                console.log('affichage',affichage)
+                if(affichage === soluce) {
+                    message.reply(`Tu as trouver le mot => ${soluce}`)
+                    break;
+                }
+            } catch (e) {
+                console.error(e);
+                message.reply("tu ne peux proposer qu'une lettre a la fois")
             }
-            propostitions = propostitions + propostition
-            message.reply(`tu as déjà proposé ${propostitions}`)
-
-            affichage = ""
-            for (x in soluce) {
-                if (letter_found.search(propostitions)) affichage += propostitions + " "
-                else affichage += "- "
-            }
-            if(affichage === soluce) {
-                message.reply(`Tu as trouver le mot => ${soluce}`)
-                break;
-            }
-        } catch (e) {
-            console.error(e);
-            message.reply("tu ne peux proposer qu'une lettre a la fois")
-        }
         }
 
     }, help: {
