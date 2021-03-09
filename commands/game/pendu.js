@@ -1,4 +1,3 @@
-
 module.exports = {
     run: async (client, message) => {
         const words = require('../../assets/game/pendu.json');
@@ -7,8 +6,8 @@ module.exports = {
         console.log(soluce)
         let life = 10
         let affichage = ""
-        let letter_found = ""
-        let propostitions = ""
+        let letter_found = []
+        let propostitions = []
 
         await message.reply("Bienvenue dans le jeu du Pendu")
 
