@@ -4,4 +4,5 @@
 /.idea/
 /package-lock.json
 /TODO.do
-/events/twitch/config.json
+commands/game/pendu.js
+assets/game
