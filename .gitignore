@@ -4,5 +4,3 @@
 /.idea/
 /package-lock.json
 /TODO.do
-assets/game/pendu.json
-commands/game/pendu.js
