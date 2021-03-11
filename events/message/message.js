@@ -5,6 +5,7 @@ module.exports = async (client, message) => {
     const data = await client.getGuild(message.guild);
     const position = await data.users.map(e => e.id).indexOf(message.member.id);
     const userInfo = data.users[position];
+    const player = await client.getUser(message.member);
 
     if (message.guild && position === -1) client.createUserProfile(message.member, message.guild);
 
@@ -47,5 +48,5 @@ module.exports = async (client, message) => {
 
     tStamps.set(message.author.id, timeNow);
     setTimeout(() => tStamps.delete(message.author.id), cdAmount);
-    command.run(client, message, args, userInfo);
+    command.run(client, message, args, userInfo, player);
 }
