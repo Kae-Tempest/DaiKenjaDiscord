@@ -1,6 +1,8 @@
 const {capitalize} = require('../../function/other/string');
 const classes = require("../../assets/rpg/classes.json");
-const {MessageEmbed, User} = require('discord.js');
+const {createCanvas, loadImage} = require ('canvas');
+const { MessageAttachment } = require('discord.js');
+
 module.exports = {
     run: async (client, message, userInfo) => {
         if (userInfo.class === "") return message.reply('tu dois d\'abord utiliser la commande \`setup\` pour créer ton personnage');
@@ -40,23 +42,74 @@ module.exports = {
         exptotal.forEach(exp => {
             exptotalFinal += exp
         })
+
         const position = classes.map(e => e.name.toLowerCase()).indexOf(player.class.toLowerCase());
         const classe = classes[position];
-        const embed = new MessageEmbed()
-            .setAuthor(`${message.author.username} | ${player.class} de niveau ${player.level} et de prestige ${player.prestige}`, message.author.displayAvatarURL())
-            .setThumbnail(classe.icon)
-            .setDescription(`${player.description !== "" ? classe.description : player.description}`)
-            .addField("Statistique :",
-                `${Object.entries(player.stats).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join('\n')}
-                ${player.experience} points d'experiences (${player.experience === 0 ? 0 : (( player.experience / exptotalFinal) * 100).toFixed(2)}%)`
-            )
-            .addField("Inventaire :",
-                `${player.po}<:GoldCoin:781575067108507648>
-                 ${player.inventory.length !== 0 ? player.inventory.join(" | ") : "L'inventaire est vide"}`
-            )
-            .addField("Attribut :", `${player.attribut.length !== 0 ? player.attribut.join(" | ") : "Vous n'avez aucun attribut"}`)
-            .addField("Equipement :", `${Object.entries(player.equipments).map(([key, value]) => `**${capitalize(key)}:** ${value}`).join(' \n ')}`)
-        message.channel.send(embed);
+        const canvas = createCanvas(1204,1504);
+        const ctx = canvas.getContext('2d');
+        const classIcon = await loadImage(classe.icon)
+        const GoldCoin = await loadImage("https://cdn.discordapp.com/attachments/587692066411249688/819592773861900328/I_GoldCoin.png")
+
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#FFF"
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = "#222";
+        ctx.fillRect(2,2,1200,1500);
+        ctx.globalAlpha = 1;
+        ctx.strokeRect(2,2,1200,1500);
+
+        ctx.fillStyle = "#FFF";
+        ctx.font = "30px Arial";
+        ctx.fillText(`${message.author.username} | ${player.class} de niveau ${player.level} et de prestige ${player.prestige}`,30,50);
+        ctx.drawImage(classIcon,990 ,10 ,210, 360);
+
+        ctx.fillStyle = "#FFF";
+        ctx.font = "30px Arial";
+        ctx.fillText("Statistique :", 30,150);
+        ctx.fillText(`${Object.entries(player.stats).map(([key, value]) => `${capitalize(key)}: ${value}`).join('\n')}`,40, 190);
+
+        ctx.fillText("Expérience :", 30,430);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#FFF"
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = "#222";
+        ctx.fillRect(30,450,1140,30);
+        ctx.globalAlpha = 1;
+        ctx.strokeRect(30,450,1140,30);
+
+        ctx.fillStyle = "#FF0000";
+        ctx.globalAlpha = 0.8;
+        ctx.fillRect(30,451, (player.experience / exptotalFinal ) * 1140, 27);
+
+        ctx.globalAlpha = 1;
+        ctx.textAlign = "center"
+        ctx.fillStyle = "#FFF";
+        ctx.fillText(`${player.experience === 0 ? 0 : (( player.experience / exptotalFinal) * 100).toFixed(2)}%`, 630,475)
+
+        ctx.textAlign = "start"
+        ctx.fillStyle = "#FFF";
+        ctx.font = "30px Arial";
+        ctx.fillText("Attribut :", 30,550);
+        ctx.fillText(`${player.attribut.length !== 0 ? player.attribut.join(" | ") : "Vous n'avez aucun attribut"}`, 40,600);
+
+        ctx.fillStyle = "#FFF";
+        ctx.font = "30px Arial";
+        ctx.fillText("Equipement :", 30,640);
+        ctx.fillText(`${Object.entries(player.equipments).map(([key, value]) => `${capitalize(key)}: ${value}`).join('\n')}`, 40,690);
+
+        ctx.fillStyle = "#FFF";
+        ctx.font = "30px Arial";
+        ctx.fillText("Inventaire :", 550,550);
+        ctx.drawImage(GoldCoin,560,575)
+        ctx.fillText(`${player.po}`, 595,603);
+        ctx.font = "24px Arial";
+        ctx.fillText(`${player.inventory.length > 31 ? "Votre inventaire est plein" : `${player.inventory.length !== 0 ? player.inventory.join("\n") : "L'inventaire est vide"}`}`, 560, 635)
+
+        
+        const attachment = new MessageAttachment(canvas.toBuffer(), "exp.png");
+        message.channel.send(attachment)
+
     }, help: {
         name: 'profile',
         aliases: ["profile", "profil","Profile","Profil","PROFILE","PROFIL"],
