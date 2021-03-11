@@ -1,5 +1,5 @@
 const { MessageEmbed, MessageAttachment } = require("discord.js");
-const leaderboard = new MessageAttachment('./imgembed/leaderboard.png');
+const leaderboard = new MessageAttachment('./imgOpenSource/leaderboard.png');
 module.exports = {
     run: async (client, message) => {
     const players = await client.getGuild(message.guild);
