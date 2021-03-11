@@ -1,7 +1,6 @@
-const {MessageEmbed, User} = require('discord.js');
 const {capitalize} = require('../../function/other/string');
 const classes = require("../../assets/rpg/classes.json");
-
+const {MessageEmbed, User} = require('discord.js');
 module.exports = {
     run: async (client, message, userInfo) => {
         if (userInfo.class === "") return message.reply('tu dois d\'abord utiliser la commande \`setup\` pour créer ton personnage');
@@ -9,15 +8,15 @@ module.exports = {
         function exp(lvlmin, lvlmax, exp) {
             if (player.level <= lvlmax && player.level > lvlmin) {
                 if(player.prestige === 0) if (player.experience < player.level * exp - 1) return  player.level * exp
-                if (player.prestige === 1) if (player.experience < player.level * player.prestige * 10 * exp - 1) return  player.level * player.prestige * 10 * exp;
-                if (player.prestige === 2) if (player.experience < player.level * player.prestige * 50 * exp - 1) return  player.level * player.prestige * 50 * exp;
-                if (player.prestige === 3) if (player.experience < player.level * player.prestige * 100 * exp - 1) return  player.level * player.prestige * 100 * exp;
-                if (player.prestige === 4) if (player.experience < player.level * player.prestige * 150 * exp - 1) return  player.level * player.prestige * 150 * exp;
+                if (player.prestige === 1) if (player.experience < player.level * player.prestige * 10 * exp - 1) return player.level * player.prestige * 10 * exp;
+                if (player.prestige === 2) if (player.experience < player.level * player.prestige * 50 * exp - 1) return player.level * player.prestige * 50 * exp;
+                if (player.prestige === 3) if (player.experience < player.level * player.prestige * 100 * exp - 1) return player.level * player.prestige * 100 * exp;
+                if (player.prestige === 4) if (player.experience < player.level * player.prestige * 150 * exp - 1) return player.level * player.prestige * 150 * exp;
                 if (player.prestige === 5) if (player.experience < player.level * player.prestige * 200 * exp - 1) return player.level * player.prestige * 200 * exp
-                if (player.prestige === 6) if (player.experience < player.level * player.prestige * 250 * exp - 1) return  player.level * player.prestige * 250 * exp;
-                if (player.prestige === 7) if (player.experience < player.level * player.prestige * 300 * exp - 1) return  player.level * player.prestige * 300 * exp;
-                if (player.prestige === 8) if (player.experience < player.level * player.prestige * 350 * exp - 1) return  player.level * player.prestige * 350 * exp;
-                if (player.prestige === 9) if (player.experience < player.level * player.prestige * 400 * exp - 1) return  player.level * player.prestige * 400 * exp;
+                if (player.prestige === 6) if (player.experience < player.level * player.prestige * 250 * exp - 1) return player.level * player.prestige * 250 * exp;
+                if (player.prestige === 7) if (player.experience < player.level * player.prestige * 300 * exp - 1) return player.level * player.prestige * 300 * exp;
+                if (player.prestige === 8) if (player.experience < player.level * player.prestige * 350 * exp - 1) return player.level * player.prestige * 350 * exp;
+                if (player.prestige === 9) if (player.experience < player.level * player.prestige * 400 * exp - 1) return player.level * player.prestige * 400 * exp;
                 if (player.prestige === 10) if (player.experience < player.level * player.prestige * 500 * exp - 1) return player.level * player.prestige * 500 * exp;
             }
             return 0;
