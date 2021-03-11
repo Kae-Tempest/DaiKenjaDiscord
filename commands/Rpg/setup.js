@@ -34,6 +34,7 @@ module.exports = {
                                         stats: classe.stats,
                                         statsMax: classe.stats,
                                         inventory: [],
+                                        bank: [],
                                         equipments: {
                                             "Mh": "None",
                                             "Oh": "None",

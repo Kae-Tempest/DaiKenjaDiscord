@@ -48,6 +48,7 @@ module.exports = client => {
                         stats: {},
                         statsMax: {},
                         inventory: [],
+                        bank: [],
                         equipments: {
                             "Mh": "None",
                             "Oh": "None",
