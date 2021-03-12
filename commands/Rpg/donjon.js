@@ -1,4 +1,4 @@
-import {donjon} from '../../function/rpg/donjon.js';
+const {donjon} = require ('../../function/rpg/donjon.js');
 module.exports = {
     run: async (client, message) => {
     const player = await client.getUser(message.member);

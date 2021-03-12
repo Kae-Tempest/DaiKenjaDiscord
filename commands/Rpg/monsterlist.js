@@ -1,5 +1,5 @@
-import {MessageEmbed} from 'discord.js';
-import { capitalize } from '../../function/other/string';
+const {MessageEmbed} = require ('discord.js');
+const { capitalize } = require ('../../function/other/string');
 module.exports = {
     run: (client, message, args) => {
     const monsters = [];

@@ -1,11 +1,11 @@
-import {MessageEmbed} from 'discord.js';
-import shop from '../../assets/shop/shop.json';
-import {capitalize} from '../../function/other/string';
+const {MessageEmbed} = require('discord.js');
+const {capitalize} = require('../../function/other/string');
 module.exports = {
     run: async (client, message, args, userInfo) => {
         if (userInfo.inventory === undefined) {
             client.createMissingInfoOnUser(message.member, {"users.inventory": {"inventory": []}});
         }
+        const shop = require('../../assets/shop/shop.json');
         const q = args.slice(1).join(" ")
         const position = shop.map(e => e.label).indexOf(q.toLowerCase());
         const item = shop[position];

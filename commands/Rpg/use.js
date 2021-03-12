@@ -1,5 +1,5 @@
-import {capitalize} from '../../function/other/string';
-import getItemInfo from '../../assets/shop/shop.json';
+const {capitalize} = require ('../../function/other/string');
+const getItemInfo = require ('../../assets/shop/shop.json');
 module.exports = {
     run: async (client, message, args, userInfo) => {
         const q = args.join(" ");

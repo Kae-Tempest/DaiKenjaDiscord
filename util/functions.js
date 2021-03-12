@@ -1,5 +1,5 @@
-import mongoose from'./mongoose';
-import {Guild} from '../models/index';
+const mongoose = require ('./mongoose');
+const {Guild} = require ('../models/index');
 module.exports = client => {
     //New Guild
     client.createGuild = async guild => {

@@ -1,4 +1,4 @@
-import { leveling } from './leveling';
+const { leveling } = require ('./leveling');
 
 const levelup = async (client, message, player) => {
     //Aumentation des niveaux

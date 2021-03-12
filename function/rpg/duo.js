@@ -1,4 +1,4 @@
-import { levelup, isWhithin, prestigeForest } from './levelupduo';
+const { levelup, isWhithin, prestigeForest } = require ('./levelupduo');
 
 const battleduo = async (client, message, player, player2, hostile, user) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');

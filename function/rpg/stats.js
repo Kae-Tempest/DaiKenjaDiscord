@@ -1,4 +1,4 @@
-import getItemInfo from'../../assets/shop/shop.json';
+const getItemInfo = require ('../../assets/shop/shop.json');
 
 const calculateUserStatsEquip = async (client, message) => {
     const userInfo = await client.getUser(message.member);

@@ -1,7 +1,7 @@
-import {capitalize} from '../../function/other/string';
-import classes from "../../assets/rpg/classes.json";
-import {createCanvas, loadImage} from 'canvas';
-import { MessageAttachment } from 'discord.js';
+const {capitalize} = require ('../../function/other/string');
+const classes = require ("../../assets/rpg/classes.json");
+const {createCanvas, loadImage} = require ('canvas');
+const { MessageAttachment } = require ('discord.js');
 
 module.exports = {
     run: async (client, message, userInfo) => {

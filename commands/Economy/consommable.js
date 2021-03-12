@@ -1,5 +1,5 @@
-import {MessageEmbed} from 'discord.js';
-import shop from '../../assets/shop/consommable.json';
+const {MessageEmbed} = require ('discord.js');
+const shop = require ('../../assets/shop/consommable.json');
 
 module.exports = {
     run: async message => {

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import {DBCONNECTION} from '../config';
+const mongoose = require('mongoose')
+const {DBCONNECTION} = require ('../config');
 
 module.exports = {
     init: () => {

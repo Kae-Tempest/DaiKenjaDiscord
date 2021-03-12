@@ -1,4 +1,4 @@
-import {readdirSync} from 'fs';
+const {readdirSync} = require ('fs');
 
 //Find commands
 const loadCommands = (client, dir = './commands/') => {

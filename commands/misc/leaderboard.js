@@ -1,4 +1,4 @@
-import { MessageEmbed, MessageAttachment } from "discord.js";
+const {MessageEmbed , MessageAttachment} = require('discord.js');
 const leaderboard = new MessageAttachment('./imgOpenSource/leaderboard.png');
 module.exports = {
     run: async (client, message) => {

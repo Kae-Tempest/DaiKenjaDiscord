@@ -1,6 +1,6 @@
-import {battleduo} from '../../function/rpg/duo';
-import hostile from '../../assets/npc/hostile.json';
-import {capitalize} from  '../../function/other/string';
+const {battleduo} = require ('../../function/rpg/duo');
+const hostile = require ('../../assets/npc/hostile.json');
+const {capitalize} = require  ('../../function/other/string');
 module.exports = {
     run: async (client, message, args) => {
     const player = await client.getUser(message.member);

@@ -1,4 +1,4 @@
-import {MessageEmbed} from 'discord.js';
+const {MessageEmbed} = require('discord.js');
 module.exports = {
     run :  async (client, message, args) => {
     if (isNaN(args[0]) || (args[0] < 1 || args[0] > 100)) return message.reply('Il faut spécifier un ***nombre*** entre 1 et 100')

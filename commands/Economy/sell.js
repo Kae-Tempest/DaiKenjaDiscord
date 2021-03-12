@@ -1,11 +1,11 @@
-import {capitalize} from '../../function/other/string';
-import shop from '../../assets/shop/shop.json';
+const {capitalize} = require('../../function/other/string')
 module.exports = {
     run: async (client, message, args, userInfo) => {
         if (userInfo.inventory === undefined) {
             client.createMissingInfoOnUser(message.member, {"users.inventory": {"inventory": []}});
             return message.reply("Ton inventaire est vide !")
         }
+        const shop = require('../../assets/shop/shop.json');
         const q = args.join(" ")
         const position = shop.map(e => e.name).indexOf(capitalize(q));
         const item = shop[position];
