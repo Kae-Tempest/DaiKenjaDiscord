@@ -1,4 +1,4 @@
-const { levelup, isWhithin, prestigeForest } = require('./levelup');
+import { levelup, isWhithin, prestigeForest } from './levelup';
 
 const battle = async (client, message, player, hostile) => {
     if (player.stats.vitality <= 0) return message.reply('Tu ne peux pas combattre sans HP');

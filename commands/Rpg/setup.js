@@ -1,4 +1,4 @@
-const {Guild} = require('../../models/index')
+import {Guild} from '../../models/index';
 module.exports = {
     run: async (client, message, args, userInfo) => {
         if (userInfo && userInfo.class !== "") return message.reply('tu ne peux pas taper plusieurs fois cette commande!');

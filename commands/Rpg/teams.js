@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+import { MessageEmbed } from "discord.js";
 module.exports = {
     run: async (client, message, args) => {
         const player1 = await client.getUser(message.member);

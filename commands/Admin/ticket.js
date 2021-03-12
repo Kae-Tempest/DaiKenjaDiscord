@@ -1,4 +1,4 @@
-const {MessageEmbed} = require("discord.js");
+import {MessageEmbed} from "discord.js";
 module.exports = {
     run: (client, message, args) => {
         const user = message.author;

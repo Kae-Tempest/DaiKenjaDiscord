@@ -1,5 +1,5 @@
-const { capitalize } = require("../../function/other/string");
-const { MessageEmbed, MessageAttachment } = require("discord.js");
+import { capitalize } from "../../function/other/string";
+import { MessageEmbed, MessageAttachment } from "discord.js";
 const bankIcon = new MessageAttachment('./imgOpenSource/bank.png');
 
 module.exports = {

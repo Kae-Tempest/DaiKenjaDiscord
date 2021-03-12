@@ -1,8 +1,9 @@
-const {MessageEmbed} = require('discord.js');
+import {MessageEmbed} from 'discord.js';
+import shop from '../../assets/shop/accessory.json';
+
 module.exports = {
     run: async message => {
         const items = [];
-        const shop = require('../../assets/shop/accessory.json');
         const embed = new MessageEmbed()
             .setTitle('Bienvenue dans notre shop !')
             .setColor('RANDOM')

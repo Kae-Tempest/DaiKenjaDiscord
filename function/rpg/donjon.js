@@ -1,6 +1,6 @@
-const { levelup, isWhithin, prestigeForest } = require('./levelup');
-const hostile = require('../../assets/npc/hostile.json');
-const { capitalize } = require('../other/string');
+import { levelup, isWhithin, prestigeForest } from './levelup';
+import hostile from '../../assets/npc/hostile.json';
+import { capitalize } from'../other/string';
 
 
 const donjon = (client, message, player) => {

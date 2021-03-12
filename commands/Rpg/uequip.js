@@ -1,6 +1,6 @@
-const {capitalize} = require('../../function/other/string');
-const getItemInfo = require('../../assets/shop/shop.json');
-const {calculateUserStatsEquip, calculateUserStatsUequip} = require('../../function/rpg/stats');
+import {capitalize} from '../../function/other/string';
+import getItemInfo from '../../assets/shop/shop.json';
+import {calculateUserStatsEquip, calculateUserStatsUequip} from '../../function/rpg/stats';
 module.exports = {
     run: async (client, message, args, userInfo) => {
         const q = args.join(" ");

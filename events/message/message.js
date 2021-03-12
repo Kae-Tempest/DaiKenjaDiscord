@@ -1,4 +1,4 @@
-const {Collection} = require('discord.js');
+import {Collection} from 'discord.js';
 module.exports = async (client, message) => {
     if (message.channel.type === "dm" || message.author.bot || !message.content.startsWith((client.config.PREFIX))) return;
 

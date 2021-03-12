@@ -1,4 +1,4 @@
-const fs = require('fs')
+import fs from 'fs';
 const monster = (client) => {
     function writingDot() {
         fs.appendFileSync('./assets/npc/hostile.json', ",")

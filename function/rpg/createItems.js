@@ -1,4 +1,4 @@
-const fs = require('fs')
+import fs from 'fs';
 const items = (client) => {
     function writingDot(file) {
         fs.appendFileSync("./assets/shop/" + file, ",");

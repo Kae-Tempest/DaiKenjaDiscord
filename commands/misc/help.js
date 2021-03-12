@@ -1,5 +1,5 @@
-const {MessageEmbed} = require('discord.js');
-const {readdirSync} = require('fs')
+import {MessageEmbed} from 'discord.js';
+import {readdirSync} from 'fs';
 const categoryList = readdirSync('./commands')
 module.exports = {
     run: (client, message, args) => {
