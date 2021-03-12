@@ -1,5 +1,6 @@
-const { MessageEmbed, MessageAttachment } = require("discord.js");
 const { capitalize } = require("../../function/other/string");
+const { MessageEmbed, MessageAttachment } = require("discord.js");
+const bankIcon = new MessageAttachment('./imgOpenSource/bank.png');
 
 module.exports = {
     run: async (client, message, args, player) => {
@@ -14,6 +15,7 @@ module.exports = {
                 "users.$.inventory": userInventory,
                 "users.$.bank": userBank
             });
+            message.reply(`Tu as bien mis en banque ${capitalize(q)}`)
         }
         else if (args[0] === "out") {
             q = args.slice(1).join(" ");
@@ -24,12 +26,13 @@ module.exports = {
                 "users.$.inventory": userInventory,
                 "users.$.bank": userBank
             });
+            message.reply(`Tu as bien retirer de la banque ${capitalize(q)}`)
         } else {
-            const bankIcon = new MessageAttachment(/*Link of img*/)
             const embed = new MessageEmbed()
+                .attachFiles(bankIcon)
                 .setAuthor(`Bank de ${message.author.username}`)
-                .setThumbnail(bankIcon)
-                .addField("Banque :",`${player.banque.length !== 0 ? player.banque.join(" | ") : "La banque est vide"}`)
+                .setThumbnail(`attachment://bank.png`)
+                .addField("Banque :",`${player.bank.length !== 0 ? player.bank.join(" | ") : "La banque est vide"}`)
             message.channel.send(embed);
         }
 
