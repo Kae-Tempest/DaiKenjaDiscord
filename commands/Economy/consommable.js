@@ -15,12 +15,12 @@ module.exports = {
         name: "consomable",
         aliases: ["consomable", "cons", "Consomable", "Cons", "CONSOMABLE", "CONS"],
         category: 'economy',
-        description: "affiche les potions",
+        description: "affiche les consommables",
         cd: 3,
         usage: "",
         isUserAdmin: false,
         permission: false,
         args: false,
-        profile: false
+        profile: true
     }
 }

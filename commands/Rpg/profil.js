@@ -114,7 +114,7 @@ module.exports = {
         name: 'profile',
         aliases: ["profile", "profil","Profile","Profil","PROFILE","PROFIL"],
         category: 'rpg',
-        description: 'Renvoie le profile de votre personnage',
+        description: 'Affiche le profile de votre personnage',
         cd: 5,
         usage: "",
         isUserAdmin: false,

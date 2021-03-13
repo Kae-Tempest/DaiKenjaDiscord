@@ -40,7 +40,7 @@ module.exports = {
     name: "roue",
     aliases: ["roue", "rdc","Roue","Rdc","ROUE","RDC"],
     category: 'misc',
-    description: 'lance la roue de la chance',
+    description: 'Lance la roue de la chance',
     cd: 1,
     usage: "",
     isUserAdmin: false,

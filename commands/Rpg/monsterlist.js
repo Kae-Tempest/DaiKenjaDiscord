@@ -29,7 +29,7 @@ module.exports = {
         name: 'monsterlist',
         aliases: ["monsterlist", "ml", "MONSTERLIST","ML","Monsterlist","Ml"],
         category: 'rpg',
-        description: "affiche la liste des monstres",
+        description: "Affiche la liste des monstres",
         cd: 3,
         usage: "",
         isUserAdmin: false,

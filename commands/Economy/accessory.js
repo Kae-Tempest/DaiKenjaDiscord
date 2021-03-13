@@ -14,12 +14,12 @@ module.exports = {
         name: "accessory",
         aliases: ["accessory", "acc", "ACCESSORY", "ACC", "Accessory", "Acc"],
         category: 'economy',
-        description: "affiche les accesoires",
+        description: "Affiche les accesoires",
         cd: 3,
         usage: "",
         isUserAdmin: false,
         permission: false,
         args: false,
-        profile: false
+        profile: true
     }
 };

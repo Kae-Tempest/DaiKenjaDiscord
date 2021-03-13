@@ -44,7 +44,7 @@ module.exports = {
         name: "shop",
         aliases: ["shop", "Shop", "SHOP"],
         category: 'economy',
-        description: "affiche le shop",
+        description: "Permet de voir ou d'acheter un item",
         cd: 3,
         usage: "[buy/show][<id_object>]",
         isUserAdmin: false,

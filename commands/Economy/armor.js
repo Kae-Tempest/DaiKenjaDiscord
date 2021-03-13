@@ -14,12 +14,12 @@ module.exports = {
         name: "armor",
         aliases: ["armor", "Armor", "ARMOR"],
         category: 'economy',
-        description: "affiche les armures",
+        description: "Affiche les armures",
         cd: 3,
         usage: "",
         isUserAdmin: false,
         permission: false,
         args: false,
-        profile: false
+        profile: true
     }
 }

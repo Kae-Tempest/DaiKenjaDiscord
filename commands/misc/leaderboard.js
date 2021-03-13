@@ -28,6 +28,6 @@ module.exports = {
         isUserAdmin: false,
         permission: false,
         args: false,
-        profile: false
+        profile: true
     }
 }

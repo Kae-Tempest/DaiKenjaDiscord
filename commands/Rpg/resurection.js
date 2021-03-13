@@ -39,7 +39,7 @@ module.exports = {
         name: 'resurection',
         aliases: ["resurection", "res", "rez","Resurection","Res","Rez","RESSURECTION","RES","REZ"],
         category: 'rpg',
-        description: 'Rend la vie au joueur (Cout : 250<:GoldCoin:781575067108507648>)',
+        description: 'Rend la vie au joueur (Cout : 250 à 1 000 000<:GoldCoin:781575067108507648>)',
         cd: 3,
         usage: "",
         isUserAdmin: false,

@@ -20,7 +20,7 @@ module.exports = {
     category: 'rpg',
     description: 'Bataille avec un monstre avec votre duo !',
     cd: 20  ,
-    usage: "<@your_teammate> <enemy_name>",
+    usage: "tm <enemy_name>",
     isUserAdmin: false,
     permissions: false,
     args: true,

@@ -68,7 +68,7 @@ module.exports = {
         name: "teams",
         aliases: ["teams","Teams","TEAMS"],
         category: 'rpg',
-        description: "affiche le duo ou créer un duo !",
+        description: "Affiche le duo ou créer un duo !",
         cd: 5,
         usage: "[create <mentionedUser>]",
         isUserAdmin: false,

@@ -37,7 +37,7 @@ module.exports = {
         name: 'prestige',
         category: 'rpg',
         aliases: ["prestige","Prestige","PRESTIGE"],
-        description: 'Permet de reset le niveaux de la classe mais en gardant les stats',
+        description: 'Permet de reset le niveaux de la classe mais en gardant les stats [ Cost min : 1 000 000 0000<:GoldCoin:781575067108507648> ]',
         cd: 1,
         usage: "<object>",
         isUserAdmin: false,

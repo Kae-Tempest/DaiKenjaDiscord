@@ -14,12 +14,12 @@ module.exports = {
         name: "removebalance",
         aliases: ["removebalance", "rembalance"],
         category: '',
-        description: "Enlève de l'argent de manière journalière",
+        description: "Enlève de l'argent à un utilisateur",
         cd: 10,
         usage: "<@user> <balance>",
         isUserAdmin: false,
         permission: true,
         args: true,
-        profile: false
+        profile: true
     }
 }

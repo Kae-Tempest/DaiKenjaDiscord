@@ -35,7 +35,7 @@ module.exports = {
         name: "sell",
         aliases: ["sell", "Sell", "SELL"],
         category: 'economy',
-        description: "affiche le shop",
+        description: "Permet de vendre un item",
         cd: 3,
         usage: "<object>",
         isUserAdmin: false,

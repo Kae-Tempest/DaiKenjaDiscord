@@ -20,11 +20,12 @@ module.exports = {
         name: "ticket",
         aliases: ["ticket", "Ticket", "TICKET"],
         category: 'admin',
-        description: "envoie un ticket au staff",
+        description: "Envoie un ticket au staff",
         cd: 500,
         usage: "<args_of_ticket>",
         isUserAdmin: false,
         permission: false,
-        args: true
+        args: true,
+        profil: false
     }
 };

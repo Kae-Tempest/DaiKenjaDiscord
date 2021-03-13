@@ -11,7 +11,7 @@ module.exports = {
         name: "addbalance",
         aliases: ["addbalance", "addb"],
         category: '',
-        description: "Ajoute de l'argent a un utilisateur",
+        description: "Ajoute de l'argent à un utilisateur",
         cd: 10,
         usage: "<@user> <balance>",
         isUserAdmin: false,

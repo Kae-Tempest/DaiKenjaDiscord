@@ -18,8 +18,9 @@ module.exports = {
         description: "Renvoie un code js testé",
         cd: 1,
         usage: "<code_to_test>",
-        isUserAdmin: false,
+        isUserAdmin: true,
         permission: true,
-        args: true
+        args: true,
+        profil: false
     }
 };
