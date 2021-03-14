@@ -14,6 +14,7 @@ module.exports = client => {
     console.clear();
     console.log('\033[2J');
     console.log(`${Daikenja.username} (${Daikenja.id}) connected at ${now} on ${Daikenja.server_name}`);
+    console.log("Création des monstres en cours !");
     fs.unlink('./assets/npc/hostile.json', (err) => {
         if (err) throw err
     })
@@ -34,6 +35,7 @@ module.exports = client => {
     fs.unlink('./assets/shop/consommable.json', (err) => {
         if (err) throw err
     })
+    console.log("Création des items en cours !");
     items(client);
     console.log("Items crées !")
     client.mongoose.init();
