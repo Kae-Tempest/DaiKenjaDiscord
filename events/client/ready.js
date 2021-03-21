@@ -5,6 +5,7 @@ const fs = require ('fs');
 
 module.exports = client => {
     client.mongoose = require("../../util/mongoose");
+    client.mariadb = require('../../util/mariadb');
     let Daikenja = {
         'id': client.user.id,
         'username': client.user.username,
@@ -38,7 +39,8 @@ module.exports = client => {
     console.log("Création des items en cours !");
     items(client);
     console.log("Items crées !")
-    client.mongoose.init();
+    //client.mongoose.init();
+    client.mariadb.init();
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
     if (tokenDB.DBCONNECTION !== "mongodb://localhost:27017/test") client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
