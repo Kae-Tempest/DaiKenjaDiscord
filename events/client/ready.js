@@ -1,15 +1,13 @@
 const {monster} = require ('../../function/rpg/createMonster');
 const {items} = require ('../../function/rpg/createItems');
-const tokenDB = require ('../../config');
 const fs = require ('fs');
 
 module.exports = client => {
     client.mongoose = require("../../util/mongoose");
-    client.mariadb = require('../../util/mariadb');
     let Daikenja = {
         'id': client.user.id,
         'username': client.user.username,
-        'server_name': client.guilds.cache.map(guild => guild.name)
+        'server_name': client.guilds.cache.map(g => g.name)
     };
     let now = new Date().toLocaleString('fr-FR');
     console.clear();
@@ -39,11 +37,9 @@ module.exports = client => {
     console.log("Création des items en cours !");
     items(client);
     console.log("Items crées !")
-    //client.mongoose.init();
-    client.mariadb.init();
+    client.mongoose.init();
     console.log("I'm ready Ningen");
     client.user.setActivity(`Donner des conseil a Rimuru Tempest`).catch(console.error);
-    if (tokenDB.DBCONNECTION !== "mongodb://localhost:27017/test") client.channels.cache.get('769215379238027297').send("Dai Kenja est opérationel!");
     const guild = [];
     client.guilds.cache.map(e => guild.push(e));
     guild.forEach(async g => {
