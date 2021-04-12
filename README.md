@@ -62,6 +62,8 @@ _Equip_: Permet de s'équiper d'un objet avec le nom de celui-ci dans son invent
 
 _Uequip_: Permet de retirer un objet avec son nom quand il est équipé.
 
+_Bank_: Permet de stocké des objets.
+
 _Heal_: Heal le joueur selon son niveau. `(commande payante en po)`
 
 _Monsterlist_: Affiche la liste des monstres disponible à combattre. `(attention à la difficulté des monstres)`
