@@ -1,6 +1,6 @@
 const {MessageEmbed} = require('discord.js');
 module.exports = {
-    run: async message => {
+    run: async (client, message) => {
         const items = [];
         const shop = require('../../assets/shop/accessory.json');
         const embed = new MessageEmbed()
@@ -9,7 +9,7 @@ module.exports = {
         shop.map(e => items.push(`${e.label}.**${e.name}** *(${e.cost})*`));
         embed.setDescription(`Voici les differents accesoires disponible :\n${items.map(item => `${item}`).join("\n")}`)
         embed.setFooter('pensez à regarder le détail des objets ! ');
-        message.channel.send(embed)
+        client.channels.cache.get('781579158437888081').send(embed);
     }, help: {
         name: "accessory",
         aliases: ["accessory", "acc", "ACCESSORY", "ACC", "Accessory", "Acc"],

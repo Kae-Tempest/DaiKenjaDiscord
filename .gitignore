@@ -4,3 +4,4 @@
 /.idea/
 /package-lock.json
 /TODO.do
+/util/mariadb.config.js

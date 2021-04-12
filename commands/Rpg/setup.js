@@ -33,8 +33,8 @@ module.exports = {
                                         class: classe.name,
                                         stats: classe.stats,
                                         statsMax: classe.stats,
-                                        inventory: [],
-                                        bank: [],
+                                        inventory: ["None"],
+                                        bank: ["None"],
                                         equipments: {
                                             "Mh": "None",
                                             "Oh": "None",
