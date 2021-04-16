@@ -41,7 +41,7 @@ module.exports = async (client, message) => {
     if (tStamps.has(message.author.id)) {
         const cdExpirationTime = tStamps.get(message.author.id) + cdAmount;
         if (timeNow < cdExpirationTime) {
-            timeLeft = (cdExpirationTime - timeNow) / 1000;
+            let timeLeft = (cdExpirationTime - timeNow) / 1000;
             return message.reply(`Merci d'attendre ${timeLeft.toFixed(0)} seconde(s) avant de ré-utilier la command \`${command.help.name}\`.`);
         }
     }

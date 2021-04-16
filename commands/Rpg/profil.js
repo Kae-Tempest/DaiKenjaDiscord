@@ -1,3 +1,4 @@
+const evolveClasses = require ("../../assets/rpg/evolveclasses.json");
 const {capitalize} = require ('../../function/other/string');
 const classes = require ("../../assets/rpg/classes.json");
 const {createCanvas, loadImage} = require ('canvas');
@@ -7,23 +8,23 @@ module.exports = {
     run: async (client, message, userInfo) => {
         if (userInfo.class === "") return message.reply('tu dois d\'abord utiliser la commande \`setup\` pour créer ton personnage');
         const player = await client.getUser(message.member);
-        function exp(lvlmin, lvlmax, exp) {
+        function exp(lvlmin, lvlmax, xp) {
             if (player.level <= lvlmax && player.level > lvlmin) {
-                if(player.prestige === 0) if (player.experience < player.level * exp - 1) return  player.level * exp
-                if (player.prestige === 1) if (player.experience < player.level * player.prestige * 10 * exp - 1) return player.level * player.prestige * 10 * exp;
-                if (player.prestige === 2) if (player.experience < player.level * player.prestige * 50 * exp - 1) return player.level * player.prestige * 50 * exp;
-                if (player.prestige === 3) if (player.experience < player.level * player.prestige * 100 * exp - 1) return player.level * player.prestige * 100 * exp;
-                if (player.prestige === 4) if (player.experience < player.level * player.prestige * 150 * exp - 1) return player.level * player.prestige * 150 * exp;
-                if (player.prestige === 5) if (player.experience < player.level * player.prestige * 200 * exp - 1) return player.level * player.prestige * 200 * exp
-                if (player.prestige === 6) if (player.experience < player.level * player.prestige * 250 * exp - 1) return player.level * player.prestige * 250 * exp;
-                if (player.prestige === 7) if (player.experience < player.level * player.prestige * 300 * exp - 1) return player.level * player.prestige * 300 * exp;
-                if (player.prestige === 8) if (player.experience < player.level * player.prestige * 350 * exp - 1) return player.level * player.prestige * 350 * exp;
-                if (player.prestige === 9) if (player.experience < player.level * player.prestige * 400 * exp - 1) return player.level * player.prestige * 400 * exp;
-                if (player.prestige === 10) if (player.experience < player.level * player.prestige * 500 * exp - 1) return player.level * player.prestige * 500 * exp;
+                if(player.prestige === 0) if (player.experience < player.level * xp - 1) return  player.level * xp
+                if (player.prestige === 1) if (player.experience < player.level * player.prestige * 10 * xp - 1) return player.level * player.prestige * 10 * xp;
+                if (player.prestige === 2) if (player.experience < player.level * player.prestige * 50 * xp - 1) return player.level * player.prestige * 50 * xp;
+                if (player.prestige === 3) if (player.experience < player.level * player.prestige * 100 * xp - 1) return player.level * player.prestige * 100 * xp;
+                if (player.prestige === 4) if (player.experience < player.level * player.prestige * 150 * xp - 1) return player.level * player.prestige * 150 * xp;
+                if (player.prestige === 5) if (player.experience < player.level * player.prestige * 200 * xp - 1) return player.level * player.prestige * 200 * xp
+                if (player.prestige === 6) if (player.experience < player.level * player.prestige * 250 * xp - 1) return player.level * player.prestige * 250 * xp;
+                if (player.prestige === 7) if (player.experience < player.level * player.prestige * 300 * xp - 1) return player.level * player.prestige * 300 * xp;
+                if (player.prestige === 8) if (player.experience < player.level * player.prestige * 350 * xp - 1) return player.level * player.prestige * 350 * xp;
+                if (player.prestige === 9) if (player.experience < player.level * player.prestige * 400 * xp - 1) return player.level * player.prestige * 400 * xp;
+                if (player.prestige === 10) if (player.experience < player.level * player.prestige * 500 * xp - 1) return player.level * player.prestige * 500 * xp;
             }
             return 0;
         }
-        exptotal = [
+        let exptotal = [
             exp(0, 10, 250),exp(10, 20, 500),exp(30, 40, 1000),exp(40, 50, 3000),exp(50, 60, 5000),exp(60, 70, 7000),exp(70, 80, 9000),exp(80, 90, 15000),exp(90, 100, 20000),
             exp(100, 110, 30000),exp(110, 120, 40000),exp(120, 130, 50000),exp(130, 140, 60000),exp(140, 150, 70000),exp(150, 160, 80000),exp(160, 170, 90000),exp(170, 180, 100000),
             exp(180, 190, 110000),exp(190, 200, 120000),exp(200, 210, 130000),exp(210, 220, 140000),exp(220, 230, 150000),exp(230, 240, 160000),exp(240, 250, 170000),exp(250, 260, 180000),
@@ -39,15 +40,19 @@ module.exports = {
             exp(980, 990, 910000),exp(990, 1000, 920000)
         ]
         let exptotalFinal = 0
-        exptotal.forEach(exp => {
+        exptotal.forEach(e => {
             exptotalFinal += exp
         })
 
-        const position = classes.map(e => e.name.toLowerCase()).indexOf(player.class.toLowerCase());
-        const classe = classes[position];
+        let position = classes.map(e => e.name.toLowerCase()).indexOf(player.class.toLowerCase());
+        let classe = classes[position];
+        if (position === -1) {
+            position = evolveClasses.map(e => e.name.toLowerCase()).indexOf(player.class.toLowerCase());
+            classe = evolveClasses[position];
+        }
         const canvas = createCanvas(1204,1504);
         const ctx = canvas.getContext('2d');
-        const classIcon = await loadImage(classe.icon)
+        const classIcon = await loadImage(classe.icon);
         const GoldCoin = await loadImage("https://cdn.discordapp.com/attachments/587692066411249688/819592773861900328/I_GoldCoin.png")
 
         ctx.beginPath();

@@ -28,6 +28,7 @@ module.exports = {
                                         rdc: 0,
                                         daily: 0,
                                         po: 200,
+                                        evolve: 0,
                                         teams: "None",
                                         attribut: ["None"],
                                         class: classe.name,
