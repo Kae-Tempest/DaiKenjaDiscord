@@ -138,7 +138,7 @@ const donjon = (client, message, player) => {
     const consti = player.stats.constitution;
     const agility = player.stats.agility;
     const intelligence = player.stats.intelligence;
-    const PlayerHP = player.stats.vitality;
+    let PlayerHP = player.stats.vitality;
     const attribut = player.attribut
     const nameOfBoss = hostile.map(n => n.name)
     let poGain = 0;
@@ -146,7 +146,7 @@ const donjon = (client, message, player) => {
     
         async function dj (atk){
         for(let i = 1; PlayerHP > 0 ; i++) {
-            let playerHP = player.stats.vitality;
+            PlayerHP = player.stats.vitality;
             let floorBoss = nameOfBoss[Math.floor(Math.random() * (nameOfBoss.length - 1) )]
             const boss = setBoss(floorBoss)
             client.channels.cache.get("813056123216330763").send(`Vous etes étages ${i} et vous tombez sur ***${floorBoss}***`)
@@ -175,11 +175,11 @@ const donjon = (client, message, player) => {
             if (hostileResi === undefined && hostileFaib === undefined) playerAtk = atk - bossConsti;
             if (hostileResi !== undefined && hostileFaib !== undefined) playerAtk = atk - bossConsti;
             if (player.level <= 500 && player.prestige !== 0) {
-                hostileExp = hostile.experience + (hostile.experience * player.prestige) * 1750
-                hostilePo = hostile.po * player.prestige
+                bossExp = boss.experience + (boss.experience * player.prestige) * 1750
+                bossPo = boss.po * player.prestige
             } else if (player.level >= 500 && player.prestige !== 0) {
-                hostileExp = hostile.experience + (hostile.experience * player.prestige - hostile.experience) * 1750
-                hostilePo = hostile.po * player.prestige
+                bossExp = boss.experience + (boss.experience * player.prestige - boss.experience) * 1750
+                bossPo = boss.po * player.prestige
             }
 
             if (bossAtk < 0 ) bossAtk = 0;
@@ -200,12 +200,12 @@ const donjon = (client, message, player) => {
             }
             if (intelligence > bossIntel) {
                 bossHP -= playerAtk
-                playerHP -= bossAtk
+                PlayerHP -= bossAtk
             } else {
-                playerHP -= bossAtk
+                PlayerHP -= bossAtk
                 bossHP -= playerAtk
             }
-            if (playerHP <= 0) {
+            if (PlayerHP <= 0) {
                 client.updateUserInfo(message.member, {
                     "users.$.stats.vitality": 0
                 });

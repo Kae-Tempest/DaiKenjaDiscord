@@ -145,12 +145,13 @@ const battleduo = async (client, message, player, player2, hostile, user) => {
     const intelligence = player.stats.intelligence + player2.stats.intelligence;
     const prestige = player.prestige + player2.prestige
     const attribut = player.attribut + "," + player2.attribut
+    const evolve = player.evolve + player2.evolve
 
-    let hostileStrengh = (hostile.stats.strength * 2) + (prestige * 10500);
-    let hostileHP = (hostile.stats.vitality * 2) + (prestige * 10500);
-    let hostileConsti = (hostile.stats.constitution * 2) + (prestige * 10500);
-    let hostileAgility = (hostile.stats.agility * 2) + (prestige * 10500);
-    let hostileIntel = (hostile.stats.intelligence * 2) + (prestige * 10500);
+    let hostileStrengh = (hostile.stats.strength * 2) + (prestige * 10500 * ( evolve + 1));
+    let hostileHP = (hostile.stats.vitality * 2) + (prestige * 10500 * ( evolve + 1) );
+    let hostileConsti = (hostile.stats.constitution * 2) + (prestige * 10500 * ( evolve + 1));
+    let hostileAgility = (hostile.stats.agility * 2) + (prestige * 10500 * ( evolve + 1));
+    let hostileIntel = (hostile.stats.intelligence * 2) + (prestige * 10500 * ( evolve + 1));
     let hostilePo = hostile.po;
     let hostileExp = hostile.experience;
     const hostileResistance = hostile.attribut.resistance;

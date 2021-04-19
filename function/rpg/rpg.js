@@ -123,18 +123,19 @@ const battle = async (client, message, player, hostile) => {
     }
 
 
-    const strength = player.stats.strength
-    const spirit = player.stats.spirit
+    const strength = player.stats.strength;
+    const spirit = player.stats.spirit;
     const consti = player.stats.constitution;
-    const agility = player.stats.agility
-    const intelligence = player.stats.intelligence
-    const attribut = player.attribut
+    const agility = player.stats.agility;
+    const intelligence = player.stats.intelligence;
+    const attribut = player.attribut;
+    const evolve = player.evolve;
 
-    let hostileStrengh = hostile.stats.strength + (player.prestige * 10500);
-    let hostileHP = hostile.stats.vitality + (player.prestige * 10500);
-    let hostileConsti = hostile.stats.constitution + (player.prestige * 10500);
-    let hostileAgility = hostile.stats.agility + (player.prestige * 10500);
-    let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500);
+    let hostileStrengh = hostile.stats.strength + (player.prestige * 10500 * ( evolve + 1));
+    let hostileHP = hostile.stats.vitality + (player.prestige * 10500 * ( evolve + 1));
+    let hostileConsti = hostile.stats.constitution + (player.prestige * 10500 * ( evolve + 1));
+    let hostileAgility = hostile.stats.agility + (player.prestige * 10500 * ( evolve + 1) );
+    let hostileIntel = hostile.stats.intelligence + (player.prestige * 10500 * ( evolve + 1));
     let hostilePo = hostile.po;
     let hostileExp = hostile.experience;
     const hostileResistance = hostile.attribut.resistance;
