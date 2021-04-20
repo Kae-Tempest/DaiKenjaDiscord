@@ -66,7 +66,7 @@ module.exports = {
 
         ctx.fillStyle = "#FFF";
         ctx.font = "30px Arial";
-        ctx.fillText(`${message.author.username} | ${player.class} de niveau ${player.level} et de prestige ${player.prestige}`,30,50);
+        ctx.fillText(`${message.author.username} | ${player.class} ${player.race !== "" ? player.race : "de race inconnu"}, de niveau ${player.level} et de prestige ${player.prestige}`,30,50);
         ctx.drawImage(classIcon,990 ,10 ,210, 360);
 
         ctx.fillStyle = "#FFF";

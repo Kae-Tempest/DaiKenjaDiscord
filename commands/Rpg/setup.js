@@ -22,6 +22,7 @@ module.exports = {
                                     users: {
                                         id: message.member.id,
                                         username: message.member.user.username,
+                                        race: "",
                                         level: 1,
                                         prestige: 0,
                                         experience: 0,
@@ -60,7 +61,7 @@ module.exports = {
             } catch (e) {
                 message.channel.send(`Vous avez pris trop de temps pour choisir votre classe !`)
             }
-        } else message.channel.send(`Veuillez choisir votre classe (syntax: \`!setup nom_de_classe\`)! Les classes disposible: ${classes.map(e => `${e.name}`).join(', ')}`);
+        } else message.channel.send(`Veuillez choisir votre classe (syntax: \`!setup nom_de_classe\`)! Les classes disposible: ${classes.map(e => `${e.name}`).join(', ')} `);
     }, help: {
         name: 'setup',
         aliases: ["setup","Setup","SETUP"],

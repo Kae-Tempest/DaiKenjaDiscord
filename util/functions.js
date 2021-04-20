@@ -36,6 +36,7 @@ module.exports = client => {
                     users: {
                         id: member.id,
                         username: member.user.username,
+                        race: "",
                         level: 1,
                         prestige: 0,
                         experience: 0,
