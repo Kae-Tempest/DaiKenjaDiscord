@@ -40,7 +40,7 @@ module.exports = {
             exp(980, 990, 910000),exp(990, 1000, 920000)
         ]
         let exptotalFinal = 0
-        exptotal.forEach(e => {
+        exptotal.forEach(exp => {
             exptotalFinal += exp
         })
 
