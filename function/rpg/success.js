@@ -379,6 +379,42 @@ const success = (client, message, hostile, player) => {
                     break;
             }
             break;
+        case 'Giant armored cave spider' : 
+            client.updateUserInfo(message.member, {"users.$.monster.Giant_Armored_Cave_Spider" : player.monster.Giant_Armored_Cave_Spider += 1});
+            switch(player.monster.Giant_Armored_Cave_Spider){
+                case 1 :
+                    message.channel.send(`${player.username} tu as tué ton premier ${name}`)
+                    break;
+                case 10 :
+                    message.channel.send(`${player.username}, C'est ton 10ème ${name} tué ! Bien joué`)
+                    break;
+                case 50 :
+                    message.channel.send(`${player.username}, Tu as tué 50 ${name} ! Tu te rapproche du titre !`)
+                    break;
+                case 1000 :
+                    message.reply(`Tu obtien le titre \`Tueur de ${name}\` pour en avoir tué 1000 !`);
+                    client.updateUserInfo(message.member, {"users.$.success.Giant_Armored_Cave_Spider" : true})
+                    break;
+            }
+            break;
+        case 'King Kobold Lord' : 
+            client.updateUserInfo(message.member, {"users.$.monster.King_Kobold_Lord" : player.monster.King_Kobold_Lord += 1});
+            switch(player.monster.King_Kobold_Lord){
+                case 1 :
+                    message.channel.send(`${player.username} tu as tué ton premier ${name}`)
+                    break;
+                case 10 :
+                    message.channel.send(`${player.username}, C'est ton 10ème ${name} tué ! Bien joué`)
+                    break;
+                case 50 :
+                    message.channel.send(`${player.username}, Tu as tué 50 ${name} ! Tu te rapproche du titre !`)
+                    break;
+                case 1000 :
+                    message.reply(`Tu obtien le titre \`Tueur de ${name}\` pour en avoir tué 1000 !`);
+                    client.updateUserInfo(message.member, {"users.$.success.King_Kobold_Lord" : true})
+                    break;
+            }
+            break;
         case 'Moonlight cat' :
             client.updateUserInfo(message.member, {"users.$.monster.Moonlight_cat" : player.monster.Moonlight_cat += 1});
             switch(player.monster.Moonlight_cat){
@@ -541,8 +577,6 @@ const success = (client, message, hostile, player) => {
                     break;
             }
             break;
-    }
-    switch(name) {
         case 'Vampmask' :
             client.updateUserInfo(message.member, {"users.$.monster.Vampmask" : player.monster.Vampmask += 1});
             switch(player.monster.Vampmask){
