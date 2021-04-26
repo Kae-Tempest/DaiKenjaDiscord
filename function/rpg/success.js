@@ -2,7 +2,7 @@ const success = (client, message, hostile, player) => {
     const name = hostile.name
     switch(name) {
         case 'Slime' : 
-            client.updateUserInfo(message.member, {"users.$.Slime" : player.monster.Slime += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Slime" : player.monster.Slime += 1});
             switch(player.monster.Slime) {
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -20,7 +20,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Goblin' :
-            client.updateUserInfo(message.member, {"users.$.Goblin" : player.monster.Goblin += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Goblin" : player.monster.Goblin += 1});
             switch(player.monster.Goblin){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -38,7 +38,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Wildboar' :
-            client.updateUserInfo(message.member, {"users.$.Wildboar" : player.monster.Wildboar += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Wildboar" : player.monster.Wildboar += 1});
             switch(player.monster.Wildboar){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -56,7 +56,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Cave Spider' :
-            client.updateUserInfo(message.member, {"users.$.Cave_Spider" : player.monster.Cave_Spider += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Cave_Spider" : player.monster.Cave_Spider += 1});
             switch(player.monster.Cave_Spider){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -74,7 +74,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Wolf' :
-            client.updateUserInfo(message.member, {"users.$.Wolf" : player.monster.Wolf += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Wolf" : player.monster.Wolf += 1});
             switch(player.monster.Wolf){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -92,7 +92,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Skeleton' :
-            client.updateUserInfo(message.member, {"users.$.Skeleton" : player.monster.Skeleton += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Skeleton" : player.monster.Skeleton += 1});
             switch(player.monster.Skeleton) {
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -110,7 +110,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Shadow' :
-            client.updateUserInfo(message.member, {"users.$.Shadow" : player.monster.Shadow += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Shadow" : player.monster.Shadow += 1});
             switch(player.monster.Shadow){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -128,7 +128,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Ogre' :
-            client.updateUserInfo(message.member, {"users.$.Ogre" : player.monster.Ogre += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Ogre" : player.monster.Ogre += 1});
             switch(player.monster.Ogre){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -146,7 +146,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Giant Mantis' :
-            client.updateUserInfo(message.member, {"users.$.Giant_Mantis" : player.monster.Giant_Mantis += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Giant_Mantis" : player.monster.Giant_Mantis += 1});
             switch(player.monster.Giant_Mantis){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -164,7 +164,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Orc' :
-            client.updateUserInfo(message.member, {"users.$.Orc" : player.monster.Orc += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Orc" : player.monster.Orc += 1});
             switch(player.Orc){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -182,7 +182,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Phantomtooth' :
-            client.updateUserInfo(message.member, {"users.$.Phantomtooth" : player.monster.Phantomtooth += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Phantomtooth" : player.monster.Phantomtooth += 1});
             switch(player.monster.Phantomtooth){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -200,7 +200,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Vaporhag' :
-            client.updateUserInfo(message.member, {"users.$.Vaporhag" : player.monster.Vaporhag += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Vaporhag" : player.monster.Vaporhag += 1});
             switch(player.monster.Vaporhag){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -218,7 +218,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Gloomfang' :
-            client.updateUserInfo(message.member, {"users.$.Gloomfang" : player.monster.Gloomfang += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Gloomfang" : player.monster.Gloomfang += 1});
             switch(player.monster.Gloomfang){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -236,7 +236,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Taintscreamer' :
-            client.updateUserInfo(message.member, {"users.$.Taintscreamer" : player.monster.Taintscreamer += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Taintscreamer" : player.monster.Taintscreamer += 1});
             switch(player.monster.Taintscreamer){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -254,7 +254,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Cryptsoul' :
-            client.updateUserInfo(message.member, {"users.$.Cryptsoul" : player.monster.Cryptsoul += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Cryptsoul" : player.monster.Cryptsoul += 1});
             switch(player.monster.Cryptsoul){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -272,7 +272,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Mimic' :
-            client.updateUserInfo(message.member, {"users.$.Mimic" : player.monster.Mimic += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Mimic" : player.monster.Mimic += 1});
             switch(player.monster.Mimic){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -290,7 +290,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Zombie' :
-            client.updateUserInfo(message.member, {"users.$.Zombie" : player.monster.Zombie += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Zombie" : player.monster.Zombie += 1});
             switch(player.monster.Zombie){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -308,7 +308,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Becale' :
-            client.updateUserInfo(message.member, {"users.$.Becale" : player.monster.Becale += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Becale" : player.monster.Becale += 1});
             switch(player.monster.Becale){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -326,7 +326,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Sopurenne' :
-            client.updateUserInfo(message.member, {"users.$.Sopurenne" : player.monster.Sopurenne += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Sopurenne" : player.monster.Sopurenne += 1});
             switch(player.monster.Sopurenne){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -344,7 +344,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Dark timilo' :
-            client.updateUserInfo(message.member, {"users.$.Dark_timilo" : player.monster.Dark_timilo += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Dark_timilo" : player.monster.Dark_timilo += 1});
             switch(player.monster.Dark_timilo){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -362,7 +362,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'King Slime' :
-            client.updateUserInfo(message.member, {"users.$.King_Slime" : player.monster.King_Slime += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.King_Slime" : player.monster.King_Slime += 1});
             switch(player.monster.King_Slime){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -380,7 +380,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Moonlight cat' :
-            client.updateUserInfo(message.member, {"users.$.Moonlight_cat" : player.monster.Moonlight_cat += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Moonlight_cat" : player.monster.Moonlight_cat += 1});
             switch(player.monster.Moonlight_cat){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -398,7 +398,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Orc Disaster' :
-            client.updateUserInfo(message.member, {"users.$.Orc_Disaster" : player.monster.Orc_Disaster += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Orc_Disaster" : player.monster.Orc_Disaster += 1});
             switch(player.monster.Orc_Disaster){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -416,7 +416,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Elyon' :
-            client.updateUserInfo(message.member, {"users.$.Elyon" : player.monster.Elyon += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Elyon" : player.monster.Elyon += 1});
             switch(player.monster.Elyon){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -434,7 +434,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Dracula' :
-            client.updateUserInfo(message.member, {"users.$.Dracula" : player.monster.Dracula += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Dracula" : player.monster.Dracula += 1});
             switch(player.monster.Dracula) {
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -452,7 +452,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Bowser' :
-            client.updateUserInfo(message.member, {"users.$.Bowser" : player.monster.Bowser += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Bowser" : player.monster.Bowser += 1});
             switch(player.monster.Bowser){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -470,7 +470,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Fake Kami' :
-            client.updateUserInfo(message.member, {"users.$.Fake_Kami" : player.monster.Fake_Kami += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Fake_Kami" : player.monster.Fake_Kami += 1});
             switch(player.monster.Fake_Kami){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -488,7 +488,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Shogun' :
-            client.updateUserInfo(message.member, {"users.$.Shogun" : player.monster.Shogun += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Shogun" : player.monster.Shogun += 1});
             switch(player.monster.Shogun){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -506,7 +506,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'The Gleam Eyes' :
-            client.updateUserInfo(message.member, {"users.$.The_Gleam_Eyes" : player.monster.The_Gleam_Eyes += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.The_Gleam_Eyes" : player.monster.The_Gleam_Eyes += 1});
             switch(player.monster.The_Gleam_Eyes){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -524,7 +524,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Hellwraith' :
-            client.updateUserInfo(message.member, {"users.$.Hellwraith" : player.monster.Hellwraith += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Hellwraith" : player.monster.Hellwraith += 1});
             switch(player.monster.Hellwraith){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -544,7 +544,7 @@ const success = (client, message, hostile, player) => {
     }
     switch(name) {
         case 'Vampmask' :
-            client.updateUserInfo(message.member, {"users.$.Vampmask" : player.monster.Vampmask += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Vampmask" : player.monster.Vampmask += 1});
             switch(player.monster.Vampmask){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -562,7 +562,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Dreadfang' :
-            client.updateUserInfo(message.member, {"users.$.Dreadfang" : player.monster.Dreadfang += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Dreadfang" : player.monster.Dreadfang += 1});
             switch(player.monster.Dradfang){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -580,7 +580,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Hellstep' :
-            client.updateUserInfo(message.member, {"users.$.Hellstep" : player.monster.Hellstep += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Hellstep" : player.monster.Hellstep += 1});
             switch(player.monster.Hellstep) {
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -598,7 +598,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Wispling' :
-            client.updateUserInfo(message.member, {"users.$.Wispling" : player.Wispling += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Wispling" : player.Wispling += 1});
             switch(player.Wispling) {
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -616,7 +616,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Kae' :
-            client.updateUserInfo(message.member, {"users.$.Kae" : player.monster.Kae += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Kae" : player.monster.Kae += 1});
             switch(player.monster.Kae){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -634,7 +634,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Charybdis' :
-            client.updateUserInfo(message.member, {"users.$.Charybdis" : player.monster.Charybdis += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Charybdis" : player.monster.Charybdis += 1});
             switch(player.monster.Charybdis){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -652,7 +652,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Yuusha' :
-            client.updateUserInfo(message.member, {"users.$.Yuusha" : player.monster.Yuusha += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Yuusha" : player.monster.Yuusha += 1});
             switch(player.monster.Yuusha){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -670,7 +670,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Demon Lord' :
-            client.updateUserInfo(message.member, {"users.$.Demon_Lord" : player.monster.Demon_Lord += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Demon_Lord" : player.monster.Demon_Lord += 1});
             switch(player.monster.Demon_Lord){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -688,7 +688,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Maho' :
-            client.updateUserInfo(message.member, {"users.$.Maho" : player.monster.Maho += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Maho" : player.monster.Maho += 1});
             switch(player.monster.Maho){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -706,7 +706,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Norico' :
-            client.updateUserInfo(message.member, {"users.$.Norico" : player.monster.Norico += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Norico" : player.monster.Norico += 1});
             switch(player.monster.Norico){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -724,7 +724,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Thor' :
-            client.updateUserInfo(message.member, {"users.$.Thor" : player.monster.Thor += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Thor" : player.monster.Thor += 1});
             switch(player.monster.Thor){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -742,7 +742,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Odin' :
-            client.updateUserInfo(message.member, {"users.$.Odin" : player.monster.Odin += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Odin" : player.monster.Odin += 1});
             switch(player.monster.Odin){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -760,7 +760,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Reaper' :
-            client.updateUserInfo(message.member, {"users.$.Reaper" : player.monster.Reaper += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Reaper" : player.monster.Reaper += 1});
             switch(player.monster.Reaper){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -778,7 +778,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Rimuru' :
-            client.updateUserInfo(message.member, {"users.$.Rimuru" : player.monster.Rimuru += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Rimuru" : player.monster.Rimuru += 1});
             switch(player.monster.Rimuru){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -796,7 +796,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Skarab' :
-            client.updateUserInfo(message.member, {"users.$.Skarab" : player.monster.Skarab += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Skarab" : player.monster.Skarab += 1});
             switch(player.monster.Skarab){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -814,7 +814,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Naminoe' :
-            client.updateUserInfo(message.member, {"users.$.Naminoe" : player.monster.Naminoe += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Naminoe" : player.monster.Naminoe += 1});
             switch(player.monster.Naminoe){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
@@ -832,7 +832,7 @@ const success = (client, message, hostile, player) => {
             }
             break;
         case 'Kami' :
-            client.updateUserInfo(message.member, {"users.$.Kami" : player.monster.Kami += 1});
+            client.updateUserInfo(message.member, {"users.$.monster.Kami" : player.monster.Kami += 1});
             switch(player.monster.Kami){
                 case 1 :
                     message.channel.send(`${player.username} tu as tué ton premier ${name}`)
