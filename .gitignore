@@ -1,7 +1,4 @@
 /node_modules/
 /img/
 /config.js
-/.idea/
 /package-lock.json
-/TODO.do
-/util/mariadb.config.js
