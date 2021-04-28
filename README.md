@@ -81,6 +81,11 @@ _Race_: Permet de choisir sa race.
 _Use_: Permet d'utiliser des objets de type => **potion** && **scroll**
 
 #
+*******************
+<br>
+<br>
+<br>
+
 
 # Warning !
 You can creat just one character (multi-server is no-config) if you are on many servers with the bot, play **only** on where you have created you character !!
