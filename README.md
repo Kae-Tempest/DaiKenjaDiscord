@@ -31,7 +31,7 @@ _Armor_: Permet de voir la liste des armures disponible à la vente.
 _Weapon_: Permet de voir la liste des armes et bouclier à la vente.
 
 _Consomable_: Permet de voir la liste des consommables
-
+ 
 _Sell_: Permet de vendre un objet dans son inventaire via le nom de l'item.
 
 _Shop_: Permet d'acheter un objet via son `label`(nombre) avec demande d'achat. `(achat annulé au bout de 5s sans réponse)`
@@ -75,6 +75,8 @@ _Profil_: Affiche le profil du joueur.
 _Ressusrection:_ Permet de retourner à la vie si on meurt au combat. `(commande payante en po)`
 
 _Setup_: Permet de créer son personnage.
+
+_Race_: Permet de choisir sa race.
 
 _Use_: Permet d'utiliser des objets de type => **potion** && **scroll**
 
