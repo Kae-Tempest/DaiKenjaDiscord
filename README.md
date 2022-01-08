@@ -1,4 +1,4 @@
-# Dai Kenja
+# Dai Kenja ( /!\ DISCORD.JS V12 /!\ )
 **Bot Discord RPG/Moderation**
 
 Necessary module : discord.js, fs,mongoose,ms
